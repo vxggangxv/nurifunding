@@ -1,0 +1,18 @@
+/* 콘텐츠 영역 */
+
+/* 타이틀 */
+#contents {margin-top: 80px;}
+#contents .tit h2 {font-size: 36px;}
+.category-group .btn {font-size: 18px; width: 180px; letter-spacing: 0;}
+.category-group .btn span {position: relative; top: 10px; right: 0; border: 5px solid transparent; border-top-width: 8px; border-top-color: #398FE2; }
+.category-group .dropdown-menu {width: 180px;}
+
+/* 리스트 */
+.list {margin-top: 20px;}
+.list .items {height: 300px;}
+.list .items > div {border: 1px solid #d4d4d4; border-radius: 6px; background: #fff; height: 300px; }
+.list .items {margin-top: 30px;}
+.list .items:first-child, .list .items:first-child + div {margin-top: 0px;}
+@media (max-width: 767px){
+  .list .items:first-child + div {margin-top: 30px;}
+}

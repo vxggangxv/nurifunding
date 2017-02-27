@@ -1,9 +1,18 @@
 /* css 초기화 */
 @import url(reset.css);
+@import url(../fonts/NanumBarunGothic/NanumBarunGothic.css);
+@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
 @import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
-body, * {margin:0; padding:0; font-family: 'Nanum Gothic', 'Malgun Gothic', sans-serif;}
-body, * {box-sizing: border-box;}
+body, * {margin:0; padding:0; font-family: 'Noto Sans Kr', 'Nanum Gothic', 'Malgun Gothic', Arial, sans-serif; box-sizing: border-box; letter-spacing: -1px;}
+body {background: #f5f5f5; color: #333;}
+button {cursor: pointer;}
 a {text-decoration:none; color: #434343;}
+
+/* 공통속성 css */
+.dropdown .btn {position: relative; border: 1px solid #d4d4d4; background: #fff; padding: 8px 20px; border-radius: 6px; text-align: left;}
+.dropdown .dropdown-menu {display: none; position: absolute; border: 1px solid #d4d4d4; background: #fff; border-radius: 6px; margin-top: -1px; z-index: 1;}
+.dropdown .dropdown-menu li a {display: block; padding: 5px 20px; line-height: 1.2em;}
+.dropdown .dropdown-menu li a:hover {color: #398fe2;}
 /* 색상 */
 .c_blue {color: #398FE2;}
 
@@ -18,3 +27,12 @@ a {text-decoration:none; color: #434343;}
   .main-nav .hidden-margin {height: 20px;}
 }
 
+/* footer영역 */
+#footer {margin-top: 100px; padding: 40px 0; background: #282828; color: #b4b4b4;}
+#footer .row-box > div {margin-top: 15px;}
+#footer .row-box > div:first-child {margin-top: 0px;}
+#footer .a-txt > a {display: inline-block; margin-left: 20px; color: #b4b4b4;}
+#footer .a-txt > a:first-child {margin-left: 0;}
+#footer .f-txt > p {font-size: 14px;}
+#footer .f-txt address {display: inline; font-size: 14px; line-height: 1.5em;}
+#footer .c-txt small {font-size: 12px;}
