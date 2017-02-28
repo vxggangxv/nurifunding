@@ -2,6 +2,7 @@
 
 /* 타이틀 */
 #contents {margin-top: 80px;}
+/*#contents.container {padding: 0 60px;}*/
 #contents .tit h2 {font-size: 36px;}
 .category-group .btn {font-size: 18px; width: 180px; letter-spacing: 0;}
 .category-group .btn span {position: relative; top: 10px; right: 0; border: 5px solid transparent; border-top-width: 8px; border-top-color: #398FE2; }

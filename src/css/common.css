@@ -20,6 +20,8 @@ a {text-decoration:none; color: #434343;}
 #header {background: #fff; border-bottom: 1px solid #ddd; height: 90px;}
 .header-box {position: relative; padding: 34px 0;}
 .header-box > div {float: left;}
+.header-box .navbar-brand {position: relative; display: inline-block; width: 216px; top: -10px;}
+.header-box .navbar-brand img {width: 100%;}
 
 .main-nav li {float: left; font-size: 18px; margin-left: 20px;}
 .main-nav li:first-child {margin-left: 0;}
@@ -29,8 +31,8 @@ a {text-decoration:none; color: #434343;}
 
 /* footer영역 */
 #footer {margin-top: 100px; padding: 40px 0; background: #282828; color: #b4b4b4;}
-#footer .row-box > div {margin-top: 15px;}
-#footer .row-box > div:first-child {margin-top: 0px;}
+#footer .footer-box > div {margin-top: 15px;}
+#footer .footer-box > div:first-child {margin-top: 0px;}
 #footer .a-txt > a {display: inline-block; margin-left: 20px; color: #b4b4b4;}
 #footer .a-txt > a:first-child {margin-left: 0;}
 #footer .f-txt > p {font-size: 14px;}
