@@ -3,5 +3,4 @@ $(function() {
   $(".dropdown .btn").on("click", function() {
     $(this).next().slideToggle("fast");
   });
-    
 });

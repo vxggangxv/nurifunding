@@ -27,12 +27,19 @@
 <body>
   <h1 class="skip">누리펀딩</h1>
   <div class="wrap">
+    <!-- 일반 해더 -->
     <header id="header">
       <div class="container header-box">
         <div class="navbar-header">
+          <button type="button" class="nav-tab show-xs" data-target="mlnb-wrapper" data-toggle="slide-left">
+            <span class="icon-bar b1"></span>
+            <span class="icon-bar b2"></span>
+            <span class="icon-bar b3"></span>
+          </button>
           <h2><a href="/" class="navbar-brand"><img src="../src/img/logo.png" alt="누리펀딩로고"></a></h2>
+          <a href="#" class="my-tab show-xs"><img src="../src/img/myp_icon.png" alt="마이페이지"></a>
         </div>
-        <div class="navbar-collapse pull-right">
+        <div class="navbar-collapse pull-right hidden-xs">
           <ul class="main-nav clearfix">
             <li>대출신청</li>
             <li class="hidden-xs hidden-sm hidden-margin"></li>
@@ -42,19 +49,41 @@
             <li class="hidden-xs hidden-sm hidden-margin"></li>
             <li>이용안내</li>
             <li class="hidden-xs hidden-sm hidden-margin"></li>
-            <li class="c_blue">회원가입</li>
+            <li class="c-blue">회원가입</li>
             <li class="hidden-xs hidden-sm hidden-margin"></li>
-            <li class="c_blue">로그인</li>
+            <li class="c-blue">로그인</li>
           </ul>
         </div>
       </div>
     </header>
+    <!-- 모바일 네비게이션 -->
+    <section id="mlnb-wrapper" class="show-xs">
+      <div class="mlnb-container">
+        <header class="mlnb-header">
+          <p>
+            <a href="" class="mh-logo"><img src="../src/img/lnb_logo.png" alt="누리펀딩"></a><a href="" class="cls-btn"><img src="../src/img/cls_icon.png" alt="닫기"></a>
+          </p>
+          <div class="t-box">
+            <p>지금 바로 로그인하고</p>
+            <p>누리펀딩의 투자서비스를 이용하세요!</p>
+            <p class="nth-3"><a href="" >로그인</a><a href="" class="nth-2">회원가입</a></p>
+          </div>
+        </header>
+        <ul class="mlnb">
+          <li><a href="">대출신청<img src="../src/img/arrow_r_icon.png" alt="바로가기"></a></li>
+          <li><a href="">투자하기<img src="../src/img/arrow_r_icon.png" alt="바로가기"></a></li>
+          <li><a href="">회사소개<img src="../src/img/arrow_r_icon.png" alt="바로가기"></a></li>
+          <li><a href="">이용안내<img src="../src/img/arrow_r_icon.png" alt="바로가기"></a></li>
+        </ul>
+      </div>
+    </section>
+    
     <!--<setction id="main"></setction>-->
     <section id="contents" class="container">
       <div class="row tit">
         <h2 class="pull-left">누리펀딩 투자상품</h2>
         <div class="dropdown pull-right category-group">
-          <button class="btn" data-toggle="drop-down">전체<span class="pull-right"></span></button>
+          <button type="button" class="btn" data-toggle="drop-down">전체<span class="pull-right"></span></button>
           <ul class="dropdown-menu">
             <li><a href="#">아파트</a></li>
             <li><a href="#">빌라</a></li>
