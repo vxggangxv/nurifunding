@@ -1,6 +1,6 @@
 /* css 초기화 */
 @import url(reset.css);
-@import url(../fonts/NanumBarunGothic/NanumBarunGothic.css);
+@import url(../fonts/NanumBarunGothic/nanumbarungothic.css);
 @import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
 @import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
 body, * {margin:0; padding:0; font-family: 'Noto Sans Kr', 'Nanum Gothic', 'Malgun Gothic', Arial, sans-serif; box-sizing: border-box; letter-spacing: -1px;}
