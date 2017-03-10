@@ -5,13 +5,26 @@
 /*아이콘*/
 .arrow-icon {font-family: "NanumGothic", sans-serif; font-weight: 800;}
 
+
 /*전체*/
 .wrap {position: relative; width: 100%;}
 
 .main {position: relative;}
+/*pc 영역*/
 /*메인 영역*/
-.main {width: 100%; height: 328px; background: url(../img/main_bg_m.jpg) no-repeat center bottom;}
-.main-img {position: absolute; display: block; width: 468px; bottom: 0; left: 50%; margin-left: -234px;}
-.more-btn {position: absolute; }
-
+.main {width: 100%; height: 487px; background: url(../img/main_bg.jpg) no-repeat center top;}
+.main-box {position: relative; width: 1024px; height: 100%; margin: 0 auto; text-align: center; background: url(../img/main_img.png) no-repeat center bottom;}
+.more-btn {position: absolute; width: 220px; height: 60px; top: 335px; left: 20px; color: #fff; font-size: 20px;}
+.yellow-r-icon {position: relative; top: 1px;margin-left: 3px;}
+/*테블릿 영역*/
+/*모바일 영역*/
+@media (max-width: 767px){
+  .main {width: 100%; height: 224px; background: url(../img/main_bg_m.jpg) no-repeat center top;}
+  .main-box {position: relative; width: 320px; height: 100%; margin: 0 auto; text-align: center; background: url(../img/main_img_m.png) no-repeat center bottom;}
+  .more-btn {position: absolute; width: 120px; height: 36px; bottom: 30px; left: 20px; color: #fff; font-size: 14px;}
+  .yellow-r-icon {position: relative; top: -1px;width: 6px; margin-left: 3px;}
+}
+@media (max-width: 434px){
+  .main {width: 100%; height: 224px; background: url(../img/main_bg_m_434.jpg) no-repeat center top;}
+}
 
