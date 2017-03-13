@@ -14,15 +14,20 @@
 /*메인 영역*/
 .main {width: 100%; height: 487px; background: url(../img/main_bg.jpg) no-repeat center top;}
 .main-box {position: relative; width: 1024px; height: 100%; margin: 0 auto; text-align: center; background: url(../img/main_img.png) no-repeat center bottom;}
-.more-btn {position: absolute; width: 220px; height: 60px; top: 335px; left: 20px; color: #fff; font-size: 20px;}
-.yellow-r-icon {position: relative; top: 1px;margin-left: 3px;}
+.more-btn {position: absolute; width: 220px; height: 50px; top: 335px; left: 16px; color: #fff; font-size: 20px; padding-left: 6px;}
+.yellow-r-icon {display: inline-block; position: relative; top: 2px; left: 6px; width: 12px; height: 18px; background: url(../img/nrm_icon.png) no-repeat;}
 /*테블릿 영역*/
+@media (min-width: 768px) and (max-width: 1199px){
+  .main {width: 100%; height: 365px; background: url(../img/main_bg.jpg) no-repeat center top;}
+  .main-box {position: relative; width: 768px; height: 100%; margin: 0 auto; text-align: center; background: url(../img/main_img_t.png) no-repeat center bottom;}
+  .more-btn {position: absolute; width: 220px; height: 50px; top: 255px; left: 12px; color: #fff; font-size: 20px; padding-left: 6px;}
+}
 /*모바일 영역*/
 @media (max-width: 767px){
   .main {width: 100%; height: 224px; background: url(../img/main_bg_m.jpg) no-repeat center top;}
   .main-box {position: relative; width: 320px; height: 100%; margin: 0 auto; text-align: center; background: url(../img/main_img_m.png) no-repeat center bottom;}
-  .more-btn {position: absolute; width: 120px; height: 36px; bottom: 30px; left: 20px; color: #fff; font-size: 14px;}
-  .yellow-r-icon {position: relative; top: -1px;width: 6px; margin-left: 3px;}
+  .more-btn {position: absolute; width: 120px; height: 32px; top: 160px; left: 20px; color: #fff; font-size: 14px; padding-left: 6px;}
+  .yellow-r-icon {display: inline-block; position: relative; width: 6px; left: 3px; top: -1px; height: 9px; background: url(../img/nrm_icon_m.png) no-repeat;}
 }
 @media (max-width: 434px){
   .main {width: 100%; height: 224px; background: url(../img/main_bg_m_434.jpg) no-repeat center top;}
