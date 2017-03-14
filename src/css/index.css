@@ -1,33 +1,171 @@
 /*폰트 색상*/
 .bg-blue {background-color: #398fe1;}
 .fc-blue {color: #398fe1;}
+.fc-white {color: #fff;}
+
+/*공통 속성*/
 
 /*아이콘*/
-.arrow-icon {font-family: "NanumGothic", sans-serif; font-weight: 800;}
 
 
 /*전체*/
 .wrap {position: relative; width: 100%;}
-
 .main {position: relative;}
+
 /*pc 영역*/
-/*메인 영역*/
+@media (min-width: 1200px){
+.com-pd {padding: 98px 10px 95px;}
+.com-ft {text-align: center; font-size: 36px; font-family: "Noto Sans Kr";}
+.com-box {margin: 0 auto; margin-top: 50px;}
+  
 .main {width: 100%; height: 487px; background: url(../img/main_bg.jpg) no-repeat center top;}
 .main-box {position: relative; width: 1024px; height: 100%; margin: 0 auto; text-align: center; background: url(../img/main_img.png) no-repeat center bottom;}
-.more-btn {position: absolute; width: 220px; height: 50px; top: 335px; left: 16px; color: #fff; font-size: 20px; padding-left: 6px;}
-.yellow-r-icon {display: inline-block; position: relative; top: 2px; left: 6px; width: 12px; height: 18px; background: url(../img/nrm_icon.png) no-repeat;}
+.more-btn {position: absolute; width: 220px; height: 50px; top: 335px; left: 16px; color: #fff; font-size: 18px; padding-left: 6px;}
+.yellow-r-icon {display: inline-block; position: relative; top: 5px; left: 6px; width: 12px; height: 18px; background: url(../img/nrm_icon.png) no-repeat;}
+
+.rate {padding: 40px 0px;}
+.r-f, .r-f2 {text-align: center; color: #fff; font-family: "NanumGothic"; letter-spacing: 0;}
+.r-f {font-size: 18px;}
+.r-f2 {font-size: 24px; margin-top: 12px; font-weight: 500;}
+
+.benefit {background: #09345F; font-family: "NanumGothic";}
+.benefit div[class*="bd"] {padding: 50px 0px; height: 174px;}
+.bd-nth-1 {background: #134aa4;}
+.bd-nth-2 {background: #f5f5f5;}
+.bd-nth-3 {background: #202125;}
+.bd-nth-4 {background: #2aa0ea;}
+
+.benefit div[class*="bd"] .pl-nth-1 {width: 28%;}
+.benefit div[class*="bd"] .pl-nth-2 {width: 72%;}
+.benefit-icon {position: relative; display: block; left: 3px; margin: 0 auto; width: 79px; height: 74px; background: url(../img/benefit_icon.png) no-repeat;}
+.bi-nth-1 {}
+.bi-nth-2 {background-position: -150px;}
+.bi-nth-3 {background-position: -300px; top: 4px;}
+.bi-nth-4 {background-position: -450px; top: 4px;}
+.bh3, .bh3-2 {font-size: 20px;}
+.bd-nth-2 .bh3 {color: #101010;}
+.bd-nth-4 .bh3 {margin-top: -3px;}
+.bd-nth-4 .bh3-2 {margin-top: 3px;}
+.bp {margin-top: 10px; font-size: 16px; line-height: 1.3em;}
+  
+}
+
 /*테블릿 영역*/
-@media (min-width: 768px) and (max-width: 1199px){
+@media (min-width: 992px) and (max-width: 1199px){
+  .com-pd {padding: 98px 10px 95px;}
+  .com-ft {text-align: center; font-size: 36px; font-family: "Noto Sans Kr";}
+  .com-box {margin: 0 auto; margin-top: 50px;}
+  
   .main {width: 100%; height: 365px; background: url(../img/main_bg.jpg) no-repeat center top;}
   .main-box {position: relative; width: 768px; height: 100%; margin: 0 auto; text-align: center; background: url(../img/main_img_t.png) no-repeat center bottom;}
-  .more-btn {position: absolute; width: 220px; height: 50px; top: 255px; left: 12px; color: #fff; font-size: 20px; padding-left: 6px;}
+  .more-btn {position: absolute; width: 220px; height: 50px; top: 255px; left: 12px; color: #fff; font-size: 18px; padding-left: 6px;}
+  .yellow-r-icon {display: inline-block; position: relative; top: 5px; left: 6px; width: 12px; height: 18px; background: url(../img/nrm_icon.png) no-repeat;}
+  
+  .rate {padding: 40px 0px;}
+  .r-f, .r-f2 {text-align: center; color: #fff; font-family: "NanumGothic"; letter-spacing: 0;}
+  .r-f {font-size: 18px;}
+  .r-f2 {font-size: 24px; margin-top: 12px; font-weight: 500;}
+
+  .benefit {background: #09345F; font-family: "NanumGothic";}
+  .benefit div[class*="bd"] {padding: 40px 0px; height: 174px;}
+  .bd-nth-1 {background: #134aa4;}
+  .bd-nth-2 {background: #f5f5f5;}
+  .bd-nth-3 {background: #202125;}
+  .bd-nth-4 {background: #2aa0ea;}
+
+  .benefit div[class*="bd"] .pl-nth-1 {width: 28%;}
+  .benefit div[class*="bd"] .pl-nth-2 {width: 72%;}
+  .benefit-icon {position: relative; display: block; left: 3px; margin: 0 auto; width: 79px; height: 74px; background: url(../img/benefit_icon.png) no-repeat;}
+  .bi-nth-1 {}
+  .bi-nth-2 {background-position: -150px;}
+  .bi-nth-3 {background-position: -300px; top: 4px;}
+  .bi-nth-4 {background-position: -450px; top: 4px;}
+  .bh3, .bh3-2 {font-size: 20px;}
+  .bd-nth-2 .bh3 {color: #101010;}
+  .bd-nth-4 .bh3 {margin-top: -3px;}
+  .bd-nth-4 .bh3-2 {margin-top: 3px;}
+  .bp {margin-top: 10px; font-size: 16px; line-height: 1.3em;}
+  
+}
+/*테블릿 영역*/
+@media (min-width: 768px) and (max-width: 991px){
+  .com-pd {padding: 98px 10px 95px;}
+  .com-ft {text-align: center; font-size: 36px; font-family: "Noto Sans Kr";}
+  .com-box {margin: 0 auto; margin-top: 50px;}
+  
+  .main {width: 100%; height: 365px; background: url(../img/main_bg.jpg) no-repeat center top;}
+  .main-box {position: relative; width: 768px; height: 100%; margin: 0 auto; text-align: center; background: url(../img/main_img_t.png) no-repeat center bottom;}
+  .more-btn {position: absolute; width: 220px; height: 50px; top: 255px; left: 12px; color: #fff; font-size: 18px; padding-left: 6px;}
+  .yellow-r-icon {display: inline-block; position: relative; top: 5px; left: 6px; width: 12px; height: 18px; background: url(../img/nrm_icon.png) no-repeat;}
+
+  .rate {padding: 40px 0px;}
+  .r-f, .r-f2 {text-align: center; color: #fff; font-family: "NanumGothic"; letter-spacing: 0;}
+  .r-f {font-size: 18px;}
+  .r-f2 {font-size: 24px; margin-top: 6px; font-weight: 500;}
+  .rate .mt {margin-top: 30px;}
+
+  .benefit {background: #09345F; font-family: "NanumGothic";}
+  .benefit div[class*="bd"] {padding: 40px 0px; height: auto;}
+  .bd-nth-1 {background: #134aa4;}
+  .bd-nth-2 {background: #f5f5f5;}
+  .bd-nth-3 {background: #202125;}
+  .bd-nth-4 {background: #2aa0ea;}
+
+  .benefit div[class*="bd"] .pl-nth-1 {width: 28%;}
+  .benefit div[class*="bd"] .pl-nth-2 {width: 72%;}
+  .benefit-icon {position: relative; display: block; left: 3px; margin: 0 auto; width: 79px; height: 74px; background: url(../img/benefit_icon.png) no-repeat;}
+  .bi-nth-1 {}
+  .bi-nth-2 {background-position: -150px;}
+  .bi-nth-3 {background-position: -300px; top: 4px;}
+  .bi-nth-4 {background-position: -450px; top: 4px;}
+  .bh3, .bh3-2 {font-size: 20px;}
+  .bd-nth-2 .bh3 {color: #101010;}
+  .bd-nth-4 .bh3 {margin-top: -3px;}
+  .bd-nth-4 .bh3-2 {margin-top: 3px;}
+  .bp {margin-top: 10px; font-size: 16px; line-height: 1.3em;}
+  
+  
 }
 /*모바일 영역*/
 @media (max-width: 767px){
+  .com-pd {padding: 28px 10px 25px;}
+  .com-ft {text-align: center; font-size: 17px; font-family: "Noto Sans Kr";}
+  .com-box {margin: 0 auto; margin-top: 20px; width: 300px;}
+  
   .main {width: 100%; height: 224px; background: url(../img/main_bg_m.jpg) no-repeat center top;}
   .main-box {position: relative; width: 320px; height: 100%; margin: 0 auto; text-align: center; background: url(../img/main_img_m.png) no-repeat center bottom;}
   .more-btn {position: absolute; width: 120px; height: 32px; top: 160px; left: 20px; color: #fff; font-size: 14px; padding-left: 6px;}
   .yellow-r-icon {display: inline-block; position: relative; width: 6px; left: 3px; top: -1px; height: 9px; background: url(../img/nrm_icon_m.png) no-repeat;}
+  
+  .rate {padding: 20px 0px;}
+  .rate .container {width: 320px;}
+  .r-f, .r-f2 {text-align: center; color: #fff; font-family: "NanumGothic";}
+  .r-f {font-size: 14px;}
+  .r-f2 {font-size: 17px; margin-top: 6px;}
+  .rate .mt {margin-top: 20px;}
+  
+  .benefit {background: #09345F; font-family: "NanumGothic";}
+  .benefit div[class*="bd"] {padding: 20px 10px 20px 6px; height: auto;}
+  .bd-nth-1 {background: #134aa4;}
+  .bd-nth-2 {background: #f5f5f5;}
+  .bd-nth-3 {background: #202125;}
+  .bd-nth-4 {background: #2aa0ea;}
+  
+  .benefit div[class*="bd"] .pl-nth-1 {width: 79px;}
+  .benefit div[class*="bd"] .pl-nth-2 {width: 205px;}
+  .benefit-icon {position: relative; display: block; left: 0; margin: 0 auto; width: 52px; height: 48px; background: url(../img/benefit_icon_m.png) no-repeat; top: 3px;}
+  .bi-nth-1 {}
+  .bi-nth-2 {background-position: -100px; top: 2px;}
+  .bi-nth-3 {background-position: -200px; top: 7px;}
+  .bi-nth-4 {background-position: -300px; top: 9px;}
+  .bh3, .bh3-2 {font-size: 14px;}
+  .bd-nth-2 .bh3 {color: #101010;}
+  .bd-nth-4 .bh3 {margin-top: 0;}
+  .bd-nth-4 .bh3-2 {margin-top: 3px;}
+  .bp {margin-top: 5px; font-size: 12px; line-height: 1.2em;}
+  
+  .ingProduct {background: #f5f5f5;}
+  
 }
 @media (max-width: 434px){
   .main {width: 100%; height: 224px; background: url(../img/main_bg_m_434.jpg) no-repeat center top;}
