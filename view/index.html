@@ -18,8 +18,11 @@
 	<script type="text/javascript" src="../src/js/jquery.lazyload.min.js"></script> -->
   <!-- <script type="text/javascript" src="../src/js/index.js"></script> -->
   <!--[if lt IE 9]>
+    <link rel="stylesheet" href="..src/css/ie9_lt.css">
+   
     <script type="text/javascript" src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
     <script type="text/javascript" src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+  
   <![endif]-->
 </head>
 
@@ -79,7 +82,7 @@
     
     <section class="main">
       <div class="container main-box">
-        <button class="more-btn bg-blue" type="button">대출 더 알아보기 <span class="yellow-r-icon"></span><!--<img class="yellow-r-icon" src="../src/img/yellow_r_icon.png" alt="더알아보기">--></button>
+        <button class="main-more-btn bg-blue" type="button">대출 더 알아보기 <span class="arr-icon yellow-r-icon"></span></button>
       </div>
       
     </section>
@@ -150,45 +153,179 @@
     </section>
     <section class="ingProduct com-pd">
       <div class="container">
+       
         <h2 class="com-ft">진행중인 투자상품</h2>
-        <div class="row com-box">
-          <!--(div.col-xs-12>h3.iph3+ul.ip-inner>(li.ipli-nth-$>p.pull-left+p.pull-right)*4)*2-->
-          <div class="col-xs-12">
-            <h3 class="iph3">해운대 아파트</h3>
-            
-            <ul class="ip-inner">
-              <li class="ipli-nth-1">
-                <p class="pull-left">예상수익률</p>
-                <p class="pull-right">6.5%</p>
-              </li>
-              <li class="ipli-nth-2">
-                <p class="pull-left">기간</p>
-                <p class="pull-right">12개월</p>
-              </li>
-              <li class="ipli-nth-3">
-                <p class="pull-left">상환방식</p>
-                <p class="pull-right">혼합상환</p>
-              </li>
-              <li class="ipli-nth-4">
-                <p class="pull-left">모집현황</p>
-                <p class="pull-right">4,000/4,000만원</p>
-              </li>
-              <li class="ipli-nth-5">
-                <p class="ip-per-bar"></p>
-              </li>
-              <li class="ipli-nth-6">
-                <p class="pull-left"></p>
-                <p class="pull-right ip-percent"></p>
-              </li>
-            </ul>
-            <p class="ip-btn-box"><a href="" class="ip-btn">투자하기</a></p>
+        <div class="row com-box ip-wrap">
+          <!--(div.col-xs-12.ip-box>h3.iph3+ul.ip-inner>(li.ipli-nth-$>p.pull-left+p.pull-right)*4)*2-->
+          <div class="col-xs-12 col-sm-6 ip-outer">
+            <div class="ip-box br4">
+              <div class="thumb-box"><img src="../src/img/pro_sample_1.jpg" alt="해운대 아파트"></div>            
+              <h3 class="iph3">해운대 아파트</h3>
+              <ul class="ip-inner">
+                <li class="ipli-nth-1 clearfix">
+                  <p class="pull-left">예상수익률</p>
+                  <p class="pull-right">6.5%</p>
+                </li>
+                <li class="ipli-nth-2 clearfix">
+                  <p class="pull-left">기간</p>
+                  <p class="pull-right">12개월</p>
+                </li>
+                <li class="ipli-nth-3 clearfix">
+                  <p class="pull-left">상환방식</p>
+                  <p class="pull-right">혼합상환</p>
+                </li>
+                <li class="ipli-nth-4 clearfix">
+                  <p class="pull-left">모집현황</p>
+                  <p class="pull-right">4,000 / 4,000만원</p>
+                </li>
+                <li class="ipli-nth-5 clearfix">
+                  <p class="ip-per-bar bg-blue"></p>
+                </li>
+                <li class="ipli-nth-6 clearfix">
+                  <p class="pull-left">진행중<span class="ip-per-num">(852명)</span></p>
+                  <p class="pull-right ip-percent fc-blue">80%</p>
+                </li>
+              </ul>
+              <p class="ip-btn-box"><a href="" class="ip-btn bg-blue br4">투자하기</a></p>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-6 ip-outer">
+            <div class="ip-box br4">
+              <div class="thumb-box"><img src="../src/img/pro_sample_1.jpg" alt="해운대 아파트"></div>            
+              <h3 class="iph3">해운대 아파트</h3>
+              <ul class="ip-inner">
+                <li class="ipli-nth-1 clearfix">
+                  <p class="pull-left">예상수익률</p>
+                  <p class="pull-right">6.5%</p>
+                </li>
+                <li class="ipli-nth-2 clearfix">
+                  <p class="pull-left">기간</p>
+                  <p class="pull-right">12개월</p>
+                </li>
+                <li class="ipli-nth-3 clearfix">
+                  <p class="pull-left">상환방식</p>
+                  <p class="pull-right">혼합상환</p>
+                </li>
+                <li class="ipli-nth-4 clearfix">
+                  <p class="pull-left">모집현황</p>
+                  <p class="pull-right">4,000 / 4,000만원</p>
+                </li>
+                <li class="ipli-nth-5 clearfix">
+                  <p class="ip-per-bar bg-blue"></p>
+                </li>
+                <li class="ipli-nth-6 clearfix">
+                  <p class="pull-left">진행중<span class="ip-per-num">(852명)</span></p>
+                  <p class="pull-right ip-percent fc-blue">80%</p>
+                </li>
+              </ul>
+              <p class="ip-btn-box"><a href="" class="ip-btn bg-blue br4">투자하기</a></p>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-6 ip-outer">
+            <div class="ip-box br4">
+              <div class="thumb-box"><img src="../src/img/pro_sample_1.jpg" alt="해운대 아파트"></div>            
+              <h3 class="iph3">해운대 아파트</h3>
+              <ul class="ip-inner">
+                <li class="ipli-nth-1 clearfix">
+                  <p class="pull-left">예상수익률</p>
+                  <p class="pull-right">6.5%</p>
+                </li>
+                <li class="ipli-nth-2 clearfix">
+                  <p class="pull-left">기간</p>
+                  <p class="pull-right">12개월</p>
+                </li>
+                <li class="ipli-nth-3 clearfix">
+                  <p class="pull-left">상환방식</p>
+                  <p class="pull-right">혼합상환</p>
+                </li>
+                <li class="ipli-nth-4 clearfix">
+                  <p class="pull-left">모집현황</p>
+                  <p class="pull-right">4,000 / 4,000만원</p>
+                </li>
+                <li class="ipli-nth-5 clearfix">
+                  <p class="ip-per-bar bg-blue"></p>
+                </li>
+                <li class="ipli-nth-6 clearfix">
+                  <p class="pull-left">진행중<span class="ip-per-num">(852명)</span></p>
+                  <p class="pull-right ip-percent fc-blue">80%</p>
+                </li>
+              </ul>
+              <p class="ip-btn-box"><a href="" class="ip-btn bg-blue br4">투자하기</a></p>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-6 ip-outer">
+            <div class="ip-box br4">
+              <div class="thumb-box"><img src="../src/img/pro_sample_1.jpg" alt="해운대 아파트"></div>            
+              <h3 class="iph3">해운대 아파트</h3>
+              <ul class="ip-inner">
+                <li class="ipli-nth-1 clearfix">
+                  <p class="pull-left">예상수익률</p>
+                  <p class="pull-right">6.5%</p>
+                </li>
+                <li class="ipli-nth-2 clearfix">
+                  <p class="pull-left">기간</p>
+                  <p class="pull-right">12개월</p>
+                </li>
+                <li class="ipli-nth-3 clearfix">
+                  <p class="pull-left">상환방식</p>
+                  <p class="pull-right">혼합상환</p>
+                </li>
+                <li class="ipli-nth-4 clearfix">
+                  <p class="pull-left">모집현황</p>
+                  <p class="pull-right">4,000 / 4,000만원</p>
+                </li>
+                <li class="ipli-nth-5 clearfix">
+                  <p class="ip-per-bar bg-blue"></p>
+                </li>
+                <li class="ipli-nth-6 clearfix">
+                  <p class="pull-left">진행중<span class="ip-per-num">(852명)</span></p>
+                  <p class="pull-right ip-percent fc-blue">80%</p>
+                </li>
+              </ul>
+              <p class="ip-btn-box"><a href="" class="ip-btn bg-blue br4">투자하기</a></p>
+            </div>
           </div>
           
+        </div>
+        
+        <div class="row com-box ip-more-outer">
+          <div class="col-xs-12 com-sm-4 ip-more-box"><a href="" class="ip-more-btn br4">투자상품 모두 보러가기<span class="arr-icon black-r-icon"></span></a></div>
+        </div>
+        
+      </div>
+    </section>
+    <section class="faq com-pd">
+      <div class="container">
+        <h2 class="com-ft">자주하는 질문</h2>
+        <div class="row com-box fq-wrap">
+         
+          <div class="col-xs-12 col-sm-4 fq-outer">
+            <div class="fq-box br4">
+              <h3 class="fqh3"><span class="arr-icon q-icon"></span>고금리의 대출을 갈아탈 수 있나요?</h3>
+              <p class="fq-a"><span class="arr-icon a-icon"></span>가능합니다. 年 45~20%의 고객별 최적화된 중/저금리로 상환 부담을 덜어드리며 기존 고금리 대출을 전환하시는 고객께는 더 나은 조건의 금리와 한도 혜택을 드립니다.</p>
+            </div>
+          </div>
           
+          <div class="col-xs-12 col-sm-4 fq-outer">
+            <div class="fq-box br4">
+              <h3 class="fqh3"><span class="arr-icon q-icon"></span>고금리의 대출을 갈아탈 수 있나요?</h3>
+              <p class="fq-a"><span class="arr-icon a-icon"></span>가능합니다. 年 45~20%의 고객별 최적화된 중/저금리로 상환 부담을 덜어드리며 기존 고금리 대출을 전환하시는 고객께는 더 나은 조건의 금리와 한도 혜택을 드립니다.</p>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-4 fq-outer">
+            <div class="fq-box br4">
+              <h3 class="fqh3"><span class="arr-icon q-icon"></span>고금리의 대출을 갈아탈 수 있나요?</h3>
+              <p class="fq-a"><span class="arr-icon a-icon"></span>가능합니다. 年 45~20%의 고객별 최적화된 중/저금리로 상환 부담을 덜어드리며 기존 고금리 대출을 전환하시는 고객께는 더 나은 조건의 금리와 한도 혜택을 드립니다.</p>
+            </div>
+          </div>
           
         </div>
+        
+        <div class="row com-box fq-btn-outer">
+          <div class="col-xs-12 com-sm-4 fq-btn-box"><a href="" class="fq-btn br4">질문 전체 보러가기<span class="arr-icon black-r-icon"></span></a></div>
+        </div>
+        
       </div>
-      
     </section>
     <footer class="footer container-fluid">
       <div class="container footer-box">
@@ -203,7 +340,7 @@
             고객센터 1544-2499 ㅣ E-mail 000@ebiznetworks.co.kr ㅣ 주소: 서울특별시 강남구 선릉로 99길 12, 4층(역삼동, 모노타워)
           </address>
         </div>
-        <div class="row c-txt"><small>COPYRIGHT NURIFUNDING ALL RIGHTS RESERVED.</small></div>
+        <div class="row c-txt"><small>COPYRIGHT <span class="fc-yellow">NURIFUNDING</span> ALL RIGHTS RESERVED.</small></div>
       </div>
     </footer>
   </div>

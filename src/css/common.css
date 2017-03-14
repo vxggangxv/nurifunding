@@ -16,31 +16,7 @@ a {text-decoration:none; color: #434343;}
 /* 색상 */
 .c-blue {color: #398FE2;}
 
-/* header영역 */
-.header {background: #fff; border-bottom: 1px solid #ddd; height: 90px;}
-.header-box {position: relative; top: 34px;}
-.header-box > div {position: relative; float: left;}
-.navbar-header {top: -10px;}
-.navbar-brand {position: relative; display: inline-block; width: 216px;}
-.navbar-brand img {width: 216px;}
-
-.main-nav li {float: left; font-size: 18px; margin-left: 20px;}
-.main-nav li:first-child {margin-left: 0;}
-
-/* footer영역 */
-.footer {/*margin-top: 100px;*/ padding: 40px 0; background: #282828; color: #b4b4b4;}
-.footer .footer-box > div {margin-top: 15px;}
-.footer .footer-box > div:first-child {margin-top: 0px;}
-.footer .a-txt > a {display: inline-block; margin-left: 20px; color: #b4b4b4;}
-.footer .a-txt > a:first-child {margin-left: 0;}
-.footer .f-txt > p {font-size: 14px;}
-.footer .f-txt address {display: inline; font-size: 14px; line-height: 1.5em;}
-.footer .c-txt small {font-size: 12px;}
-
-@media all and (min-width: 768px){
-  .main-nav .hidden-margin {height: 20px;}
-  .footer .f-txt .min-xs-br {display: block;}
-}
+/*모바일 영역*/
 @media (max-width: 767px){
   .header {background: #fff; border-bottom: 2px solid #398FE1; height: 46px;}
   .header-box {position: relative; top: 18px;}
@@ -76,16 +52,40 @@ a {text-decoration:none; color: #434343;}
   .mlnb > li > a { display: block; padding: 15px 20px 15px 20px; color: #333; letter-spacing: 0;}
   .mlnb > li > a > img {position: absolute; width: 9px;  right: 20px; top: 16px;}
   
+  .footer {padding: 40px 0; background: #282828; margin-top: 0;}
+  .footer .a-txt, .footer .f-txt, .footer .c-txt {width: 300px; margin: 0 auto; margin-top: 15px; color: #b4b4b4;}
+  .footer .c-txt {margin-top: 10px;}
+  .footer .footer-box div[class*="-txt"]:first-child {margin-top: 0px;}
+  .footer .a-txt > a {display: inline-block; margin-left: 20px; color: #d3d3d3; font-size: 15px;}
+  .footer .a-txt > a:first-child {margin-left: 0;}
+  .footer .f-txt address {display: inline; font-size: 12px; line-height: 1.5em;}
+  .footer .c-txt small {font-size: 11px;}
+  .fc-yellow {color: #ffea00;}
+  
   .footer .f-txt .xs-br {display: block;}
 }
-/*@media (max-device-width: 360px){
-  .navbar-brand img {width: 200px;}
-  .nav-tab {left: 10px;}
-  .nav-tab .icon-bar {width: 28px;}
-  .nav-tab .b2,.nav-tab .b3 {margin-top: 6px;}
-  .my-tab {top: 2px; right: 10px; width: 24px; height: 32px;}
+/*테블릿 & PC영역*/
+@media (min-width: 768px){
+  .header {background: #fff; border-bottom: 1px solid #ddd; height: 90px;}
+  .header-box {position: relative; top: 34px;}
+  .header-box > div {position: relative; float: left;}
+  .navbar-header {top: -10px;}
+  .navbar-brand {position: relative; display: inline-block; width: 216px;}
+  .navbar-brand img {width: 216px;}
+
+  .main-nav li {float: left; font-size: 18px; margin-left: 20px;}
+  .main-nav li:first-child {margin-left: 0;}
+
+  .footer {padding: 40px 0; background: #282828; color: #b4b4b4; margin-top: 0;}
+  .footer .a-txt, .footer .f-txt {margin-top: 15px;}
+  .footer .c-txt {margin-top: 10px;}
+  .footer .footer-box div[class*="-txt"]:first-child {margin-top: 0px;}
+  .footer .a-txt > a {display: inline-block; margin-left: 20px; color: #d3d3d3}
+  .footer .a-txt > a:first-child {margin-left: 0;}
+  .footer .f-txt address {display: inline; font-size: 14px; line-height: 1.5em;}
+  .footer .c-txt small {font-size: 12px;}
+  .fc-yellow {color: #ffea00;}
+  
+  .main-nav .hidden-margin {height: 20px;}
+  .footer .f-txt .min-xs-br {display: block;}
 }
-@media (max-device-width: 320px){
-  .nav-tab {left: 6px;}
-  .my-tab {right: 6px;}
-}*/
