@@ -31,7 +31,7 @@
   .m-nr-t, .nr-ph {font-size: 14px;}
   .mlow2.mt {margin-top: 20px;}
   .nr-check {width: 21px; height: 21px;}
-  .nr-check:checked {width: 21px; height: 21px; background: url(../img/check-icon.png) no-repeat 3px; background-color: #fff;}
+  .nr-check:checked {width: 21px; height: 21px; background: url(http://img.nurifunding.co.kr/check-icon.png) no-repeat 3px; background-color: #fff;}
   .nr-label {margin-left: 5px;}
   .nr-check, .m-fc1, .m-fc2, .ml2-link, .m-fc0 {position: relative; vertical-align: middle;}
   .m-fc1, .m-fc2 {margin-left: 5px;}
@@ -109,7 +109,7 @@
   .m-nr-t, .nr-ph {font-size: 18px;}
   .mlow2.mt {margin-top: 20px;}
   .nr-check {width: 21px; height: 21px;}
-  .nr-check:checked {width: 21px; height: 21px; background: url(../img/check-icon.png) no-repeat 3px; background-color: #fff;}
+  .nr-check:checked {width: 21px; height: 21px; background: url(http://img.nurifunding.co.kr/check-icon.png) no-repeat 3px; background-color: #fff;}
   .nr-label {margin-left: 5px;}
   .nr-check, .m-fc1, .m-fc2, .ml2-link, .m-fc0 {position: relative; vertical-align: middle;}
   .m-fc1, .m-fc2 {margin-left: 5px;}

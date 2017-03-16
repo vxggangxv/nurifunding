@@ -3,12 +3,6 @@ $(function() {
   $(".dropdown .btn").on("click", function() {
     $(this).next().slideToggle("fast");
   });
-  /*체크박스 전체동의*/
-  $(".nr-check.all").on("click", function() {
-    var isChecked = $(this).prop("checked");
-    //console.log(isChecked);
-    $(this).closest(".main-box").find(".nr-check").prop("checked", isChecked);
-  })
   /*텝박스 기능*/
   $(".tab-box li").on("click", function() {
     var thIdx = $(this).index();

@@ -1,6 +1,7 @@
 /* css 초기화 */
-@import url(reset.css);
-@import url(../fonts/NanumBarunGothic/nanumbarungothic.css);
+@import url(http://static.nurifunding.co.kr/css/reset.css);
+@import url(http://static.nurifunding.co.kr/css/grid_1024.css);
+@import url(http://static.nurifunding.co.kr/fonts/NanumBarunGothic/nanumbarungothic.css);
 @import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
 @import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
 body, * {margin:0; padding:0; font-family: 'Noto Sans Kr', 'Nanum Gothic', 'Malgun Gothic', Arial, sans-serif; box-sizing: border-box; letter-spacing: -1px;}
@@ -14,15 +15,19 @@ a {text-decoration:none; color: #434343;}
 .fc-white {color: #fff;}
 
 /* input태그 커스커마이징 */
+.nr-box {position: relative;}
+.nr-ph {display: none; position: absolute; top: 17px; left: 1px; text-indent: 15px; color: #999;}
+
 .nr-text, .nr-radio, .nr-button, .nr-reset, .nr-select, .nr-check { appearance: none;	-webkit-appearance: none;  -moz-appearance: none;  -ms-appearance: none; background: #fff;}
 .nr-text + label, .nr-radio + label, .nr-check + label {vertical-align: middle; cursor: pointer;}
-.nr-text, .nr-radio, .nr-check {border: 1px solid #ddd; outline: none;}
+.nr-text, .nr-radio, .nr-check {border: 1px solid #ddd; outline: none; cursor: pointer;}
 .nr-radio:checked, .nr-check:checked {background-color: #fff;}
 
 
 /* 공통속성 css */
-.dropdown .btn {position: relative; border: 1px solid #d4d4d4; background: #fff; padding: 8px 20px; border-radius: 6px; text-align: left;}
-.dropdown .dropdown-menu {display: none; position: absolute; border: 1px solid #d4d4d4; background: #fff; border-radius: 6px; margin-top: -1px; z-index: 1;}
+.dropdown .btn {position: relative; border: 1px solid #ddd; background: #fff; padding: 8px 20px; border-radius: 6px; text-align: left; outline: none;}
+.dropdown .btn span {font-size: 10px; color: #398FE2;}
+.dropdown .dropdown-menu {display: none; position: absolute; border: 1px solid #ddd; background: #fff; border-radius: 6px; margin-top: -1px; z-index: 1;}
 .dropdown .dropdown-menu li a {display: block; padding: 5px 20px; line-height: 1.2em;}
 .dropdown .dropdown-menu li a:hover {color: #398fe2;}
 
@@ -30,6 +35,11 @@ a {text-decoration:none; color: #434343;}
 
 /* 색상 */
 .c-blue {color: #398FE2;}
+
+/*전체*/
+.wrap {position: relative; width: 100%;}
+.contents {position: relative;}
+.main {position: relative;}
 
 /*모바일 영역*/
 @media (max-width: 767px){

@@ -1,0 +1,50 @@
+.wrap {min-width: 1044px;}
+.container {
+  width: 945px;
+}
+.container.header-box, .container.footer-box {
+  width: 1044px;
+}
+
+.container-fluid {
+  padding-right: 10px;
+  padding-left: 10px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.row {
+	
+}
+.row-col {
+  margin-right: -10px;
+  margin-left: -10px;
+}
+.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
+  position: relative;
+  min-height: 1px;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.header {background: #fff; border-bottom: 1px solid #ddd; height: 90px;}
+.header-box {position: relative; top: 34px;}
+.header-box > div {position: relative; float: left;}
+.navbar-header {top: -10px;}
+.navbar-brand {position: relative; display: inline-block; width: 216px;}
+.navbar-brand img {width: 216px;}
+
+.main-nav li {float: left; font-size: 18px; margin-left: 20px;}
+.main-nav li:first-child {margin-left: 0;}
+
+.footer {padding: 40px 0; background: #282828; color: #b4b4b4; margin-top: 0;}
+.footer .a-txt, .footer .f-txt {margin-top: 15px;}
+.footer .c-txt {margin-top: 10px;}
+.footer .footer-box div[class*="-txt"]:first-child {margin-top: 0px;}
+.footer .a-txt > a {display: inline-block; margin-left: 20px; color: #d3d3d3}
+.footer .a-txt > a:first-child {margin-left: 0;}
+.footer .f-txt address {display: inline; font-size: 14px; line-height: 1.5em;}
+.footer .c-txt small {font-size: 12px;}
+.fc-yellow {color: #ffea00;}
+
+.main-nav .hidden-margin {height: 20px;}
+.footer .f-txt .min-xs-br {display: block;}

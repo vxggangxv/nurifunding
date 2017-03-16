@@ -7,23 +7,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=0">
   <title>누리펀딩</title>
   <link href="https://opensource.keycdn.com/fontawesome/4.6.3/font-awesome.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="../src/css/grid_1024.css">
-  <link rel="stylesheet" href="../src/css/common.css">
-  <link rel="stylesheet" href="../src/css/join.css">
-   
-  <script type="text/javascript" src="../src/js/jquery-1.10.2.min.js"></script>
-  <script type="text/javascript" src="../src/js/components_custom.js"></script>
-  <script type="text/javascript" src="../src/js/common.js"></script>
-  <!-- <script type="text/javascript" src="../src/js/owl.carousel.min.js"></script>
-	<script type="text/javascript" src="../src/js/jquery.lazyload.min.js"></script> -->
-  <!-- <script type="text/javascript" src="../src/js/index.js"></script> -->
+  <!--<link rel="stylesheet" href="http://static.nurifunding.co.kr/css/common.css">
+  <link rel="stylesheet" href="http://static.nurifunding.co.kr/css/join/join.css">-->
+   <link rel="stylesheet" href="../src/css/common.css">
+  <link rel="stylesheet" href="../src/css/join/join.css"> 
+
+  <script type="text/javascript" src="http://static.nurifunding.co.kr/js/jquery-1.10.2.min.js"></script>
+  <script type="text/javascript" src="http://static.nurifunding.co.kr/js/components_custom.js"></script>
+  <script type="text/javascript" src="http://static.nurifunding.co.kr/js/common.js"></script>
+  <script type="text/javascript" src="http://static.nurifunding.co.kr/js/join/join.js"></script> 
+  <script type="text/javascript" src="../src/js/join/join.js"></script>
+
   <!--[if lt IE 9]>
-    <link rel="stylesheet" href="..src/css/ie9_lt.css">
+    <link rel="stylesheet" href="http://static.nurifunding.co.kr/css/grid_ie9lt.min.css">
+    <link rel="stylesheet" href="http://static.nurifunding.co.kr/css/common_ie9lt.css">
+    <link rel="stylesheet" href="http://static.nurifunding.co.kr/css/join/join_ie9lt.css">
    
-    <script type="text/javascript" src="../src/js/ie9_lt.js"></script>
+    <script type="text/javascript" src="http://static.nurifunding.co.kr/js/ie9_lt.js"></script>
     <script type="text/javascript" src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-    <script type="text/javascript" src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-  
   <![endif]-->
 </head>
 
@@ -44,17 +45,17 @@
         </div>
         <div class="navbar-collapse pull-right hidden-xs">
           <ul class="main-nav clearfix">
-            <li>대출신청</li>
+            <li><a href="">대출신청</a></li>
             <li class="hidden-xs hidden-sm hidden-margin"></li>
-            <li>투자하기</li>
+            <li><a href="">투자하기</a></li>
             <li class="hidden-xs hidden-sm hidden-margin"></li>
-            <li>회사소개</li>
+            <li><a href="">회사소개</a></li>
             <li class="hidden-xs hidden-sm hidden-margin"></li>
-            <li>이용안내</li>
+            <li><a href="">이용안내</a></li>
             <li class="hidden-xs hidden-sm hidden-margin"></li>
-            <li class="c-blue">회원가입</li>
+            <li><a class="c-blue" href="">회원가입</a></li>
             <li class="hidden-xs hidden-sm hidden-margin"></li>
-            <li class="c-blue">로그인</li>
+            <li><a class="c-blue" href="">로그인</a></li>
           </ul>
         </div>
       </div>
@@ -83,21 +84,21 @@
     
     <div class="contents">
      
-      <!--<section class="main">
+      <section class="main">
         <div class="container main-box">
           <h2 class="mh2"><img src="../src/img/logo.png" alt="누리펀딩"></h2>
           <p class="mlow mt nr-box"><input type="text" class="nr-text m-nr-t br4" placeholder="이메일주소"><span class="nr-ph">이메일주소</span></p>
           <p class="mlow nr-box"><input type="password" class="nr-text m-nr-t br4" placeholder="비밀번호"><span class="nr-ph">비밀번호</span></p>
           <p class="mlow2 mt nr-box"><input type="checkbox" class="nr-check all" id="m-all"><label for="m-all" class="nr-label">전체 동의</label></p>
-          <p class="mlow2 nr-box"><input type="checkbox" class="nr-check"><span class="m-fc1">[필수]</span><a href="" class="ml2-link">서비스 이용약관</a><span class="m-fc0">동의</span></p>
-          <p class="mlow2 nr-box"><input type="checkbox" class="nr-check"><span class="m-fc1">[필수]</span><a href="" class="ml2-link">서비스 이용약관</a><span class="m-fc0">동의</span></p>
-          <p class="mlow2 nr-box"><input type="checkbox" class="nr-check"><span class="m-fc2">[선택]</span><a href="" class="ml2-link">서비스 이용약관</a><span class="m-fc0">동의</span></p>
+          <p class="mlow2 nr-box"><input type="checkbox" class="nr-check"><span class="m-fc1">[필수]</span><a href="" class="ml2-link">서비스 이용약관</a><span class="m-fc0"> 동의</span></p>
+          <p class="mlow2 nr-box"><input type="checkbox" class="nr-check"><span class="m-fc1">[필수]</span><a href="" class="ml2-link">서비스 이용약관</a><span class="m-fc0"> 동의</span></p>
+          <p class="mlow2 nr-box"><input type="checkbox" class="nr-check"><span class="m-fc2">[선택]</span><a href="" class="ml2-link">서비스 이용약관</a><span class="m-fc0"> 동의</span></p>
           <p class="mlow3 mt"><a href="" class="m-btn join br4">회원가입</a></p>
           <p class="mlow3"><a href="" class="m-btn face br4">페이스북 계정으로 가입</a></p>
           <p class="mlow4 mt">이미 회원이세요?<a href="" class="ml4-link">로그인</a></p>
           <p class="mlow4">비밀번호를 잊으셨나요?<a href="" class="ml4-link">비밀번호찾기</a></p>
         </div>
-      </section>-->
+      </section>
       <!--<section class="member">
         <div class="container mem-box">
           <ul class="mt-box tab-box clearfix">
@@ -125,14 +126,14 @@
           <p class="wel-link"><a href="" class="fc-white bg-blue br4 center-block">이메일 재발송하기</a></p>
         </div>
       </section>-->
-      <section class="pswd">
+      <!--<section class="pswd">
         <div class="container pw-box br4">
           <h3 class="pw-h3">비밀번호 설정하기</h3>
           <p class="pw-txt">회원님의 계정과 연계된 이메일을 입력하시면, <span class="center-block">비밀번호 재설정 링크를 전송해 드립니다.</span></p>
           <p class="pw-mail mt nr-box center-block"><input type="text" class="nr-text pw-nr-t br4 center-block" placeholder="이메일계정"><span class="nr-ph">이메일계정</span></p>
           <p class="pw-link center-block"><a href="" class="fc-white bg-blue br4 center-block">비밀번호 설정하기</a></p>
         </div>
-      </section>
+      </section>-->
       
     </div>
     
