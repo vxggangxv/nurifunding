@@ -8,20 +8,20 @@
   <title>누리펀딩</title>
   <link href="https://opensource.keycdn.com/fontawesome/4.6.3/font-awesome.min.css" rel="stylesheet">
   <!--<link rel="stylesheet" href="http://static.nurifunding.co.kr/css/common.css">
-  <link rel="stylesheet" href="http://static.nurifunding.co.kr/css/loan/loan.css">-->
-  <link rel="stylesheet" href="../src/css/common.css">
-  <link rel="stylesheet" href="../src/css/list/list.css"> 
+  <link rel="stylesheet" href="http://static.nurifunding.co.kr/css/invest/invest.css">-->
+  <link rel="stylesheet" href="../../src/css/common.css">
+  <link rel="stylesheet" href="../../src/css/invest/invest.css"> 
 
   <script type="text/javascript" src="http://static.nurifunding.co.kr/js/jquery-1.10.2.min.js"></script>
   <script type="text/javascript" src="http://static.nurifunding.co.kr/js/components_custom.js"></script>
   <script type="text/javascript" src="http://static.nurifunding.co.kr/js/common.js"></script>
-  <!-- <script type="text/javascript" src="http://static.nurifunding.co.kr/js/loan/loan.js"></script> -->
-  <script type="text/javascript" src="../src/js/list/list.js"></script>
+  <!-- <script type="text/javascript" src="http://static.nurifunding.co.kr/js/invest/invest.js"></script> -->
+  <script type="text/javascript" src="../../src/js/invest/invest.js"></script>
 
   <!--[if lt IE 9]>
     <link rel="stylesheet" href="http://static.nurifunding.co.kr/css/grid_ie9lt.min.css">
     <link rel="stylesheet" href="http://static.nurifunding.co.kr/css/common_ie9lt.css">
-    <link rel="stylesheet" href="http://static.nurifunding.co.kr/css/list/list_ie9lt.css">
+    <link rel="stylesheet" href="http://static.nurifunding.co.kr/css/invest/invest_ie9lt.css">
 
     <script type="text/javascript" src="http://static.nurifunding.co.kr/js/ie9_lt.js"></script>
     <script type="text/javascript" src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -35,7 +35,7 @@
     <header class="header" id="header">
       <div class="container header-box">
         <div class="navbar-header">
-          <button type="button" class="nav-tab show-xs" data-target="mlnb-wrapper" data-toggle="slide-left">
+          <button type="button" class="nav-tab show-xs">
             <span class="icon-bar b1"></span>
             <span class="icon-bar b2"></span>
             <span class="icon-bar b3"></span>
@@ -82,14 +82,13 @@
       </div>
     </section>
     
-    <!--<setction class="main"></setction>-->
-    <!-- 리스트 -->
+    <!-- 01.리스트 -->
     <section class="ingProduct com-pd">
       <div class="container">
-
+    
         <div class="row tit">
           <h2 class="com-ft">누리펀딩 투자상품</h2>
-          <div class="dropdown category">
+          <div class="dropdown category" id="category">
             <button type="button" class="btn">전체<span class="pull-right">▼</span></button>
             <ul class="dropdown-menu">
               <li><a href="#">아파트</a></li>
@@ -100,7 +99,6 @@
           </div>
         </div>
         <div class="row com-box ip-wrap">
-          <!--(div.col-xs-12.ip-box>h3.iph3+ul.ip-inner>(li.ipli-nth-$>p.pull-left+p.pull-right)*4)*2-->
           <div class="col-xs-12 col-sm-6 ip-outer">
             <div class="ip-box br4">
               <div class="thumb-box"><img src="http://img.nurifunding.co.kr/pro_sample_1.jpg" alt="해운대 아파트"></div>            
@@ -229,11 +227,22 @@
               <p class="ip-btn-box"><a href="" class="ip-btn bg-blue br4">투자하기</a></p>
             </div>
           </div>
-
+    
         </div>
-
+    
       </div>
     </section>
+
+    <!-- 02.부동산 -->
+    <!-- <setction class="estate com-pd">
+      <div class="container">
+        
+        <p class="bond-num">채권번호: 41586호</p>
+        <h2 class="com-ft">누리펀딩 투자상품</h2>
+                        
+      </div>
+    </setction> -->
+    
     <footer class="footer container-fluid">
       <div class="container footer-box">
         <div class="row a-txt">
@@ -242,10 +251,12 @@
           <a href="#">개인정보취급방침</a>
         </div>
         <div class="row f-txt">
-          <address>(주)누리펀딩 ㅣ 대표이사: 박기범 ㅣ 사업자등록번호 000-00-00000 ㅣ 통신판매업신고: 제 2017-서울강남-00000호<br/>
-			    고객센터 1544-2499 ㅣ E-mail 000@ebiznetworks.co.kr ㅣ 주소: 서울특별시 강남구 선릉로 99길 12, 4층(역삼동, 모노타워)</address>
+          <address>
+            <span class="min-xs-br"><span class="xs-br">(주)누리펀딩</span><span class="hidden-xs"> ㅣ </span>대표이사: 박기범 ㅣ 사업자등록번호 000-00-00000 ㅣ 통신판매업신고: 제 2017-서울강남-00000호</span>
+            고객센터 1544-2499 ㅣ E-mail 000@ebiznetworks.co.kr ㅣ 주소: 서울특별시 강남구 선릉로 99길 12, 4층(역삼동, 모노타워)
+          </address>
         </div>
-        <div class="row c-txt"><small>COPYRIGHT NURIFUNDING ALL RIGHTS RESERVED.</small></div>
+        <div class="row c-txt"><small>COPYRIGHT <span class="fc-yellow">NURIFUNDING</span> ALL RIGHTS RESERVED.</small></div>
       </div>
     </footer>
   </div>

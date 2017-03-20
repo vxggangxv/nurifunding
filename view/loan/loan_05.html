@@ -8,21 +8,21 @@
   <title>누리펀딩</title>
   <link href="https://opensource.keycdn.com/fontawesome/4.6.3/font-awesome.min.css" rel="stylesheet">
   <!--<link rel="stylesheet" href="http://static.nurifunding.co.kr/css/common.css">
-  <link rel="stylesheet" href="http://static.nurifunding.co.kr/css/join/join.css">-->
-   <link rel="stylesheet" href="../src/css/common.css">
-  <link rel="stylesheet" href="../src/css/join/join.css"> 
+  <link rel="stylesheet" href="http://static.nurifunding.co.kr/css/loan/loan.css">-->
+  <link rel="stylesheet" href="../../src/css/common.css">
+  <link rel="stylesheet" href="../../src/css/loan/loan.css"> 
 
   <script type="text/javascript" src="http://static.nurifunding.co.kr/js/jquery-1.10.2.min.js"></script>
   <script type="text/javascript" src="http://static.nurifunding.co.kr/js/components_custom.js"></script>
   <script type="text/javascript" src="http://static.nurifunding.co.kr/js/common.js"></script>
-  <script type="text/javascript" src="http://static.nurifunding.co.kr/js/join/join.js"></script> 
-  <script type="text/javascript" src="../src/js/join/join.js"></script>
+  <!-- <script type="text/javascript" src="http://static.nurifunding.co.kr/js/loan/loan.js"></script> -->
+  <script type="text/javascript" src="../../src/js/loan/loan.js"></script>
 
   <!--[if lt IE 9]>
     <link rel="stylesheet" href="http://static.nurifunding.co.kr/css/grid_ie9lt.min.css">
     <link rel="stylesheet" href="http://static.nurifunding.co.kr/css/common_ie9lt.css">
-    <link rel="stylesheet" href="http://static.nurifunding.co.kr/css/join/join_ie9lt.css">
-   
+    <link rel="stylesheet" href="http://static.nurifunding.co.kr/css/loan/loan_ie9lt.css">
+
     <script type="text/javascript" src="http://static.nurifunding.co.kr/js/ie9_lt.js"></script>
     <script type="text/javascript" src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
   <![endif]-->
@@ -84,56 +84,21 @@
     
     <div class="contents">
      
-      <section class="main">
-        <div class="container main-box">
-          <h2 class="mh2"><img src="http://img.nurifunding.co.kr/logo.png" alt="누리펀딩"></h2>
-          <p class="mlow mt nr-box"><input type="text" class="nr-text m-nr-t br4" placeholder="이메일주소"><span class="nr-ph">이메일주소</span></p>
-          <p class="mlow nr-box"><input type="password" class="nr-text m-nr-t br4" placeholder="비밀번호"><span class="nr-ph">비밀번호</span></p>
-          <p class="mlow2 mt nr-box"><input type="checkbox" class="nr-check all" id="m-all"><label for="m-all" class="nr-label">전체 동의</label></p>
-          <p class="mlow2 nr-box"><input type="checkbox" class="nr-check"><span class="m-fc1">[필수]</span><a href="" class="ml2-link">서비스 이용약관</a><span class="m-fc0"> 동의</span></p>
-          <p class="mlow2 nr-box"><input type="checkbox" class="nr-check"><span class="m-fc1">[필수]</span><a href="" class="ml2-link">서비스 이용약관</a><span class="m-fc0"> 동의</span></p>
-          <p class="mlow2 nr-box"><input type="checkbox" class="nr-check"><span class="m-fc2">[선택]</span><a href="" class="ml2-link">서비스 이용약관</a><span class="m-fc0"> 동의</span></p>
-          <p class="mlow3 mt"><a href="" class="m-btn join br4">회원가입</a></p>
-          <p class="mlow3"><a href="" class="m-btn face br4">페이스북 계정으로 가입</a></p>
-          <p class="mlow4 mt">이미 회원이세요?<a href="" class="ml4-link">로그인</a></p>
-          <p class="mlow4">비밀번호를 잊으셨나요?<a href="" class="ml4-link">비밀번호찾기</a></p>
+      <!-- 05.서류제출완료 -->
+      <section class="loan nth-5">
+        <h2 class="lon-h2">서류 제출 확인</h2>
+        <div class="container lon-box br4">
+          <img class="sub_01" src="http://img.nurifunding.co.kr/sub_01.png" alt="제출확인중">
+          <h3 class="lon-h3 center-block"><span class="fc-blue">임준수</span>님의 서류 제출을 확인 중입니다.</h3>
+          <p class="l5-ps">서류 제출이 확인되면 바로 문자 안내해 드립니다.</p>
+          
+          <p class="alow3"><a href="" class="a-btn br4 bg-blue">서류 제출 완료하기</a></p>
+          
+          <p class="l5-ps-2">제출하지 않은 서류가 있으신가요?</p>
+          <p class="l5-ps-3">건강보험자격득실확인서, 건강보험료납부확인서</p>
+          <p class="l5-ps-3">국민건강보험공단 1577-1000 (평일 오전 8시 ~ 오후 7시)에 전화하여 팩스 (050-5481-9064)로 서류 발송을 요청해주세요.</p>
         </div>
       </section>
-      <!--<section class="member">
-        <div class="container mem-box">
-          <ul class="mt-box tab-box clearfix">
-            <li class="mem-tab nth-1 on">투자자 회원</li>
-            <li class="mem-tab nth-2">대출자 회원</li>
-          </ul>
-          <ul class="mc-box con-box">
-            <li class="mem-con on">
-              <h3 class="mc-img"><img class="center-block" src="http://img.nurifunding.co.kr/mem_01.png" alt="투자자회원"></h3>
-              <p class="mc-txt">아래 <span class="fc-blue">투자자 정보 입력하기</span> 버튼을 눌러 투자자 정보를 입력해 주세요. <span class="sm-block">투자자 정보를 입력해야 투자가 가능합니다.</span></p>
-              <p class="mc-link"><a href="" class="fc-white bg-blue br4 center-block">투자자 정보 입력하기</a></p>
-            </li>
-            <li class="mem-con">
-              <h3 class="mc-img"><img class="center-block" src="http://img.nurifunding.co.kr/mem_02.png" alt="대출자회원"></h3>
-              <p class="mc-txt">아래 <span class="fc-blue">대출자 신청하기</span> 버튼을 눌러 대출을 신청 하실 수 있습니다. <span class="sm-block">신용도에 영향없는 합리적인 대출을 이용해 보세요.</span></p>
-              <p class="mc-link"><a href="" class="fc-white bg-blue br4 center-block">대출 신청하기</a></p>
-            </li>
-          </ul>
-        </div>
-      </section>-->
-      <!--<section class="welcome">
-        <div class="container wel-box br4">
-          <h3 class="wel-img"><img class="center-block" src="http://img.nurifunding.co.kr/wel.png" alt="투자자회원"></h3>
-          <p class="wel-txt">본인 확인을 위한 인증 메일이 <span class="fc-blue">oooo@naver.com</span> 로 발송되었습니다. <span class="center-block">계속하시려면 이메일을 확인해 주세요.</span></p>
-          <p class="wel-link"><a href="" class="fc-white bg-blue br4 center-block">이메일 재발송하기</a></p>
-        </div>
-      </section>-->
-      <!--<section class="pswd">
-        <div class="container pw-box br4">
-          <h3 class="pw-h3">비밀번호 설정하기</h3>
-          <p class="pw-txt">회원님의 계정과 연계된 이메일을 입력하시면, <span class="center-block">비밀번호 재설정 링크를 전송해 드립니다.</span></p>
-          <p class="pw-mail mt nr-box center-block"><input type="text" class="nr-text pw-nr-t br4 center-block" placeholder="이메일계정"><span class="nr-ph">이메일계정</span></p>
-          <p class="pw-link center-block"><a href="" class="fc-white bg-blue br4 center-block">비밀번호 설정하기</a></p>
-        </div>
-      </section>-->
       
     </div>
     

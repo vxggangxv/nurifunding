@@ -14,17 +14,16 @@
 
 /*모바일 영역, col-xs*/
 @media (max-width: 767px){
-  .com-pd {padding: 28px 10px 50px;}
-  .com-ft {text-align: center; font-size: 24px; font-family: "Noto Sans Kr";}
-  .com-box, .tit {margin: 0 auto; width: 300px;}
-  .tit {margin-top: 10px;}
+  .com-pd {padding: 28px 5px 50px;}
+  .com-ft {position: relative; text-align: center; font-size: 22px; font-family: "Noto Sans Kr";}
+  .com-box, .tit {margin: 0 auto; width: 310px;}
   .com-box {margin-top: 10px;}
-  .arr-icon {display: inline-block; position: relative; background: url(http://img.nurifunding.co.kr/nrm_icon_m.png) no-repeat;}
   .br4 {border-radius: 4px;}
 
   .ingProduct {background: #f5f5f5;}
-  .dropdown.category {width: 120px; float: right; margin-top: 20px; font-size: 15px;}
-  .dropdown .btn {position: relative; border: 1px solid #ddd; background: #fff; padding: 6px 20px; border-radius: 6px; text-align: left; outline: none; width: 100%; font-size: 15px;}
+  .ingProduct .com-ft {float: left;}
+  .dropdown.category {width: 110px; float: right; font-size: 15px;}
+  .dropdown .btn {position: relative; border: 1px solid #ddd; background: #fff; padding: 3px 10px; border-radius: 6px; text-align: left; outline: none; width: 100%; font-size: 15px;}
   .dropdown .btn span {position: relative; top: 2px; font-size:10px; color: #398FE2;}
   .dropdown .dropdown-menu {display: none; position: absolute; border: 1px solid #ddd; background: #fff; border-radius: 6px; margin-top: -1px; z-index: 1; width: 100%;}
   .dropdown .dropdown-menu li a {display: block; padding: 5px 20px; line-height: 1.2em; font-size: 1em;}
@@ -52,7 +51,6 @@
   .com-pd {padding: 68px 10px 95px;}
   .com-ft {text-align: center; font-size: 36px; font-family: "Noto Sans Kr";}
   .com-box {margin: 0 auto; margin-top: 10px;}
-  .arr-icon {display: inline-block; position: relative; background: url(http://img.nurifunding.co.kr/nrm_icon.png) no-repeat;}
   .br4 {border-radius: 4px;}
 
   .ingProduct {background: #f5f5f5;}
@@ -87,7 +85,6 @@
   .com-pd {padding: 68px 10px 95px;}
   .com-ft {text-align: center; font-size: 36px; font-family: "Noto Sans Kr";}
   .com-box {margin: 0 auto; margin-top: 10px;}
-  .arr-icon {display: inline-block; position: relative; background: url(http://img.nurifunding.co.kr/nrm_icon.png) no-repeat;}
   .br4 {border-radius: 4px;}
 
   .ingProduct {background: #f5f5f5;}
