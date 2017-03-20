@@ -76,8 +76,42 @@
   .lon-d#lon-year, .lon-d#lon-month {width: 49%; float: left;}
   .lon-d#lon-year {margin-right: 2%;}
   .lon-li.lon-li-area {height: 130px;}
-  .nr-text.nr-area {height: 100px; line-height: 1.5em; padding: 10px 0 0 15px; text-indent: 0;}
+  .nr-text.nr-area {height: 100px; line-height: 1.5em; padding: 10px 0 0 15px; text-indent: 0; resize: none;}
   .a-ps-dot {font-size: 10px; top: -1px;}
+  .lon-ul.lt {border-bottom: none; padding-bottom: 0; margin-bottom: -10px;}
+  
+  .loan.nth-3 {}
+  .loan.nth-3 .lon-h3 {text-align: center; font-weight: 400; font-size: 14px; line-height: 1.5em; margin-top: 0; font-size: 20px;}
+  .loan.nth-3 .lon-li .pull-right {color: #888;}
+  .loan.nth-3 .lon-li .fc-blue {font-size: 18px; margin-left: 5px;}
+  .loan.nth-3 .a-ps {position: relative; text-align: left; color: #999; padding-left: 8px; font-family: "NanumGothic";}
+  .a-pl {position: absolute; left: 0; top: 0; display: inline-block; width: 10px;}
+  .loan.nth-3 .a-ps {position: relative; text-align: left; color: #999; padding-left: 8px; font-family: "NanumGothic"; margin-top: 5px; line-height: 1.2em;}
+  .loan.nth-3 .a-ps.mt {margin-top: 15px;}
+  
+  .loan.nth-4 {}
+  .loan.nth-4 .lon-em {font-size: 15px;}
+  .l4-ps {font-size: 14px; text-align: center; color: #636363; margin-top: 3px; line-height: 1.2em;}
+  .submit-box {margin-top: 25px; border: 1px solid #ddd; padding-top: 20px;}
+  p[class*=sb-] {text-align: center; font-size: 14px; line-height: 1.5em;}
+  .sb-p1 .fc-blue {text-decoration: underline;}
+  p[class*=sb-].sb-p2 {color: #999; font-size: 13px;}
+  .sb-p3, .sb-p5, .sb-p7 {margin: 4px 0;}
+  .sb-p3 img, .sb-p5 img, .sb-p7 img {width: 18px;}
+  .sb-p9 {background: #f5f5f5; padding: 10px 0;}
+  .sb-p8 {margin-bottom: 20px;}
+  .nr-check, .a-fc {vertical-align: middle;}
+  .xs-block {display: block;}
+  
+  .loan.nth-5 {}
+  .sub_01 {display: block; margin: 0 auto; width: 100px; margin-top: 20px;}
+  .loan.nth-5 .lon-h3 {text-align: center; font-size: 18px;}
+  .l5-ps {text-align: center; color: #888; font-size: 14px; margin-top: 5px;}
+  .l5-ps-2 {margin-top: 20px; padding-top: 20px; border-top: 1px solid #ddd;}
+  .l5-ps-2, .l5-ps-3 {font-size: 13px; line-height: 1.4em; font-family: "NanumGothic";}
+  .l5-ps-2 {}
+  .l5-ps-3 {color: #888;}
+  
 }
 
 /*테블릿 영역, col-sm */
@@ -134,9 +168,49 @@
   .al-link:before {content: ""; display: block; width: 100%; position: absolute; height: 1px; background: #999; left: 0px; bottom: -1px;}
   .alow3 {text-align: center;}
   .alow3 {margin-top: 25px;}
-  .a-btn {display: inline-block; width: 100%; color: #fff; font-size: 15px; line-height: 3.1em; height: 46px; letter-spacing: 0;}
-  .a-btn span {position: relative; right: 20px;font-size: 10px;}
+  .a-btn {display: inline-block; width: 100%; color: #fff; font-size: 16px; line-height: 3.2em; height: 50px; letter-spacing: 0;}
+  .a-btn span {position: relative; right: 20px;font-size: 11px;}
   .a-ps {font-size: 14px; text-align: center; margin-top: 10px; color: #545454;}
+  
+  .loan.nth-2 {}
+  .lon-h3 {margin-top: 25px; font-size: 22px;}
+  .loan.nth-2 .lon-li:first-child {margin-top: 15px;}
+  .lon-d#lon-year, .lon-d#lon-month {width: 49%; float: left;}
+  .lon-d#lon-year {margin-right: 2%;}
+  .lon-li.lon-li-area {height: 130px;}
+  .nr-text.nr-area {height: 100px; line-height: 1.5em; padding: 10px 0 0 15px; text-indent: 0; resize: none;}
+  .a-ps-dot {font-size: 10px; top: -1px;}
+  .lon-ul.lt {border-bottom: none; padding-bottom: 0; margin-bottom: -5px;}
+  
+  .loan.nth-3 {}
+  .loan.nth-3 .lon-h3 {text-align: center; font-size: 14px; line-height: 1.5em; margin-top: 0; font-size: 24px; font-weight: 500;}
+  .loan.nth-3 .lon-li .pull-right {color: #888;}
+  .loan.nth-3 .lon-li .fc-blue {font-size: 18px; margin-left: 5px;}
+  .loan.nth-3 .a-ps {position: relative; text-align: left; color: #999; padding-left: 8px; font-family: "NanumGothic"; margin-top: 5px; line-height: 1.3em;}
+  .loan.nth-3 .a-ps.mt {margin-top: 15px;}
+  .a-pl {position: absolute; left: 0; top: 0; display: inline-block; width: 10px;}
+  
+  .loan.nth-4 {}
+  .loan.nth-4 .lon-em {font-size: 16px;}
+  .loan.nth-4 .ps {font-size: 14px; text-align: center; color: #636363; margin-top: 3px;}
+  .submit-box {margin-top: 25px; border: 1px solid #ddd; padding-top: 20px;}
+  p[class*=sb-] {text-align: center; font-size: 15px; line-height: 1.5em;}
+  .sb-p1 .fc-blue {text-decoration: underline;}
+  p[class*=sb-].sb-p2 {color: #999; font-size: 14px;}
+  .sb-p3, .sb-p5, .sb-p7 {margin: 8px 0;}
+  .sb-p3 img, .sb-p5 img, .sb-p7 img {width: 20px;}
+  .sb-p9 {background: #f5f5f5; padding: 10px 0;}
+  .sb-p8 {margin-bottom: 20px;}
+  .nr-check, .a-fc {vertical-align: middle;}
+  
+  .loan.nth-5 {}
+  .sub_01 {display: block; margin: 0 auto; width: 140px; margin-top: 30px;}
+  .loan.nth-5 .lon-h3 {text-align: center; font-size: 22px; font-weight: 500;}
+  .l5-ps {text-align: center; color: #888; font-size: 16px; margin-top: 5px;}
+  .l5-ps-2 {margin-top: 30px; padding-top: 30px; border-top: 1px solid #ddd;}
+  .l5-ps-2, .l5-ps-3 {font-size: 14px; line-height: 1.4em; font-family: "NanumGothic";}
+  .l5-ps-2 {}
+  .l5-ps-3 {color: #888;}
 }
 /*PC영역*/
 @media (min-width: 1200px) {
@@ -154,13 +228,39 @@
   .lon-li {position: relative; font-size: 17px; margin-top: 20px;}
   .lon-li:first-child {margin-top: 30px;}
   .lon-p {color: #434343;}
-  .lon-d {margin-top: 12px; height: 46px;}
   .dropdown .btn, .dropdown .dropdown-menu, .nr-text, .nr-bg-txt, .nr-ph {font-size: 17px;}
   .lon-ps {font-size: 14px; margin-top: 8px; color: #999; font-weight: 300;}
   .nr-label {margin-left: 5px; font-size: 17px;}
-  .agree-box {padding: 15px; border: 1px solid #ddd; margin-top: 15px;}
   .a-fc1, .a-fc2, .al-link, .a-fc0 {font-size: 15px; font-weight: 400; top: 0px;}
-  .al-link, .a-fc0 {color: #696969;}
-  .a-fc1 {color: #ff9a16;}
-  .a-fc2 {color: #b3b3b3;}
+  
+  .a-btn {display: inline-block; width: 100%; color: #fff; font-size: 18px; line-height: 3.2em; height: 58px; letter-spacing: 0;}
+  .a-btn span {position: relative; right: 20px;font-size: 11px;}
+  
+  .loan.nth-3 {}
+  .loan.nth-3 .lon-box {padding-bottom: 100px;}
+  .loan.nth-3 .lon-h3 {text-align: center; font-size: 14px; line-height: 1.5em; margin-top: 5px; margin-bottom: 40px; font-size: 32px;}
+  .loan.nth-3 .lon-li {font-size: 20px;}
+  .loan.nth-3 .lon-li .pull-right {color: #888; letter-spacing: 0;}
+  .loan.nth-3 .lon-li .fc-blue {font-size: 26px; margin-left: 5px;}
+  .loan.nth-3 .a-ps {position: relative; text-align: left; color: #999; padding-left: 8px; font-family: "NanumGothic"; margin-top: 5px; line-height: 1.5em;}
+  
+  .loan.nth-4 {}
+  .loan.nth-4 .lon-em {font-size: 22px;}
+  .loan.nth-4 .ps {font-size: 17px; text-align: center; color: #636363; margin-top: 3px;}
+  .submit-box {margin-top: 35px; border: 1px solid #ddd; padding-top: 40px;}
+  p[class*=sb-] {text-align: center; line-height: 1.5em; font-size: 17px;}
+  p[class*=sb-].sb-p2 {color: #999; font-size: 15px;}
+  .sb-p8 {margin-bottom: 40px;}
+  .sb-p3 img, .sb-p5 img, .sb-p7 img {width: 22px;}
+  .loan.nth-4 .nr-check {width: 20px; height: 20px; margin-right: 5px;}
+  .loan.nth-4 .nr-check:checked {width: 20px; height: 20px; background: url(http://img.nurifunding.co.kr/check-icon.png) no-repeat 3px 3px; background-size: 12px; background-color: #fff;}
+  .loan.nth-4 .alow3 {margin-top: 40px; margin-bottom: 30px;}
+  
+  .loan.nth-5 {}
+  .sub_01 {display: block; margin: 0 auto; width: 172px; margin-top: 30px;}
+  .loan.nth-5 .lon-h3 {text-align: center; font-size: 32px;}
+  .loan.nth-5 .alow3 {margin-top: 35px;}
+  .l5-ps {text-align: center; color: #888; font-size: 17px; margin-top: 10px;}
+  .l5-ps-2 {margin-top: 35px; padding-top: 30px; border-top: 1px solid #ddd;}
+  .l5-ps-2, .l5-ps-3 {font-size: 15px; line-height: 1.4em; font-family: "NanumGothic";}
 }

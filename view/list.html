@@ -7,19 +7,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=0">
   <title>누리펀딩</title>
   <link href="https://opensource.keycdn.com/fontawesome/4.6.3/font-awesome.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="../src/css/grid_1024.css">
+  <!--<link rel="stylesheet" href="http://static.nurifunding.co.kr/css/common.css">
+  <link rel="stylesheet" href="http://static.nurifunding.co.kr/css/loan/loan.css">-->
   <link rel="stylesheet" href="../src/css/common.css">
-  <link rel="stylesheet" href="../src/css/index.css">
+  <link rel="stylesheet" href="../src/css/list/list.css"> 
 
-  <script type="text/javascript" src="../src/js/jquery-1.10.2.min.js"></script>
-  <script type="text/javascript" src="../src/js/components_custom.js"></script>
-  <script type="text/javascript" src="../src/js/index.js"></script>
-  <!-- <script type="text/javascript" src="../src/js/owl.carousel.min.js"></script>
-	<script type="text/javascript" src="../src/js/jquery.lazyload.min.js"></script> -->
-  <!-- <script type="text/javascript" src="../src/js/index.js"></script> -->
+  <script type="text/javascript" src="http://static.nurifunding.co.kr/js/jquery-1.10.2.min.js"></script>
+  <script type="text/javascript" src="http://static.nurifunding.co.kr/js/components_custom.js"></script>
+  <script type="text/javascript" src="http://static.nurifunding.co.kr/js/common.js"></script>
+  <!-- <script type="text/javascript" src="http://static.nurifunding.co.kr/js/loan/loan.js"></script> -->
+  <script type="text/javascript" src="../src/js/list/list.js"></script>
+
   <!--[if lt IE 9]>
+    <link rel="stylesheet" href="http://static.nurifunding.co.kr/css/grid_ie9lt.min.css">
+    <link rel="stylesheet" href="http://static.nurifunding.co.kr/css/common_ie9lt.css">
+    <link rel="stylesheet" href="http://static.nurifunding.co.kr/css/list/list_ie9lt.css">
+
+    <script type="text/javascript" src="http://static.nurifunding.co.kr/js/ie9_lt.js"></script>
     <script type="text/javascript" src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-    <script type="text/javascript" src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
   <![endif]-->
 </head>
 
@@ -35,8 +40,8 @@
             <span class="icon-bar b2"></span>
             <span class="icon-bar b3"></span>
           </button>
-          <h2><a href="./index.html" class="navbar-brand"><img src="../src/img/logo.png" alt="누리펀딩로고"></a></h2>
-          <a href="#" class="my-tab show-xs"><img src="../src/img/myp_icon.png" alt="마이페이지"></a>
+          <h2><a href="./index.html" class="navbar-brand"><img src="http://img.nurifunding.co.kr//logo.png" alt="누리펀딩로고"></a></h2>
+          <a href="#" class="my-tab show-xs"><img src="http://img.nurifunding.co.kr//myp_icon.png" alt="마이페이지"></a>
         </div>
         <div class="navbar-collapse pull-right hidden-xs">
           <ul class="main-nav clearfix">
@@ -60,7 +65,7 @@
       <div class="mlnb-container">
         <header class="mlnb-header">
           <p>
-            <a href="" class="mh-logo"><img src="../src/img/lnb_logo.png" alt="누리펀딩"></a><a href="javascript:void(0)" class="cls-btn"><img src="../src/img/cls_icon.png" alt="닫기"></a>
+            <a href="" class="mh-logo"><img src="http://img.nurifunding.co.kr//lnb_logo.png" alt="누리펀딩"></a><a href="javascript:void(0)" class="cls-btn"><img src="http://img.nurifunding.co.kr//cls_icon.png" alt="닫기"></a>
           </p>
           <div class="t-box">
             <p>지금 바로 로그인하고</p>
@@ -69,48 +74,164 @@
           </div>
         </header>
         <ul class="mlnb">
-          <li><a href="">대출신청<img src="../src/img/arrow_r_icon.png" alt="바로가기"></a></li>
-          <li><a href="">투자하기<img src="../src/img/arrow_r_icon.png" alt="바로가기"></a></li>
-          <li><a href="">회사소개<img src="../src/img/arrow_r_icon.png" alt="바로가기"></a></li>
-          <li><a href="">이용안내<img src="../src/img/arrow_r_icon.png" alt="바로가기"></a></li>
+          <li><a href="">대출신청<img src="http://img.nurifunding.co.kr//arrow_r_icon.png" alt="바로가기"></a></li>
+          <li><a href="">투자하기<img src="http://img.nurifunding.co.kr//arrow_r_icon.png" alt="바로가기"></a></li>
+          <li><a href="">회사소개<img src="http://img.nurifunding.co.kr//arrow_r_icon.png" alt="바로가기"></a></li>
+          <li><a href="">이용안내<img src="http://img.nurifunding.co.kr//arrow_r_icon.png" alt="바로가기"></a></li>
         </ul>
       </div>
     </section>
     
     <!--<setction class="main"></setction>-->
-    <section class="contents container">
-      <div class="row tit">
-        <h2 class="pull-left">누리펀딩 투자상품</h2>
-        <div class="dropdown pull-right category-group">
-          <button type="button" class="btn">전체<span class="pull-right"></span></button>
-          <ul class="dropdown-menu">
-            <li><a href="#">아파트</a></li>
-            <li><a href="#">빌라</a></li>
-            <li><a href="#">단독주택</a></li>
-            <li><a href="#">복합상가</a></li>
-          </ul>
+    <!-- 리스트 -->
+    <section class="ingProduct com-pd">
+      <div class="container">
+
+        <div class="row tit">
+          <h2 class="com-ft">누리펀딩 투자상품</h2>
+          <div class="dropdown category">
+            <button type="button" class="btn">전체<span class="pull-right">▼</span></button>
+            <ul class="dropdown-menu">
+              <li><a href="#">아파트</a></li>
+              <li><a href="#">빌라</a></li>
+              <li><a href="#">단독주택</a></li>
+              <li><a href="#">복합상가</a></li>
+            </ul>
+          </div>
         </div>
-      </div>
-      <!-- 리스트 -->
-      <div class="row-col list">
-        <div class="col-xs-12 col-sm-6 col-md-6 items">
-          <div>item</div>
+        <div class="row com-box ip-wrap">
+          <!--(div.col-xs-12.ip-box>h3.iph3+ul.ip-inner>(li.ipli-nth-$>p.pull-left+p.pull-right)*4)*2-->
+          <div class="col-xs-12 col-sm-6 ip-outer">
+            <div class="ip-box br4">
+              <div class="thumb-box"><img src="http://img.nurifunding.co.kr/pro_sample_1.jpg" alt="해운대 아파트"></div>            
+              <h3 class="iph3">해운대 아파트</h3>
+              <ul class="ip-inner">
+                <li class="ipli-nth-1 clearfix">
+                  <p class="pull-left">예상수익률</p>
+                  <p class="pull-right">6.5%</p>
+                </li>
+                <li class="ipli-nth-2 clearfix">
+                  <p class="pull-left">기간</p>
+                  <p class="pull-right">12개월</p>
+                </li>
+                <li class="ipli-nth-3 clearfix">
+                  <p class="pull-left">상환방식</p>
+                  <p class="pull-right">혼합상환</p>
+                </li>
+                <li class="ipli-nth-4 clearfix">
+                  <p class="pull-left">모집현황</p>
+                  <p class="pull-right">4,000 / 4,000만원</p>
+                </li>
+                <li class="ipli-nth-5 clearfix">
+                  <p class="ip-per-bar bg-blue"></p>
+                </li>
+                <li class="ipli-nth-6 clearfix">
+                  <p class="pull-left">진행중<span class="ip-per-num">(852명)</span></p>
+                  <p class="pull-right ip-percent fc-blue">80%</p>
+                </li>
+              </ul>
+              <p class="ip-btn-box"><a href="" class="ip-btn bg-blue br4">투자하기</a></p>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-6 ip-outer">
+            <div class="ip-box br4">
+              <div class="thumb-box"><img src="http://img.nurifunding.co.kr/pro_sample_1.jpg" alt="해운대 아파트"></div>            
+              <h3 class="iph3">해운대 아파트</h3>
+              <ul class="ip-inner">
+                <li class="ipli-nth-1 clearfix">
+                  <p class="pull-left">예상수익률</p>
+                  <p class="pull-right">6.5%</p>
+                </li>
+                <li class="ipli-nth-2 clearfix">
+                  <p class="pull-left">기간</p>
+                  <p class="pull-right">12개월</p>
+                </li>
+                <li class="ipli-nth-3 clearfix">
+                  <p class="pull-left">상환방식</p>
+                  <p class="pull-right">혼합상환</p>
+                </li>
+                <li class="ipli-nth-4 clearfix">
+                  <p class="pull-left">모집현황</p>
+                  <p class="pull-right">4,000 / 4,000만원</p>
+                </li>
+                <li class="ipli-nth-5 clearfix">
+                  <p class="ip-per-bar bg-blue"></p>
+                </li>
+                <li class="ipli-nth-6 clearfix">
+                  <p class="pull-left">진행중<span class="ip-per-num">(852명)</span></p>
+                  <p class="pull-right ip-percent fc-blue">80%</p>
+                </li>
+              </ul>
+              <p class="ip-btn-box"><a href="" class="ip-btn bg-blue br4">투자하기</a></p>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-6 ip-outer">
+            <div class="ip-box br4">
+              <div class="thumb-box"><img src="http://img.nurifunding.co.kr/pro_sample_1.jpg" alt="해운대 아파트"></div>            
+              <h3 class="iph3">해운대 아파트</h3>
+              <ul class="ip-inner">
+                <li class="ipli-nth-1 clearfix">
+                  <p class="pull-left">예상수익률</p>
+                  <p class="pull-right">6.5%</p>
+                </li>
+                <li class="ipli-nth-2 clearfix">
+                  <p class="pull-left">기간</p>
+                  <p class="pull-right">12개월</p>
+                </li>
+                <li class="ipli-nth-3 clearfix">
+                  <p class="pull-left">상환방식</p>
+                  <p class="pull-right">혼합상환</p>
+                </li>
+                <li class="ipli-nth-4 clearfix">
+                  <p class="pull-left">모집현황</p>
+                  <p class="pull-right">4,000 / 4,000만원</p>
+                </li>
+                <li class="ipli-nth-5 clearfix">
+                  <p class="ip-per-bar bg-blue"></p>
+                </li>
+                <li class="ipli-nth-6 clearfix">
+                  <p class="pull-left">진행중<span class="ip-per-num">(852명)</span></p>
+                  <p class="pull-right ip-percent fc-blue">80%</p>
+                </li>
+              </ul>
+              <p class="ip-btn-box"><a href="" class="ip-btn bg-blue br4">투자하기</a></p>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-6 ip-outer">
+            <div class="ip-box br4">
+              <div class="thumb-box"><img src="http://img.nurifunding.co.kr/pro_sample_1.jpg" alt="해운대 아파트"></div>            
+              <h3 class="iph3">해운대 아파트</h3>
+              <ul class="ip-inner">
+                <li class="ipli-nth-1 clearfix">
+                  <p class="pull-left">예상수익률</p>
+                  <p class="pull-right">6.5%</p>
+                </li>
+                <li class="ipli-nth-2 clearfix">
+                  <p class="pull-left">기간</p>
+                  <p class="pull-right">12개월</p>
+                </li>
+                <li class="ipli-nth-3 clearfix">
+                  <p class="pull-left">상환방식</p>
+                  <p class="pull-right">혼합상환</p>
+                </li>
+                <li class="ipli-nth-4 clearfix">
+                  <p class="pull-left">모집현황</p>
+                  <p class="pull-right">4,000 / 4,000만원</p>
+                </li>
+                <li class="ipli-nth-5 clearfix">
+                  <p class="ip-per-bar bg-blue"></p>
+                </li>
+                <li class="ipli-nth-6 clearfix">
+                  <p class="pull-left">진행중<span class="ip-per-num">(852명)</span></p>
+                  <p class="pull-right ip-percent fc-blue">80%</p>
+                </li>
+              </ul>
+              <p class="ip-btn-box"><a href="" class="ip-btn bg-blue br4">투자하기</a></p>
+            </div>
+          </div>
+
         </div>
-        <div class="col-xs-12 col-sm-6 col-md-6 items">
-          <div>item</div>
-        </div>
-        <div class="col-xs-12 col-sm-6 col-md-6 items">
-          <div>item</div>
-        </div>
-        <div class="col-xs-12 col-sm-6 col-md-6 items">
-          <div>item</div>
-        </div>
-        <div class="col-xs-12 col-sm-6 col-md-6 items">
-          <div>item</div>
-        </div>
-        <div class="col-xs-12 col-sm-6 col-md-6 items">
-          <div>item</div>
-        </div>
+
       </div>
     </section>
     <footer class="footer container-fluid">
