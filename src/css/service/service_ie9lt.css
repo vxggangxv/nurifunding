@@ -1,28 +1,16 @@
+/*전체*/
+body {background: #fff;}
 
-.com-ft {text-align: center; font-size: 36px; font-family: "Noto Sans Kr"; margin-top: 55px;}
-.com-pd {margin-bottom: 20px;}
-.com-pd.last {margin-bottom: 125px;}
-.com-box {margin: 0 auto; margin-top: 0px; padding: 30px 40px; background: #fff; border: 1px solid #ddd;}
-.com-box.nth-1 {margin-top: 40px;}
+.com-box {position: relative; margin: 0 auto;}
 .br4 {border-radius: 4px;}
 
-.faq {}
-.f-h3 {font-size: 21px;}
-.f-table {position: relative; margin: 15px 0 0px;}
-.f-q, .f-a {position: relative; font-size: 16px; border-bottom: 1px solid #ddd; border-bottom: 1px solid #ddd;}
-.f-q {cursor: pointer; color: #363636; line-height: 1.5em; padding: 15px 5px 16px 46px;}
-/*.f-a {display: none; color: #444; line-height: 1.5em; letter-spacing: -1px; font-family: "NanumGothic"; background: #fafafa; min-height: 50px; padding: 17px 5px 16px 36px; font-size: 14px;}
-.f-a.on {display: block;}*/
+.page-sect {width: 100%; height: 120px; background: url(../../img/service_bg.jpg) no-repeat center; background-size: cover;}
+.ps-h2 {position: relative; top: 50px; font-size: 28px; color: #fff;}
 
-.f-a {height: 0; opacity: 0; visibility: hidden; color: #444; line-height: 1.5em; letter-spacing: -1px; font-family: "NanumGothic"; background: #fafafa; 
-  -webkit-transition: all 0.8s,  height 0.5s; transition: all 0.8s, height 0.5s; top: -10px; padding: 0px 5px 0px 46px; overflow: hidden; font-size: 14px;}
-.f-a.on {display: block; top: 0; padding: 17px 5px 16px 46px; opacity: 1; visibility: visible; height: auto;}
-.q-icon, .a-icon, .q-num {position: absolute; display: inline-block; text-align: center; left: 0px; line-height: 1.5em; font-size: 17px; font-family: Arial, "NanumBarunGothic", "NanumGothic", sans-serif; }
-.q-icon, .q-num {top: 15px;}
-.q-icon {color: #398fe1;}
-/*.a-icon {color: #ff6434; top: 14px; left: 18px;}*/
-.a-icon {color: #ff6434; top: 0px; left: 18px; transition: all 1s;}
-.f-a.on .a-icon {top: 15px;}
-.q-num {left: 20px; color: #212121;}
-
-.com-box {width: 800px; padding: 45px 40px;}
+.info-sect {padding: 60px 0;}
+.is-h3 {font-size: 28px; font-weight: 500; margin-top: 45px; line-height: 1.3em;}
+.is-box.nth-1 .is-h3, .is-box.nth-2 .is-h3 {margin-top: 0;}
+.is-ul {margin-top: 15px;}
+.is-li {line-height: 1.6em; font-weight: 300; font-size: 16px;}
+.is-li .dot {position: relative; top: 1px; margin-right: 10px; font-size: 24px; font-weight: 500;}
+.is-p {margin-top: 20px; font-size: 16px; font-weight: 300; line-height: 1.5em;}

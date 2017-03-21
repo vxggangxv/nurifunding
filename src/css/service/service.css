@@ -17,41 +17,41 @@ body {background: #fff;}
 /*모바일 영역, col-xs*/
 @media (max-width: 767px){
   .com-box {position: relative; margin: 0 auto; width: 300px;}
-  .com-box.first {}
-  .com-pd {}
-  .com-pd.last {}
   .br4 {border-radius: 4px;}
   
   .page-sect {width: 100%; height: 120px; background: url(../../img/service_bg.jpg) no-repeat center; background-size: cover;}
   .ps-h2 {position: relative; top: 50px; font-size: 28px; color: #fff;}
  
-  .info-sect {}
-  .is-box.nth-2 {margin-top: 10px;}
-  .is-h3, .is-h3 {margin-top: 30px; }
-  .is-h3 {font-size: 18px; font-weight: 500;}
-  .is-ul {margin-top: 25px;}
+  .info-sect {padding: 30px 0;}
+  .is-h3 {font-size: 18px; font-weight: 500; margin-top: 40px; line-height: 1.2em;}
+  .is-box.nth-1 .is-h3 {margin-top: 0px;}
+  .is-ul {margin-top: 15px;}
   .is-li {line-height: 1.6em; font-weight: 300; font-size: 15px;}
   .is-li .dot {position: relative; top: -1px; margin-right: 10px; font-size: 18px;}
+  .is-p {margin-top: 20px; font-size: 13px; font-weight: 300; line-height: 1.5em;}
 }
 
 /*테블릿 영역, col-sm */
 @media (min-width: 768px) {
   .com-box {position: relative; margin: 0 auto;}
-  .com-box.first {}
-  .com-pd {}
-  .com-pd.last {}
   .br4 {border-radius: 4px;}
 
-  .faq {}
+  .page-sect {width: 100%; height: 120px; background: url(../../img/service_bg.jpg) no-repeat center; background-size: cover;}
+  .ps-h2 {position: relative; top: 50px; font-size: 28px; color: #fff;}
 
+  .info-sect {padding: 60px 0;}
+  .is-h3 {font-size: 28px; font-weight: 500; margin-top: 45px; line-height: 1.3em;}
+  .is-box.nth-1 .is-h3, .is-box.nth-2 .is-h3 {margin-top: 0;}
+  .is-ul {margin-top: 15px;}
+  .is-li {line-height: 1.6em; font-weight: 300; font-size: 16px;}
+  .is-li .dot {position: relative; top: 1px; margin-right: 10px; font-size: 24px; font-weight: 500;}
+  .is-p {margin-top: 20px; font-size: 16px; font-weight: 300; line-height: 1.5em;}
 }
 
 /*테블릿 영역, col-md */
-/*@media (min-width: 992px) {
+@media (min-width: 992px) {
   
-  
-  
-}*/
+}
 
 /*pc 영역*/
 @media (min-width: 1200px){
