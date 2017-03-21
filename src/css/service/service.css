@@ -1,0 +1,59 @@
+@media (min-width: 992px) {
+  .container {
+    width: 945px;
+  }
+}
+
+/*공통 속성*/
+
+/*아이콘*/
+
+/*전체*/
+body {background: #fff;}
+
+.wrap {position: relative; width: 100%;}
+.main {position: relative;}
+
+/*모바일 영역, col-xs*/
+@media (max-width: 767px){
+  .com-box {position: relative; margin: 0 auto; width: 300px;}
+  .com-box.first {}
+  .com-pd {}
+  .com-pd.last {}
+  .br4 {border-radius: 4px;}
+  
+  .page-sect {width: 100%; height: 120px; background: url(../../img/service_bg.jpg) no-repeat center; background-size: cover;}
+  .ps-h2 {position: relative; top: 50px; font-size: 28px; color: #fff;}
+ 
+  .info-sect {}
+  .is-box.nth-2 {margin-top: 10px;}
+  .is-h3, .is-h3 {margin-top: 30px; }
+  .is-h3 {font-size: 18px; font-weight: 500;}
+  .is-ul {margin-top: 25px;}
+  .is-li {line-height: 1.6em; font-weight: 300; font-size: 15px;}
+  .is-li .dot {position: relative; top: -1px; margin-right: 10px; font-size: 18px;}
+}
+
+/*테블릿 영역, col-sm */
+@media (min-width: 768px) {
+  .com-box {position: relative; margin: 0 auto;}
+  .com-box.first {}
+  .com-pd {}
+  .com-pd.last {}
+  .br4 {border-radius: 4px;}
+
+  .faq {}
+
+}
+
+/*테블릿 영역, col-md */
+/*@media (min-width: 992px) {
+  
+  
+  
+}*/
+
+/*pc 영역*/
+@media (min-width: 1200px){
+
+}
