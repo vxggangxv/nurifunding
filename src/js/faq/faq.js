@@ -1,10 +1,6 @@
 $(function() {
-  $("#pagenation li a").on("click", function() {
-    var idx = $(this).closest("li").index();
-    if( idx != 0 && idx !=6 ){
-      $("#pagenation li").removeClass("on");
-      $(this).closest("li").addClass("on");
-    }
-    event.preventDefault();
+  $("section[class*='faq'] .f-q").on("click", function() {
+    $(this).next().toggleClass("on");
+    //$(this).next().slideToggle("fast");
   });
 });

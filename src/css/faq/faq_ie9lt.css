@@ -1,0 +1,95 @@
+
+.com-ft {text-align: center; font-size: 36px; font-family: "Noto Sans Kr"; margin-top: 55px;}
+.com-pd {margin-bottom: 125px;}
+.com-box, .page-wrap {margin: 0 auto; margin-top: 10px;}
+.br4 {border-radius: 4px;}
+
+.fl-wrap, .fp-wrap, .fw-wrap {margin-top: 40px; background: #fff; border: 1px solid #ddd; padding: 5px 10px;}
+.faq-th-box, .faq-td-box {position: relative;}
+.faq-td-box {border-top: 1px solid #ddd;}
+.faq-th, .faq-td {position: relative; float: left; font-size: 16px; padding: 17px 5px;}
+.faq-th {text-align: center;}
+.faq-td {color: #464646;}
+.faq-th.nth-1, .faq-td.nth-1 {width: 87%;}
+.faq-th.nth-2, .faq-td.nth-2 {width: 13%;}
+.faq-td.nth-1 {padding-left: 30px;}
+.faq-td.nth-2 {text-align: center;}
+.faq-td .idx {position: absolute; top: 17px; left: 10px; color: #398fe1; margin-right: 5px;}
+.page-wrap {text-align: center;}
+.pagenation {display: inline-block; margin-top: 15px; border: 1px solid #ddd;}
+.pagenation > li {float:left;}
+.pagenation > li > a {display: inline-block; width: 36px; text-align: center; padding: 12px 0; font-size: 16px; background: #fff; color: #398fe1; border-left: 1px solid #ddd;}
+.pagenation > li.first > a {border-top-left-radius: 4px; border-bottom-left-radius: 4px; border-left: none; color: #565656;}
+.pagenation > li.last > a {border-top-right-radius: 4px; border-bottom-right-radius: 4px; color: #565656;}
+.pagenation > li > a:active, .pagenation > li.on > a {color: #fff; background: #398fe1;}
+.wbtn-wrap {margin-top: 15px; float: right;}
+.write-btn {display: inline-block; width: 100px; text-align: center; padding: 12px 0; font-size: 16px;}
+
+.faq-post {}
+.faq-post .com-box {}
+.fp-wrap {padding: 25px 40px;}
+.fp-tit-box {padding-bottom: 15px; border-bottom: 1px solid #ddd; font-size: 17px;}
+.fp-title {}
+.fp-date {position: relative; top: 3px; float: right; font-size: 15px; color: #565656;}
+.fp-contents {padding: 15px 0px; font-size: 15px; font-family: "NanumGothic"; line-height: 1.5em;}
+.fp-footer {position: relative; margin-top: 80px; text-align: center;}
+.fp-footer > a {display: inline-block; border: 1px solid #ddd; font-size: 16px; padding: 10px 14px; margin-right: 3px; letter-spacing: 0;}
+.fp-footer > a:hover {background-color: rgba(219,219,219,0.1);}
+.fp-footer .view-btn {padding: 10px 18px;}
+.update-btn, .delete-btn {position: absolute; top: 0; right: 0;}
+.update-btn {right: 80px;}
+.delete-btn {}
+.udt-icon, .dlt-icon {position: relative; top: 2px; display: inline-block; width: 17px; height: 15px; background: url(../../img/post_icon.png) no-repeat ; margin-right: 2px;}
+.dlt-icon {background-position: -50px 0px;}
+
+.faq-write {}
+.fw-wrap {padding: 30px 70px 40px;}
+.fwt-label, .fwi-label {font-size: 16px; line-height: 1.8em; margin-bottom: 10px;}
+.fwt-label {}
+.fwi-name {position: relative; top: 13px;}
+.nr-text {width: 100%; height: 100%; text-indent: 15px; letter-spacing: 0; background-color: transparent; line-height: 3em; height: 37px; font-size: 14px;}
+.nr-ph {top: 49px;}
+.fw-info {}
+.fw-info > li {float: left;}
+.fw-info > li.nth-1 {width: 25%;}
+.fw-info > li.nth-2 {width: 25%;}
+.fw-info > li.nth-3 {width: 50%;}
+.fwi-label {margin-top: 20px;}
+.dropdown, .dropdown .btn {font-size: 15px;}
+.dropdown {width: 90%; height: 42px;}
+.dropdown .btn {position: relative; border: 1px solid #ddd; background: #fff; padding: 8px 15px; border-radius: 4px; text-align: left; width: 100%; height: 100%; color:#999;}
+.dropdown .btn:focus, .dropdown .btn:active, .dropdown .btn.on {color: #333;}
+.dropdown .btn span {position: relative; top: 2px;}
+.dropdown .dropdown-menu {display: none; position: absolute; border: 1px solid #d4d4d4; background: #fff; border-radius: 4px; margin-top: -1px; z-index: 1; width: 100%; padding: 3px 0;}
+.dropdown .dropdown-menu li a {display: block; padding: 5px 15px; line-height: 1.2em; font-size: 1em;}
+.dropdown .dropdown-menu li a:hover {color: #398fe2;}
+/*파일박스 커스터마이징*/
+.filebox input[type="file"] { 
+  position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip:rect(0,0,0,0); border: 0; 
+} 
+.filebox label, .filebox .upload-name {display: inline-block; box-sizing: border-box; font-size: 15px; height: 42px;}
+.filebox label { 
+  width: 45%; text-align: center; line-height: 2.7em;
+  background-color: #f5f5f5; cursor: pointer; border: 1px solid #d0d0d0;
+} 
+.filebox label span {position: relative; font-size: 10px; margin-left: 6px; top: -2px;}
+/* named upload */ 
+.filebox .upload-name { 
+  position: relative; top: -1px;
+  color: #999;
+  width: 45%; text-align: left; left: 15px;
+  line-height: 2.7em; vertical-align: middle; background-color: #fff; border: none; border-bottom: 1px solid #ddd;
+  text-overflow: ellipsis;
+  -webkit-appearance: none; /* 네이티브 외형 감추기 */ 
+  -moz-appearance: none; appearance: none; 
+}
+.fw-contents textarea {width: 100%; resize: none; border-color: #ddd; padding: 5px; height: 300px;}
+.fw-footer {margin-top: 40px; text-align: center;}
+.cancle-btn, .create-btn {font-size: 16px; padding: 6px 40px; border: 1px solid #ddd;}
+.create-btn {margin-left: 5px; border-color: #398fe1;}
+
+.com-box, .page-wrap {width: 800px;}
+.faq-th.nth-1, .faq-td.nth-1 {width: 88%;}
+.faq-th.nth-2, .faq-td.nth-2 {width:12%;}
+
+.fw-wrap {padding: 30px 90px 40px;}

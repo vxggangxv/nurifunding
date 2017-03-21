@@ -15,97 +15,62 @@
 /*모바일 영역, col-xs*/
 @media (max-width: 767px){
   .com-ft {position: relative; text-align: center; font-size: 22px; font-family: "Noto Sans Kr"; margin-top: 28px;}
-  .com-pd {margin-bottom: 50px;}
-  .com-box, .page-wrap {position: relative; margin: 0 auto; width: 320px;}
+  .com-pd {margin-bottom: 10px;}
+  .com-pd.last {margin-bottom: 50px;}
+  .com-box {position: relative; margin: 0 auto; width: 310px; padding: 22px 10px; background: #fff; border: 1px solid #ddd;}
+  .com-box.nth-1 {margin-top: 20px;}
   .br4 {border-radius: 4px;}
-
-  .fl-wrap, .fp-wrap {margin-top: 20px; background: #fff; border: 1px solid #ddd; padding: 5px 10px;}
-  .faq-th-box, .faq-td-box {position: relative;}
-  .faq-td-box {border-top: 1px solid #ddd;}
-  .faq-th, .faq-td {position: relative; float: left; font-size: 14px; padding: 12px 5px;}
-  .faq-th {text-align: center;}
-  .faq-td {color: #464646;}
-  .faq-th.nth-1, .faq-td.nth-1 {width: 75%;}
-  .faq-th.nth-2, .faq-td.nth-2 {width: 25%;}
-  .faq-td.nth-1 {padding-left: 23px;}
-  .faq-td.nth-2 {text-align: center;}
-  .faq-td .idx {position: absolute; top: 12px; left: 5px; color: #398fe1; margin-right: 5px;}
-  .page-wrap {text-align: center;}
-  .pagenation {display: inline-block; margin-top: 15px; border: 1px solid #ddd;}
-  .pagenation > li {float:left;}
-  .pagenation > li > a {display: inline-block; width: 28px; text-align: center; padding: 8px 0; font-size: 15px; background: #fff; color: #398fe1; border-left: 1px solid #ddd;}
-  .pagenation > li.first > a {border-top-left-radius: 4px; border-bottom-left-radius: 4px; border-left: none; color: #565656;}
-  .pagenation > li.last > a {border-top-right-radius: 4px; border-bottom-right-radius: 4px; color: #565656;}
-  .pagenation > li > a:active, .pagenation > li.on > a {color: #fff; background: #398fe1;}
-  .wbtn-wrap {margin-top: 8px; text-align: right;}
-  .write-btn {display: inline-block; width: 80px; text-align: center; padding: 7px 0; font-size: 15px;}
   
-  .faq-post {}
-  .faq-post .com-box {width: 300px;}
-  .fp-wrap {padding: 15px;}
-  .fp-tit-box {padding-bottom: 10px; border-bottom: 1px solid #ddd; font-size: 15px;}
-  .fp-title {}
-  .fp-date {position: relative; top: 2px; float: right; font-size: 13px; color: #565656;}
-  .fp-contents {padding: 15px 0px; font-size: 13px; font-family: "NanumGothic"; line-height: 1.4em;}
-  .fp-footer {position: relative; margin-top: 20px; text-align: right;}
-  .fp-footer > a {display: inline-block; border: 1px solid #ddd; font-size: 14px; padding: 5px 8px; margin-right: 3px;}
-  .view-btn {}
-  .update-btn {}
-  .delete-btn {}
-  .udt-icon, .dlt-icon {display: inline-block; width: 13px; height: 11px; background: url(../../img/post_icon.png) no-repeat ; background-size: 80px;margin-right: 2px;}
-  .dlt-icon {background-position: -40px 0px;}
+  .faq {}
+  .f-h3 {}
+  .f-table {position: relative; margin: 12px 0 0px;}
+  .f-q, .f-a {position: relative; font-size: 13px; border-bottom: 1px solid #ddd;}
+  .f-q {cursor: pointer; color: #363636; line-height: 1.4em; padding: 11px 5px 12px 36px;}
+  .f-a {height: 0; opacity: 0; visibility: hidden; color: #444; line-height: 1.5em; letter-spacing: -1px; font-family: "NanumGothic"; background: #fafafa; 
+    -webkit-transition: all 0.8s,  height 0.5s; transition: all 0.8s, height 0.5s; top: -10px; padding: 0px 5px 0px 36px; overflow: hidden;}
+  .f-a.on {display: block; top: 0; padding: 12px 5px 11px 36px; opacity: 1; visibility: visible; height: auto;}
+  .q-icon, .a-icon, .q-num {position: absolute; display: inline-block; text-align: center; left: 0px; line-height: 1.4em; font-size: 14px; font-family: Arial, "NanumBarunGothic", "NanumGothic", sans-serif; }
+  .q-icon, .q-num {top: 11px;}
+  .q-icon {color: #398fe1;}
+  .a-icon {color: #ff6434; top: 0px; left: 18px; transition: all 1s;}
+  .f-a.on .a-icon {top: 12px;}
+  .q-num {left: 15px; color: #212121;}
+  
 }
 
 /*테블릿 영역, col-sm */
 @media (min-width: 768px) {
   .com-ft {text-align: center; font-size: 36px; font-family: "Noto Sans Kr"; margin-top: 55px;}
-  .com-pd {margin-bottom: 125px;}
-  .com-box, .page-wrap {margin: 0 auto; margin-top: 10px;}
+  .com-pd {margin-bottom: 20px;}
+  .com-pd.last {margin-bottom: 125px;}
+  .com-box {margin: 0 auto; margin-top: 0px; padding: 30px 40px; background: #fff; border: 1px solid #ddd;}
+  .com-box.nth-1 {margin-top: 40px;}
   .br4 {border-radius: 4px;}
 
-  .fl-wrap, .fp-wrap {margin-top: 40px; background: #fff; border: 1px solid #ddd; padding: 5px 10px;}
-  .faq-th-box, .faq-td-box {position: relative;}
-  .faq-td-box {border-top: 1px solid #ddd;}
-  .faq-th, .faq-td {position: relative; float: left; font-size: 16px; padding: 17px 5px;}
-  .faq-th {text-align: center;}
-  .faq-td {color: #464646;}
-  .faq-th.nth-1, .faq-td.nth-1 {width: 87%;}
-  .faq-th.nth-2, .faq-td.nth-2 {width: 13%;}
-  .faq-td.nth-1 {padding-left: 30px;}
-  .faq-td.nth-2 {text-align: center;}
-  .faq-td .idx {position: absolute; top: 17px; left: 10px; color: #398fe1; margin-right: 5px;}
-  .page-wrap {text-align: center;}
-  .pagenation {display: inline-block; margin-top: 15px; border: 1px solid #ddd;}
-  .pagenation > li {float:left;}
-  .pagenation > li > a {display: inline-block; width: 36px; text-align: center; padding: 12px 0; font-size: 16px; background: #fff; color: #398fe1; border-left: 1px solid #ddd;}
-  .pagenation > li.first > a {border-top-left-radius: 4px; border-bottom-left-radius: 4px; border-left: none; color: #565656;}
-  .pagenation > li.last > a {border-top-right-radius: 4px; border-bottom-right-radius: 4px; color: #565656;}
-  .pagenation > li > a:active, .pagenation > li.on > a {color: #fff; background: #398fe1;}
-  .wbtn-wrap {margin-top: 15px; float: right;}
-  .write-btn {display: inline-block; width: 100px; text-align: center; padding: 12px 0; font-size: 16px;}
-
-  .faq-post {}
-  .faq-post .com-box {}
-  .fp-wrap {padding: 25px 40px;}
-  .fp-tit-box {padding-bottom: 15px; border-bottom: 1px solid #ddd; font-size: 17px;}
-  .fp-title {}
-  .fp-date {position: relative; top: 3px; float: right; font-size: 15px; color: #565656;}
-  .fp-contents {padding: 15px 0px; font-size: 15px; font-family: "NanumGothic"; line-height: 1.5em;}
-  .fp-footer {position: relative; margin-top: 80px; text-align: center;}
-  .fp-footer > a {display: inline-block; border: 1px solid #ddd; font-size: 16px; padding: 10px 14px; margin-right: 3px; letter-spacing: 0;}
-  .fp-footer .view-btn {padding: 10px 18px;}
-  .update-btn, .delete-btn {position: absolute; top: 0; right: 0;}
-  .update-btn {right: 80px;}
-  .delete-btn {}
-  .udt-icon, .dlt-icon {position: relative; top: 2px; display: inline-block; width: 17px; height: 15px; background: url(../../img/post_icon.png) no-repeat ; margin-right: 2px;}
-  .dlt-icon {background-position: -50px 0px;}
+  .faq {}
+  .f-h3 {font-size: 21px;}
+  .f-table {position: relative; margin: 15px 0 0px;}
+  .f-q, .f-a {position: relative; font-size: 16px; border-bottom: 1px solid #ddd; border-bottom: 1px solid #ddd;}
+  .f-q {cursor: pointer; color: #363636; line-height: 1.4em; padding: 15px 5px 16px 46px;}
+  /*.f-a {display: none; color: #444; line-height: 1.5em; letter-spacing: -1px; font-family: "NanumGothic"; background: #fafafa; min-height: 50px; padding: 17px 5px 16px 36px; font-size: 14px;}
+  .f-a.on {display: block;}*/
+  
+  .f-a {height: 0; opacity: 0; visibility: hidden; color: #444; line-height: 1.5em; letter-spacing: -1px; font-family: "NanumGothic"; background: #fafafa; 
+    -webkit-transition: all 0.8s,  height 0.5s; transition: all 0.8s, height 0.5s; top: -10px; padding: 0px 5px 0px 46px; overflow: hidden; font-size: 14px;}
+  .f-a.on {display: block; top: 0; padding: 17px 5px 16px 46px; opacity: 1; visibility: visible; height: auto;}
+  .q-icon, .a-icon, .q-num {position: absolute; display: inline-block; text-align: center; left: 0px; line-height: 1.5em; font-size: 17px; font-family: Arial, "NanumBarunGothic", "NanumGothic", sans-serif; }
+  .q-icon, .q-num {top: 15px;}
+  .q-icon {color: #398fe1;}
+  /*.a-icon {color: #ff6434; top: 14px; left: 18px;}*/
+  .a-icon {color: #ff6434; top: 0px; left: 18px; transition: all 1s;}
+  .f-a.on .a-icon {top: 15px;}
+  .q-num {left: 20px; color: #212121;}
 }
 
 /*테블릿 영역, col-md */
 @media (min-width: 992px) {
-  .com-box, .page-wrap {width: 800px;}
-  .faq-th.nth-1, .faq-td.nth-1 {width: 88%;}
-  .faq-th.nth-2, .faq-td.nth-2 {width:12%;}
+  .com-box {width: 800px; padding: 45px 40px;}
+  
   
 }
 

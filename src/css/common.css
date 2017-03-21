@@ -29,7 +29,7 @@ a {text-decoration:none; color: #434343;}
 .dropdown .btn {position: relative; border: 1px solid #ddd; background: #fff; padding: 8px 20px; border-radius: 6px; text-align: left; outline: none;}
 .dropdown .btn span {position: relative; font-size: 10px; color: #398FE2;}
 .dropdown .dropdown-menu {display: none; position: absolute; border: 1px solid #ddd; background: #fff; border-radius: 6px; margin-top: -1px; z-index: 1;}
-.dropdown .dropdown-menu li a {display: block; padding: 5px 20px; line-height: 1.2em;}
+.dropdown .dropdown-menu li a {display: block; padding: 5px 20px; line-height: 1.2em; font-size: 1em;}
 .dropdown .dropdown-menu li a:hover {color: #398fe2;}
 
 /*jquery컴포넌트 공통 속성*/
