@@ -14,6 +14,12 @@ a {text-decoration:none; color: #434343;}
 .fc-blue {color: #398fe1;}
 .fc-white {color: #fff;}
 
+/* 캔버스 커스타미이징 */
+canvas {
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
 /* input태그 커스커마이징 */
 .nr-box {position: relative;}
 .nr-ph {display: none; position: absolute; top: 17px; left: 1px; text-indent: 15px; color: #999;}
@@ -32,6 +38,7 @@ a {text-decoration:none; color: #434343;}
 .dropdown .dropdown-menu li a {display: block; padding: 5px 20px; line-height: 1.2em; font-size: 1em;}
 .dropdown .dropdown-menu li a:hover {color: #398fe2;}
 
+hr {border: none; border-top: 1px solid #ddd;}
 /*jquery컴포넌트 공통 속성*/
 
 /* 색상 */
@@ -41,6 +48,8 @@ a {text-decoration:none; color: #434343;}
 .wrap {position: relative; width: 100%;}
 .contents {position: relative;}
 .main {position: relative;}
+.section:before, .section:after {content: ""; display: block;}
+.section:after {clear: both;}
 
 /*모바일 영역*/
 @media (max-width: 767px){
