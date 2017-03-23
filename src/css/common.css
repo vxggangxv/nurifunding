@@ -86,6 +86,11 @@ hr {border: none; border-top: 1px solid #ddd;}
   .mlnb > li {position: relative; border-bottom: 1px solid #ddd;}
   .mlnb > li > a { display: block; padding: 15px 20px 15px 20px; color: #333; letter-spacing: 0;}
   .mlnb > li > a > img {position: absolute; width: 9px;  right: 20px; top: 16px;}
+  .mlnb > li:hover .m-sub-nav {display: block;}
+  
+  .m-sub-nav {display: none; position: relative; width: 100%; border-top: 1px solid #ddd; background: #fff; padding: 15px 0;}
+  .m-sub-nav a {width: 242px; display: block; margin: 0 auto; font-size: 15px; padding: 10px 0; border-bottom: 1px dotted #e0e0e0;}
+  .m-sub-nav a:hover, .sub-nav a:active {color: #398fe1;}
   
   .footer {padding: 40px 0; background: #282828; margin-top: 0;}
   .footer .a-txt, .footer .f-txt, .footer .c-txt {width: 300px; margin: 0 auto; margin-top: 15px; color: #b4b4b4;}
@@ -109,12 +114,13 @@ hr {border: none; border-top: 1px solid #ddd;}
   .navbar-brand {position: relative; display: inline-block; width: 216px;}
   .navbar-brand img {width: 216px;}
 
-  .main-nav > li {position: relative; float: left; font-size: 18px; margin-left: 20px; padding-bottom: 20px;}
+  .main-nav > li, .main-nav > li > a {padding-bottom: 20px;}
+  .main-nav > li {position: relative; float: left; font-size: 18px; margin-left: 20px;}
   .main-nav > li:first-child {margin-left: 0;}
   .main-nav > li:hover .sub-nav {opacity: 1; filter: alpha(opacity=100); visibility: visible; margin-top: 10px; transition: all 1s;}
   
-  .sub-nav {opacity: 0; filter: alpha(opacity=100); visibility: hidden; position: absolute; width: 120px; left: 50%; margin-top: 0px; margin-left: -60px; border: 1px solid #eaeaea; background: #fff; padding-bottom: 10px;}
-  .sub-nav a {width: 100%; display: inline-block; text-align: center; margin-top: 10px; font-size: 15px;}
+  .sub-nav {opacity: 0; filter: alpha(opacity=100); visibility: hidden; position: absolute; width: 120px; left: 50%; margin-top: 0px; margin-left: -60px; border: 1px solid #eaeaea; background: #fff; padding-bottom: 15px;}
+  .sub-nav a {width: 100%; display: block; text-align: center; margin-top: 15px; font-size: 15px; color: #545454;}
   .sub-nav a:hover, .sub-nav a:active {color: #398fe1;}
 
   .footer {padding: 40px 0; background: #282828; color: #b4b4b4; margin-top: 0;}
