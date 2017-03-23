@@ -71,5 +71,6 @@
 .pw-link {margin-top: 14px; text-align: center;}
 .pw-link > a {line-height: 3.3em; height: 60px; letter-spacing: 0; font-size: 18px;}
 
+.main.login {padding-bottom: 100px;}
 
 .main-box {position: relative; width: 460px;}
