@@ -215,7 +215,7 @@
   .prps-d2-li1 {border-bottom: 1px solid #ddd;}
   .prps-d2-li2 .pull-left {font-weight: 300;}
   .prps-d2-p1 {font-size: 11px; text-align: center; padding: 15px 0px;}
-  .prps-d2-p1 .btn {display: inline-block; padding: 4px 5px; border: 1px solid #6c6c6c; background: #aaa; margin-left: 3px;}
+  .prps-d2-p1 .btn {display: inline-block; padding: 3px 5px; border: 1px solid #6c6c6c; background: #aaa; margin-left: 3px;}
   
   .prps-ps {font-size: 14px; margin-top: 5px;}
   .prps-h3 {margin-top: 20px; font-size: 15px;}
@@ -235,6 +235,22 @@
   .prps-p2, .prps-p2 a {color: #666;}
   .prps-p2 {margin-top: 10px; text-align: center; font-size: 11px;}
   .prps-p2 a {text-decoration: underline;}
+  
+  .proposal.result {}
+  .proposal.result .prps-d1-ul {position: relative; padding-bottom: 15px;margin-top: -15px;}
+  .proposal.result .prps-d1-li2 .nth-1, 
+  .proposal.result .prps-d1-li3 .nth-1, 
+  .proposal.result .prps-d1-li4 .nth-1,
+  .proposal.result .prps-d1-li5 .nth-1 {margin-top: 15px;}
+  .proposal.result li[class*="prps-d1-li"].prps-d1-li5 .nth-2 {margin-top: 10px;}
+  .proposal.result .prps-d1-li2 {width: 23%;}
+  .proposal.result .prps-d1-li3 {width: 23%;}
+  .proposal.result .prps-d1-li4 {width: 24%;}
+  .proposal.result .prps-d1-li5 {width: 30%;}
+  .proposal.result .prps-d2-ul {padding: 0px 10px 0; background: #F6FBFF; border-radius: 4px; border-bottom: 0;}
+  .proposal.result .prps-p1 .btn {display: inline-block; width: 48%; text-align: center; padding: 15px 0; font-size: 15px;}
+  .proposal.result .prps-p1 .btn.nth-1 {border: 1px solid #888;}
+  .proposal.result .prps-p1 .btn.nth-2 {margin-left: 2%;}
 }
 
 /*테블릿 영역, col-sm */
@@ -356,7 +372,7 @@
   #canvas-holder-11 {position: relative; width: 337px;  margin: 0 auto;}
   #chart-area-11 {margin-top: -24px;}
 
-  .est-box.nth-12 {margin-left: 2%;} 
+  .est-box.nth-12 {margin-left: 2%; height: 378px;} 
   .est-box.nth-12 .est-b7-p2 {line-height: 1.6em;}
   .est-box.nth-12 .est-b7-p2 .pull-left {font-weight: 300;}
   .est-box.nth-12 .est-b7-p2 .pull-right {font-size: 17px;}
@@ -422,7 +438,7 @@
   .prps-d1-ul {position: relative; padding-bottom: 15px; margin-top: 10px;}
   li[class*="prps-d1-li"] {float: left; position: relative; text-align: center;}
   li[class*="prps-d1-li"].prps-d1-li1 {width: 50%; text-align: left;}
-  .prps-d-0 .pc .nth-1 {width: 49%;}
+  .prps-d-0 .pc .nth-1 {width: 49%; text-indent: -40px;}
   .prps-d-0 .pc .nth-2, .prps-d1-li2 {width: 10%;}
   .prps-d-0 .pc .nth-3, .prps-d1-li3 {width: 10%;}
   .prps-d-0 .pc .nth-4, .prps-d1-li4 {width: 10%;}
@@ -473,6 +489,22 @@
   .prps-p2, .prps-p2 a {color: #666;}
   .prps-p2 {margin-top: 25px; text-align: center; font-size: 14px;}
   .prps-p2 a {text-decoration: underline;}
+  
+  .proposal.result {}
+
+  .prps-d-0 .pc {position: relative; top: 21px; width: 100%;}
+  .prps-d-0 .pc span {display: inline-block; text-align: center;}
+  .prps-d-0 .pc span.nth-1 {}
+  
+  .proposal.result .com-box {padding-bottom: 100px;}
+  .proposal.result .prps-d-0 .pc .nth-5, .proposal.result .prps-d1-li5 {width: 19%;}
+  .proposal.result .prps-d1-ul {position: relative; padding-bottom: 15px; margin-top: 20px;}
+  .proposal.result li[class*="prps-d1-li"].prps-d1-li5 .nth-2 {margin-top: 10px;}
+  .proposal.result .prps-d2-ul {padding: 0px 10px 0; background: #F6FBFF; border-radius: 4px; border-bottom: 0;}
+  .proposal.result .prps-p1 .btn {display: inline-block; width: 48%; text-align: center; padding: 15px 0; font-size: 15px;}
+  .proposal.result .prps-p1 .btn.nth-1 {border: 1px solid #888;}
+  .proposal.result .prps-p1 .btn.nth-2 {margin-left: 2%;}
+  
 }
 
 /*테블릿 영역, col-md*/
@@ -603,8 +635,7 @@
   #canvas-holder-11 {position: relative; width: 455px;  margin: 0 auto;}
   #chart-area-11 {margin-top: -24px;}
   
-  .est-box.nth-12 {margin-left: 2%;} 
-  .est-box.nth-12 {}
+  .est-box.nth-12 {margin-left: 2%; height: 454px;} 
   .est-box.nth-12 .est-b7-p2 {line-height: 2.1em;}
   .est-box.nth-12 .est-b7-p2 .pull-left {font-weight: 400; font-size: 18px;}
   .est-box.nth-12 .est-b7-p2 .dot1, .est-box.nth-12 .est-b7-p2 .dot2, .est-box.nth-12 .est-b7-p2 .dot3 {font-size: 10px; margin-right: 5px;}
@@ -663,7 +694,7 @@
   .prps-d1-ul {position: relative; padding-bottom: 15px; margin-top: 10px;}
   li[class*="prps-d1-li"] {float: left; position: relative; text-align: center;}
   li[class*="prps-d1-li"].prps-d1-li1 {width: 50%; text-align: left;}
-  .prps-d-0 .pc .nth-1 {width: 49%;}
+  .prps-d-0 .pc .nth-1 {width: 49%; text-indent: -80px;}
   .prps-d-0 .pc .nth-2, .prps-d1-li2 {width: 10%;}
   .prps-d-0 .pc .nth-3, .prps-d1-li3 {width: 10%;}
   .prps-d-0 .pc .nth-4, .prps-d1-li4 {width: 10%;}
@@ -714,6 +745,15 @@
   .prps-p2, .prps-p2 a {color: #666;}
   .prps-p2 {margin-top: 25px; text-align: center; font-size: 14px;}
   .prps-p2 a {text-decoration: underline;}
+  
+  .proposal.result .com-box {padding-bottom: 150px;}
+  .proposal.result .prps-d-0 .pc .nth-5, .proposal.result .prps-d1-li5 {width: 19%;}
+  .proposal.result .prps-d1-ul {position: relative; padding-bottom: 15px; margin-top: 20px;}
+  .proposal.result li[class*="prps-d1-li"].prps-d1-li5 .nth-2 {margin-top: 10px;}
+  .proposal.result .prps-p1 .btn {display: inline-block; width: 48%; text-align: center; padding: 15px 0; font-size: 15px;}
+  .proposal.result .prps-p1 .btn.nth-1 {border: 1px solid #888;}
+  .proposal.result .prps-p1 .btn.nth-2 {margin-left: 2%;}
+  
 }
 
 /*pc 영역*/
