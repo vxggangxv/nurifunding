@@ -8,21 +8,22 @@
   <title>누리펀딩</title>
   <link href="https://opensource.keycdn.com/fontawesome/4.6.3/font-awesome.min.css" rel="stylesheet">
   <link rel="stylesheet" href="http://static.nurifunding.co.kr/css/common.css">
-  <link rel="stylesheet" href="http://static.nurifunding.co.kr/css/join/join.css">
-   <!-- <link rel="stylesheet" href="../../src/css/common.css">
-     <link rel="stylesheet" href="../../src/css/join/join.css">  -->
+  <link rel="stylesheet" href="http://static.nurifunding.co.kr/css/mypage/mypage.css">
+  <!--<link rel="stylesheet" href="../../src/css/common.css">
+  <link rel="stylesheet" href="../../src/css/mypage/mypage.css"> -->
 
   <script type="text/javascript" src="http://static.nurifunding.co.kr/js/jquery-1.10.2.min.js"></script>
+  <script type="text/javascript" src="http://static.nurifunding.co.kr/js/Chart.bundle.min.js"></script>
   <script type="text/javascript" src="http://static.nurifunding.co.kr/js/components_custom.js"></script>
   <script type="text/javascript" src="http://static.nurifunding.co.kr/js/common.js"></script>
-  <script type="text/javascript" src="http://static.nurifunding.co.kr/js/join/join.js"></script> 
-  <!-- <script type="text/javascript" src="../../src/js/join/join.js"></script> -->
+  <script type="text/javascript" src="http://static.nurifunding.co.kr/js/mypage/mypage.js"></script> 
+  <!--<script type="text/javascript" src="../../src/js/mypage/mypage.js"></script>-->
 
   <!--[if lt IE 9]>
     <link rel="stylesheet" href="http://static.nurifunding.co.kr/css/grid_ie9lt.min.css">
     <link rel="stylesheet" href="http://static.nurifunding.co.kr/css/common_ie9lt.css">
-    <link rel="stylesheet" href="http://static.nurifunding.co.kr/css/join/join_ie9lt.css">
-   
+    <link rel="stylesheet" href="http://static.nurifunding.co.kr/css/mypage/mypage_ie9lt.css">
+
     <script type="text/javascript" src="http://static.nurifunding.co.kr/js/ie9_lt.js"></script>
     <script type="text/javascript" src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
   <![endif]-->
@@ -40,8 +41,8 @@
             <span class="icon-bar b2"></span>
             <span class="icon-bar b3"></span>
           </button>
-          <h2><a href="./index.html" class="navbar-brand"><img src="http://img.nurifunding.co.kr/logo.png" alt="누리펀딩로고"></a></h2>
-          <a href="#" class="my-tab show-xs"><img src="http://img.nurifunding.co.kr/myp_icon.png" alt="마이페이지"></a>
+          <h2><a href="./index.html" class="navbar-brand"><img src="http://img.nurifunding.co.kr//logo.png" alt="누리펀딩로고"></a></h2>
+          <a href="#" class="my-tab show-xs"><img src="http://img.nurifunding.co.kr//myp_icon.png" alt="마이페이지"></a>
         </div>
         <div class="navbar-collapse pull-right hidden-xs">
           <ul class="main-nav clearfix">
@@ -65,7 +66,7 @@
       <div class="mlnb-container">
         <header class="mlnb-header">
           <p>
-            <a href="" class="mh-logo"><img src="http://img.nurifunding.co.kr/lnb_logo.png" alt="누리펀딩"></a><a href="javascript:void(0)" class="cls-btn"><img src="http://img.nurifunding.co.kr/cls_icon.png" alt="닫기"></a>
+            <a href="" class="mh-logo"><img src="http://img.nurifunding.co.kr//lnb_logo.png" alt="누리펀딩"></a><a href="javascript:void(0)" class="cls-btn"><img src="http://img.nurifunding.co.kr//cls_icon.png" alt="닫기"></a>
           </p>
           <div class="t-box">
             <p>지금 바로 로그인하고</p>
@@ -74,26 +75,44 @@
           </div>
         </header>
         <ul class="mlnb">
-          <li><a href="">대출신청<img src="http://img.nurifunding.co.kr/arrow_r_icon.png" alt="바로가기"></a></li>
-          <li><a href="">투자하기<img src="http://img.nurifunding.co.kr/arrow_r_icon.png" alt="바로가기"></a></li>
-          <li><a href="">회사소개<img src="http://img.nurifunding.co.kr/arrow_r_icon.png" alt="바로가기"></a></li>
-          <li><a href="">이용안내<img src="http://img.nurifunding.co.kr/arrow_r_icon.png" alt="바로가기"></a></li>
+          <li><a href="">대출신청<img src="http://img.nurifunding.co.kr//arrow_r_icon.png" alt="바로가기"></a></li>
+          <li><a href="">투자하기<img src="http://img.nurifunding.co.kr//arrow_r_icon.png" alt="바로가기"></a></li>
+          <li><a href="">회사소개<img src="http://img.nurifunding.co.kr//arrow_r_icon.png" alt="바로가기"></a></li>
+          <li><a href="">이용안내<img src="http://img.nurifunding.co.kr//arrow_r_icon.png" alt="바로가기"></a></li>
         </ul>
       </div>
     </section>
     
-    <div class="contents">
-     
-      <!-- 03.회원가입완료 -->
-      <section class="welcome">
-        <div class="container wel-box br4">
-          <h3 class="wel-img"><img class="center-block" src="http://img.nurifunding.co.kr/wel.png" alt="투자자회원"></h3>
-          <p class="wel-txt">본인 확인을 위한 인증 메일이 <span class="fc-blue">oooo@naver.com</span> 로 발송되었습니다. <span class="center-block">계속하시려면 이메일을 확인해 주세요.</span></p>
-          <p class="wel-link"><a href="" class="fc-white bg-blue br4 center-block">이메일 재발송하기</a></p>
+    
+    <h2 class="com-ft">마이페이지</h2>
+    
+    <!--03.계정정보 변경하기 버튼 클릭시 노출-->
+    <section class="account-info com-mg">
+      <div class="container">
+
+        <div class="ai-box com-box row br3">
+          <h3 class="align-center">계정정보</h3>
+          <p class="aib-p0 align-center">회원정보를 입력해야 투자 하실 수 있습니다.</p>
+          <p class="aib-p1"><span class="label">이메일</span><span class="email-name">nurifunding@nave.rcom</span></p>
+          <p class="aib-p1"><span class="label">기존 비밀번호</span><input type="text" class="nr-text br4" placeholder="기존 비밀번호"></p>
+          <p class="aib-p1"><span class="label">비밀번호 변경</span><input type="text" class="nr-text br4" placeholder="새로운 비밀번호"></p>
+          <p class="aib-p1"><span class="label">비밀번호 확인</span><input type="text" class="nr-text br4" placeholder="새로운 비밀번호 확인"></p>
+          <p class="aib-p2">
+            <em>안내설정</em>
+            수신 설정시 누리펀딩 투자상품 및 이벤트 정보등을 받아 보실 수 있습니다.<br/>
+            단, 투자 및 상환에 관련된 안내는 설정여부와 상관없이 발송 됩니다.
+          </p>
+
+          <p class="aib-p4 nr-box">
+            <input type="checkbox" class="nr-check aibp4"><span>이메일 수신</span>
+            <input type="checkbox" class="nr-check aibp4"><span>SMS 수신</span>
+          </p>
+          <p class="aib-p3"><a href="" class="btn fc-white bg-blue center-block align-center br4">변경사항 저장하기</a></p>
+
+
         </div>
-      </section>
-      
-    </div>
+      </div>
+    </section>
     
     <footer class="footer container-fluid">
       <div class="container footer-box">
@@ -112,8 +131,6 @@
       </div>
     </footer>
   </div>
-  
-
   
 </body>
 

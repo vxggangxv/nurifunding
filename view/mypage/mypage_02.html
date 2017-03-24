@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=0">
+  <title>누리펀딩</title>
+  <link href="https://opensource.keycdn.com/fontawesome/4.6.3/font-awesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="http://static.nurifunding.co.kr/css/common.css">
+  <link rel="stylesheet" href="http://static.nurifunding.co.kr/css/mypage/mypage.css">
+  <!--<link rel="stylesheet" href="../../src/css/common.css">
+  <link rel="stylesheet" href="../../src/css/mypage/mypage.css"> -->
+
+  <script type="text/javascript" src="http://static.nurifunding.co.kr/js/jquery-1.10.2.min.js"></script>
+  <script type="text/javascript" src="http://static.nurifunding.co.kr/js/Chart.bundle.min.js"></script>
+  <script type="text/javascript" src="http://static.nurifunding.co.kr/js/components_custom.js"></script>
+  <script type="text/javascript" src="http://static.nurifunding.co.kr/js/common.js"></script>
+  <script type="text/javascript" src="http://static.nurifunding.co.kr/js/mypage/mypage.js"></script> 
+  <!--<script type="text/javascript" src="../../src/js/mypage/mypage.js"></script>-->
+
+  <!--[if lt IE 9]>
+    <link rel="stylesheet" href="http://static.nurifunding.co.kr/css/grid_ie9lt.min.css">
+    <link rel="stylesheet" href="http://static.nurifunding.co.kr/css/common_ie9lt.css">
+    <link rel="stylesheet" href="http://static.nurifunding.co.kr/css/mypage/mypage_ie9lt.css">
+
+    <script type="text/javascript" src="http://static.nurifunding.co.kr/js/ie9_lt.js"></script>
+    <script type="text/javascript" src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+  <h1 class="skip">누리펀딩</h1>
+  <div class="wrap">
+    <!-- 일반 해더 -->
+    <header class="header" id="header">
+      <div class="container header-box">
+        <div class="navbar-header">
+          <button type="button" class="nav-tab show-xs">
+            <span class="icon-bar b1"></span>
+            <span class="icon-bar b2"></span>
+            <span class="icon-bar b3"></span>
+          </button>
+          <h2><a href="./index.html" class="navbar-brand"><img src="http://img.nurifunding.co.kr//logo.png" alt="누리펀딩로고"></a></h2>
+          <a href="#" class="my-tab show-xs"><img src="http://img.nurifunding.co.kr//myp_icon.png" alt="마이페이지"></a>
+        </div>
+        <div class="navbar-collapse pull-right hidden-xs">
+          <ul class="main-nav clearfix">
+            <li><a href="">대출신청</a></li>
+            <li class="hidden-xs hidden-sm hidden-margin"></li>
+            <li><a href="">투자하기</a></li>
+            <li class="hidden-xs hidden-sm hidden-margin"></li>
+            <li><a href="">회사소개</a></li>
+            <li class="hidden-xs hidden-sm hidden-margin"></li>
+            <li><a href="">이용안내</a></li>
+            <li class="hidden-xs hidden-sm hidden-margin"></li>
+            <li><a class="c-blue" href="">회원가입</a></li>
+            <li class="hidden-xs hidden-sm hidden-margin"></li>
+            <li><a class="c-blue" href="">로그인</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <!-- 모바일 네비게이션 -->
+    <section class="mlnb-wrap show-xs" id="mlnb-wrap">
+      <div class="mlnb-container">
+        <header class="mlnb-header">
+          <p>
+            <a href="" class="mh-logo"><img src="http://img.nurifunding.co.kr//lnb_logo.png" alt="누리펀딩"></a><a href="javascript:void(0)" class="cls-btn"><img src="http://img.nurifunding.co.kr//cls_icon.png" alt="닫기"></a>
+          </p>
+          <div class="t-box">
+            <p>지금 바로 로그인하고</p>
+            <p>누리펀딩의 투자서비스를 이용하세요!</p>
+            <p class="nth-3"><a href="" >로그인</a><a href="" class="nth-2">회원가입</a></p>
+          </div>
+        </header>
+        <ul class="mlnb">
+          <li><a href="">대출신청<img src="http://img.nurifunding.co.kr//arrow_r_icon.png" alt="바로가기"></a></li>
+          <li><a href="">투자하기<img src="http://img.nurifunding.co.kr//arrow_r_icon.png" alt="바로가기"></a></li>
+          <li><a href="">회사소개<img src="http://img.nurifunding.co.kr//arrow_r_icon.png" alt="바로가기"></a></li>
+          <li><a href="">이용안내<img src="http://img.nurifunding.co.kr//arrow_r_icon.png" alt="바로가기"></a></li>
+        </ul>
+      </div>
+    </section>
+    
+    
+    <h2 class="com-ft">마이페이지</h2>
+    
+    <!--02.비밀번호 입력 후 확인버튼 클릭시 노출-->
+    <section class="member-info com-mg">
+      <div class="container">
+
+        <div class="mi-box com-box row br3">
+          <h3 class="align-center">회원정보</h3>
+          <p class="mib-p0 align-center">회원정보를 입력해야 투자 하실 수 있습니다.</p>
+          <p class="mib-p1"><span class="label">이름</span><span class="member-name">임준수</span></p>
+          <p class="mib-p1"><span class="label">휴대전화</span><input type="text" class="nr-text" value="01012345678"></p>
+          <p class="mib-p1">
+            <span class="label">주소</span><input type="text" class="nr-text" value="서울특별시 강남구 테헤란로 82길 15">
+            <input type="text" class="nr-text detail" value="DI타워 14층">
+          </p>
+          <p class="mib-p1"><span class="label">주민등록번호</span><input type="text" class="nr-text" value="121212 1231212"></p>
+          <p class="mib-p2">
+            <span class="c-orange">왜 주민등록번호와 주소가 필요한가요?</span>
+            주민번호와 주소 정보는 현행 세법상 원천징수 납부에 사용됩니다. 주민번호와 주소 정보 없이도
+            사이트 이용은 가능하나, 현행 세법상 누리펀딩 내부의 투자는 이용하실 수없습니다.<br/>
+            사이트 탈퇴시 모든 개인정보는 즉시 삭제 됩니다.
+          </p>
+          
+          <h3 class="align-center mt">나의 은행 계좌 정보</h3>
+          <p class="mib-p0 align-center">투자의 원리금을 수취할 본인명의의 은행 계좌 정보를 <span class="xs-block">입력해 주세요</span></p>
+          <p class="mib-p1">
+            <span class="label">은행명</span>
+            <div class="dropdown bank">
+              <button type="button" class="btn">은행을 선택하세요<span class="pull-right">▼</span></button>
+              <ul class="dropdown-menu">
+                <li><a href="javascript:void(0)">기업은행</a></li>
+                <li><a href="javascript:void(0)">신한은행</a></li>
+                <li><a href="javascript:void(0)">KEB하나은행</a></li>
+                <li><a href="javascript:void(0)">SC은행</a></li>
+                <li><a href="javascript:void(0)">한국씨티은행</a></li>
+                <li><a href="javascript:void(0)">대구은행</a></li>
+                <li><a href="javascript:void(0)">부산은행</a></li>
+                <li><a href="javascript:void(0)">광주은행</a></li>
+                <li><a href="javascript:void(0)">경남은행</a></li>
+                <li><a href="javascript:void(0)">우체국</a></li>
+              </ul>
+            </div>
+          </p>
+        <p class="mib-p1"><span class="label">계좌번호</span><input type="text" class="nr-text" value="12312300123123"></p>
+        <p class="mib-p3"><a href="" class="btn fc-white bg-blue center-block align-center br4">저장하기</a></p>
+        
+          
+        </div>
+      </div>
+    </section>
+    
+    <footer class="footer container-fluid">
+      <div class="container footer-box">
+        <div class="row a-txt">
+          <a href="#">회사소개</a>
+          <a href="#">이용약관</a>
+          <a href="#">개인정보취급방침</a>
+        </div>
+        <div class="row f-txt">
+          <address>
+            <span class="min-xs-br"><span class="xs-br">(주)누리펀딩</span><span class="hidden-xs"> ㅣ </span>대표이사: 박기범 ㅣ 사업자등록번호 000-00-00000 ㅣ 통신판매업신고: 제 2017-서울강남-00000호</span>
+            고객센터 1544-2499 ㅣ E-mail 000@ebiznetworks.co.kr ㅣ 주소: 서울특별시 강남구 선릉로 99길 12, 4층(역삼동, 모노타워)
+          </address>
+        </div>
+        <div class="row c-txt"><small>COPYRIGHT <span class="fc-yellow">NURIFUNDING</span> ALL RIGHTS RESERVED.</small></div>
+      </div>
+    </footer>
+  </div>
+  
+</body>
+
+</html>

@@ -11,9 +11,15 @@ a {text-decoration:none; color: #434343;}
 
 /*폰트 색상*/
 .bg-blue {background-color: #398fe1;}
-.fc-blue {color: #398fe1;}
-.fc-white {color: #fff;}
-.c-orange {color: #ff9a16;}
+.c-white, .fc-blue {color: #398fe1;}
+.c-white, .fc-white {color: #fff;}
+.c-orange, .fc-orange {color: #ff9a16;}
+
+/*폰트 정렬*/
+.align-left {text-align: left;}
+.align-right {text-align: right;}
+.align-center {text-align: center;}
+.td-under {text-decoration: underline;}
 
 /* 캔버스 커스타미이징 */
 canvas {
