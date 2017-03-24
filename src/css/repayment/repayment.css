@@ -87,6 +87,11 @@
   
 }
 
+.com-pd {padding: 68px 10px 95px;}
+.com-ft {text-align: center; font-size: 36px; font-family: "Noto Sans Kr";}
+.com-box {margin: 0 auto; margin-top: 10px;}
+.br4 {border-radius: 4px;}
+
 
 /*테블릿 영역, col-sm */
 @media (min-width: 768px) {
