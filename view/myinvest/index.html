@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=0">
+  <title>누리펀딩</title>
+  <link href="https://opensource.keycdn.com/fontawesome/4.6.3/font-awesome.min.css" rel="stylesheet">
+  <!--<link rel="stylesheet" href="http://static.nurifunding.co.kr/css/common.css">
+  <link rel="stylesheet" href="http://static.nurifunding.co.kr/css/myinvest/myinvest.css">-->
+   <link rel="stylesheet" href="../../src/css/common.css">
+  <link rel="stylesheet" href="../../src/css/myinvest/myinvest.css"> 
+
+  <script type="text/javascript" src="http://static.nurifunding.co.kr/js/jquery-1.10.2.min.js"></script>
+  <script type="text/javascript" src="http://static.nurifunding.co.kr/js/Chart.bundle.min.js"></script>
+  <script type="text/javascript" src="http://static.nurifunding.co.kr/js/components_custom.js"></script>
+  <script type="text/javascript" src="http://static.nurifunding.co.kr/js/common.js"></script>
+  <!--<script type="text/javascript" src="http://static.nurifunding.co.kr/js/myinvest/myinvest.js"></script>-->
+   <script type="text/javascript" src="../../src/js/myinvest/myinvest.js"></script> 
+
+  <!--[if lt IE 9]>
+    <link rel="stylesheet" href="http://static.nurifunding.co.kr/css/grid_ie9lt.min.css">
+    <link rel="stylesheet" href="http://static.nurifunding.co.kr/css/common_ie9lt.css">
+    <link rel="stylesheet" href="../../src/css/myinvest/myinvest_ie9lt.css">
+
+    <script type="text/javascript" src="http://static.nurifunding.co.kr/js/ie9_lt.js"></script>
+    <script type="text/javascript" src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+  <h1 class="skip">누리펀딩</h1>
+  <div class="wrap">
+    <!-- 일반 해더 -->
+    <header class="header" id="header">
+      <div class="container header-box">
+        <div class="navbar-header">
+          <button type="button" class="nav-tab show-xs">
+            <span class="icon-bar b1"></span>
+            <span class="icon-bar b2"></span>
+            <span class="icon-bar b3"></span>
+          </button>
+          <h2><a href="./index.html" class="navbar-brand"><img src="http://img.nurifunding.co.kr//logo.png" alt="누리펀딩로고"></a></h2>
+          <a href="#" class="my-tab show-xs"><img src="http://img.nurifunding.co.kr//myp_icon.png" alt="마이페이지"></a>
+        </div>
+        <div class="navbar-collapse pull-right hidden-xs">
+          <ul class="main-nav clearfix">
+            <li><a href="">대출신청</a></li>
+            <li class="hidden-xs hidden-sm hidden-margin"></li>
+            <li><a href="">투자하기</a></li>
+            <li class="hidden-xs hidden-sm hidden-margin"></li>
+            <li><a href="">회사소개</a></li>
+            <li class="hidden-xs hidden-sm hidden-margin"></li>
+            <li><a href="">이용안내</a></li>
+            <li class="hidden-xs hidden-sm hidden-margin"></li>
+            <li><a class="c-blue" href="">회원가입</a></li>
+            <li class="hidden-xs hidden-sm hidden-margin"></li>
+            <li><a class="c-blue" href="">로그인</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <!-- 모바일 네비게이션 -->
+    <section class="mlnb-wrap show-xs" id="mlnb-wrap">
+      <div class="mlnb-container">
+        <header class="mlnb-header">
+          <p>
+            <a href="" class="mh-logo"><img src="http://img.nurifunding.co.kr//lnb_logo.png" alt="누리펀딩"></a><a href="javascript:void(0)" class="cls-btn"><img src="http://img.nurifunding.co.kr//cls_icon.png" alt="닫기"></a>
+          </p>
+          <div class="t-box">
+            <p>지금 바로 로그인하고</p>
+            <p>누리펀딩의 투자서비스를 이용하세요!</p>
+            <p class="nth-3"><a href="" >로그인</a><a href="" class="nth-2">회원가입</a></p>
+          </div>
+        </header>
+        <ul class="mlnb">
+          <li><a href="">대출신청<img src="http://img.nurifunding.co.kr//arrow_r_icon.png" alt="바로가기"></a></li>
+          <li><a href="">투자하기<img src="http://img.nurifunding.co.kr//arrow_r_icon.png" alt="바로가기"></a></li>
+          <li><a href="">회사소개<img src="http://img.nurifunding.co.kr//arrow_r_icon.png" alt="바로가기"></a></li>
+          <li><a href="">이용안내<img src="http://img.nurifunding.co.kr//arrow_r_icon.png" alt="바로가기"></a></li>
+        </ul>
+      </div>
+    </section>
+    
+    
+    <!--01.나의 투자-->
+    <section class="contents com-mg">
+      <div class="container">
+       
+        <div class="mode com-box row br3">
+          <h2><img class="mode-icon" src="http://img.nurifunding.co.kr/mode_icon.png" alt="자동투자">자동투자 모드 : <span class="use">사용안함</span><span class="hidden-xs">동일한 금액을 자동으로 투자하여 최적의 포트폴리오를 구성할 수 있습니다.</span></h2>
+          <div class="modify-tab" id="modify-tab">
+            - 각 채권당 <span class="td-under">5만원</span>씩 자동으로 투자 <a href="" class="on-btn fc-white">수정</a>
+          </div>
+          <div class="modify-box clearfix" id="modify-box">
+            - 각 채권당
+            <div class="dropdown mode-prc" id="mode-prc">
+              <button type="button" class="btn">5만원<span class="pull-right">▼</span></button>
+              <ul class="dropdown-menu">
+                <li><a href="#">5만원</a></li>
+                <li><a href="#">10만원</a></li>
+                <li><a href="#">20만원</a></li>
+                <li><a href="#">50만원</a></li>
+              </ul>
+            </div>
+            <div class="dropdown mode-range" id="mode-range">
+              <button type="button" class="btn">채권기간 범위<span class="pull-right">▼</span></button>
+              <ul class="dropdown-menu">
+                <li><a href="#">6개월</a></li>
+                <li><a href="#">12개월</a></li>
+                <li><a href="#">18개월</a></li>
+                <li><a href="#">24개월</a></li>
+                <li><a href="#">30개월</a></li>
+                <li><a href="#">36개월</a></li>
+              </ul>
+            </div>
+            자동투자
+            <p class="mod-p1 nr-box"><input type="checkbox" class="nr-check"><span>예치금 잔액부족 문자 알림받기 (SMS)</span></p>
+            <p class="mod-p2"><a href="" class="cancle-btn br4">취소</a><a href="" class="save-btn fc-white bg-blue br4">저장</a></p>
+          </div>
+        </div>
+        
+        <div class="myi-dep com-box row br3">
+          <!--등록 안했을 경우-->
+          <!--<h2><span class="fc-blue"></span></h2>
+          <div class="md-bank">
+            <p class="mdb-p1"></p>
+            <p class="mdb-p2"></p>
+          </div>
+          <div class="md-with">
+            <h3>나의 예치금<a href="" class="histry-btn">거래내역 &gt;</a></h3>
+            <p class="mdw-p0">
+              본인명의 은행계좌가 있다면<br/>
+              바로 누리펀딩전용 예치금 가상계좌를<br/>
+              발급받으실 수 있습니다.
+            </p>
+            <p class="mdw-p2"><a href="" class="btn fc-white bg-blue br4">예치금 게좌 발급받기 &gt;</a></p>            
+          </div>
+          <div class="md-bank2">
+            <p class="mdb-p1">예치금 계좌</p>
+            <p class="mdb-p2">정보없음</p>
+            <p class="mdb-p1">예금주</p>
+            <p class="mdb-p2">정보없음</p>
+          </div>-->
+          
+          <!--등록 했을 경우-->
+          <h2><span class="fc-blue">임준수</span><a href="" class="user-btn"><img src="http://img.nurifunding.co.kr/myp_icon.png" alt="회원정보"></a></h2>
+          <div class="md-bank">
+            <p class="mdb-p1">mykasya@naver.com</p>
+            <p class="mdb-p2">국민은행 55284 16238510</p>
+          </div>
+          <div class="md-with">
+            <h3>나의 예치금<a href="" class="histry-btn">거래내역 &gt;</a></h3>
+            <p class="mdw-p1"><span class="c-blue">0</span> 원</p>
+            <p class="mdw-p2"><a href="" class="btn fc-white bg-blue br4">출금 하기</a></p>            
+          </div>
+          <div class="md-bank2">
+            <p class="mdb-p1">예치금 계좌</p>
+            <p class="mdb-p2">신한은행 4567894561238</p>
+            <p class="mdb-p1">예금주</p>
+            <p class="mdb-p2">누리펀딩임준수</p>
+          </div>
+        </div>
+        
+        <div class="row md-wrapper">
+          <div class="revenue com-box row br3">
+            <h3>수익률<span class="fc-blue">0 %</span></h3>
+          </div>
+          
+          <div class="total-payment com-box row br3">
+            <h3>총 지급</h3>
+            <p class="tp-p1 clearfix"><span class="pull-left">원금</span><span class="pull-right">0 원</span></p>
+            <p class="tp-p1 clearfix"><span class="pull-left">이자</span><span class="pull-right">0 원</span></p>
+            <p class="tp-p1 clearfix"><span class="pull-left">기타</span><span class="pull-right">0 원</span></p>
+            <p class="tp-p2"><span class="c-blue">0</span> 원</p>
+            <p class="tp-p3"><span class="pull-left">지급 예정중</span><span class="pull-right">0 원</span></p>
+          </div>
+          
+          <div class="total-invest com-box row br3">
+            <h3>총 투자</h3>
+            <p class="ti-p1"><span class="c-blue">0</span> 원</p>
+            <p class="ti-p2"><span class="pull-left">투자 신청중</span><span class="pull-right">0 원</span></p>
+          </div>
+        </div>
+        
+        <div class="portfolio com-box row br3">
+          <h3>나의 포트폴리오</h3>
+          <div class="pf-tab-box" id="pf-tab-box">
+            <a href="" class="btn br4 on">상품</a>
+            <a href="" class="btn br4">수익률</a>
+            <a href="" class="btn br4">리스트 등급</a>
+          </div>
+          <ul class="chart-box">
+            <li class="on">
+              <div class="chart-area-empty"></div>
+              <div id="canvas-holder-pdt"><span class="in-txt">상품</span><canvas id="chart-area-pdt"/></div>
+              <script>
+                var dataGroupPdt = [ 0, 0, 0 ];
+                if ( dataGroupPdt[0] == 0 && dataGroupPdt[1] == 0 && dataGroupPdt[2] == 0 ) {
+                  $("#canvas-holder-pdt").prev().css("display", "block");
+                }
+
+                var configPdt = {
+                  type: 'doughnut',
+                  data: {
+                    datasets: [{
+                      data: [
+                        dataGroupPdt[0],
+                        dataGroupPdt[1],
+                        dataGroupPdt[2],
+                      ],
+                      backgroundColor: [
+                        "#575A8D",
+                        "#B2B1C3",
+                        "#8488A3",
+                      ],
+                      borderWidth: 4,
+                    }],
+                    labels: [
+                      "법인",
+                      "개인",
+                      "부동산"
+                    ]
+                  },
+                  options: {
+                    responsive: true,
+                    legend: {
+                      position: 'bottom',
+                      labels: {
+                          usePointStyle: 'circle'
+                      }
+                    },
+                    animation: {
+                      animateScale: false,
+                      animateRotate: true
+                    }
+                  }
+                };
+
+              </script>
+              
+            </li>
+            <li>
+              <div class="chart-area-empty"></div>
+              <div id="canvas-holder-rev"><span class="in-txt">수익률</span><canvas id="chart-area-rev"/></div>
+              <script>
+                var dataGroupRev = [ 10, 10, 10, 10 ];
+                if ( dataGroupRev[0] == 0 && dataGroupRev[1] == 0 && dataGroupRev[2] == 0 && dataGroupRev[3] == 0 ) {
+                  $("#canvas-holder-rev").prev().css("display", "block");
+                }
+
+                var configRev = {
+                  type: 'doughnut',
+                  data: {
+                    datasets: [{
+                      data: [
+                        dataGroupRev[0],
+                        dataGroupRev[1],
+                        dataGroupRev[2],
+                        dataGroupRev[3],
+                      ],
+                      backgroundColor: [
+                        "#393A7B",
+                        "#585A8A",
+                        "#83859E",
+                        "#AFB0C2"
+                      ],
+                      borderWidth: 2,
+                    }],
+                    labels: [
+                      "8%미만",
+                      "8%~10%",
+                      "10.1~12%",
+                      "12%초과",
+                    ]
+                  },
+                  options: {
+                    responsive: true,
+                    legend: {
+                      position: 'bottom',
+                      labels: {
+                        usePointStyle: 'circle'
+                      }
+                    },
+                    animation: {
+                      animateScale: false,
+                      animateRotate: true
+                    }
+                  }
+                };
+
+              </script>
+            </li>
+            <li>
+              <div class="chart-area-empty"></div>
+              <div id="canvas-holder-grade"><span class="in-txt">리스크 등급</span><canvas id="chart-area-grade"/></div>
+              <script>
+                var dataGroupGrade = [ 10, 10, 10, 10 ];
+                if ( dataGroupGrade[0] == 0 && dataGroupGrade[1] == 0 && dataGroupGrade[2] == 0 && dataGroupGrade[3] == 0 ) {
+                  $("#canvas-holder-rev").prev().css("display", "block");
+                }
+
+                var configGrade = {
+                  type: 'doughnut',
+                  data: {
+                    datasets: [{
+                      data: [
+                        dataGroupGrade[0],
+                        dataGroupGrade[1],
+                        dataGroupGrade[2],
+                        dataGroupGrade[3],
+                      ],
+                      backgroundColor: [
+                        "#2AA3FF",
+                        "#3ACC00",
+                        "#FFD600",
+                        "#FF9100"
+                      ],
+                      borderWidth: 2,
+                    }],
+                    labels: [
+                      "A 등급",
+                      "B 등급",
+                      "C 등급",
+                      "D 등급",
+                    ]
+                  },
+                  options: {
+                    responsive: true,
+                    legend: {
+                      position: 'bottom',
+                      labels: {
+                        usePointStyle: 'circle'
+                      }
+                    },
+                    animation: {
+                      animateScale: false,
+                      animateRotate: true
+                    }
+                  }
+                };
+
+              </script>
+            </li>
+          </ul>
+        </div>
+        
+        <div class="bond-pdt com-box row br3">
+          <h3>나의 채권상품<a href="">월별 지금 스케쥴 &gt;</a></h3>
+        </div>
+        
+        <div class="pdt-cat-box">
+          <ul class="pdt-cate clearfix">
+            <li class="on br4 ml0 clearfix"><span class="pull-left">전체</span><span class="pull-right">1</span></li>
+            <li class="br4 clearfix"><span class="pull-left">투자신청</span><span class="pull-right">1</span></li>
+            <li class="br4 clearfix"><span class="pull-left">상환중</span><span class="pull-right">0</span></li>
+            <li class="br4 ml0 clearfix"><span class="pull-left">상환완료</span><span class="pull-right">0</span></li>
+            <li class="br4 clearfix"><span class="pull-left">연체중</span><span class="pull-right">0</span></li>
+            <li class="br4 clearfix"><span class="pull-left">부도</span><span class="pull-right">0</span></li>
+          </ul>
+        </div>
+        
+        <!--없을 경우-->
+        <!--<p class="pdt-0"><span class="fc-blue">전체</span> 투자상품이 <span class="fc-blue">0개</span> 있습니다.</p>-->
+        <!--있을 경우-->
+        <div class="mypdt-num com-box row br3">
+          <span class="pull-left nth-1">17.02.22</span><span class="pull-left nth-2">1개의 채권에 투자</span><span class="pull-right">10,000원</span>
+        </div>
+        
+        <div class="mypdt com-box row br3">
+          <ul class="mp-ul clearfix">
+            <li class="mp-li nth1 clearfix">
+              <div class="mp-d1"><p class="mp-number">채권번호 : 41586호</p><p class="mp-label">퍼드림채권 103호</p><p class="mp-wid-box"><span class="mp-wid bg-blue"></span></p></div>
+              <div class="mp-d2"><p class="mp-label">상환중</p><p class="mp-prc">0/1</p></div>
+              <div class="mp-d3"><p class="mp-label">수익</p><p class="mp-prc">2,000원</p></div>
+              <div class="mp-d4"><p class="mp-label">투자금액</p><p class="mp-prc fc-blue">10,000원</p></div>
+            </li>
+            <li class="mp-li nth2 clearfix">
+              <div class="mp-d clearfix"><p class="pull-left">지급</p><p class="pull-right">0원</p></div>
+              <div class="mp-d clearfix"><p class="pull-left">지급예정</p><p class="pull-right">0원</p></div>
+              <div class="mp-d clearfix"><p class="pull-left">지급기간</p><p class="pull-right">-</p></div>
+              <div class="mp-d clearfix"><p class="pull-left">다음 지급일</p><p class="pull-right">17.03.02</p></div>
+            </li>
+          </ul>
+        </div>
+        
+      </div>
+    </section>
+    
+    <script>
+      window.onload = function() {
+        var ctxPdt = document.getElementById("chart-area-pdt").getContext("2d");
+        window.myDoughnut = new Chart(ctxPdt, configPdt);
+
+        var ctxRev = document.getElementById("chart-area-rev").getContext("2d");
+        window.myLine = new Chart(ctxRev, configRev);
+          
+        
+        var ctxGrade = document.getElementById("chart-area-grade").getContext("2d");
+        window.myDoughnut = new Chart(ctxGrade, configGrade);
+
+      };
+    </script>
+    
+    <footer class="footer container-fluid">
+      <div class="container footer-box">
+        <div class="row a-txt">
+          <a href="#">회사소개</a>
+          <a href="#">이용약관</a>
+          <a href="#">개인정보취급방침</a>
+        </div>
+        <div class="row f-txt">
+          <address>
+            <span class="min-xs-br"><span class="xs-br">(주)누리펀딩</span><span class="hidden-xs"> ㅣ </span>대표이사: 박기범 ㅣ 사업자등록번호 000-00-00000 ㅣ 통신판매업신고: 제 2017-서울강남-00000호</span>
+            고객센터 1544-2499 ㅣ E-mail 000@ebiznetworks.co.kr ㅣ 주소: 서울특별시 강남구 선릉로 99길 12, 4층(역삼동, 모노타워)
+          </address>
+        </div>
+        <div class="row c-txt"><small>COPYRIGHT <span class="fc-yellow">NURIFUNDING</span> ALL RIGHTS RESERVED.</small></div>
+      </div>
+    </footer>
+  </div>
+  
+</body>
+
+</html>

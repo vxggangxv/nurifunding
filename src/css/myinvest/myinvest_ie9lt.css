@@ -1,0 +1,65 @@
+.contents .container {width: 1024px; padding-left: 0; padding-right: 0;}
+.com-ft {position: relative; margin-top: 48px; text-align: center; font-size: 36px; font-family: "Noto Sans Kr";}
+.com-mg {margin: 45px 0px 95px;}
+.com-box {position: relative; margin: 0 auto; border: 1px solid #ddd; background: #fff; padding: 25px 25px; box-shadow: 1px 1px 4px 0px #dadada;}
+.br3 {border-radius: 3px;}
+.br4 {border-radius: 4px;}
+.sm-inBlock {display: inline-block;}
+
+.lg-wrapper {width: 1024px;}
+
+.repayment {width: 270px; height: 410px; float: left;}
+.repayment h2 {font-size: 22px;}
+.repayment .rep-box {position: relative; display: block; width: 100%; margin-top: 40px;}
+.repayment .rep-box [class*="rep-p"] {position: relative;}
+.repayment .rep-p1 {font-size: 15px; font-weight: 300; margin-top: 10px;}
+.repayment .rep-p1 span {display: block; margin-bottom: 8px;}
+.repayment .rep-p2 {position: relative; margin-top: 20px; padding-top: 45px; text-align: right; font-size: 24px; border-top: 1px solid #ddd;}
+.repayment .rep-p3 {font-size: 15px; font-weight: 300; margin-top: 30px;}
+
+.schedule {overflow: hidden; padding-bottom: 0; width: 744px; height: 410px; float: left; margin-left: 10px;}
+.schedule h2, .sch-p1 {display: inline-block;}
+.schedule h2 {font-size: 22px; margin-bottom: 20px;}
+.schedule h2 .sm-inBlock {font-size: 16px; color: #999; letter-spacing: 0;}
+.sch-p1 {font-size: 15px; line-height: 1.5em; font-weight: 300; float: right;}
+.sch-p1 .c-blue, .sch-p1 .c-gray {position: relative; top: -1px; font-size: 12px;}
+.sch-p1 .c-blue {margin-right: 5px;}
+.sch-p1 .c-gray {margin-left: 15px; margin-right: 5px;}
+.schedule .canvas-wrap {position: relative; width: 690px; height: 345px; overflow: hidden; margin-top: 10px;}
+.schedule .canvas-box {margin-top: -25px; width: 690px; height: 345px;}
+.canvas-box {}
+
+.monthly-rep {margin-top: 20px; width: 1024px; height: 430px;}
+.monthly-rep h2 {font-size: 22px; letter-spacing: 0; display: inline-block;}
+
+.month-box {text-align: center; margin-top: 25px;}
+.month-box * {display: inline-block; font-weight: 300; font-size: 18px;}
+.month {width: 120px;} 
+.month-box a {width: 20px; text-align: center;}
+.th {position: relative; border-bottom: 1px solid #888; margin-top: 15px;}
+.th li {display: block; float: left; font-size: 15px; padding: 15px 0;}
+.th li, .td li {font-weight: 300;}
+.th li.nth-1 {width: 10%; text-align: center;}
+.th li.nth-2 {width: 10%; text-align: center;}
+.th li.nth-3 {width: 10%; text-align: left; padding-left: 5px;}
+.th li.nth-4 {width: 10%;}
+.th li.nth-5 {width: 10%;}
+.th li.nth-6 {width: 10%;}
+.th li.nth-7 {width: 10%;}
+.th li.nth-8 {width: 10%;}
+.th li.nth-9 {width: 10%;}
+.th li.nth-10 {width: 10%; text-align: right; padding-right: 5px;}
+
+.m-rep {margin-top: 35px; display: block; width: 20%;}
+.m-rep-li {margin-top: 10px; font-size: 15px; font-weight: 300;}
+.m-rep-li span.nth-2 {margin-left: 20px;}
+.m-rep-li span.nth-3 {float: right;}
+
+.monthly-rep .rep-box, .monthly-rep .rep-p2 {top: -44px;}
+.monthly-rep .rep-box {position: relative; display: block; width: 100%;}
+.monthly-rep .rep-box [class*="rep-p"], .monthly-rep .rep-p2 {width: 30%; left: 70%;}
+.monthly-rep .rep-box [class*="rep-p"] {position: relative;}
+.monthly-rep .rep-p1 {font-size: 15px; font-weight: 300; margin-top: 8px;}
+.monthly-rep .rep-p1 span {display: block; margin-bottom: 8px;}
+.monthly-rep .rep-p2 {position: relative; margin-top: 10px; padding-top: 15px; text-align: right; font-size: 24px;  border-top: 1px solid #ddd;}
+.monthly-rep .rep-p3 {position: absolute; top: 142px; width: 40%; font-size: 15px; font-weight: 300;}

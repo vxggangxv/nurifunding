@@ -11,7 +11,8 @@ a {text-decoration:none; color: #434343;}
 
 /*폰트 색상*/
 .bg-blue {background-color: #398fe1;}
-.c-white, .fc-blue {color: #398fe1;}
+.c-gray, .fc-gray {color: #ccc;}
+.c-blue, .fc-blue {color: #398fe1;}
 .c-white, .fc-white {color: #fff;}
 .c-orange, .fc-orange {color: #ff9a16;}
 

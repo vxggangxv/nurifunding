@@ -1,0 +1,211 @@
+@media (min-width: 992px) {
+  .container {
+    width: 945px;
+  }
+}
+
+/*공통 속성*/
+
+/*아이콘*/
+
+/*전체*/
+.wrap {position: relative; width: 100%;}
+.main {position: relative;}
+
+/*모바일 영역, col-xs*/
+@media (max-width: 767px){
+  .com-ft {position: relative; margin-top: 28px; text-align: center; font-size: 22px; font-family: "Noto Sans Kr";}
+  .com-mg {margin: 15px 0px 50px;}
+  .com-box{position: relative; margin: 0 auto; margin-top: 10px; width: 300px; border: 1px solid #ddd; background: #fff; padding: 20px 15px; box-shadow: 1px 1px 4px 0px #dadada;}
+  .br3 {border-radius: 3px;}
+  .br4 {border-radius: 4px;}
+  .xs-block {display: block;}
+  .sm-block {display: none;}
+  
+  .repayment {}
+  .repayment h2 {font-size: 18px; margin-bottom: 25px;}
+  .repayment .rep-box {border-bottom: 1px solid #ddd; padding-bottom: 10px; }
+  .repayment .rep-p1 {font-size: 14px; font-weight: 300; margin-top: 6px;}
+  .repayment .rep-p1 span {display: block; margin-bottom: 8px;}
+  .repayment .rep-p2 {padding-top: 15px; text-align: right; font-size: 20px;}
+  .repayment .rep-p3 {font-size: 13px; font-weight: 300; margin-top: 15px;}
+  
+  .schedule {overflow-y: hidden; overflow-x: scroll; padding-bottom: 0;}
+  .schedule h2 {font-size: 18px; margin-bottom: 20px;}
+  .sch-p1 {font-size: 13px; line-height: 1.5em; font-weight: 300;}
+  .sch-p1 .c-blue, .sch-p1 .c-gray {position: relative; top: -2px; font-size: 10px;}
+  .sch-p1 .c-blue {margin-right: 5px;}
+  .sch-p1 .c-gray {margin-left: 15px; margin-right: 5px;}
+  .schedule .canvas-wrap {position: relative; width: 450px; height: 200px; overflow: hidden; margin-top: 20px;}
+  .schedule .canvas-box {margin-top: -25px; width: 450px; height: 225px;}
+  .canvas-box {}
+  
+  .monthly-rep {}
+  .monthly-rep h2 {font-size: 18px; letter-spacing: 0;}
+  .monthly-rep h2 {display: inline-block; font-weight: 300;}
+  
+  .month-box {text-align: center; margin-top: 25px;}
+  .month-box * {display: inline-block; font-weight: 300;}
+  .month {width: 120px;} 
+  .month-box a {width: 20px; text-align: center;}
+  .th {position: relative; border-bottom: 1px solid #888; margin-top: 15px;}
+  .th li {display: none; float: left; font-size: 14px; padding: 15px 0;}
+  .th li.m {display: block;}
+  .th li, .td li {font-weight: 300;}
+  .th li.nth-1 {width: 20%; text-align: center;}
+  .th li.nth-2 {width: 20%; text-align: center;}
+  .th li.nth-3 {width: 40%; text-align: left; padding-left: 5px;}
+  .th li.nth-10 {width: 20%; text-align: right; padding-right: 5px;}
+  .m-rep {margin-top: 15px;}
+  .m-rep-li {margin-top: 8px; font-size: 14px; font-weight: 300;}
+  .m-rep-li span.nth-2 {margin-left: 10px;}
+  .m-rep-li span.nth-3 {float: right;}
+  .monthly-rep .rep-box {margin-top: 30px;}
+  .monthly-rep .rep-p1 {font-size: 14px; font-weight: 300; margin-top: 6px;}
+  .monthly-rep .rep-p1 span {display: block; margin-bottom: 8px;}
+  .monthly-rep .rep-p2 {padding-top: 15px; text-align: right; font-size: 20px;}
+  .monthly-rep .rep-p3 {font-size: 13px; font-weight: 300; margin-top: 15px;}
+  
+}
+
+/*테블릿 영역, col-sm~col-md */
+@media (min-width: 768px) and (max-width: 1199px) {
+  .com-ft {position: relative; margin-top: 48px; text-align: center; font-size: 36px; font-family: "Noto Sans Kr";}
+  .com-mg {margin: 45px 0px 95px;}
+  .com-box {position: relative; width: 730px; margin: 0 auto; margin-top: 20px; border: 1px solid #ddd; background: #fff; padding: 20px 25px; box-shadow: 1px 1px 4px 0px #dadada;}
+  .br3 {border-radius: 3px;}
+  .br4 {border-radius: 4px;}
+  .sm-inBlock {display: inline-block;}
+
+  
+  .repayment {height: 232px;}
+  .repayment h2 {position: absolute; font-size: 22px;}
+  .repayment .rep-box {position: relative; display: block; width: 100%; }
+  .repayment .rep-box [class*="rep-p"] {position: relative; left: 55%; width: 45%;}
+  .repayment .rep-p1 {font-size: 15px; font-weight: 300; margin-top: 6px;}
+  .repayment .rep-p1 span {display: block; margin-bottom: 8px;}
+  .repayment .rep-p2 {position: relative; top: 0px; padding-top: 15px; text-align: right; font-size: 24px; border-top: 1px solid #ddd;}
+  .repayment .rep-p3 {position: absolute; top: 142px; width: 40%; font-size: 15px; font-weight: 300;}
+
+  .schedule {overflow-y: hidden; padding-bottom: 0; height: 415px;}
+  .schedule h2, .sch-p1 {display: inline-block;}
+  .schedule h2 {font-size: 22px; margin-bottom: 20px;}
+  .schedule h2 .sm-inBlock {font-size: 16px; color: #999; letter-spacing: 0;}
+  .sch-p1 {font-size: 15px; line-height: 1.5em; font-weight: 300; float: right;}
+  .sch-p1 .c-blue, .sch-p1 .c-gray {position: relative; top: -1px; font-size: 12px;}
+  .sch-p1 .c-blue {margin-right: 5px;}
+  .sch-p1 .c-gray {margin-left: 15px; margin-right: 5px;}
+  .schedule .canvas-wrap {position: relative; width: 690px; height: 345px; overflow: hidden; margin-top: 10px;}
+  .schedule .canvas-box {margin-top: -25px; width: 690px; height: 345px;}
+  .canvas-box {}
+
+  .monthly-rep {height: 380px;}
+  .monthly-rep h2 {font-size: 22px; letter-spacing: 0; display: inline-block;}
+
+  .month-box {text-align: center; margin-top: 25px;}
+  .month-box * {display: inline-block; font-weight: 300; font-size: 18px;}
+  .month {width: 120px;} 
+  .month-box a {width: 20px; text-align: center;}
+  .th {position: relative; border-bottom: 1px solid #888; margin-top: 15px;}
+  .th li {display: block; float: left; font-size: 15px; padding: 15px 0;}
+  .th li, .td li {font-weight: 300;}
+  .th li.nth-1 {width: 10%; text-align: center;}
+  .th li.nth-2 {width: 10%; text-align: center;}
+  .th li.nth-3 {width: 10%; text-align: left; padding-left: 5px;}
+  .th li.nth-4 {width: 10%;}
+  .th li.nth-5 {width: 10%;}
+  .th li.nth-6 {width: 10%;}
+  .th li.nth-7 {width: 10%;}
+  .th li.nth-8 {width: 10%;}
+  .th li.nth-9 {width: 10%;}
+  .th li.nth-10 {width: 10%; text-align: right; padding-right: 5px;}
+  
+  .m-rep {margin-top: 20px; display: block; width: 25%;}
+  .m-rep-li {margin-top: 8px; font-size: 15px; font-weight: 300;}
+  .m-rep-li span.nth-2 {margin-left: 10px;}
+  .m-rep-li span.nth-3 {float: right;}
+  
+  .monthly-rep .rep-box, .monthly-rep .rep-p2 { top: -44px;}
+  .monthly-rep .rep-box {position: relative; display: block; width: 100%;}
+  .monthly-rep .rep-box [class*="rep-p"], .monthly-rep .rep-p2 {left: 60%; width: 40%;}
+  .monthly-rep .rep-box [class*="rep-p"] {position: relative }
+  .monthly-rep .rep-p1 {font-size: 15px; font-weight: 300; margin-top: 6px;}
+  .monthly-rep .rep-p1 span {display: block; margin-bottom: 8px;}
+  .monthly-rep .rep-p2 {position: relative; margin-top: 5px; padding-top: 15px; text-align: right; font-size: 24px; border-top: 1px solid #ddd;}
+  .monthly-rep .rep-p3 {position: absolute; top: 142px; width: 40%; font-size: 15px; font-weight: 300;}
+  
+}
+
+/*테블릿 영역, col-md*/
+@media (min-width: 992px) {
+
+}
+
+/*pc 영역 col-lg*/
+@media (min-width: 1200px){
+  .contents .container {width: 1024px; padding-left: 0; padding-right: 0;}
+  .com-ft {position: relative; margin-top: 48px; text-align: center; font-size: 36px; font-family: "Noto Sans Kr";}
+  .com-mg {margin: 45px 0px 95px;}
+  .com-box {position: relative; margin: 0 auto; border: 1px solid #ddd; background: #fff; padding: 25px 25px; box-shadow: 1px 1px 4px 0px #dadada;}
+  .br3 {border-radius: 3px;}
+  .br4 {border-radius: 4px;}
+  .sm-inBlock {display: inline-block;}
+  
+  .lg-wrapper {width: 1024px;}
+  
+  .repayment {width: 270px; height: 410px; float: left;}
+  .repayment h2 {font-size: 22px;}
+  .repayment .rep-box {position: relative; display: block; width: 100%; margin-top: 40px;}
+  .repayment .rep-box [class*="rep-p"] {position: relative;}
+  .repayment .rep-p1 {font-size: 15px; font-weight: 300; margin-top: 10px;}
+  .repayment .rep-p1 span {display: block; margin-bottom: 8px;}
+  .repayment .rep-p2 {position: relative; margin-top: 20px; padding-top: 45px; text-align: right; font-size: 24px; border-top: 1px solid #ddd;}
+  .repayment .rep-p3 {font-size: 15px; font-weight: 300; margin-top: 30px;}
+
+  .schedule {overflow: hidden; padding-bottom: 0; width: 744px; height: 410px; float: left; margin-left: 10px;}
+  .schedule h2, .sch-p1 {display: inline-block;}
+  .schedule h2 {font-size: 22px; margin-bottom: 20px;}
+  .schedule h2 .sm-inBlock {font-size: 16px; color: #999; letter-spacing: 0;}
+  .sch-p1 {font-size: 15px; line-height: 1.5em; font-weight: 300; float: right;}
+  .sch-p1 .c-blue, .sch-p1 .c-gray {position: relative; top: -1px; font-size: 12px;}
+  .sch-p1 .c-blue {margin-right: 5px;}
+  .sch-p1 .c-gray {margin-left: 15px; margin-right: 5px;}
+  .schedule .canvas-wrap {position: relative; width: 690px; height: 345px; overflow: hidden; margin-top: 10px;}
+  .schedule .canvas-box {margin-top: -25px; width: 690px; height: 345px;}
+  .canvas-box {}
+
+  .monthly-rep {margin-top: 20px; width: 1024px; height: 430px;}
+  .monthly-rep h2 {font-size: 22px; letter-spacing: 0; display: inline-block;}
+
+  .month-box {text-align: center; margin-top: 25px;}
+  .month-box * {display: inline-block; font-weight: 300; font-size: 18px;}
+  .month {width: 120px;} 
+  .month-box a {width: 20px; text-align: center;}
+  .th {position: relative; border-bottom: 1px solid #888; margin-top: 15px;}
+  .th li {display: block; float: left; font-size: 15px; padding: 15px 0;}
+  .th li, .td li {font-weight: 300;}
+  .th li.nth-1 {width: 10%; text-align: center;}
+  .th li.nth-2 {width: 10%; text-align: center;}
+  .th li.nth-3 {width: 10%; text-align: left; padding-left: 5px;}
+  .th li.nth-4 {width: 10%;}
+  .th li.nth-5 {width: 10%;}
+  .th li.nth-6 {width: 10%;}
+  .th li.nth-7 {width: 10%;}
+  .th li.nth-8 {width: 10%;}
+  .th li.nth-9 {width: 10%;}
+  .th li.nth-10 {width: 10%; text-align: right; padding-right: 5px;}
+
+  .m-rep {margin-top: 35px; display: block; width: 20%;}
+  .m-rep-li {margin-top: 10px; font-size: 15px; font-weight: 300;}
+  .m-rep-li span.nth-2 {margin-left: 20px;}
+  .m-rep-li span.nth-3 {float: right;}
+
+  .monthly-rep .rep-box, .monthly-rep .rep-p2 {top: -44px;}
+  .monthly-rep .rep-box {position: relative; display: block; width: 100%;}
+  .monthly-rep .rep-box [class*="rep-p"], .monthly-rep .rep-p2 {width: 30%; left: 70%;}
+  .monthly-rep .rep-box [class*="rep-p"] {position: relative;}
+  .monthly-rep .rep-p1 {font-size: 15px; font-weight: 300; margin-top: 8px;}
+  .monthly-rep .rep-p1 span {display: block; margin-bottom: 8px;}
+  .monthly-rep .rep-p2 {position: relative; margin-top: 10px; padding-top: 15px; text-align: right; font-size: 24px;  border-top: 1px solid #ddd;}
+  .monthly-rep .rep-p3 {position: absolute; top: 142px; width: 40%; font-size: 15px; font-weight: 300;}
+}

@@ -8,21 +8,21 @@
   <title>누리펀딩</title>
   <link href="https://opensource.keycdn.com/fontawesome/4.6.3/font-awesome.min.css" rel="stylesheet">
   <!--<link rel="stylesheet" href="http://static.nurifunding.co.kr/css/common.css">
-  <link rel="stylesheet" href="http://static.nurifunding.co.kr/css/repayment/repayment.css">-->
-  <link rel="stylesheet" href="../../src/css/common.css">
-  <link rel="stylesheet" href="../../src/css/repayment/repayment.css"> 
+  <link rel="stylesheet" href="http://static.nurifunding.co.kr/css/mydeposit/mydeposit.css">-->
+   <link rel="stylesheet" href="../../src/css/common.css">
+  <link rel="stylesheet" href="../../src/css/mydeposit/mydeposit.css"> 
 
   <script type="text/javascript" src="http://static.nurifunding.co.kr/js/jquery-1.10.2.min.js"></script>
   <script type="text/javascript" src="http://static.nurifunding.co.kr/js/Chart.bundle.min.js"></script>
   <script type="text/javascript" src="http://static.nurifunding.co.kr/js/components_custom.js"></script>
   <script type="text/javascript" src="http://static.nurifunding.co.kr/js/common.js"></script>
-  <!--<script type="text/javascript" src="http://static.nurifunding.co.kr/js/repayment/repayment.js"></script>-->
-  <script type="text/javascript" src="../../src/js/repayment/repayment.js"></script>
+  <script type="text/javascript" src="http://static.nurifunding.co.kr/js/mydeposit/mydeposit.js"></script>
+  <!-- <script type="text/javascript" src="../../src/js/mydeposit/mydeposit.js"></script> -->
 
   <!--[if lt IE 9]>
     <link rel="stylesheet" href="http://static.nurifunding.co.kr/css/grid_ie9lt.min.css">
     <link rel="stylesheet" href="http://static.nurifunding.co.kr/css/common_ie9lt.css">
-    <link rel="stylesheet" href="http://static.nurifunding.co.kr/css/repayment/repayment_ie9lt.css">
+    <link rel="stylesheet" href="http://static.nurifunding.co.kr/css/mydeposit/mydeposit_ie9lt.css">
 
     <script type="text/javascript" src="http://static.nurifunding.co.kr/js/ie9_lt.js"></script>
     <script type="text/javascript" src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -84,48 +84,87 @@
     </section>
     
     
-    <!--01.마이페이지-->
-    <section class="mypage com-mg">
+    <!--01.나의 계좌로 출금-->
+    <section class="contents com-mg">
       <div class="container">
        
-        <div class="pw-box com-box row br3">
-          <em class="align-center center-block"><span class="fc-blue">회원정보</span>가 <span class="fc-blue">안전</span>하게 보호되고 있습니다</em>
-          <p class="nth-1">회원님의 정보를 수정하려면 비밀번호를 입력해 주세요</p>
-          <p class="nth-2 nr-box">
-            <input class="nr-text br4" type="password" placeholder="비밀번호"><span class="nr-ph">비밀번호</span><a class="ok-btn align-center br4" href="">확인</a>
-          </p>
-          <p class="nth-3">비밀번호를 잊으셨나요? <a href="" class="txt-btn td-under">비밀번호찾기</a></p>
+        <div class="row lg-wrapper">
+          <div class="deposit com-box row br3">
+            <h2 class="center-block">예치금</h2>
+            <p class="dep-p1">
+              <span>누리펀딩 예치금 계좌</span>
+              신한은행 12312300123123
+            </p>
+            <p class="dep-p1 sm-ml">
+              <span>예금주</span>
+              누리펀딩 임준수
+            </p>
+            <p class="dep-p2 fc-blue">0 원</p>
+          </div>
+
+          <div class="withdraw com-box row br3">
+            <h2 class="center-block">나의 계좌로 출금</h2>
+            <p class="with-p1">출금 신청을 하시면 다음 날(영업일 기준) 오전에 고객님 계좌로 입금됩니다.(1일 1회 신청 가능)</p>
+            <p class="with-p5">나의 계좌<span>국민은행 12312300123123</span><img class="user-icon" src="http://img.nurifunding.co.kr/myp_icon.png" alt="사용자"></p>
+            <p class="with-p2">
+              <button class="br4" type="button">+ 10만원</button>
+              <button class="br4" type="button">+ 100만원</button>
+              <button class="br4" type="button">+ 전체</button>
+            </p>
+            <p class="with-p3 nr-box">
+              <input type="text" class="nr-text br4" placeholder="0"> 원
+            </p>
+            <p class="with-p4"><a href="" class="btn align-center br4">출금하기</a></p>
+          </div>
         </div>
         
-        <div class="bank-box com-box row br3">
-          <em class="align-center center-block">나의 예치금 입금 계좌</em>
-          <div class="dropdown bank">
-            <button type="button" class="btn">은행을 선택하세요<span class="pull-right">▼</span></button>
-            <ul class="dropdown-menu">
-              <li><a href="javascript:void(0)">기업은행</a></li>
-              <li><a href="javascript:void(0)">신한은행</a></li>
-              <li><a href="javascript:void(0)">KEB하나은행</a></li>
-              <li><a href="javascript:void(0)">SC은행</a></li>
-              <li><a href="javascript:void(0)">한국씨티은행</a></li>
-              <li><a href="javascript:void(0)">대구은행</a></li>
-              <li><a href="javascript:void(0)">부산은행</a></li>
-              <li><a href="javascript:void(0)">광주은행</a></li>
-              <li><a href="javascript:void(0)">경남은행</a></li>
-              <li><a href="javascript:void(0)">우체국</a></li>
+        <div class="history com-box row br3">
+          <h2>거래내역</h2>
+          <div class="tab-box clearfix">
+            <ul class="tab clearfix" id="tab">
+              <li class="nth-1 on"><a href="">전체</a></li>
+              <li class="nth-2"><a href="">지급내역</a></li>
             </ul>
           </div>
-          <p class="bb-p0"><a href="" class="bg-blue fc-white center-block align-center btn br4">계좌 만들기</a></p>
-          <p class="bb-p1">예치금 계좌는 한번 발급 후 변경이 불가능 하니, 입금 은행 선택시 유의하여 주시기 바랍니다.</p>
-          <p class="bb-p1">위 목록에 없는 은행의 경우, 발급이 불가능 합니다.</p>
-        </div>
-        
-        <div class="binfo-box com-box row br3">
-          <em class="align-center center-block">계정정보</em>
-          <p class="bib-p1 clearfix"><span class="sl">이메일</span><span class="sr">nurifunding@naver.com</span></p>
-          <p class="bib-p1 clearfix"><span class="sl">기존 비밀번호</span><span class="sr">**********</span></p>
-          <p class="bib-p2"><a href="" class="btn fc-white bg-blue center-block align-center br4">계정 정보 변경하기</a></p>
-        </div>
-        
+          
+          <div class="tab-cont-box" id="tab-cont-box">
+             
+            <section class="all on">
+              <ul class="th clearfix">
+                <li class="nth-1 m">날짜</li>
+                <li class="nth-2">구분</li>
+                <li class="nth-3 m">거래내역</li>
+                <li class="nth-4 m">입출금액</li>
+                <li class="nth-5">거래 후 잔액</li>
+              </ul>
+              <ul class="td clearfix">
+                <li class="nth-1 m">17.02.22</li>
+                <li class="nth-2">투자</li>
+                <li class="nth-3 m">채권번호 : 2498호 대전상가 건물</li>
+                <li class="nth-4 m">-100,000원</li>
+                <li class="nth-5"><span class="fc-blue">100,000</span> 원</li>
+              </ul>
+            </section>
+            <section class="payback">
+              <ul class="th clearfix">
+                <li class="nth-1 m">날짜</li>
+                <li class="nth-2">구분</li>
+                <li class="nth-3 m">거래내역</li>
+                <li class="nth-4 m">지급액</li>
+                <li class="nth-5">누적지급액</li>
+              </ul>
+              <ul class="td clearfix">
+                <li class="nth-1 m">17.02.22</li>
+                <li class="nth-2">투자</li>
+                <li class="nth-3 m">채권번호 : 2498호 대전상가 건물</li>
+                <li class="nth-4 m">100,000원</li>
+                <li class="nth-5"><span class="fc-blue">100,000</span> 원</li>
+              </ul>
+            </section>
+            
+            
+          </div>
+        </div>        
       </div>
     </section>
     
