@@ -136,22 +136,23 @@
   .mode h2 span.hidden-xs {margin-left: 15px; font-size: 14px; font-weight: 300;}
   .modify-tab {font-size: 14px; font-weight: 300; letter-spacing: 0;}
   .modify-tab .on-btn {display: inline-block; position: relative; top: -1px;margin-left: 10px; padding: 3px 15px 4px; text-align: center; background: #aaa; border: 1px solid #888; font-size: 12px;}
-  .modify-box {font-size: 14px; display: none;}
-  .mode-prc.dropdown, .mode-range.dropdown {display: inline-block; height: 32px;}
+  .modify-box {position: relative; margin-top: -8px; font-size: 14px; display: none;}
+  .mode-prc.dropdown, .mode-range.dropdown {display: inline-block; height: 32px; position: relative; top: -1px;}
   .mode-prc.dropdown {width: 58px;}
   .mode-range.dropdown {width: 92px; margin-left: 3px;}
   .mode-prc.dropdown .btn, .mode-range.dropdown .btn {display: inline-block; padding: 0 5px 0 3px; width: 100%; height: 100%; border-radius: 0;}
   .mode-prc.dropdown .dropdown-menu, .mode-range.dropdown .dropdown-menu {border-radius: 0; width: 100%;}
   .mode-prc.dropdown .dropdown-menu li a, .mode-range.dropdown .dropdown-menu li a {border-radius: 0; width: 100%; font-size: 14px; padding: 5px;}
-  .mod-p1 {margin-top: 10px;}
+  .mod-p1, .mod-p2 {display: inline-block;}
+  .mod-p1 {margin-top: 10px; margin-left: 20px;}
   .mod-p1 .nr-check {width: 16px; height: 16px;}
   .mod-p1 .nr-check:checked {width: 16px; height: 16px; background: url(http://img.nurifunding.co.kr/check-icon.png) no-repeat 2px 2px; background-size: 10px; background-color: #fff;}
   .mod-p1 .nr-check + span {vertical-align: middle; margin-left: 5px; font-size: 14px; font-weight: 300;}
-  .mod-p2 {margin-top: 20px; text-align: center;}
-  .mod-p2 [class*="-btn"] {display: inline-block; width: 49%; padding: 10px;}
+  .mod-p2 {position: relative; top: 1px; width: 170px; margin-left: 15px;}
+  .mod-p2 [class*="-btn"] {display: inline-block; width: 80px; padding: 8px 10px; text-align: center;}
   .mod-p2 .cancle-btn {border: 1px solid #ccc;}
-  .mod-p2 .save-btn {margin-left: 2%; border: 1px solid #398fe1;}
-
+  .mod-p2 .save-btn {margin-left: 5px; border: 1px solid #398fe1;}
+  
   .myi-dep {}
   .myi-dep h2 {width: 50%;}
   .myi-dep h2 .user-btn {position: relative; float: right; right: 15px;}
@@ -162,7 +163,7 @@
   .mdb-p1, .mdb-p2 {letter-spacing: 0;}
   .mdb-p1 {font-size: 14px; font-weight: 300; color: #666;}
   .mdb-p2 {font-size: 14px; font-weight: 300;margin-top: 10px;}
-  .md-with {position: relative; margin-top: -30px; padding-bottom: 10px; border-left: 1px solid #ddd; width: 50%; padding-left: 20px; height: 223px;}
+  .md-with {position: relative; margin-top: -26px; padding-bottom: 10px; border-left: 1px solid #ddd; width: 50%; padding-left: 20px; height: 223px;}
   .md-with h3 {font-size: 20px;}
   .md-with h3 a {font-size: 14px; float: right; font-weight: 300;}
   .mdw-p0 {text-align: center; font-size: 14px; font-weight: 300; margin-top: 45px; line-height: 1.5em; }
@@ -172,7 +173,7 @@
   .md-bank2 {width: 50%;}
   .md-bank2 .mdb-p1 {margin-top: 20px;}
 
-  .md-wrapper {width: 730px;}
+  .md-wrapper {width: 730px; margin: 0 auto;}
   
   .revenue, .total-payment, .total-invest {float: left; width: 237px; height: 241px;}
   .total-payment, .total-invest {margin-left: 9px;}
@@ -191,7 +192,7 @@
   .ti-p1 {margin-top: 120px; text-align: right; font-size: 20px;}
   .ti-p2 {margin-top: 15px; font-size: 14px; font-weight: 300;}
 
-  .portfolio {height: 350px;}
+  .portfolio {height: 340px;}
   .portfolio h3 {margin-bottom: 25px;}
   .pf-tab-box {position: relative; text-align: center; display: none;}
   .pf-tab-box .btn {display: inline-block; width: 32%; padding: 7px 0 8px; font-size: 14px; border:1px solid #ccc; font-weight: 300;}
@@ -206,7 +207,7 @@
   .bond-pdt {}
   .bond-pdt h3 {}
   .bond-pdt h3 a {font-size: 14px; float: right; font-weight: 300;}
-  .pdt-cat-box {position: relative;  margin: 0 auto; margin-top: 10px;}
+  .pdt-cat-box {position: relative; width: 730px; margin: 0 auto; margin-top: 10px;}
   .pdt-cate {}
   .pdt-cate li {float: left; width: 15%; padding: 12px 12px; border:1px solid #ccc; text-align: center; margin-top: 10px; margin-left: 2%;}
   .pdt-cate li:first-child {margin-left: 0;}
@@ -226,15 +227,15 @@
   .mp-d1 .mp-label {font-size: 17px; margin-top: 20px;} 
   .mp-wid-box {position: relative; margin-top: 20px; height: 8px; width: 100%; background: #DCDCDC;}
   .mp-wid {display: block; width: 70%; height: 100%;}
-  .mp-d2, .mp-d3, .mp-d4 {display: inline-block; text-align: left; font-size: 15px; margin-top: 40px;}
-  .mp-d1 {width: 47%;}
-  .mp-d2 {width: 15%; margin-left: 3%;}
+  .mp-d2, .mp-d3, .mp-d4 {display: inline-block; text-align: left; font-size: 15px; margin-top: 44px;}
+  .mp-d1 {width: 45%;}
+  .mp-d2 {width: 15%; margin-left: 5%;}
   .mp-d3 {width: 15%;}
   .mp-d4 {width: 20%;}
   .mp-li.nth1 .mp-prc {margin-top: 5px;}
 
   .mp-li.nth2 {border-left: 1px solid #ddd; padding-left: 30px;}
-  .mp-li.nth2 .mp-d {/*margin-top: 15px;*/ line-height: 1.8em;}
+  .mp-li.nth2 .mp-d {/*margin-top: 15px;*/ line-height: 1.5em;}
   .mp-li.nth2 .mp-d p {font-size: 14px; font-weight: 300;}
   
   
@@ -251,12 +252,119 @@
   .contents .container {width: 1024px; padding-left: 0; padding-right: 0;}
   .com-ft {position: relative; margin-top: 48px; text-align: center; font-size: 36px; font-family: "Noto Sans Kr";}
   .com-mg {margin: 45px 0px 95px;}
-  .com-box {position: relative; margin: 0 auto; border: 1px solid #ddd; background: #fff; padding: 25px 25px; box-shadow: 1px 1px 4px 0px #dadada;}
+  .com-box {position: relative; margin: 0 auto; margin-top: 20px; border: 1px solid #ddd; background: #fff; padding: 25px 25px; box-shadow: 1px 1px 4px 0px #dadada;}
+  .com-box h2, .com-box h3 {font-size: 20px;}
   .br3 {border-radius: 3px;}
   .br4 {border-radius: 4px;}
   .sm-inBlock {display: inline-block;}
   
-  .lg-wrapper {width: 1024px;}
+  /*.lg-wrapper {width: 1024px;}*/
+  
+  .mode {}
+  .mode h2 {margin-bottom: 25px; padding-bottom: 15px; border-bottom: 1px solid #ddd;}
+  .mode h2 .mode-icon {position: relative; width: 26px; top: 4px; margin-right: 5px;}
+  .mode h2 span.hidden-xs {margin-left: 15px; font-size: 14px; font-weight: 300;}
+  .modify-tab {font-size: 14px; font-weight: 300; letter-spacing: 0;}
+  .modify-tab .on-btn {display: inline-block; position: relative; top: -1px;margin-left: 10px; padding: 3px 15px 4px; text-align: center; background: #aaa; border: 1px solid #888; font-size: 12px;}
+  .modify-box {position: relative; margin-top: -8px; font-size: 14px; display: none;}
+  .mode-prc.dropdown, .mode-range.dropdown {display: inline-block; height: 32px; position: relative; top: -1px;}
+  .mode-prc.dropdown {width: 58px;}
+  .mode-range.dropdown {width: 92px; margin-left: 3px;}
+  .mode-prc.dropdown .btn, .mode-range.dropdown .btn {display: inline-block; padding: 0 5px 0 3px; width: 100%; height: 100%; border-radius: 0;}
+  .mode-prc.dropdown .dropdown-menu, .mode-range.dropdown .dropdown-menu {border-radius: 0; width: 100%;}
+  .mode-prc.dropdown .dropdown-menu li a, .mode-range.dropdown .dropdown-menu li a {border-radius: 0; width: 100%; font-size: 14px; padding: 5px;}
+  .mod-p1, .mod-p2 {display: inline-block;}
+  .mod-p1 {margin-top: 10px; margin-left: 30px;}
+  .mod-p1 .nr-check {width: 16px; height: 16px;}
+  .mod-p1 .nr-check:checked {width: 16px; height: 16px; background: url(http://img.nurifunding.co.kr/check-icon.png) no-repeat 2px 2px; background-size: 10px; background-color: #fff;}
+  .mod-p1 .nr-check + span {vertical-align: middle; margin-left: 5px; font-size: 14px; font-weight: 300;}
+  .mod-p2 {width: 210px; margin-left: 15px;}
+  .mod-p2 [class*="-btn"] {display: inline-block; width: 100px; padding: 8px 10px; text-align: center;}
+  .mod-p2 .cancle-btn {border: 1px solid #ccc;}
+  .mod-p2 .save-btn {margin-left: 6px; border: 1px solid #398fe1;}
+
+  .myi-dep {width: 270px; height: 594px; float: left;}
+  .myi-dep h2 {}
+  .myi-dep h2 .user-btn {position: relative; float: right;}
+  .myi-dep h2 .user-btn img {width: 18px;}
+  .md-bank {margin-top: 25px;}
+  .mdb-p1, .mdb-p2 {letter-spacing: 0;}
+  .mdb-p1 {font-size: 14px; font-weight: 300; color: #666;}
+  .mdb-p2 {font-size: 14px; font-weight: 300;margin-top: 10px;}
+  .md-with {margin-top: 55px; padding-top: 20px; padding-bottom: 10px; position: relative; border-top: 1px solid #ddd;}
+  .md-with h3 {font-size: 20px;}
+  .md-with h3 a {font-size: 15px; float: right; font-weight: 300;}
+  .mdw-p0 {text-align: center; font-size: 14px; font-weight: 300; margin-top: 45px; line-height: 1.5em; }
+  .mdw-p1 {text-align: right; margin-top: 90px; font-size: 26px; }
+  .mdw-p2 {margin-top: 30px; text-align: center;}
+  .mdw-p2 .btn {display: block; width: 100%; padding: 20px 0; font-size: 15px; letter-spacing: 0;}
+  .md-bank2 {}
+  .md-bank2 .mdb-p1 {margin-top: 30px;}
+
+  .md-wrapper {width: 740px; height: 241px; float: left; margin-left: 14px;}
+
+  .revenue, .total-payment, .total-invest {float: left; width: 237px; height: 241px;}
+  .total-payment, .total-invest {margin-left: 14px;}
+  .revenue {}
+  .revenue h3 {}
+  .revenue h3 span {float: right; position: relative; top: 140px;}
+
+  .total-payment {}
+  .total-payment h3 {margin-bottom: 25px;}
+  .tp-p1 {margin-top: 6px; font-weight: 300; font-size: 14px;}
+  .tp-p2 {margin-top: 20px; padding-top: 20px; border-top: 1px solid #ddd; text-align: right; font-size: 20px;}
+  .tp-p3 {margin-top: 15px; font-size: 14px; font-weight: 300;}
+
+  .total-invest {}
+  .total-invest h3 {}
+  .ti-p1 {margin-top: 120px; text-align: right; font-size: 20px;}
+  .ti-p2 {margin-top: 15px; font-size: 14px; font-weight: 300;}
+
+  .portfolio {width: 740px; height: 340px; float: left; margin-left: 14px; margin-top: 33px;}
+  .portfolio h3 {margin-bottom: 25px;}
+  .pf-tab-box {position: relative; text-align: center; display: none;}
+  .pf-tab-box .btn {display: inline-block; width: 32%; padding: 7px 0 8px; font-size: 14px; border:1px solid #ccc; font-weight: 300;}
+  .pf-tab-box .btn.on {color: #398fe1; background: #f7fbff; border-color: #398fe1; font-weight: 400;}
+  .portfolio .chart-box {position: relative; margin-top: 30px; text-align: center;}
+  .chart-box .in-txt {position: relative; display: block; top: 86px; font-size: 15px; font-weight: 300;}
+  .chart-box li {display: inline-block;}
+  .chart-area-empty {display: none; width: 0px; height: 0px;}
+  #canvas-holder-pdt {width: 200px; height: 200px; }
+  #canvas-holder-rev, #canvas-holder-grade {width: 210px; height: 210px; margin-left: 25px;}
+
+  .bond-pdt {}
+  .bond-pdt h3 {}
+  .bond-pdt h3 a {font-size: 15px; float: right; font-weight: 300;}
+  .pdt-cat-box {position: relative; margin: 0 auto; margin-top: 10px;}
+  .pdt-cate {}
+  .pdt-cate li {float: left; width: 15%; padding: 12px 12px; border:1px solid #ccc; text-align: center; margin-top: 10px; margin-left: 2%;}
+  .pdt-cate li:first-child {margin-left: 0;}
+  .pdt-cate li.on {color: #398fe1; border-color: #398fe1; background: #fff;}
+
+  .pdt-0 {position: relative;  margin: 0 auto; margin-top: 20px; font-size: 15px; font-weight: 300;}
+
+  .mypdt-num {font-weight: 400;}
+  .mypdt-num span.nth-2 {margin-left: 10px;}
+
+  .mypdt {}
+  .mp-li.nth1, .mp-li.nth2 {float: left; }
+  .mp-li.nth1 {width: 65%;}
+  .mp-li.nth2 {width: 35%;}
+  .mp-d1, .mp-d2, .mp-d3, .mp-d4 {float: left;}
+  .mp-d1 .mp-number {font-size: 15px; font-weight: 300;}
+  .mp-d1 .mp-label {font-size: 18px; margin-top: 20px;} 
+  .mp-wid-box {position: relative; margin-top: 20px; height: 8px; width: 100%; background: #DCDCDC;}
+  .mp-wid {display: block; width: 70%; height: 100%;}
+  .mp-d2, .mp-d3, .mp-d4 {display: inline-block; text-align: left; font-size: 16px; margin-top: 44px;}
+  .mp-d1 {width: 45%;}
+  .mp-d2 {width: 15%; margin-left: 5%;}
+  .mp-d3 {width: 15%;}
+  .mp-d4 {width: 20%;}
+  .mp-li.nth1 .mp-prc {margin-top: 5px;}
+
+  .mp-li.nth2 {border-left: 1px solid #ddd; padding-left: 30px;}
+  .mp-li.nth2 .mp-d {line-height: 1.5em;}
+  .mp-li.nth2 .mp-d p {font-size: 14px; font-weight: 300;}
   
   
 }
