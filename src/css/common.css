@@ -1,3 +1,4 @@
+@charset "utf-8";
 /* css 초기화 */
 @import url(http://static.nurifunding.co.kr/css/reset.css);
 @import url(http://static.nurifunding.co.kr/css/grid_1024.css);
@@ -116,7 +117,7 @@ hr {border: none; border-top: 1px solid #ddd;}
 @media (min-width: 768px){
   .header, .sub-nav {z-index: 11;}
   .header {background: #fff; border-bottom: 1px solid #ddd; height: 90px;}
-  .header-box {position: relative; top: 34px;}
+  .header-box {position: relative; top: 35px;}
   .header-box > div {position: relative; float: left;}
   .navbar-header {top: -10px;}
   .navbar-brand {position: relative; display: inline-block; width: 216px;}
