@@ -126,7 +126,7 @@ hr {border: none; border-top: 1px solid #ddd;}
   .main-nav > li, .main-nav > li > a {padding-bottom: 20px;}
   .main-nav > li {position: relative; float: left; font-size: 18px; margin-left: 20px;}
   .main-nav > li:first-child {margin-left: 0;}
-  .main-nav > li:hover .sub-nav {opacity: 1; filter: alpha(opacity=100); visibility: visible; margin-top: 10px; transition: all 1s;}
+  .main-nav > li:hover .sub-nav {opacity: 1; filter: alpha(opacity=100); visibility: visible; margin-top: 10px; transition: all 0.8s; -webkit-transition: all 0.8s; -moz-transition: all 0.8s; -o-transition: all 0.8s;}
   
   .sub-nav {opacity: 0; filter: alpha(opacity=100); visibility: hidden; position: absolute; width: 120px; left: 50%; margin-top: 0px; margin-left: -60px; border: 1px solid #eaeaea; background: #fff; padding-bottom: 15px;}
   .sub-nav a {width: 100%; display: block; text-align: center; margin-top: 15px; font-size: 15px; color: #545454;}
