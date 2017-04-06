@@ -22,7 +22,7 @@
   <!--[if lt IE 9]>
     <link rel="stylesheet" href="http://static.nurifunding.co.kr/css/grid_ie9lt.min.css">
     <link rel="stylesheet" href="http://static.nurifunding.co.kr/css/common_ie9lt.css">
-    <link rel="stylesheet" href="http://static.nurifunding.co.kr/css/mydeposit/mydeposit_ie9lt.css">
+<link rel="stylesheet" href="http://static.nurifunding.co.kr/css/common_ie9lt.css">
 
     <script type="text/javascript" src="http://static.nurifunding.co.kr/js/ie9_lt.js"></script>
     <script type="text/javascript" src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -91,15 +91,27 @@
         <div class="row lg-wrapper">
           <div class="deposit com-box row br3">
             <h2 class="center-block">예치금</h2>
-            <p class="dep-p1">
-              <span>누리펀딩 예치금 계좌</span>
-              신한은행 12312300123123
-            </p>
-            <p class="dep-p1 sm-ml">
-              <span>예금주</span>
-              누리펀딩 임준수
-            </p>
-            <p class="dep-p2 fc-blue">0 원</p>
+            <!--계좌없을 경우-->
+            <div class="md-with">
+              <p class="mdw-p0">
+                본인명의 은행계좌가 있다면<br/>
+                바로 누리펀딩전용 예치금 가상계좌를
+                <span class="xs-block">발급받으실 수 있습니다.</span>
+              </p>
+              <p class="mdw-p2"><a href="" class="btn fc-white bg-blue br4">예치금 게좌 발급받기 &gt;</a></p>            
+            </div>
+            <!--계좌있을 경우-->
+            <!--<div class="dep-p1-box">
+              <p class="dep-p1">
+                <span>누리펀딩 예치금 계좌</span>
+                신한은행 12312300123123
+              </p>
+              <p class="dep-p1 sm-ml">
+                <span>예금주</span>
+                누리펀딩 임준수
+              </p>
+              <p class="dep-p2 fc-blue">0 원</p>
+            </div>-->
           </div>
 
           <div class="withdraw com-box row br3">
