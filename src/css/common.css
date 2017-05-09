@@ -12,6 +12,7 @@ a {text-decoration:none; color: #434343;}
 
 /*폰트 색상*/
 .bg-blue {background-color: #398fe1;}
+.bg-darkBlue {background-color: #09345f;}
 .c-gray, .fc-gray {color: #ccc;}
 .c-blue, .fc-blue {color: #398fe1;}
 .c-white, .fc-white {color: #fff;}
@@ -35,6 +36,7 @@ canvas {
 
 .nr-text, .nr-radio, .nr-button, .nr-reset, .nr-select, .nr-check { appearance: none;	-webkit-appearance: none;  -moz-appearance: none;  -ms-appearance: none; background: #fff;}
 .nr-text + label, .nr-radio + label, .nr-check + label {vertical-align: middle; cursor: pointer;}
+.nr-text {border: 1px solid #ddd; outline: none;}
 .nr-radio, .nr-check {border: 1px solid #ddd; outline: none; cursor: pointer;}
 .nr-radio:checked, .nr-check:checked {background-color: #fff;}
 
