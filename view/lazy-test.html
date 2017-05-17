@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=0">
+  <title>누리펀딩</title>
+  <link href="https://opensource.keycdn.com/fontawesome/4.6.3/font-awesome.min.css" rel="stylesheet">
+  <!--css 추가-->
+  <link rel="stylesheet" href="http://static.nurifunding.co.kr/css/animate.css">
+  
+
+
+  <script type="text/javascript" src="http://static.nurifunding.co.kr/js/jquery-1.10.2.min.js"></script>
+  <!--js 추가-->
+  <script type="text/javascript" src="http://static.nurifunding.co.kr/js/jquery.lazyload.min.js"></script>
+  <script type="text/javascript" src="http://static.nurifunding.co.kr/js/jquery.animateNumber.min.js"></script>
+  <script type="text/javascript" src="http://static.nurifunding.co.kr/js/waypoints.min.js"></script>
+  <script type="text/javascript" src="http://static.nurifunding.co.kr/js/jquery.easing.min.js"></script>
+  
+  <script type="text/javascript" src="http://static.nurifunding.co.kr/js/components_custom.js"></script>
+  <script type="text/javascript" src="http://static.nurifunding.co.kr/js/common.js"></script>
+  <!--<script type="text/javascript" src="http://static.nurifunding.co.kr/js/index.js"></script>-->
+  <script type="text/javascript" src="../src/js/index.js"></script>
+  
+    <!-- <link rel="stylesheet" href="../src/css/common_ie9lt.css"> --> 
+  <!--[if lt IE 9]>
+    <link rel="stylesheet" href="http://static.nurifunding.co.kr/css/grid_ie9lt.min.css">
+    <link rel="stylesheet" href="http://static.nurifunding.co.kr/css/common_ie9lt.css">
+    <link rel="stylesheet" href="http://static.nurifunding.co.kr/css/index_ie9lt.css">
+   
+    <script type="text/javascript" src="http://static.nurifunding.co.kr/js/ie9_lt.js"></script>
+    <script type="text/javascript" src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+  <div style="width: 100%; height: 1048px;"></div>
+  <img class="lazy" width="400" height="200" src="http://img.nurifunding.co.kr/lazy_gray.png" data-original="http://img.nurifunding.co.kr/pro_sample_1.jpg" alt="해운대 아파트">
+  <img class="lazy" width="400" height="200" src="http://img.nurifunding.co.kr/lazy_gray.png" data-original="http://img.nurifunding.co.kr/pro_sample_1.jpg" alt="해운대 아파트">
+  <img class="lazy" width="400" height="200" src="http://img.nurifunding.co.kr/lazy_gray.png" data-original="http://img.nurifunding.co.kr/pro_sample_1.jpg" alt="해운대 아파트">
+  <script>
+    //이미지로드 지연 - 로딩속도 단축
+    $("img.lazy").lazyload({
+      threshold : 300,   
+      effect : "fadeIn"  
+    });
+  </script>
+  
+</body>
+
+</html>

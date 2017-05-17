@@ -1,4 +1,7 @@
 $(function() {
+  //애니메이션 함수 호출 중단
+  //wayP("off");
+  
   /*투자상품 간격*/
   $(".ip-outer").css("padding", "10px");
   

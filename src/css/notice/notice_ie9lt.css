@@ -25,6 +25,8 @@
 .wbtn-wrap {margin-top: 15px; float: right;}
 .write-btn {display: inline-block; width: 100px; text-align: center; padding: 12px 0; font-size: 16px;}
 
+.faq-list {min-height: 640px;}
+
 .faq-post {}
 .faq-post .com-box {}
 .fp-wrap {padding: 25px 40px;}
@@ -42,13 +44,14 @@
 .udt-icon, .dlt-icon {position: relative; top: 2px; display: inline-block; width: 17px; height: 15px; background: url(../../img/post_icon.png) no-repeat ; margin-right: 2px;}
 .dlt-icon {background-position: -50px 0px;}
 
-.faq-write {}
+.faq-write {min-height: 664px;}
 .fw-wrap {padding: 30px 70px 40px;}
 .fwt-label, .fwi-label {font-size: 16px; line-height: 1.8em; margin-bottom: 10px;}
 .fwt-label {}
 .fwi-name {position: relative; top: 13px;}
-.nr-text {width: 100%; height: 100%; text-indent: 15px; letter-spacing: 0; background-color: transparent; line-height: 3em; height: 37px; font-size: 14px;}
-.nr-ph {top: 49px;}
+.nr-text {width: 100%; height: 100%; text-indent: 15px; letter-spacing: 0; background-color: transparent; line-height: 1.5em; height: 37px; 
+  font-size: 15px;}
+.nr-ph {top: 49px; font-size: 15px;}
 .fw-info {}
 .fw-info > li {float: left;}
 .fw-info > li.nth-1 {width: 25%;}
@@ -80,10 +83,9 @@
   width: 45%; text-align: left; left: 15px;
   line-height: 2.7em; vertical-align: middle; background-color: #fff; border: none; border-bottom: 1px solid #ddd;
   text-overflow: ellipsis;
-  -webkit-appearance: none; /* 네이티브 외형 감추기 */ 
-  -moz-appearance: none; appearance: none; 
+  -webkit-appearance: none; -moz-appearance: none; appearance: none;
 }
-.fw-contents textarea {width: 100%; resize: none; border-color: #ddd; padding: 5px; height: 300px;}
+.fw-contents textarea {width: 100%; resize: none; border-color: #ddd; padding: 5px; height: 300px; font-size: 15px;}
 .fw-footer {margin-top: 40px; text-align: center;}
 .cancle-btn, .create-btn {font-size: 16px; padding: 6px 40px; border: 1px solid #ddd;}
 .create-btn {margin-left: 5px; border-color: #398fe1;}
@@ -93,3 +95,4 @@
 .faq-th.nth-2, .faq-td.nth-2 {width:12%;}
 
 .fw-wrap {padding: 30px 90px 40px;}
+.faq-post {min-height: 475px;}

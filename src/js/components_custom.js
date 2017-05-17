@@ -1,9 +1,9 @@
 $(function() {
-  /* 드롭다운 */
+  // 드롭다운
   $(".dropdown .btn").on("click", function() {
     $(this).next().slideToggle("fast");
   });
-  /*텝박스 기능*/
+  //텝박스 기능
   $(".tab-box li").on("click", function() {
     var thIdx = $(this).index();
     $(this).closest("ul").find("li").removeClass("on");

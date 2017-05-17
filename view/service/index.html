@@ -8,18 +8,19 @@
   <title>누리펀딩</title>
   <link href="https://opensource.keycdn.com/fontawesome/4.6.3/font-awesome.min.css" rel="stylesheet">
   <link rel="stylesheet" href="http://static.nurifunding.co.kr/css/common.css">
-  <link rel="stylesheet" href="http://static.nurifunding.co.kr/css/service/service.css">
-  <!-- <link rel="stylesheet" href="../../src/css/common.css">
-  <link rel="stylesheet" href="../../src/css/service/service.css">  -->
+  <link rel="stylesheet" href="http://static.nurifunding.co.kr/css/service/service2.css">
+  <!--<link rel="stylesheet" href="../../src/css/common.css">
+  <link rel="stylesheet" href="../../src/css/service/service2.css">  -->
 
   <script type="text/javascript" src="http://static.nurifunding.co.kr/js/jquery-1.10.2.min.js"></script>
   <script type="text/javascript" src="http://static.nurifunding.co.kr/js/components_custom.js"></script>
   <script type="text/javascript" src="http://static.nurifunding.co.kr/js/common.js"></script>
 
+    <!--<link rel="stylesheet" href="../../src/css/service/service2_ie9lt.css">-->
   <!--[if lt IE 9]>
     <link rel="stylesheet" href="http://static.nurifunding.co.kr/css/grid_ie9lt.min.css">
     <link rel="stylesheet" href="http://static.nurifunding.co.kr/css/common_ie9lt.css">
-    <link rel="stylesheet" href="http://static.nurifunding.co.kr/css/service/service_ie9lt.css">
+    <link rel="stylesheet" href="http://static.nurifunding.co.kr/css/service/service2_ie9lt.css">
 
     <script type="text/javascript" src="http://static.nurifunding.co.kr/js/ie9_lt.js"></script>
     <script type="text/javascript" src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -38,22 +39,29 @@
             <span class="icon-bar b2"></span>
             <span class="icon-bar b3"></span>
           </button>
-          <h2><a href="./index.html" class="navbar-brand"><img src="http://img.nurifunding.co.kr//logo.png" alt="누리펀딩로고"></a></h2>
+          <h2><a href="../index.html" class="navbar-brand"><img src="http://img.nurifunding.co.kr//logo.png" alt="누리펀딩로고"></a></h2>
           <a href="#" class="my-tab show-xs"><img src="http://img.nurifunding.co.kr//myp_icon.png" alt="마이페이지"></a>
         </div>
         <div class="navbar-collapse pull-right hidden-xs">
           <ul class="main-nav clearfix">
-            <li><a href="">대출신청</a></li>
+            <li><a href="../loan/loan_00.html">대출신청</a></li>
             <li class="hidden-xs hidden-sm hidden-margin"></li>
-            <li><a href="">투자하기</a></li>
+            <li><a href="../invest/invest_01.html">투자하기</a></li>
             <li class="hidden-xs hidden-sm hidden-margin"></li>
-            <li><a href="">회사소개</a></li>
+            <li><a href="../service/index.html">회사소개</a>
+              <nav class="sub-nav">
+                <ul>
+                  <li><a href="../service/index.html">회사소개</a></li>
+                  <li><a href="../notice/index.html">공지사항</a></li>
+                </ul>
+              </nav>
+            </li>
             <li class="hidden-xs hidden-sm hidden-margin"></li>
-            <li><a href="">이용안내</a></li>
+            <li><a href="../faq/index.html">이용안내</a></li>
             <li class="hidden-xs hidden-sm hidden-margin"></li>
-            <li><a class="c-blue" href="">회원가입</a></li>
+            <li><a class="c-blue" href="../join/join_01.html">회원가입</a></li>
             <li class="hidden-xs hidden-sm hidden-margin"></li>
-            <li><a class="c-blue" href="">로그인</a></li>
+            <li><a class="c-blue" href="../login/index.html">로그인</a></li>
           </ul>
         </div>
       </div>
@@ -83,7 +91,8 @@
     <section class="page-sect">
       <div class="container">
         <div class="ps-wrap com-box">
-          <h2 class="ps-h2">서비스 소개</h2>
+          <!--변경내용 제목변경-->
+          <h2 class="ps-h2">회사소개</h2>
         </div>
       </div>
     </section>
@@ -91,45 +100,79 @@
     <section class="info-sect">
       <div class="container">
        
+        <!--변경내용 시작 전체변경-->
         <div class="is-wrap com-box low">
           <!--(div.is-box.nth-$.col-xs-12>h3.is-h3+ul.is-ul>li.is-li)*2-->
-          <div class="is-box nth-1 col-xs-12 col-sm-6">
-            <h3 class="is-h3">대출자를 위한 누리펀딩</h3>
-            <ul class="is-ul">
-              <li class="is-li"><span class="dot c-blue">&#8226;</span>간편한 온라인 대출신청</li>
-              <li class="is-li"><span class="dot c-blue">&#8226;</span>중금리대출 이율</li>
-              <li class="is-li"><span class="dot c-blue">&#8226;</span>원기름 균등상환방식 가능</li>
-              <li class="is-li"><span class="dot c-blue">&#8226;</span>대출 상환 기간 선택 가능</li>
-              <li class="is-li"><span class="dot c-blue">&#8226;</span>조기상환 위약금 없음</li>
-            </ul>
+          <div class="is-box nth-1 col-xs-12 col-sm-12">
+            <h3 class="is-h3">대출이 <span class="c-blue">쉬운 P2P금융</span>은?</h3>
+            <p class="is-p">
+              <span class="sm-block">온라인 플랫폼에서 개인 간에 필요 자금을 지원하고 대출하는 서비스를 말합니다.</span>
+              <span class="sm-block">덕분에 대출과 목돈 마련이 쉬워졌죠. 그런데 말입니다. 큰 돈이 오가는 대출과 투자,</span>
+              과연 어떤 회사에 맡겨야 할까요?
+            </p>
+            <p class="is-p2">
+              <img src="http://img.nurifunding.co.kr/service/service_ill_01.png" alt="누리펀딩">
+            </p>
           </div>
-          <div class="is-box nth-2 col-xs-12 col-sm-6">
-            <h3 class="is-h3">투자자를 위한 누리펀딩</h3>
-            <ul class="is-ul">
-              <li class="is-li"><span class="dot c-blue">&#8226;</span>간편한 온라인 투자 방법</li>
-              <li class="is-li"><span class="dot c-blue">&#8226;</span>매달 현금 상환</li>
-              <li class="is-li"><span class="dot c-blue">&#8226;</span>분산투자를 통한 리스크 관리</li>
-              <li class="is-li"><span class="dot c-blue">&#8226;</span>투자 취소 수수료 없음</li>
-              <li class="is-li"><span class="dot c-blue">&#8226;</span>리스크 대비 높은 투자 수익률</li>
-            </ul>
+          <div class="is-box nth-2 col-xs-12 col-sm-12">
+            <h3 class="is-h3"><span class="c-blue">누리펀딩</span>은 이렇게 만들어 졌습니다</h3>
+            <p class="is-p">
+              <span class="sm-block">30년 경력 탄탄한 금융 전문가와 토탈 IT 서비스 전문기업으로</span>
+              10년 동안 온라인 사이트의 보안을 책임져온 이비즈네트웍스가 누리펀딩에서 만났습니다.
+            </p>
+            <p class="is-p2">
+              <img src="http://img.nurifunding.co.kr/service/service_ill_02.png" alt="누리펀딩">
+            </p>
           </div>
           <div class="is-box nth-3 col-xs-12 col-sm-12">
-            <h3 class="is-h3 fc-blue">누리펀딩은 중금리 대출 시장개척에 앞장서 <br/>대한민국의 서민금융에 기여하겠습니다.</h3>
-            <p class="is-p">누리펀딩은 대한민국을 선도하는 온라인 금융서비스 입니다.  플랫폼을 통해 다수의 소액투자자들이 자금이 필요한 사람에게 대출을 해주고
-              대출자는 투자자들에게 매 달 상환하는 방식입니다. 누리펀딩만의 온라인 평가시스템과 플랫폼 기술로 운영비용을 대폭 절감하여
-              중금리 금융 상품을 제공할 수 있습니다.  국내 대출 시장은 은행의 저금리 상품과 저축은행, 대부업의 고금리 상품으로 양분화 되어 있었습니다.
-              누리펀딩은 기술 혁신을 통해 중금리 대출 시장을 개척하였으며 건강한 서민금융에 기여하기 위해 앞으로도 책임감을 갖고
-              서비스 발전에 심혈을 기울이겠습니다.</p>
+            <h3 class="is-h3"><span class="c-blue xs-block">쉬운 투자, 쉬운 대출</span> 누리펀딩은 이렇게 말합니다</h3>
+            <div class="row d1">
+              <div class="col-xs-12 col-sm-4 nth-1">
+                <img src="http://img.nurifunding.co.kr/service/service_ill_03_1.png" alt="직접보는투자상품">
+                <h3>내 눈으로<br>직접 보는 투자 상품</h3>
+                <p>
+                  <span class="sm-block md-inline">자상품의 리스크를 직접</span> 확인할 수 있습니다.<br>
+                  권리분석, 시세, 가치, 변동등<br>
+                  내가 투자하는 부동산에 대한 모든<br>
+                  정보를 한눈에 볼 수 있습니다.
+                </p>
+              </div>
+              <div class="col-xs-12 col-sm-4 nth-2">
+                <img src="http://img.nurifunding.co.kr/service/service_ill_03_2.png" alt="전문가의설명">
+                <h3>30년 금융 전문가의<br>금융 분석 쉬운 설명</h3>
+                <p>
+                  STAR Loan Rting 심사 알고리즘을 적용해<br>
+                  믿을 수 있는 신용평가 시스템, 전문가의<br>
+                  철두철미한 분석 그리고 쉬운 설명은<br>
+                  투자 상품에 대한 이해를 높여줍니다. 
+                </p>
+              </div>
+              <div class="col-xs-12 col-sm-4 nth-3">
+                <img src="http://img.nurifunding.co.kr/service/service_ill_03_3.png" alt="쉬운투자">
+                <h3>강력한 보안 &amp;<br>쉬운투자</h3>
+                <p>
+                  개인정보 유출 방지 시스템을<br>
+                  도입해 안전합니다. 그리고 누리펀딩은<br>
+                  복잡하지 않은 절차로<br>
+                  간편하게 투자할수 있습니다.  
+                </p>
+              </div>
+            </div>
           </div>
+        
           <div class="is-box nth-4 col-xs-12 col-sm-12">
-            <h3 class="is-h3 fc-blue">누리펀딩 저금리 시대의 <br/>새로운 투자대안을 제공합니다.</h3>
-            <p class="is-p">우리 사회는 현재 초 저금리 시대에 접어들었습니다. 물가상승률에도 못 미치는 금리에 자신의 소중한 자금을 맡기시는 분들께 누리펀딩은 
-              보다 안정적이면서도 높은 수익을 지향하는 투자 상품을 제공해드리고자 합니다. 
-              누리펀딩은 전문적인 자체 심사 시스템을 통해 대출 상품을 선별합니다. 그 결과 안정적인 서비스운용을 통해 개인신용대출 기준
-              평균 연 9%대의 수익률을 달성하고 있습니다.
+            <h3 class="is-h3">웹 &#43; 보안 &#43; 금융 경험<br><span class="c-blue">P2P 금융</span>의 <span class="c-blue">최고</span>의 인력입니다</h3>
+            <p class="is-p">
+              <span class="sm-block">담보가 있어도 대출 받기 어려운 현실, 은행에 돈을 맡겨도 느는 듯 마는 듯한 이자</span>
+              <span class="sm-block">대출은 까다롭고, 예금 이자는 낮고 ‘누리펀딩‘과 새로운 인생을 설계해보세요.</span>
+              대출자와 투자자가 모두가 만족할 수 있는 금융을 만들겠습니다． 
+            </p>
+            <p class="is-p2">
+              <img src="http://img.nurifunding.co.kr/service/service_ill_04.png" alt="누리펀딩">
             </p>
           </div>
         </div>
+        <!--변경내용 끝-->
         
       </div>
     </section>

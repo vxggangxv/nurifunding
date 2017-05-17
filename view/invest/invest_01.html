@@ -7,10 +7,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=0">
   <title>누리펀딩</title>
   <link href="https://opensource.keycdn.com/fontawesome/4.6.3/font-awesome.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="http://static.nurifunding.co.kr/css/common.css">
-  <link rel="stylesheet" href="http://static.nurifunding.co.kr/css/invest/invest.css">
-  <!-- <link rel="stylesheet" href="../../src/css/common.css">
-  <link rel="stylesheet" href="../../src/css/invest/invest.css">  -->
+  <!--<link rel="stylesheet" href="http://static.nurifunding.co.kr/css/common.css">
+  <link rel="stylesheet" href="http://static.nurifunding.co.kr/css/invest/invest2.css">-->
+  <link rel="stylesheet" href="../../src/css/common.css">
+  <link rel="stylesheet" href="../../src/css/invest/invest2.css">
 
   <script type="text/javascript" src="http://static.nurifunding.co.kr/js/jquery-1.10.2.min.js"></script>
   <script type="text/javascript" src="http://static.nurifunding.co.kr/js/Chart.bundle.min.js"></script>
@@ -19,10 +19,11 @@
   <script type="text/javascript" src="http://static.nurifunding.co.kr/js/invest/invest.js"></script>
   <!-- <script type="text/javascript" src="../../src/js/invest/invest.js"></script> -->
 
+    <!--<link rel="stylesheet" href="../../src/css/invest/invest2_ie9lt.css">-->
   <!--[if lt IE 9]>
     <link rel="stylesheet" href="http://static.nurifunding.co.kr/css/grid_ie9lt.min.css">
     <link rel="stylesheet" href="http://static.nurifunding.co.kr/css/common_ie9lt.css">
-    <link rel="stylesheet" href="http://static.nurifunding.co.kr/css/invest/invest_ie9lt.css">
+    <link rel="stylesheet" href="http://static.nurifunding.co.kr/css/invest/invest2_ie9lt.css">
 
     <script type="text/javascript" src="http://static.nurifunding.co.kr/js/ie9_lt.js"></script>
     <script type="text/javascript" src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -41,18 +42,25 @@
             <span class="icon-bar b2"></span>
             <span class="icon-bar b3"></span>
           </button>
-          <h2><a href="./index.html" class="navbar-brand"><img src="http://img.nurifunding.co.kr//logo.png" alt="누리펀딩로고"></a></h2>
+          <h2><a href=".,/index.html" class="navbar-brand"><img src="http://img.nurifunding.co.kr//logo.png" alt="누리펀딩로고"></a></h2>
           <a href="#" class="my-tab show-xs"><img src="http://img.nurifunding.co.kr//myp_icon.png" alt="마이페이지"></a>
         </div>
         <div class="navbar-collapse pull-right hidden-xs">
           <ul class="main-nav clearfix">
-            <li><a href="">대출신청</a></li>
+            <li><a href="../loan/loan_00.html">대출신청</a></li>
             <li class="hidden-xs hidden-sm hidden-margin"></li>
-            <li><a href="">투자하기</a></li>
+            <li><a href="../invest/invest_01.html">투자하기</a></li>
             <li class="hidden-xs hidden-sm hidden-margin"></li>
-            <li><a href="">회사소개</a></li>
+            <li><a href="../service/index.html">회사소개</a>
+              <nav class="sub-nav">
+                <ul>
+                  <li><a href="../service/index.html">회사소개</a></li>
+                  <li><a href="../notice/index.html">공지사항</a></li>
+                </ul>
+              </nav>
+            </li>
             <li class="hidden-xs hidden-sm hidden-margin"></li>
-            <li><a href="">이용안내</a></li>
+            <li><a href="../faq/index.html">이용안내</a></li>
             <li class="hidden-xs hidden-sm hidden-margin"></li>
             <li><a class="c-blue" href="">회원가입</a></li>
             <li class="hidden-xs hidden-sm hidden-margin"></li>
@@ -99,10 +107,50 @@
             </ul>
           </div>
         </div>
-        <div class="row com-box ip-wrap">
+        <div class="row com-box ip-wrap" id="ip-wrap">
           <div class="col-xs-12 col-sm-6 ip-outer">
             <div class="ip-box br4">
-              <div class="thumb-box"><img src="http://img.nurifunding.co.kr/pro_sample_1.jpg" alt="해운대 아파트"></div>            
+              <!--변경내용 신규상품일경우 new추가-->
+              <div class="thumb-box">
+                <span class="new">NEW</span>
+              </div>        
+              <h3 class="iph3">해운대 아파트</h3>
+              <ul class="ip-inner">
+                <li class="ipli-nth-1 clearfix">
+                  <p class="pull-left">예상수익률</p>
+                  <p class="pull-right">6.5%</p>
+                </li>
+                <li class="ipli-nth-2 clearfix">
+                  <p class="pull-left">기간</p>
+                  <p class="pull-right">12개월</p>
+                </li>
+                <li class="ipli-nth-3 clearfix">
+                  <p class="pull-left">상환방식</p>
+                  <p class="pull-right">혼합상환</p>
+                </li>
+                <li class="ipli-nth-4 clearfix">
+                  <p class="pull-left">모집현황</p>
+                  <p class="pull-right">4,000 / 4,000만원</p>
+                </li>
+                <li class="ipli-nth-5 clearfix">
+                  <p class="ip-per-bar bg-blue"></p>
+                </li>
+                <!--변경내용 -->
+                <li class="ipli-nth-6 clearfix">
+                  <p class="pull-left"><span class="ip-percent fc-blue">80%</span> 진행중<span class="ip-per-num">(852명)</span></p>
+                  <p class="pull-right day fc-blue">D-6일</p>
+                </li>
+                <!--변경내용 끝-->
+              </ul>
+              <p class="ip-btn-box"><a href="invest_02.html" class="ip-btn bg-blue br4">투자하기</a></p>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-6 ip-outer">
+            <div class="ip-box br4">
+              <!--변경내용 펀딩완료일 경우 펀딩완료 추가-->
+              <div class="thumb-box">
+                <div class="end"><span>펀딩완료</span></div>
+              </div>           
               <h3 class="iph3">해운대 아파트</h3>
               <ul class="ip-inner">
                 <li class="ipli-nth-1 clearfix">
@@ -125,16 +173,16 @@
                   <p class="ip-per-bar bg-blue"></p>
                 </li>
                 <li class="ipli-nth-6 clearfix">
-                  <p class="pull-left">진행중<span class="ip-per-num">(852명)</span></p>
-                  <p class="pull-right ip-percent fc-blue">80%</p>
+                  <p class="pull-left"><span class="ip-percent fc-blue">80%</span> 진행중<span class="ip-per-num">(852명)</span></p>
+                  <p class="pull-right day fc-blue">D-6일</p>
                 </li>
               </ul>
-              <p class="ip-btn-box"><a href="" class="ip-btn bg-blue br4">투자하기</a></p>
+              <p class="ip-btn-box"><a href="invest_02.html" class="ip-btn bg-blue br4">투자하기</a></p>
             </div>
           </div>
           <div class="col-xs-12 col-sm-6 ip-outer">
             <div class="ip-box br4">
-              <div class="thumb-box"><img src="http://img.nurifunding.co.kr/pro_sample_1.jpg" alt="해운대 아파트"></div>            
+              <div class="thumb-box"></div>            
               <h3 class="iph3">해운대 아파트</h3>
               <ul class="ip-inner">
                 <li class="ipli-nth-1 clearfix">
@@ -157,16 +205,16 @@
                   <p class="ip-per-bar bg-blue"></p>
                 </li>
                 <li class="ipli-nth-6 clearfix">
-                  <p class="pull-left">진행중<span class="ip-per-num">(852명)</span></p>
-                  <p class="pull-right ip-percent fc-blue">80%</p>
+                  <p class="pull-left"><span class="ip-percent fc-blue">80%</span> 진행중<span class="ip-per-num">(852명)</span></p>
+                  <p class="pull-right day fc-blue">D-6일</p>
                 </li>
               </ul>
-              <p class="ip-btn-box"><a href="" class="ip-btn bg-blue br4">투자하기</a></p>
+              <p class="ip-btn-box"><a href="invest_02.html" class="ip-btn bg-blue br4">투자하기</a></p>
             </div>
           </div>
           <div class="col-xs-12 col-sm-6 ip-outer">
             <div class="ip-box br4">
-              <div class="thumb-box"><img src="http://img.nurifunding.co.kr/pro_sample_1.jpg" alt="해운대 아파트"></div>            
+              <div class="thumb-box"></div>            
               <h3 class="iph3">해운대 아파트</h3>
               <ul class="ip-inner">
                 <li class="ipli-nth-1 clearfix">
@@ -189,45 +237,33 @@
                   <p class="ip-per-bar bg-blue"></p>
                 </li>
                 <li class="ipli-nth-6 clearfix">
-                  <p class="pull-left">진행중<span class="ip-per-num">(852명)</span></p>
-                  <p class="pull-right ip-percent fc-blue">80%</p>
+                  <p class="pull-left"><span class="ip-percent fc-blue">80%</span> 진행중<span class="ip-per-num">(852명)</span></p>
+                  <p class="pull-right day fc-blue">D-6일</p>
                 </li>
               </ul>
-              <p class="ip-btn-box"><a href="" class="ip-btn bg-blue br4">투자하기</a></p>
+              <p class="ip-btn-box"><a href="invest_02.html" class="ip-btn bg-blue br4">투자하기</a></p>
             </div>
           </div>
-          <div class="col-xs-12 col-sm-6 ip-outer">
-            <div class="ip-box br4">
-              <div class="thumb-box"><img src="http://img.nurifunding.co.kr/pro_sample_1.jpg" alt="해운대 아파트"></div>            
-              <h3 class="iph3">해운대 아파트</h3>
-              <ul class="ip-inner">
-                <li class="ipli-nth-1 clearfix">
-                  <p class="pull-left">예상수익률</p>
-                  <p class="pull-right">6.5%</p>
-                </li>
-                <li class="ipli-nth-2 clearfix">
-                  <p class="pull-left">기간</p>
-                  <p class="pull-right">12개월</p>
-                </li>
-                <li class="ipli-nth-3 clearfix">
-                  <p class="pull-left">상환방식</p>
-                  <p class="pull-right">혼합상환</p>
-                </li>
-                <li class="ipli-nth-4 clearfix">
-                  <p class="pull-left">모집현황</p>
-                  <p class="pull-right">4,000 / 4,000만원</p>
-                </li>
-                <li class="ipli-nth-5 clearfix">
-                  <p class="ip-per-bar bg-blue"></p>
-                </li>
-                <li class="ipli-nth-6 clearfix">
-                  <p class="pull-left">진행중<span class="ip-per-num">(852명)</span></p>
-                  <p class="pull-right ip-percent fc-blue">80%</p>
-                </li>
-              </ul>
-              <p class="ip-btn-box"><a href="" class="ip-btn bg-blue br4">투자하기</a></p>
-            </div>
-          </div>
+          
+          <!--변경내용 사이즈 통일을 위해 이미지에서 배경으로 변경-->
+          <script>
+            $("#ip-wrap > div").eq(0).find(".thumb-box").css({
+              "background": "url(http://img.nurifunding.co.kr/est-list/est_mono_1.jpg) no-repeat center",
+              "background-size": "cover"
+            });
+            $("#ip-wrap > div").eq(1).find(".thumb-box").css({
+              "background": "url(http://img.nurifunding.co.kr/est-list/est_pdt_01.jpg) no-repeat center",
+              "background-size": "cover"
+            });
+            $("#ip-wrap > div").eq(2).find(".thumb-box").css({
+              "background": "url(http://img.nurifunding.co.kr/est-list/pro_sample_1.jpg) no-repeat center",
+              "background-size": "cover"
+            });
+            $("#ip-wrap > div").eq(3).find(".thumb-box").css({
+              "background": "url(http://img.nurifunding.co.kr/est-list/pro_sample_1.jpg) no-repeat center",
+              "background-size": "cover"
+            });
+          </script>
     
         </div>
     

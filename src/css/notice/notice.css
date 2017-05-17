@@ -40,7 +40,9 @@
   .wbtn-wrap {margin-top: 8px; text-align: right;}
   .write-btn {display: inline-block; width: 80px; text-align: center; padding: 7px 0; font-size: 15px;}
   
-  .faq-post {}
+  .faq-list {min-height: 540px;}
+  
+  .faq-post {min-height: 440px;}
   .fp-wrap {width: 300px; padding: 15px;}
   .fp-tit-box {padding-bottom: 10px; border-bottom: 1px solid #ddd; font-size: 15px;}
   .fp-title {}
@@ -52,7 +54,7 @@
   .udt-icon, .dlt-icon {display: inline-block; width: 13px; height: 11px; background: url(http://img.nurifunding.co.kr/post_icon.png) no-repeat ; background-size: 80px;margin-right: 2px;}
   .dlt-icon {background-position: -40px 0px;}
   
-  .faq-write {}
+  .faq-write {min-height: 485px;}
   .fw-wrap {width: 300px; padding: 15px 15px 20px;}
   .fwt-label, .fwi-label {font-size: 15px; line-height: 1.8em;}
   .fwt-label {}
@@ -83,8 +85,7 @@
     width: 47%; text-align: left; left: 5px;
     line-height: 2.5em; vertical-align: middle; background-color: #fff;  border: none; border-bottom: 1px solid #ddd;
     text-overflow: ellipsis;
-    -webkit-appearance: none; /* 네이티브 외형 감추기 */ 
-    -moz-appearance: none; appearance: none; 
+    -webkit-appearance: none; -moz-appearance: none; appearance: none;
   }
   .fw-contents textarea {width: 100%; resize: none; border-color: #ddd; padding: 5px;}
   .fw-footer {margin-top: 20px; text-align: center;}
@@ -120,7 +121,9 @@
   .wbtn-wrap {margin-top: 15px; float: right;}
   .write-btn {display: inline-block; width: 100px; text-align: center; padding: 12px 0; font-size: 16px;}
 
-  .faq-post {}
+  .faq-list {min-height: 640px;}
+  
+  .faq-post {min-height: 497px;}
   .faq-post .com-box {}
   .fp-wrap {padding: 25px 40px;}
   .fp-tit-box {padding-bottom: 15px; border-bottom: 1px solid #ddd; font-size: 17px;}
@@ -137,13 +140,14 @@
   .udt-icon, .dlt-icon {position: relative; top: 2px; display: inline-block; width: 17px; height: 15px; background: url(http://img.nurifunding.co.kr/post_icon.png) no-repeat ; margin-right: 2px;}
   .dlt-icon {background-position: -50px 0px;}
   
-  .faq-write {}
+  .faq-write {min-height: 664px;}
   .fw-wrap {padding: 30px 70px 40px;}
   .fwt-label, .fwi-label {font-size: 16px; line-height: 1.8em; margin-bottom: 10px;}
   .fwt-label {}
   .fwi-name {position: relative; top: 13px;}
-  .nr-text {width: 100%; height: 100%; text-indent: 15px; letter-spacing: 0; background-color: transparent; line-height: 3em; height: 37px; font-size: 14px;}
-  .nr-ph {top: 49px;}
+  .nr-text {width: 100%; height: 100%; text-indent: 15px; letter-spacing: 0; background-color: transparent; line-height: 1.5em; height: 37px; 
+    font-size: 15px;}
+  .nr-ph {top: 49px; font-size: 15px;}
   .fw-info {}
   .fw-info > li {float: left;}
   .fw-info > li.nth-1 {width: 25%;}
@@ -175,10 +179,9 @@
     width: 45%; text-align: left; left: 15px;
     line-height: 2.7em; vertical-align: middle; background-color: #fff; border: none; border-bottom: 1px solid #ddd;
     text-overflow: ellipsis;
-    -webkit-appearance: none; /* 네이티브 외형 감추기 */ 
-    -moz-appearance: none; appearance: none; 
+    -webkit-appearance: none; -moz-appearance: none; appearance: none;
   }
-  .fw-contents textarea {width: 100%; resize: none; border-color: #ddd; padding: 5px; height: 300px;}
+  .fw-contents textarea {width: 100%; resize: none; border-color: #ddd; padding: 5px; height: 300px; font-size: 15px;}
   .fw-footer {margin-top: 40px; text-align: center;}
   .cancle-btn, .create-btn {font-size: 16px; padding: 6px 40px; border: 1px solid #ddd;}
   .create-btn {margin-left: 5px; border-color: #398fe1;}
@@ -191,6 +194,7 @@
   .faq-th.nth-2, .faq-td.nth-2 {width:12%;}
   
   .fw-wrap {padding: 30px 90px 40px;}
+  .faq-post {min-height: 475px;}
 }
 
 /*pc 영역*/

@@ -12,6 +12,20 @@ $(function() {
       $(this).closest(".dropdown").find(".dropdown-menu").slideToggle("fast");
       event.preventDefault();
     });
-});
+  });
+  
+  //nivo라이트박스
+  $('.reg-inner a').nivoLightbox();
+  $('#est-slider a').nivoLightbox();
+  
+  //부동산이미지 bxslider
+  $('#est-slider').bxSlider({
+    mode: 'fade',
+    auto: true,
+    speed: 500,
+    duration: 6000,
+    prevText: '<img src="http://img.nurifunding.co.kr/invest/inv_btn_prev.png" alt="다음">',
+    nextText: '<img src="http://img.nurifunding.co.kr/invest/inv_btn_next.png" alt="다음">'
+  });
   
 });
