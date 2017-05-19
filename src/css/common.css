@@ -2,9 +2,9 @@
 /* css 초기화 */
 @import url(http://static.nurifunding.co.kr/css/reset.css);
 @import url(http://static.nurifunding.co.kr/css/grid_1024.css);
-@import url(http://static.nurifunding.co.kr/fonts/NanumBarunGothic/nanumbarungothic.css);
+/*@import url(http://static.nurifunding.co.kr/fonts/NanumBarunGothic/nanumbarungothic.css);
 @import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
-@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);*/
 body, * {margin:0; padding:0; font-family: 'Noto Sans Kr', 'Nanum Gothic', 'Malgun Gothic', Arial, sans-serif; box-sizing: border-box; letter-spacing: -1px;}
 body {background: #f5f5f5; color: #333;}
 button {cursor: pointer; border: none; background: none;}
