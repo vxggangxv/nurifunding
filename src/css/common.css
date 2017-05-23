@@ -1,7 +1,7 @@
 @charset "utf-8";
 /* css 초기화 */
-@import url(http://static.nurifunding.co.kr/css/reset.css);
-@import url(http://static.nurifunding.co.kr/css/grid_1024.css);
+@import url(https://nurifunding.co.kr/static/css/reset.css);
+@import url(https://nurifunding.co.kr/static/css/grid_1024.css);
 /*@import url(http://static.nurifunding.co.kr/fonts/NanumBarunGothic/nanumbarungothic.css);
 @import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
 @import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);*/
@@ -19,9 +19,13 @@ a {text-decoration:none; color: #434343;}
 .bg-darkBlue {background-color: #09345f;}
 .c-gray, .fc-gray {color: #ccc;}
 .c-blue, .fc-blue {color: #398fe1;}
+.c-blue2 {color: #126cc3;}
 .c-white, .fc-white {color: #fff;}
 .c-orange, .fc-orange {color: #ff9a16;}
 .c-red {color: #ee1c1c;}
+
+/*폰트 굵기*/
+.f-bd {font-weight: 500;}
 
 /*폰트 정렬*/
 .align-left {text-align: left;}

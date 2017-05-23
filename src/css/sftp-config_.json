@@ -14,12 +14,12 @@
     "confirm_sync": true,
     "confirm_overwrite_newer": false,
     
-    "host": "114.108.168.20",
-    "user": "ebizdev",
+    "host": "192.168.17.47",
+    "user": "ebizimg",
     //"password": "password",
     "port": "229",
     
-    "remote_path": "/home/ebizdev/web-home/nurifunding.co.kr/www/web-home/static/css",
+    "remote_path": "/data/ebizimg/nurifunding.co.kr/static/css/",
     "ignore_regexes": [
         "\\.sublime-(project|workspace)", "sftp-config(-alt\\d?)?\\.json",
         "sftp-settings\\.json", "/venv/", "\\.svn/", "\\.hg/", "\\.git/",

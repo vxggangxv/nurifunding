@@ -60,8 +60,8 @@
   .r-f, .r-f2 {text-align: center; color: #fff; font-family: "NanumGothic";}
   .r-f {font-size: 14px;}
   .r-f .q-w {position: relative; top: -2px; display: inline-block; margin-left: 4px; width: 20px; height: 20px; border-radius: 50%; background: #fff; text-align: center; cursor: pointer;}
-  .r-f .q {position: relative; top: 2px; color: #09345f; font-weight: 800; font-family: "Noto Sans KR";}
-  .r-f .q .q-t {display: none; position: absolute; width: 100px; height: 28px; left: -46px; top: -38px; color: #fff; font-weight: 400; background: #000; border-radius: 4px; 
+  .r-f .q {position: relative; display: block; top: 2px; color: #09345f; font-weight: 800; font-family: "Noto Sans KR";}
+  .r-f .q .q-t {display: none; position: absolute; width: 100px; height: 28px; left: -40px; top: -39px; color: #fff; font-weight: 400; background: #000; border-radius: 4px; 
     line-height: 1.9em;}
   .r-f .q .q-t:after {position: absolute; content: ""; bottom: -13px; left: 42px; display: block; width: 1px; border: 8px solid #000; border-color: transparent; border-top-color: #000;}
   .r-f .q:hover .q-t {display: block;}
@@ -202,8 +202,8 @@
   .r-f, .r-f2 {text-align: center; color: #fff; font-family: "NanumGothic"; letter-spacing: 0;}
   .r-f {font-size: 16px;}
   .r-f .q-w {position: relative; top: -1px; display: inline-block; margin-left: 4px; width: 22px; height: 22px; border-radius: 50%; background: #fff; text-align: center; cursor: pointer;}
-  .r-f .q {position: relative; top: 2px; left: 0px; color: #09345f; font-weight: 600; font-family: "Noto Sans KR";}
-  .r-f .q .q-t {display: none; position: absolute; width: 120px; height: 28px; left: -53px; top: -36px; color: #fff; font-weight: 400; background: #000; border-radius: 4px; 
+  .r-f .q {position: relative; display: block; top: 2px; left: 0px; color: #09345f; font-weight: 600; font-family: "Noto Sans KR";}
+    .r-f .q .q-t {display: none; position: absolute; width: 120px; height: 28px; left: -48px; top: -41px; color: #fff; font-weight: 400; background: #000; border-radius: 4px; 
     line-height: 1.6em; font-size: 16px;}
   .r-f .q .q-t:after {position: absolute; content: ""; bottom: -14px; left: 51px; display: block; width: 1px; border: 8px solid #000; border-color: transparent; border-top-color: #000;}
   .r-f .q:hover .q-t {display: block;}
@@ -337,7 +337,7 @@
   .main-box .swiper-slide > div.s2-div-2 .d2 p.nth-2, .main-box .swiper-slide > div.s2-div-2 .d2 p.nth-4 {float: left; margin-right: 3px;}
   .main-box .swiper-slide > div.s3-div-2 .d2 p.nth-2, .main-box .swiper-slide > div.s3-div-2 .d2 p.nth-3 {display: none;}
   .main-box .swiper-slide > div.s3-div-2 .d2 p.nth-1:after {content: " 부동산 가치 상승,"}
-  .main-box .swiper-slide > div.s3-div-2 .d2 p.nth-4:before {content: "임대료, 기타 수익 등 꼼꼼꼼한 "}
+  .main-box .swiper-slide > div.s3-div-2 .d2 p.nth-4:before {content: "임대료, 기타 수익 등 꼼꼼한 "}
 
   .rate {padding: 42px 0px;}
   .rr-nth-1 {width: 17%;}
@@ -347,8 +347,8 @@
   .r-f, .r-f2 {text-align: center; color: #fff; font-family: "NanumGothic"; letter-spacing: 0;}
   .r-f {font-size: 18px;}
   .r-f .q-w {position: relative; top: 0px; display: inline-block; margin-left: 4px; width: 22px; height: 22px; border-radius: 50%; background: #fff; text-align: center; cursor: pointer;}
-  .r-f .q {position: relative; top: 2px; left: 0px; color: #09345f; font-weight: 600; font-family: "Noto Sans KR";}
-  .r-f .q .q-t {display: none; position: absolute; width: 120px; height: 28px; left: -53px; top: -36px; color: #fff; font-weight: 400; background: #000; border-radius: 4px; 
+  .r-f .q {position: relative; display: block; top: 2px; left: 0px; color: #09345f; font-weight: 600; font-family: "Noto Sans KR";}
+  .r-f .q .q-t {display: none; position: absolute; width: 120px; height: 28px; left: -48px; top: -41px; color: #fff; font-weight: 400; background: #000; border-radius: 4px; 
     line-height: 1.6em; font-size: 16px;}
   .r-f .q .q-t:after {position: absolute; content: ""; bottom: -14px; left: 51px; display: block; width: 1px; border: 8px solid #000; border-color: transparent; border-top-color: #000;}
   .r-f .q:hover .q-t {display: block;}
