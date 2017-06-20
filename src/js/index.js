@@ -14,8 +14,8 @@ $(function() {
     speed: 500,
     duration: 6000,
     slideMargin: 50,
-    prevText: '<img src="http://img.nurifunding.co.kr/btn_prev.png" alt="다음">',
-    nextText: '<img src="http://img.nurifunding.co.kr/btn_next.png" alt="다음">',
+      prevText: '<img src="https://www.nurifunding.co.kr/img/btn_prev.png" alt="다음">',
+      nextText: '<img src="https://www.nurifunding.co.kr/img/btn_next.png" alt="다음">',
     onSliderLoad: function(){
       msAni("on");
     },
@@ -90,7 +90,7 @@ function wayP(flag) {
       });
     });
     //쉬운 대출
-    $("#easy > div img, #easy > div h3, #easy > div p").each(function(idx, item){
+      $("#easy > div img, #easy > div h3, #easy > div p, #easy > div.ip-more-outer").each(function(idx, item){
       $(item).addClass("blind");
       $(item).waypoint(function () {
         $(item).addClass('animated fadeIn');

@@ -1,7 +1,7 @@
 .com-pd {padding: 98px 10px 95px;}
-.com-ft {text-align: center; font-size: 42px; font-family: "Noto Sans Kr";}
+.com-ft {text-align: center; font-size: 42px; font-family: "Noto Sans Kr"; line-height: 1.2em;}
 .com-box {position: relative; margin: 0 auto; margin-top: 20px;}
-.arr-icon {display: inline-block; position: relative; background: url(http://img.nurifunding.co.kr/nrm_icon.png) no-repeat;}
+.arr-icon {display: inline-block; position: relative; background: url(https://nurifunding.co.kr/img/nrm_icon.png) no-repeat;}
 .br4 {border-radius: 4px;}
 .md-block {display: block;}
 
@@ -81,26 +81,20 @@
 
 .easy {background: #fff;}
 .easy h2 {font-weight: 500; margin-bottom: 20px;}
-.easy .container > .p1 {text-align: center; font-size: 18px; word-break: keep-all; line-height: 1.2em; margin-bottom: 50px; color: #414141; font-weight: 300;}
+.easy .container > .p1 {text-align: center; font-size: 18px; word-break: keep-all; line-height: 1.2em; margin-bottom: 50px; color: #414141;}
 .easy .com-box {text-align: center;}
-.easy .com-box img {position: relative; display: inline-block; width: 150px; margin-top: 12px; margin-bottom: 30px;}
+.easy .com-box img {position: relative; display: inline-block; width: 160px; margin-top: 52px; margin-bottom: 30px;}
 .easy .com-box div.nth-1 img {}
 .easy .com-box div.nth-2 img {left: 17px;}
 .easy .com-box div.nth-3 img {margin-bottom: 41px;}
-.easy .com-box h3 {font-size: 24px; font-weight: 500; line-height: 1.2em; margin-bottom: 15px;}
+.easy .com-box div.nth-1 {left: 15px;}
+.easy .com-box div.nth-1 img.plus,  .easy .com-box div.nth-2 img.plus {position: absolute; top: 34px; width: 76px;}
+.easy .com-box div.nth-1 img.plus {left: 250px;}
+.easy .com-box div.nth-2 img.plus {left: 296px;}
+.easy .com-box h3 {font-size: 24px; font-weight: 500; line-height: 1.2em; margin-bottom: 8px;}
 .easy .com-box div.nth-3 h3 {margin-bottom: 25px;}
 .easy .com-box p {font-size: 16px; line-height: 1.2em; word-break: keep-all; font-weight: 300;}
-
-.easy {background: #fff;}
-.easy h2 {font-weight: 500; margin-bottom: 20px;}
-.easy .container > .p1 {text-align: center; font-size: 18px; word-break: keep-all; line-height: 1.2em; margin-bottom: 50px; color: #414141;}
-.easy .com-box {text-align: center;}
-.easy .com-box img {position: relative; display: inline-block; width: 150px; margin-top: 12px; margin-bottom: 30px;}
-.easy .com-box div.nth-1 img {}
-.easy .com-box div.nth-2 img {left: 17px;}
-.easy .com-box div.nth-3 img {}
-.easy .com-box h3 {font-size: 24px; font-weight: 500; line-height: 1.2em; margin-bottom: 8px;}
-.easy .com-box p {font-size: 16px; line-height: 1.2em; word-break: keep-all;}
+.easy .ip-more-btn {width: 65%;}
 
 .ingProduct {background: #f5f5f5;}
 .ip-wrap {}

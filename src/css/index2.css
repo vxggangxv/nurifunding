@@ -17,10 +17,9 @@
 /*모바일 영역, col-xs*/
 @media (max-width: 767px){
   .com-pd {padding: 28px 10px 25px;}
-  .com-ft {text-align: center; font-size: 18px; font-family: "Noto Sans Kr";}
+  .com-ft {text-align: center; font-size: 18px; font-family: "Noto Sans Kr"; line-height: 1.2em;}
   .com-box {position: relative; margin: 0 auto; margin-top: 15px; width: 300px;}
-  .arr-icon {display: inline-block; position: relative; background: url(http://img.nurifunding.co.kr/nrm_icon_m.png) no-repeat;}
-  .br4 {border-radius: 4px;}
+  .arr-icon {display: inline-block; position: relative; background: url(https://nurifunding.co.kr/img/nrm_icon_m.png) no-repeat;} .br4 {border-radius: 4px;}
   .xs-block {display: block;}
 
   .main {width: 100%; background: #126cc3;}
@@ -60,7 +59,7 @@
   .r-f, .r-f2 {text-align: center; color: #fff; font-family: "NanumGothic";}
   .r-f {font-size: 14px;}
   .r-f .q-w {position: relative; top: -2px; display: inline-block; margin-left: 4px; width: 20px; height: 20px; border-radius: 50%; background: #fff; text-align: center; cursor: pointer;}
-  .r-f .q {position: relative; display: block; top: 2px; color: #09345f; font-weight: 800; font-family: "Noto Sans KR";}
+  .r-f .q {position: relative; display: block; top: 3px; left: -1px; color: #09345f; font-weight: 800; font-family: "Noto Sans KR";}
   .r-f .q .q-t {display: none; position: absolute; width: 100px; height: 28px; left: -40px; top: -39px; color: #fff; font-weight: 400; background: #000; border-radius: 4px; 
     line-height: 1.9em;}
   .r-f .q .q-t:after {position: absolute; content: ""; bottom: -13px; left: 42px; display: block; width: 1px; border: 8px solid #000; border-color: transparent; border-top-color: #000;}
@@ -105,9 +104,11 @@
   .easy .com-box img {position: relative; display: inline-block; width: 150px;}
   .easy .com-box div.nth-1 img {margin-top: 10px;}
   .easy .com-box div.nth-2 img {margin-top: 32px; margin-bottom: 10px; left: 17px;}
-  .easy .com-box div.nth-3 img {margin-top: 12px; margin-bottom: -10px;}
+  .easy .com-box div.nth-3 img {margin-top: 32px; margin-bottom: 10px;}
+  .easy .com-box div.nth-1 img.plus,  .easy .com-box div.nth-2 img.plus {width: 40px; left: 0; margin-bottom: -12px; margin-top: 10px;}
   .easy .com-box h3 {font-size: 16px; font-weight: 500; line-height: 1.2em; margin-bottom: 8px;}
   .easy .com-box p {font-size: 14px; line-height: 1.2em; font-weight: 300;}
+    .easy .ip-more-btn {width: 50%;}
   
   .ingProduct {background: #f5f5f5;}
   .ip-wrap {}
@@ -149,16 +150,25 @@
   .fq-btn-box {text-align: center;}
   .fq-btn {display: inline-block; width: 100%; border: 1px solid #ddd; line-height: 2.5em; font-size: 15px; background: #fff;}
 }
-@media (max-width: 480px){
-  
+@media (min-width: 410px) and (max-width: 480px){
+    .main-box .swiper-slide > div.s1-div-2 .d2 p {letter-spacing: 0; font-size: 16px;}
 }
+@media (min-width: 360px) and (max-width: 480px){
+    .main-box.swiper-container {width: 100%;}
+    .main-box .swiper-slide {height: 230px;}
+    .main-box .swiper-slide > div.s1-div-2 .d2 {font-size: 14px;}
+    .main-box .swiper-slide > div.s1-div-3 img {width: 165px;}
+    .main-box .swiper-slide > div.s3-div-3 img {width: 169px;}
+    .main-box .swiper-slide > div.s2-div-3 img {width: 174px;}
+}
+
 
 /*테블릿 영역, col-sm */
 @media (min-width: 768px) and (max-width: 991px) {
   .com-pd {padding: 98px 10px 95px;}
-  .com-ft {text-align: center; font-size: 42px; font-family: "Noto Sans Kr";}
+  .com-ft {text-align: center; font-size: 42px; font-family: "Noto Sans Kr"; line-height: 1.2em;}
   .com-box {position: relative; margin: 0 auto; margin-top: 10px;}
-  .arr-icon {display: inline-block; position: relative; background: url(http://img.nurifunding.co.kr/nrm_icon.png) no-repeat;}
+  .arr-icon {display: inline-block; position: relative; background: url(https://nurifunding.co.kr/img/nrm_icon.png) no-repeat;}
   .br4 {border-radius: 4px;}
   .sm-block {display: block;}
 
@@ -202,7 +212,7 @@
   .r-f, .r-f2 {text-align: center; color: #fff; font-family: "NanumGothic"; letter-spacing: 0;}
   .r-f {font-size: 16px;}
   .r-f .q-w {position: relative; top: -1px; display: inline-block; margin-left: 4px; width: 22px; height: 22px; border-radius: 50%; background: #fff; text-align: center; cursor: pointer;}
-  .r-f .q {position: relative; display: block; top: 2px; left: 0px; color: #09345f; font-weight: 600; font-family: "Noto Sans KR";}
+  .r-f .q {position: relative; display: block; top: 2px; left: -1px; color: #09345f; font-weight: 600; font-family: "Noto Sans KR";}
     .r-f .q .q-t {display: none; position: absolute; width: 120px; height: 28px; left: -48px; top: -41px; color: #fff; font-weight: 400; background: #000; border-radius: 4px; 
     line-height: 1.6em; font-size: 16px;}
   .r-f .q .q-t:after {position: absolute; content: ""; bottom: -14px; left: 51px; display: block; width: 1px; border: 8px solid #000; border-color: transparent; border-top-color: #000;}
@@ -244,13 +254,18 @@
   .easy h2 {font-weight: 500; margin-bottom: 20px;}
   .easy .container > .p1 {text-align: center; font-size: 18px; word-break: keep-all; line-height: 1.2em; margin-bottom: 50px; color: #414141; font-weight: 300;}
   .easy .com-box {text-align: center;}
-  .easy .com-box img {position: relative; display: inline-block; width: 160px; margin-top: 12px; margin-bottom: 30px;}
+  .easy .com-box img {position: relative; display: inline-block; width: 160px; margin-top: 52px; margin-bottom: 30px;}
   .easy .com-box div.nth-1 img {}
-  .easy .com-box div.nth-2 img {left: 17px;}
-  .easy .com-box div.nth-3 img {margin-bottom: 43px;}
+  .easy .com-box div.nth-2 img {left: 10px;}
+  .easy .com-box div.nth-3 {left: 26px;}
+  .easy .com-box div.nth-3 img {}
+  .easy .com-box div.nth-1 img.plus,  .easy .com-box div.nth-2 img.plus {position: absolute; top: 40px; width: 50px;}
+    .easy .com-box div.nth-1 img.plus {left: 220px;}
+    .easy .com-box div.nth-2 img.plus {left: 234px;}
   .easy .com-box h3 {font-size: 24px; font-weight: 500; line-height: 1.2em; margin-bottom: 15px;}
   .easy .com-box div.nth-3 h3 {margin-bottom: 30px;}
   .easy .com-box p {font-size: 16px; line-height: 1.2em; word-break: keep-all; font-weight: 300;}
+  .easy .ip-more-btn {width: 60%;}
 
   .ingProduct {background: #f5f5f5;}
   .ip-wrap {}
@@ -296,9 +311,9 @@
 /*테블릿 영역, col-md*/
 @media (min-width: 992px) {
   .com-pd {padding: 98px 10px 95px;}
-  .com-ft {text-align: center; font-size: 42px; font-family: "Noto Sans Kr";}
+  .com-ft {text-align: center; font-size: 42px; font-family: "Noto Sans Kr"; line-height: 1.2em;}
   .com-box {position: relative; margin: 0 auto; margin-top: 20px;}
-  .arr-icon {display: inline-block; position: relative; background: url(http://img.nurifunding.co.kr/nrm_icon.png) no-repeat;}
+  .arr-icon {display: inline-block; position: relative; background: url(https://nurifunding.co.kr/img/nrm_icon.png) no-repeat;}
   .br4 {border-radius: 4px;}
   .md-block {display: block;}
 
@@ -385,26 +400,20 @@
 
   .easy {background: #fff;}
   .easy h2 {font-weight: 500; margin-bottom: 20px;}
-  .easy .container > .p1 {text-align: center; font-size: 18px; word-break: keep-all; line-height: 1.2em; margin-bottom: 50px; color: #414141; font-weight: 300;}
-  .easy .com-box {text-align: center;}
-  .easy .com-box img {position: relative; display: inline-block; width: 150px; margin-top: 12px; margin-bottom: 30px;}
-  .easy .com-box div.nth-1 img {}
-  .easy .com-box div.nth-2 img {left: 17px;}
-  .easy .com-box div.nth-3 img {margin-bottom: 41px;}
-  .easy .com-box h3 {font-size: 24px; font-weight: 500; line-height: 1.2em; margin-bottom: 15px;}
-  .easy .com-box div.nth-3 h3 {margin-bottom: 25px;}
-  .easy .com-box p {font-size: 16px; line-height: 1.2em; word-break: keep-all; font-weight: 300;}
-  
-  .easy {background: #fff;}
-  .easy h2 {font-weight: 500; margin-bottom: 20px;}
   .easy .container > .p1 {text-align: center; font-size: 18px; word-break: keep-all; line-height: 1.2em; margin-bottom: 50px; color: #414141;}
   .easy .com-box {text-align: center;}
-  .easy .com-box img {position: relative; display: inline-block; width: 160px; margin-top: 12px; margin-bottom: 30px;}
+  .easy .com-box img {position: relative; display: inline-block; width: 160px; margin-top: 52px; margin-bottom: 30px;}
   .easy .com-box div.nth-1 img {}
   .easy .com-box div.nth-2 img {left: 17px;}
   .easy .com-box div.nth-3 img {}
+    .easy .com-box div.nth-1 {left: 15px;}
+    .easy .com-box div.nth-1 img.plus,  .easy .com-box div.nth-2 img.plus {position: absolute; top: 34px; width: 76px;}
+    .easy .com-box div.nth-1 img.plus {left: 250px;}
+    .easy .com-box div.nth-2 img.plus {left: 296px;}
   .easy .com-box h3 {font-size: 24px; font-weight: 500; line-height: 1.2em; margin-bottom: 8px;}
-  .easy .com-box p {font-size: 16px; line-height: 1.2em; word-break: keep-all;}
+  .easy .com-box div.nth-3 h3 {margin-bottom: 25px;}
+  .easy .com-box p {font-size: 16px; line-height: 1.2em; word-break: keep-all; font-weight: 300;}
+    .easy .ip-more-btn {width: 65%;}
   
   .ingProduct {background: #f5f5f5;}
   .ip-wrap {}

@@ -20,7 +20,7 @@ body {background: #fff;}
   .br4 {border-radius: 4px;}
   .xs-block {display: block;}
   
-  .page-sect {width: 100%; height: 120px; background: url(http://img.nurifunding.co.kr/service_bg.jpg) no-repeat center; background-size: cover;}
+  .page-sect {width: 100%; height: 120px; background: url(https://nurifunding.co.kr/img/service_bg.jpg) no-repeat center; background-size: cover;}
   .ps-h2 {position: relative; top: 50px; font-size: 28px; color: #fff;}
  
   .info-sect {padding: 30px 0;}
@@ -37,6 +37,32 @@ body {background: #fff;}
   .is-box.nth-3 .d1 img {position: relative; display: inline-block; width: 150px; margin-top: 25px; margin-bottom: 10px;}
   .is-box.nth-3 .d1 h3 {font-size: 16px; font-weight: 500; line-height: 1.2em; margin-bottom: 8px;}
   .is-box.nth-3 .d1 p {font-size: 14px; line-height: 1.3em; font-weight: 300;}
+    
+    .is-box.nth-5 h3 {text-align: center;}
+    .is-box.nth-5 > div .certifi-box a, .is-box.nth-5 .d2 .p1 {margin-top: 20px;}
+    .is-box.nth-5 > div {position: relative; text-align: center;}
+    .is-box.nth-5 > div img {display: block;}
+    .is-box.nth-5 > div .certifi-box a {position: relative; display: inline-block; width: 31%; margin-left: 1%; margin-right: 1%; text-align: center;}
+    .is-box.nth-5 > div .certifi-box a:first-child {margin-left: 0;}
+    .is-box.nth-5 > div .certifi-box a:last-child {margin-right: 0;}
+    .is-box.nth-5 > div .certifi-box a .mag {display: none; position: absolute; left: 50%; top: 50%; margin-left: -15px; margin-top: -15px; width: 30px; height: 30px;}
+    .is-box.nth-5 > div .certifi-box a:hover .mag {display: block;}
+    .is-box.nth-5 .d1 { padding-bottom: 20px; border-bottom: 1px dashed #dcdcdc;}
+    .is-box.nth-5 .d2 {}
+    .is-box.nth-5 .d2 h3 {margin-top: 20px;}
+    .is-box.nth-5 .d2 .p1, .is-box.nth-5 .d2 .history {padding-left: 50px;}
+    .is-box.nth-5 .d2 .p1 {position: relative; text-align: left; font-weight: 400; color: #111;}
+    .is-box.nth-5 .d2 .p1:after {content: ""; display: inline-block; position: relative; top: -5px; margin-left: 6px; height: 1px; width: 110px; background: #398fe1;}
+    .is-box.nth-5 .d2 .p1 .won {position: relative; top: 1px; margin-left: 3px; display: inline-block; width: 13px; height: 13px; border-radius: 50%; border: 1px solid #111; }
+    .is-box.nth-5 .d2 .history {font-size: 14px; margin-bottom: 30px; font-weight: 300; margin-top: 10px;}
+    .is-box.nth-5 .d2 .history li > div {text-align: left; line-height: 1.3em;}
+    .is-box.nth-5 .d2 .history .pull-left {width: 20%; padding-left: 2%;}
+    .is-box.nth-5 .d2 .history .pull-right {width: 78%;}
+    
+    .is-box.nth-6 {padding-bottom: 30px;}
+    .is-box.nth-6 > h3, .is-box.nth-6 > p {text-align: center;}
+    .is-box.nth-6 > img {margin-top: 25px;}
+    
 }
 
 /*테블릿 영역, col-sm */
@@ -45,7 +71,7 @@ body {background: #fff;}
   .br4 {border-radius: 4px;}
   .sm-block {display: block;}
 
-  .page-sect {width: 100%; height: 200px; background: url(http://img.nurifunding.co.kr/service_bg.jpg) no-repeat center; background-size: cover;}
+  .page-sect {width: 100%; height: 200px; background: url(https://nurifunding.co.kr/img/service_bg.jpg) no-repeat center; background-size: cover;}
   .ps-h2 {position: relative; top: 82px; font-size: 34px; color: #fff;}
 
   .info-sect {padding: 60px 0;}
@@ -62,6 +88,31 @@ body {background: #fff;}
   .is-box.nth-3 .d1 img {position: relative; display: inline-block; width: 160px; margin-top: 12px; margin-bottom: 15px;}
   .is-box.nth-3 .d1 h3 {font-size: 24px; font-weight: 500; line-height: 1.2em; margin-bottom: 15px;}
   .is-box.nth-3 .d1 p {font-size: 14px; line-height: 1.3em; word-break: keep-all; font-weight: 300;}
+    
+    .is-box.nth-5 {padding-left: 0; padding-right: 0; padding-bottom: 35px;}
+    .is-box.nth-5 h3 {text-align: center;}
+    .is-box.nth-5 > div .certifi-box a, .is-box.nth-5 .d2 .p1 {margin-top: 50px;}
+    .is-box.nth-5 > div {position: relative; text-align: center;}
+    .is-box.nth-5 > div img {display: block;}
+    .is-box.nth-5 > div .certifi-box a {position: relative; display: inline-block; width: 28%; margin-left: 3px; margin-right: 3px; text-align: center;}
+    .is-box.nth-5 > div .certifi-box a:first-child {margin-left: 0;}
+    .is-box.nth-5 > div .certifi-box a:last-child {margin-right: 0;}
+    .is-box.nth-5 > div .certifi-box a .mag {display: none; position: absolute; left: 50%; top: 50%; margin-left: -27px; margin-top: -27px; width: 54px; height: 54px;}
+    .is-box.nth-5 > div .certifi-box a:hover .mag {display: block;}
+    .is-box.nth-5 .d1 {padding-bottom: 40px; width: 60%; float: left;}
+    .is-box.nth-5 .d2 {width: 35%; float: right;}
+    .is-box.nth-5 .d2 h3 {letter-spacing: -1.5px;}
+    .is-box.nth-5 .d2:before {content: ""; display: block; position: absolute; top: 46px; left: -28px; height: 270px; border-left: 1px dashed #d1d1d1;}
+    .is-box.nth-5 .d2 .p1 {position: relative; text-align: left; font-weight: 400; color: #111; font-size: 20px; padding-left: 5px;}
+    .is-box.nth-5 .d2 .p1:after {content: ""; display: inline-block; position: relative; top: -6px; margin-left: 10px; height: 1px; width: 125px; background: #398fe1;}
+    .is-box.nth-5 .d2 .p1 .won {position: relative; top: 2px; margin-left: 3px; display: inline-block; width: 18px; height: 18px; border-radius: 50%; border: 1px solid #111; }
+    .is-box.nth-5 .d2 .history {font-size: 15px; padding-left: 10px; font-weight: 300; margin-top: 20px;}
+    .is-box.nth-5 .d2 .history li > div {text-align: left; line-height: 1.5em;}
+    .is-box.nth-5 .d2 .history .pull-left {width: 20%; text-indent: 3px;}
+    .is-box.nth-5 .d2 .history .pull-right {width: 77%;}
+    
+    .is-box.nth-6 > h3, .is-box.nth-6 > p {text-align: center;}
+    .is-box.nth-6 > img {display: block; margin: 35px auto 0; width: 85%;}
 }
 
 /*테블릿 영역, col-md */
@@ -82,11 +133,37 @@ body {background: #fff;}
   .is-box.nth-4 .is-p2 {width: 275px;}
   .is-box .is-p2 img {width: 100%;}
   
+    .is-box.nth-3 {margin-top: 55px;}
   .is-box.nth-3 .d1 {margin-top: 30px;}
   .is-box.nth-3 .d1 img {position: relative; display: inline-block; width: auto; margin-top: 12px; margin-bottom: 30px;}
   .is-box.nth-3 .d1 h3 {font-size: 24px; font-weight: 500; line-height: 1.2em; margin-bottom: 15px;}
   .is-box.nth-3 .d1 p {font-size: 16px; line-height: 1.4em; word-break: keep-all; font-weight: 300;}
   
+    .is-box.nth-5 {padding-left: 0; padding-right: 0; padding-bottom: 55px; margin-top: 55px;}
+    .is-box.nth-5 h3 {text-align: center;}
+    .is-box.nth-5 > div .certifi-box a, .is-box.nth-5 .d2 .p1 {margin-top: 90px;}
+    .is-box.nth-5 > div {position: relative; text-align: center;}
+    .is-box.nth-5 > div img {display: block;}
+    .is-box.nth-5 > div .certifi-box a {position: relative; display: inline-block; width: 175px; margin-left: 3px; margin-right: 3px; text-align: center;}
+    .is-box.nth-5 > div .certifi-box a:first-child {margin-left: 0;}
+    .is-box.nth-5 > div .certifi-box a:last-child {margin-right: 0;}
+    .is-box.nth-5 > div .certifi-box a .mag {display: none; position: absolute; left: 50%; top: 50%; margin-left: -42px; margin-top: -42px; width: 84px; height: 84px;}
+    .is-box.nth-5 > div .certifi-box a:hover .mag {display: block;}
+    .is-box.nth-5 .d1 {padding-bottom: 40px; width: 65%; float: left; left: -28px;}
+    .is-box.nth-5 .d2 {width: 35%; float: right;}
+    .is-box.nth-5 .d2 h3 {letter-spacing: -1.5px;}
+    .is-box.nth-5 .d2:before {content: ""; display: block; position: absolute; top: 0px; left: -25px; height: 396px; border-left: 1px dashed #d1d1d1;}
+    .is-box.nth-5 .d2 .p1 {position: relative; text-align: left; font-weight: 400; color: #111; font-size: 30px; padding-left: 5px;}
+    .is-box.nth-5 .d2 .p1:after {content: ""; display: inline-block; position: relative; top: -10px; margin-left: 10px; height: 1px; width: 135px; background: #398fe1;}
+    .is-box.nth-5 .d2 .p1 .won {position: relative; top: 2px; margin-left: 3px; display: inline-block; width: 25px; height: 25px; border-radius: 50%; border: 1px solid #111; }
+    .is-box.nth-5 .d2 .history {font-size: 18px; padding-left: 10px; font-weight: 300; margin-top: 35px;}
+    .is-box.nth-5 .d2 .history li > div {text-align: left; line-height: 1.5em; letter-spacing: 0;}
+    .is-box.nth-5 .d2 .history .pull-left {width: 20%;}
+    .is-box.nth-5 .d2 .history .pull-right {width: 77%;}
+
+    .is-box.nth-6 > h3, .is-box.nth-6 > p {text-align: center;}
+    .is-box.nth-6 > img {display: block; margin: 55px auto 0; width: 762px;}
+    
 }
 
 /*pc 영역*/

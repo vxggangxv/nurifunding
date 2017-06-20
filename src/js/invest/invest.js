@@ -24,8 +24,8 @@ $(function() {
     auto: true,
     speed: 500,
     duration: 6000,
-    prevText: '<img src="http://img.nurifunding.co.kr/invest/inv_btn_prev.png" alt="다음">',
-    nextText: '<img src="http://img.nurifunding.co.kr/invest/inv_btn_next.png" alt="다음">'
+    prevText: '<img src="https://nurifunding.co.kr/img/invest/inv_btn_prev.png" alt="다음">',
+    nextText: '<img src="https://nurifunding.co.kr/img/invest/inv_btn_next.png" alt="다음">'
   });
   
 });

@@ -39,6 +39,8 @@ li[class*=ipli] .pull-right.day {font-weight: 500; font-size: 17px;}
 .bond-num {font-size: 17px; letter-spacing: 0; padding-bottom: 10px; border-bottom: 1px solid #aaa;}
 .est-h2 {margin-top: 25px; font-size: 36px;}
 .est-box {position: relative;}
+.est-box #est-slider .mag {display: none; position: absolute; left: 50%; top: 50%; margin-left: -42px; margin-top: -42px; width: 84px; height: 84px;}
+.est-box #est-slider:hover .mag {display: block;}
 .est-box.nth-1 {margin-top: 15px;}
 .est-box.nth-2 {margin-top: 10px;}
 .est-box.nth-2 > p {line-height: 1.5em; font-weight: 400; font-size: 16px; letter-spacing: -1px;}
@@ -46,9 +48,12 @@ li[class*=ipli] .pull-right.day {font-weight: 500; font-size: 17px;}
 .est-box.nth-3 > a {display: block; text-align: center; padding: 20px 0; font-size: 19px; letter-spacing: 0;}
 .est-box.nth-4 {padding-bottom: 30px; border-bottom: 10px solid #398fe1;}
 
+.est-b4-li1 .quest {position: relative; top: 9px; display: inline-block; border-radius: 50%; width: 25px; height: 25px; margin-left: -2px;}
+.est-b4-li1 .quest span {position: relative; top: -16px; left: 8px; font-size: 18px; font-family: "Arial", "Noto Sans KR";}
+
 .est-b4-ul {}
-li[class*="est-b4-li"] {float: left; margin-top: 30px; margin-right: 15px; padding-left: 25px; border-left: 1px solid #d2d2d2;}
-li[class*="est-b4-li"]:first-child {margin-left: 20px; border-left: 0;}
+li[class*="est-b4-li"] {float: left; margin-top: 30px; margin-right: 10px; padding-left: 20px; border-left: 1px solid #d2d2d2;}
+li[class*="est-b4-li"]:first-child {margin-left: 0px; border-left: 0;}
 .est-b4-p1, .est-b4-p2 {letter-spacing: 0;}
 .est-b4-p1 {font-size: 17px;}
 .est-b4-p2 {padding-right: 10px; margin-top: 20px; font-size: 38px; font-weight: 500;} 
@@ -126,15 +131,49 @@ li[class*="est-b4-li"]:first-child {margin-left: 20px; border-left: 0;}
 .est-box.nth-9 {}
 .est-box.nth-9 p {font-size: 16px; line-height: 1.4em;}
 .est-box.nth-9 p.mt {margin-top: 15px;}
+.nowheel {position: relative; top: 483px; width: 100%; height: 370px; margin-top: -370px; background: transparent; z-index: 1;}
 .est-box.nth-9 iframe {width: 923px; height: 370px; margin-top: 30px; position: relative; left: -15px;}
 .d-hr {width: 100%; margin-top: 15px; font-size: 17px; padding: 20px 0 0; border-top: 1px solid #ddd;}
 
 .est-box.nth-11, .est-box.nth-12 {width: 49%; padding-left: 40px; padding-right: 40px;} 
 .est-box.nth-11 {position: relative; height: 454px;}
-.est-box.nth-11 .ebt-b11-p {margin-top: 40px; font-size: 17px;}
-.canvas-box {margin-top: 40px; overflow: hidden;}
+.est-box.nth-11 .ebt-b11-p {margin-top: 30px; font-weight: 300; font-size: 17px; line-height: 1.3em; word-break: keep-all;}
+.est-box.nth-11 .grade {}
+.est-box.nth-11 .grade .g-th {margin: 35px 0 30px; font-size: 34px; font-family: "Arial", "Noto Sans KR"; font-weight: 600; letter-spacing: 0;}
+.est-box.nth-11 .grade .g-chart   {
+    position: relative; width: 100%; height: 8px;
+    background: #398fe1; /* Old browsers */
+    background: -moz-linear-gradient(left,  #398fe1 0%, #3ac1e3 34%, #34ba89 69%, #bed13f 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left,  #398fe1 0%,#3ac1e3 34%,#34ba89 69%,#bed13f 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right,  #398fe1 0%,#3ac1e3 34%,#34ba89 69%,#bed13f 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#398fe1', endColorstr='#bed13f',GradientType=1 ); /* IE6-9 */
+
+}
+.est-box.nth-11 .grade #g-chart-dot {position: absolute; left: 0; top: -8px; display: block; width: 22px; height: 22px; border: 4px solid #398fe1; background: #fff; border-radius: 50%;}
+.est-box.nth-11 .grade #g-chart-dot.n1 {left: 0%; margin-left: -1px;}
+.est-box.nth-11 .grade #g-chart-dot.n2 {left: 33.3%; margin-left: -11px;}
+.est-box.nth-11 .grade #g-chart-dot.n3 {left: 66.6%; margin-left: -11px;}
+.est-box.nth-11 .grade #g-chart-dot.n4 {left: 100%; margin-left: -21px;}
+.est-box.nth-11 .grade .g-td, .est-box.nth-11 .grade .g-label {position: relative; font-weight: 300;}
+.est-box.nth-11 .grade .g-td {position: relative; height: 20px; font-size: 18px; margin-top: 10px;}
+.est-box.nth-11 .grade .g-label {color: #a0a0a0; height: 40px; margin-top: 20px; font-size: 15px; margin-bottom: 34px;}
+.est-box.nth-11 .grade .g-td span, .est-box.nth-11 .grade .g-label span {position: absolute; display: inline-block; line-height: 1.2em;}
+.est-box.nth-11 .grade .g-td span {}
+.est-box.nth-11 .grade .g-label span.nth-1 {left: 0;}
+.est-box.nth-11 .grade .g-label span.nth-2 {left: 95px;}
+.est-box.nth-11 .grade .g-label span.nth-3 {left: 194px;}
+.est-box.nth-11 .grade .g-label span.nth-4 {left: 288px;}
+.est-box.nth-11 .grade .g-td span.nth-1 {left: 0; margin-left: 1px;}
+.est-box.nth-11 .grade .g-td span.nth-2 {left: 33.3%; margin-left: -10px;}
+.est-box.nth-11 .grade .g-td span.nth-3 {left: 66.6%; margin-left: -10px;}
+.est-box.nth-11 .grade .g-td span.nth-4 {left: 100%; margin-left: -21px;}
+.est-box.nth-11 .grade .g-td span.nth-2:before, .est-box.nth-11 .grade .g-td span.nth-3:before {content: ""; position: absolute; display: block; top: -18px; left: 10px; width: 2px; height: 8px; background: #fff;}
+
+.est-box.nth-11 .btn-area > a {display: block; text-align: center; padding: 15px 0; font-size: 19px; letter-spacing: 0;}
+
+/*.canvas-box {margin-top: 40px; overflow: hidden;}
 #canvas-holder-11 {position: relative; width: 455px;  margin: 0 auto;}
-#chart-area-11 {margin-top: -24px;}
+#chart-area-11 {margin-top: -24px;}*/
 
 .est-box.nth-12 {margin-left: 2%; height: 454px;} 
 .est-box.nth-12 .est-b7-p2 {line-height: 2.1em;}
@@ -143,7 +182,7 @@ li[class*="est-b4-li"]:first-child {margin-left: 20px; border-left: 0;}
 .est-box.nth-12 .est-b7-p2.mt {margin-top: 20px;}
 .est-box.nth-12 .est-b7-p2 em {font-size: 18px;}
 .eb12-can-box {position: relative; margin-top: 5px; cursor: pointer;}
-#canvas-holder-12 {width: 60%; height: auto; margin: 0 auto; overflow: hidden;}
+#canvas-holder-12 {width: 222px; height: auto; margin: 0 auto; overflow: hidden;}
 #canvas-holder-12 .in-txt {display: none;}
 #chart-area-12 {margin-top: -24px; margin-bottom: 20px;}
 .est-box.nth-12 .est-b7-p3 {font-size: 16px; font-weight: 300;}
@@ -206,7 +245,7 @@ li[class*="prps-d1-li"] .nth-2 {margin-top: 10px; font-size: 17px;}
 li[class*="prps-d1-li"].prps-d1-li5 .nth-2 {margin-top: 0px; position: relative; top: 1px;}
 
 .prps-d1-li1 .nr-check {width: 17px; height: 17px; position: relative; top: 1px;}
-.prps-d1-li1 .nr-check:checked {width: 17px; height: 17px; background: url(http://img.nurifunding.co.kr/check-icon.png) no-repeat 3px 2px; background-size: 10px; background-color: #fff;}
+.prps-d1-li1 .nr-check:checked {width: 17px; height: 17px; background: url(https://nurifunding.co.kr/img/check-icon.png) no-repeat 3px 2px; background-size: 10px; background-color: #fff;}
 .prps-d1-li1 .nr-check + span {vertical-align: middle; margin-left: 15px; font-size: 17px;}
 
 .dropdown.com-p-chd {height: 28px; width: 100%;}
@@ -233,9 +272,9 @@ li[class*="prps-d2-li"] {padding: 15px 5px; font-size: 20px;}
 .prps-d3-p2 .c-orange {margin-right: 3px;}
 .prps-d3-p2 .f0 {vertical-align: middle;}
 /* .prps-d3-p2 .nr-check {width: 15px; height: 15px;}
-.prps-d3-p2 .nr-check:checked {width: 15px; height: 15px; background: url(http://img.nurifunding.co.kr/check-icon.png) no-repeat 2px 2px; background-size: 10px; background-color: #fff;} */
+.prps-d3-p2 .nr-check:checked {width: 15px; height: 15px; background: url(https://nurifunding.co.kr/img/check-icon.png) no-repeat 2px 2px; background-size: 10px; background-color: #fff;} */
 .prps-d3-p2 .nr-check {width: 19px; height: 19px;}
-.prps-d3-p2 .nr-check:checked {width: 19px; height: 19px; background: url(http://img.nurifunding.co.kr/check-icon.png) no-repeat 2px 2px; background-color: #fff;}
+.prps-d3-p2 .nr-check:checked {width: 19px; height: 19px; background: url(https://nurifunding.co.kr/img/check-icon.png) no-repeat 2px 2px; background-color: #fff;}
 .prps-d3-p2 .nr-check + span {vertical-align: middle; margin-left: 5px; font-size: 14px;}
 
 .prps-p1 {margin-top: 30px; position: relative;}
@@ -252,6 +291,30 @@ li[class*="prps-d2-li"] {padding: 15px 5px; font-size: 20px;}
 .proposal.result .prps-p1 .btn {display: inline-block; width: 48%; text-align: center; padding: 15px 0; font-size: 15px;}
 .proposal.result .prps-p1 .btn.nth-1 {border: 1px solid #888;}
 .proposal.result .prps-p1 .btn.nth-2 {margin-left: 2%;}
+
+.grade-sec {position: relative;}
+.grade-sec .com-box {width: 837px; margin: 30px auto 40px; border: 1px solid #ddd; background: #fff; padding: 45px 60px;}
+.grd-h2 {margin-top: 35px; font-size: 34px; display: block; text-align: center; width: 100%; font-weight: 400; letter-spacing: -1px;}
+.grd-com-h3 {font-size: 24px; line-height: 1.2em;}
+.grd-rate-img {margin-top: 40px; width: 100%; height: 410px; background: url(https://nurifunding.co.kr/img/invest/grade_cht.png) no-repeat; background-size: 714px;}
+.grd-label {position: relative; margin-top: 40px; padding-top: 40px; border-top: 1px solid #e0e0e0; font-size: 0;}
+.grd-label li {display: inline-block; color: #fff; margin-top: 3px; width: 21%; font-size: 14px; text-align: center; padding: 8px 0; font-weight: 300; letter-spacing: -0.5px;
+    border-left: 1px solid #fff;}
+.grd-label li.l1 {color: #333; margin-top: 0; text-align: left; width: 16%; font-weight: 400; border-left: 0;}
+.grd-label li.l2 {background: #398fe1;}
+.grd-label li.l3 {background: #3ac1e3;}
+.grd-label li.l4 {background: #34ba89;}
+.grd-label li.l5 {background: #bed13f;}
+
+.grd-fig {position: relative; text-align: center;}
+.grd-fig img {position: relative; display: inline-block; margin-top: 40px;}
+.grd-fig img.dn {width: 324px; }
+.grd-fig img.pct {width: 294px; margin-left: 65px; top: -15px;}
+
+.grd-txt-box {margin-top: 40px; padding: 35px 5px 0; border-top: 1px solid #e0e0e0;}
+.grd-p {font-size: 16px; line-height: 1.5em; font-weight: 300; word-break: keep-all; color: #646464;}
+.grd-p.mt {margin-top: 20px; color: #1e1e1e;}
+.grd-p:first-child {margin-top: 0;}
 
 /* ie9 선택자 안먹는 오류 수정 */
 .ip-outer {padding: 7.5px;}
