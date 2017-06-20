@@ -23,7 +23,7 @@
   .xs-block {display: block;}
 
   .main {width: 100%; background: #126cc3;}
-  .main-box.main-common {position: relative; width: 300px; height: 202px;}
+  .main-box.main-common {position: relative; height: 202px;}
   .main-box.main-common > div {position: absolute;}
   .main-box.main-common > div.s1-div-1 {width: 100%; text-align: center;}
   .main-box.main-common > div.s1-div-1 p {position: relative; display: inline-block;}
@@ -31,9 +31,9 @@
     margin-top: 36px; letter-spacing: 0.5px; text-indent: -8px;}
   .main-box.main-common > div.s1-div-1 p.nth-1:after {position: absolute; content: ""; display: block; left: 36px; bottom: -15px; width: 1px; border: 8px solid #09345f; border-color: transparent; border-top-color: #09345f;}
   .main-box.main-common > div.s1-div-1 p.nth-1 .f-bd {font-weight: 400;}
-  .main-box.main-common > div.s1-div-1 p.nth-2 {font-size: 45px; color: #fff; font-weight: 400; letter-spacing: -2px; font-weight: 400; margin-top: 10px; line-height: 1.1em;}
+  .main-box.main-common > div.s1-div-1 p.nth-2 {font-size: 41px; color: #fff; font-weight: 400; letter-spacing: -2px; font-weight: 400; margin-top: 10px; line-height: 1.1em;}
   .main-box.main-common > div.s1-div-1 p.nth-2 i {font-style: italic;}
-  .main-box.main-common > div.s1-div-1 p.nth-3 {font-size: 18px; color: #fff; font-weight: 200; margin-top: 10px; letter-spacing: -0.5px;}
+  .main-box.main-common > div.s1-div-1 p.nth-3 {font-size: 22px; color: #fff; font-weight: 200; margin-top: 10px;}
   
   .main-box.swiper-container {position: relative; width: 320px; padding: 0 15px; margin: 0 auto; text-align: center;}
   .main-box .swiper-slide {position: relative; width: 300px; height: 215px;}
@@ -108,7 +108,6 @@
   .easy .com-box div.nth-1 img.plus,  .easy .com-box div.nth-2 img.plus {width: 40px; left: 0; margin-bottom: -12px; margin-top: 10px;}
   .easy .com-box h3 {font-size: 16px; font-weight: 500; line-height: 1.2em; margin-bottom: 8px;}
   .easy .com-box p {font-size: 14px; line-height: 1.2em; font-weight: 300;}
-    .easy .ip-more-btn {width: 50%;}
   
   .ingProduct {background: #f5f5f5;}
   .ip-wrap {}
@@ -133,8 +132,8 @@
   .ip-btn {display: inline-block; width: 280px; color: #fff; line-height: 2.8em; font-size: 14px; letter-spacing: 0;}
   .ip-more-outer {margin: 20px auto 5px;}
   .ip-more-box {text-align: center;}
-  .ip-more-btn {display: inline-block; width: 100%; border: 1px solid #ddd; line-height: 2.5em; font-size: 15px; background: #fff;}
-  .black-r-icon {width: 7px; height: 11px; background-position: -25px 0; left: 6px;}
+    .ip-more-btn {display: inline-block; width: 100%; border: 1px solid #dcdcdc; line-height: 2.5em; font-size: 15px; background: #126cc3; color: #fff;}
+    .black-r-icon {width: 7px; height: 11px; background: url(https://nurifunding.co.kr/img/i_whiteArr.png) no-repeat; background-size: 6px; left: 6px;}
 
   .faq {background: #dae7f3;}
   .fq-outer {margin-top: 10px;}
@@ -148,7 +147,7 @@
   .a-icon {background-position: -75px; top: 15px;}
   .fq-btn-outer {margin: 20px auto 5px;}
   .fq-btn-box {text-align: center;}
-  .fq-btn {display: inline-block; width: 100%; border: 1px solid #ddd; line-height: 2.5em; font-size: 15px; background: #fff;}
+    .fq-btn {display: inline-block; width: 100%; border: 1px solid #dcdcdc; line-height: 2.5em; font-size: 15px; background: #126cc3; color: #fff;}
 }
 @media (min-width: 410px) and (max-width: 480px){
     .main-box .swiper-slide > div.s1-div-2 .d2 p {letter-spacing: 0; font-size: 16px;}
@@ -160,6 +159,9 @@
     .main-box .swiper-slide > div.s1-div-3 img {width: 165px;}
     .main-box .swiper-slide > div.s3-div-3 img {width: 169px;}
     .main-box .swiper-slide > div.s2-div-3 img {width: 174px;}
+}
+@media (min-device-width: 320px) {
+    .main-box.main-common > div.s1-div-1 p.nth-3 {font-size: 20px;}
 }
 
 
@@ -181,9 +183,9 @@
     margin-top: 60px;}
   .main-box.main-common > div.s1-div-1 p.nth-1:after {position: absolute; content: ""; display: block; left: 60px; bottom: -27px; width: 1px; border: 14px solid #09345f; border-color: transparent; border-top-color: #09345f;}
   .main-box.main-common > div.s1-div-1 p.nth-1 .f-bd {font-weight: 400;}
-  .main-box.main-common > div.s1-div-1 p.nth-2 {font-size: 74px; color: #fff; font-weight: 400; letter-spacing: -2px; font-weight: 400; margin-top: 16px;}
+  .main-box.main-common > div.s1-div-1 p.nth-2 {font-size: 71px; color: #fff; font-weight: 400; letter-spacing: -2px; font-weight: 400; margin-top: 16px;}
   .main-box.main-common > div.s1-div-1 p.nth-2 i {font-style: italic;}
-  .main-box.main-common > div.s1-div-1 p.nth-3 {font-size: 34px; color: #fff; font-weight: 200; margin-top: 20px;}
+  .main-box.main-common > div.s1-div-1 p.nth-3 {font-size: 38px; color: #fff; font-weight: 200; margin-top: 20px;}
   
   .main-box.swiper-container {position: relative; padding: 0 50px; margin: 0 auto; text-align: center;}
   .main-box .swiper-slide {position: relative; width: 650px; height: 359px;}
@@ -191,7 +193,7 @@
   .main-box .swiper-slide > div {position: absolute;}
   
   .main-box .swiper-slide > div.s1-div-2 {top: 36px; left: 20px; color: #fff; text-align: left; z-index: 1;}
-  .main-box .swiper-slide > div.s1-div-2 .d1 {font-size: 34px; font-weight: 200;}
+  .main-box .swiper-slide > div.s1-div-2 .d1 {font-size: 36px; font-weight: 200;}
   .main-box .swiper-slide > div.s1-div-2 .d1 p.nth-2 {font-weight: 400; margin-top: 10px;}
   .main-box .swiper-slide > div.s1-div-2 .d2 {font-size: 20px;}
   .main-box .swiper-slide > div.s1-div-2 .d2 p {margin-top: 10px; font-weight: 300;}
@@ -265,7 +267,7 @@
   .easy .com-box h3 {font-size: 24px; font-weight: 500; line-height: 1.2em; margin-bottom: 15px;}
   .easy .com-box div.nth-3 h3 {margin-bottom: 30px;}
   .easy .com-box p {font-size: 16px; line-height: 1.2em; word-break: keep-all; font-weight: 300;}
-  .easy .ip-more-btn {width: 60%;}
+  /*.easy .ip-more-btn {width: 60%;}*/
 
   .ingProduct {background: #f5f5f5;}
   .ip-wrap {}
@@ -291,8 +293,8 @@
   .ip-btn {display: inline-block; width: 88.5%; color: #fff; line-height: 2.8em; font-size: 16px; letter-spacing: 0;}
   .ip-more-outer {margin: 30px auto 0;}
   .ip-more-box {text-align: center;}
-  .ip-more-btn {position: relative; left: -10px; display: inline-block; width: 728px; border: 1px solid #ddd; line-height: 2.8em; font-size: 18px; background: #fff;}
-  .black-r-icon {width: 10px; height: 16px; background-position: -50px 0; left: 8px; top: 2px;}
+    .ip-more-btn {position: relative; left: -10px; display: inline-block; width: 60%; border: 1px solid #dcdcdc; line-height: 2.8em; font-size: 18px; background: #126cc3; color: #fff;}
+    .black-r-icon {width: 10px; height: 16px; background: url(https://nurifunding.co.kr/img/i_whiteArr.png) no-repeat; left: 8px; top: 2px;}
 
   .faq {background: #dae7f3;}
   .fq-outer {margin-top: 20px;}
@@ -305,7 +307,7 @@
   .a-icon {background-position: -150px; top: 18px;}
   .fq-btn-outer {margin: 30px auto 0px;}
   .fq-btn-box {text-align: center;}
-  .fq-btn {display: inline-block; width: 40%; border:1px solid #202020; line-height: 2.5em; font-size: 18px;}
+    .fq-btn {display: inline-block; width: 60%; border: 1px solid #dcdcdc; line-height: 2.5em; font-size: 18px; background: #126cc3; color: #fff;}
 }
 
 /*테블릿 영역, col-md*/
@@ -325,21 +327,22 @@
   margin-top: 60px; letter-spacing: 1px;}
   .main-box.main-common > div.s1-div-1 p.nth-1:after {position: absolute; content: ""; display: block; left: 50px; bottom: -27px; width: 1px; border: 14px solid #09345f; border-color: transparent; border-top-color: #09345f;}
   .main-box.main-common > div.s1-div-1 p.nth-1 .f-bd {font-weight: 400;}
-  .main-box.main-common > div.s1-div-1 p.nth-2 {font-size: 74px; color: #fff; font-weight: 400; letter-spacing: -2px; font-weight: 400; margin-top: 20px;}
+  .main-box.main-common > div.s1-div-1 p.nth-2 {font-size: 71px; color: #fff; font-weight: 400; letter-spacing: -2px; font-weight: 400; margin-top: 20px;}
   .main-box.main-common > div.s1-div-1 p.nth-2 i {font-style: italic;}
-  .main-box.main-common > div.s1-div-1 p.nth-3 {font-size: 42px; color: #fff; font-weight: 200; margin-top: 24px;}
+  .main-box.main-common > div.s1-div-1 p.nth-3 {font-size: 38px; color: #fff; font-weight: 200; margin-top: 24px;}
   .main-box.swiper-container {position: relative;  padding: 0 0px; margin: 0 auto; text-align: center;}
   .main-box .swiper-slide {position: relative; width: 945px; height: 375px;}
   .main-box .swiper-slide img {display: block;}
   .main-box .swiper-slide > div {position: absolute;}
   .main-box .swiper-slide > div.s1-div-2 {top: 68px; left: 20px; color: #fff; text-align: left;}
-  .main-box .swiper-slide > div.s1-div-2 .d1 {font-size: 34px; font-weight: 200;}
+  .main-box .swiper-slide > div.s1-div-2 .d1 {font-size: 40px; font-weight: 200;}
+    .main-box .swiper-slide.nth-1 > div.s1-div-2 .d1 p.nth-2, .main-box .swiper-slide.nth-1 > div.s1-div-2 .d1 p.nth-2 span {letter-spacing: -2.5px;}
   .main-box .swiper-slide > div.s1-div-2 .d1 p.nth-2 {font-weight: 400; margin-top: 10px;}
-  .main-box .swiper-slide > div.s1-div-2 .d2 {font-size: 20px;}
+  .main-box .swiper-slide > div.s1-div-2 .d2 {font-size: 24px;}
   .main-box .swiper-slide > div.s1-div-2 .d2 p {margin-top: 10px; font-weight: 300; letter-spacing: 0px;}
   .main-box .swiper-slide > div.s1-div-2 .d2 p:first-child {margin-top: 20px;}
-  .main-box .swiper-slide > div.s1-div-2 .d2 p img {display: inline-block; position: relative; top: 4px; margin-right: 10px;}
-  .main-box .swiper-slide > div.s1-div-3  {top: 42px; right: 20px;}
+  .main-box .swiper-slide > div.s1-div-2 .d2 p img {display: inline-block; position: relative; top: 5px; margin-right: 10px; width: 19px;}
+  .main-box .swiper-slide > div.s1-div-3  {top: 42px; right: 0px;}
   .main-box .swiper-slide > div.s1-div-3 img {}
   .main-box .swiper-slide > div.s2-div-3  {top: 53px; right: 64px;}
   .main-box .swiper-slide > div.s3-div-3  {top: 59px; right: 50px;}
@@ -347,7 +350,7 @@
   .main-box .swiper-slide > div.s2-div-2 {top: 100px;}
   .main-box .swiper-slide > div.s3-div-2 {top: 100px; left: 30px;}
   
-  .main-box .swiper-slide > div.s2-div-2 .d1, .main-box .swiper-slide > div.s3-div-2 .d1 {font-size: 38px;}
+  .main-box .swiper-slide > div.s2-div-2 .d1, .main-box .swiper-slide > div.s3-div-2 .d1 {font-size: 40px;}
   
   .main-box .swiper-slide > div.s2-div-2 .d2 p.nth-2, .main-box .swiper-slide > div.s2-div-2 .d2 p.nth-4 {float: left; margin-right: 3px;}
   .main-box .swiper-slide > div.s3-div-2 .d2 p.nth-2, .main-box .swiper-slide > div.s3-div-2 .d2 p.nth-3 {display: none;}
@@ -413,7 +416,7 @@
   .easy .com-box h3 {font-size: 24px; font-weight: 500; line-height: 1.2em; margin-bottom: 8px;}
   .easy .com-box div.nth-3 h3 {margin-bottom: 25px;}
   .easy .com-box p {font-size: 16px; line-height: 1.2em; word-break: keep-all; font-weight: 300;}
-    .easy .ip-more-btn {width: 65%;}
+    /*.easy .ip-more-btn {width: 65%;}*/
   
   .ingProduct {background: #f5f5f5;}
   .ip-wrap {}
@@ -439,8 +442,8 @@
   .ip-btn {display: inline-block; width: 88.5%; color: #fff; line-height: 2.8em; font-size: 18px; letter-spacing: 0;}
   .ip-more-outer {margin: 50px auto 0;}
   .ip-more-box {text-align: center;}
-  .ip-more-btn {position: relative; left: -10px; display: inline-block; width: 924px; border: 1px solid #ddd; line-height: 2.8em; font-size: 20px; background: #fff;}
-  .black-r-icon {width: 10px; height: 16px; background-position: -50px 0; left: 8px; top: 1px;}
+    .ip-more-btn {position: relative; left: -10px; display: inline-block; width: 65%; border: 1px solid #dcdcdc; line-height: 2.8em; font-size: 20px; background: #126cc3; color: #fff;}
+    .black-r-icon {width: 10px; height: 16px; background: url(https://nurifunding.co.kr/img/i_whiteArr.png) no-repeat; left: 8px; top: 1px;}
 
   .faq {background: #dae7f3;}
   .fq-outer {margin-top: 30px;}
@@ -453,7 +456,7 @@
   .a-icon {background-position: -150px; top: 18px;}
   .fq-btn-outer {margin: 50px auto 0px;}
   .fq-btn-box {text-align: center;}
-  .fq-btn {display: inline-block; width: 100%; border:1px solid #ddd; line-height: 2.8em; font-size: 20px; background: #fff;}
+    .fq-btn {display: inline-block; width: 65%; border:1px solid #dcdcdc; line-height: 2.8em; font-size: 20px; background: #126cc3; color: #fff;}
 
 }
 

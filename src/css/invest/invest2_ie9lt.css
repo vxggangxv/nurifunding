@@ -316,5 +316,26 @@ li[class*="prps-d2-li"] {padding: 15px 5px; font-size: 20px;}
 .grd-p.mt {margin-top: 20px; color: #1e1e1e;}
 .grd-p:first-child {margin-top: 0;}
 
+.rEstate-sec .grd-estate-img {margin-top: 25px; padding: 39% 0 0; background: url(https://nurifunding.co.kr/img/invest/rEstate_chart.png) no-repeat; background-size: 100% auto;}
+.rEstate-sec .ps {text-align: right; margin-top: 15px; font-size: 14px;}
+.rEstate-sec .repay-tb, .rEstate-sec .yield-tb {position: relative; width: 100%; margin-top: 25px; font-size: 14px; text-align: center;}
+.rEstate-sec .repay-tb {margin-top: 6px;}
+.rEstate-sec .repay-tb th, .rEstate-sec .repay-tb td,
+.rEstate-sec .yield-tb th, .rEstate-sec .yield-tb td
+{position: relative; border-collapse: collapse; border: 1px solid #000; vertical-align: middle; line-height: 1.1em; font-family: "Malgun Gothic";}
+.rEstate-sec .repay-tb th, .rEstate-sec .repay-tb td.nth-1 {color: #fff;}
+.rEstate-sec .repay-tb th > div, .rEstate-sec .repay-tb td > div,
+.rEstate-sec .yield-tb th > div, .rEstate-sec .yield-tb td > div {position: relative; padding: 14px 1px;}
+.rEstate-sec .repay-tb th.nth-1 > div, .rEstate-sec .repay-tb th.nth-2 > div, .rEstate-sec .repay-tb th.nth-3 > div, .rEstate-sec .repay-tb th.nth-7 > div,
+.rEstate-sec .repay-tb td.nth-1 > div {background: #398fe1;}
+.rEstate-sec .repay-tb th.nth-4 > div {background: #34ba89;}
+.rEstate-sec .repay-tb th.nth-5 > div {background: #daa411;}
+.rEstate-sec .repay-tb th.nth-6 > div {background: #ea791d;}
+.rEstate-sec .repay-tb td.nth-7 > div {background: #f5f5f5;}
+.rEstate-sec .repay-tb td {text-indent: 1px;}
+.rEstate-sec .repay-tb td.nth-1 {text-indent: 0; padding-right: 0;}
+
+.rEstate-sec .yield-tb th > div {background: #398fe1; color: #fff;}
+
 /* ie9 선택자 안먹는 오류 수정 */
 .ip-outer {padding: 7.5px;}

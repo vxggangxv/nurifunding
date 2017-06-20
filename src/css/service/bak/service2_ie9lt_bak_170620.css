@@ -29,7 +29,7 @@ body {background: #fff;}
 .info-sect {padding: 0px 0 65px;}
 .is-box {position: relative; border-bottom: 1px solid #dcdcdc; margin-top: 75px; padding-bottom: 80px}
 .is-box.nth-3 {text-align: center;}
-.is-box.nth-4 {padding-bottom: 60px;}
+.is-box.nth-4 {border-bottom: 0; padding-bottom: 60px;}
 .is-h3 {font-size: 36px; font-weight: 500; margin-top: 0px; line-height: 1.3em; color: #111;}
 .is-box.nth-2 .is-h3 {margin-top: 20px;}
 .is-p {margin-top: 15px; font-size: 18px; font-weight: 300; line-height: 1.6em;}
@@ -46,7 +46,7 @@ body {background: #fff;}
 .is-box.nth-3 .d1 p {font-size: 16px; line-height: 1.4em; word-break: keep-all; font-weight: 300;}
 .is-box.nth-3 .d1 > div.nth-1 p {letter-spacing: -1.5px;} /*ie8 별도 폰트 간격 조절*/
 
-.is-box.nth-5 {padding: 0px; margin-top: 55px; margin-bottom: -20px; border-bottom: 0;}
+.is-box.nth-5 {padding-left: 0; padding-right: 0; padding-bottom: 55px; margin-top: 55px;}
 .is-box.nth-5 h3 {text-align: center;}
 .is-box.nth-5 > div .certifi-box a, .is-box.nth-5 .d2 .p1 {margin-top: 90px;}
 .is-box.nth-5 > div {position: relative; text-align: center;}
@@ -57,7 +57,6 @@ body {background: #fff;}
 .is-box.nth-5 > div .certifi-box a .mag {display: none; position: absolute; left: 50%; top: 50%; margin-left: -42px; margin-top: -42px; width: 84px; height: 84px;}
 .is-box.nth-5 > div .certifi-box a:hover .mag {display: block;}
 .is-box.nth-5 .d1 {padding-bottom: 40px; width: 65%; float: left; left: -28px;}
-.is-box.nth-5 .d1 .cap {font-size: 18px; line-height: 1.8em;}
 .is-box.nth-5 .d2 {width: 35%; float: right;}
 .is-box.nth-5 .d2 h3 {letter-spacing: -1.5px;}
 .is-box.nth-5 .d2:before {content: ""; display: block; position: absolute; top: 0px; left: -25px; height: 396px; border-left: 1px dashed #d1d1d1;}
