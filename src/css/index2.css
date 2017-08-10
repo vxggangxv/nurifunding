@@ -31,7 +31,7 @@
     margin-top: 36px; letter-spacing: 0.5px; text-indent: -8px;}
   .main-box.main-common > div.s1-div-1 p.nth-1:after {position: absolute; content: ""; display: block; left: 36px; bottom: -15px; width: 1px; border: 8px solid #09345f; border-color: transparent; border-top-color: #09345f;}
   .main-box.main-common > div.s1-div-1 p.nth-1 .f-bd {font-weight: 400;}
-  .main-box.main-common > div.s1-div-1 p.nth-2 {font-size: 41px; color: #fff; font-weight: 400; letter-spacing: -2px; font-weight: 400; margin-top: 10px; line-height: 1.1em;}
+  .main-box.main-common > div.s1-div-1 p.nth-2 {font-size: 41px; color: #fff; font-weight: 400; letter-spacing: -2px; font-weight: 400; margin-top: 10px; line-height: 1.1em; display: block;}
   .main-box.main-common > div.s1-div-1 p.nth-2 i {font-style: italic;}
   .main-box.main-common > div.s1-div-1 p.nth-3 {font-size: 22px; color: #fff; font-weight: 200; margin-top: 10px;}
   
@@ -183,7 +183,7 @@
     margin-top: 60px;}
   .main-box.main-common > div.s1-div-1 p.nth-1:after {position: absolute; content: ""; display: block; left: 60px; bottom: -27px; width: 1px; border: 14px solid #09345f; border-color: transparent; border-top-color: #09345f;}
   .main-box.main-common > div.s1-div-1 p.nth-1 .f-bd {font-weight: 400;}
-  .main-box.main-common > div.s1-div-1 p.nth-2 {font-size: 71px; color: #fff; font-weight: 400; letter-spacing: -2px; font-weight: 400; margin-top: 16px;}
+  .main-box.main-common > div.s1-div-1 p.nth-2 {font-size: 71px; color: #fff; font-weight: 400; letter-spacing: -2px; font-weight: 400; margin-top: 16px; display: block;}
   .main-box.main-common > div.s1-div-1 p.nth-2 i {font-style: italic;}
   .main-box.main-common > div.s1-div-1 p.nth-3 {font-size: 38px; color: #fff; font-weight: 200; margin-top: 20px;}
   
@@ -327,7 +327,7 @@
   margin-top: 60px; letter-spacing: 1px;}
   .main-box.main-common > div.s1-div-1 p.nth-1:after {position: absolute; content: ""; display: block; left: 50px; bottom: -27px; width: 1px; border: 14px solid #09345f; border-color: transparent; border-top-color: #09345f;}
   .main-box.main-common > div.s1-div-1 p.nth-1 .f-bd {font-weight: 400;}
-  .main-box.main-common > div.s1-div-1 p.nth-2 {font-size: 71px; color: #fff; font-weight: 400; letter-spacing: -2px; font-weight: 400; margin-top: 20px;}
+  .main-box.main-common > div.s1-div-1 p.nth-2 {font-size: 71px; color: #fff; font-weight: 400; letter-spacing: -2px; font-weight: 400; margin-top: 20px; display: block;}
   .main-box.main-common > div.s1-div-1 p.nth-2 i {font-style: italic;}
   .main-box.main-common > div.s1-div-1 p.nth-3 {font-size: 38px; color: #fff; font-weight: 200; margin-top: 24px;}
   .main-box.swiper-container {position: relative;  padding: 0 0px; margin: 0 auto; text-align: center;}

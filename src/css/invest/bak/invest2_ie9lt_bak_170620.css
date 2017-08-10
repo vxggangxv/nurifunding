@@ -52,11 +52,11 @@ li[class*=ipli] .pull-right.day {font-weight: 500; font-size: 17px;}
 .est-b4-li1 .quest span {position: relative; top: -16px; left: 8px; font-size: 18px; font-family: "Arial", "Noto Sans KR";}
 
 .est-b4-ul {}
-li[class*="est-b4-li"] {float: left; margin-top: 30px; margin-right: 5px; padding-left: 15px; border-left: 1px solid #d2d2d2;}
-li[class*="est-b4-li"]:first-child {margin-left: 0px; padding-left: 0; border-left: 0;}
+li[class*="est-b4-li"] {float: left; margin-top: 30px; margin-right: 10px; padding-left: 20px; border-left: 1px solid #d2d2d2;}
+li[class*="est-b4-li"]:first-child {margin-left: 0px; border-left: 0;}
 .est-b4-p1, .est-b4-p2 {letter-spacing: 0;}
 .est-b4-p1 {font-size: 17px;}
-.est-b4-p2 {padding-right: 10px; margin-top: 20px; font-size: 37px; font-weight: 500;} 
+.est-b4-p2 {padding-right: 10px; margin-top: 20px; font-size: 38px; font-weight: 500;} 
 .est-b4-p2 .fw-small {font-size: 28px; font-weight: 500;}
 .est-b4-p2 .f-small {font-size: 24px; margin-left: 5px; font-weight: 400;}
 
@@ -107,10 +107,18 @@ li[class*="est-b4-li"]:first-child {margin-left: 0px; padding-left: 0; border-le
 .est-b7-p2 .dot1 {color: #dcdcdc;}
 .est-b7-p2 .dot2 {color: #398FE2;}
 .est-b7-p2 .dot3 {color: #121212;}
+.est-box.nth-7 hr {margin: 45px 0 25px;}
+.est-box.nth-7 .fc0 {display: inline-block; margin-top: 25px; color: #999; font-weight: 300; font-size: 14px;}
+
+
 .est-box.nth-7 h4 {margin-top: 25px; font-size: 18px;}
 .est-box.nth-7 p.left-b {margin-top: 15px; font-size: 16px; font-weight: 300; line-height: 1.3em;}
 .est-box.nth-7 hr {margin: 45px 0 25px;}
-.est-box.nth-7 .fc0 {display: block; width: 50%; margin: 50px auto 0; text-align: center; padding: 15px 0; font-size: 19px; letter-spacing: 0; background-color: #398fe1; color: #fff; border-radius: 4px;}
+.est-box.nth-7 .fc0 {display: inline-block; margin-top: 25px; color: #999; font-weight: 300; font-size: 15px;}
+
+
+
+
 
 .est-box.nth-8 {}
 .reg-box {}
@@ -123,7 +131,7 @@ li[class*="est-b4-li"]:first-child {margin-left: 0px; padding-left: 0; border-le
 .est-box.nth-9 {}
 .est-box.nth-9 p {font-size: 16px; line-height: 1.4em;}
 .est-box.nth-9 p.mt {margin-top: 15px;}
-.nowheel {position: absolute; top: 483px; width: 100%; height: 370px; margin-top: -370px; background: transparent; z-index: 1;}
+.nowheel {position: relative; top: 483px; width: 100%; height: 370px; margin-top: -370px; background: transparent; z-index: 1;}
 .est-box.nth-9 iframe {width: 923px; height: 370px; margin-top: 30px; position: relative; left: -15px;}
 .d-hr {width: 100%; margin-top: 15px; font-size: 17px; padding: 20px 0 0; border-top: 1px solid #ddd;}
 
@@ -141,24 +149,31 @@ li[class*="est-b4-li"]:first-child {margin-left: 0px; padding-left: 0; border-le
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#398fe1', endColorstr='#bed13f',GradientType=1 ); /* IE6-9 */
 
 }
-.est-box.nth-11 .grade #g-chart-dot {position: absolute; left: 0; top: -8px; display: block; width: 22px; height: 22px; border: 4px solid #f45454; background: #fff; border-radius: 50%;}
-.est-box.nth-11 .grade #g-chart-dot.n1 {left: 12.5%; margin-left: -11px;}
-.est-box.nth-11 .grade #g-chart-dot.n2 {left: 37.5%; margin-left: -5px;}
-.est-box.nth-11 .grade #g-chart-dot.n3 {left: 62.5%; margin-left: -1px;}
-.est-box.nth-11 .grade #g-chart-dot.n4 {left: 87.5%; margin-left: -5px;}
-.est-box.nth-11 .grade .g-label {position: relative; font-weight: 300;}
+.est-box.nth-11 .grade #g-chart-dot {position: absolute; left: 0; top: -8px; display: block; width: 22px; height: 22px; border: 4px solid #398fe1; background: #fff; border-radius: 50%;}
+.est-box.nth-11 .grade #g-chart-dot.n1 {left: 0%; margin-left: -1px;}
+.est-box.nth-11 .grade #g-chart-dot.n2 {left: 33.3%; margin-left: -11px;}
+.est-box.nth-11 .grade #g-chart-dot.n3 {left: 66.6%; margin-left: -11px;}
+.est-box.nth-11 .grade #g-chart-dot.n4 {left: 100%; margin-left: -21px;}
+.est-box.nth-11 .grade .g-td, .est-box.nth-11 .grade .g-label {position: relative; font-weight: 300;}
+.est-box.nth-11 .grade .g-td {position: relative; height: 20px; font-size: 18px; margin-top: 10px;}
 .est-box.nth-11 .grade .g-label {color: #a0a0a0; height: 40px; margin-top: 20px; font-size: 15px; margin-bottom: 34px;}
-.est-box.nth-11 .grade .g-label span {position: absolute; display: inline-block; line-height: 1.2em;}
+.est-box.nth-11 .grade .g-td span, .est-box.nth-11 .grade .g-label span {position: absolute; display: inline-block; line-height: 1.2em;}
+.est-box.nth-11 .grade .g-td span {}
 .est-box.nth-11 .grade .g-label span.nth-1 {left: 0;}
 .est-box.nth-11 .grade .g-label span.nth-2 {left: 95px;}
 .est-box.nth-11 .grade .g-label span.nth-3 {left: 194px;}
 .est-box.nth-11 .grade .g-label span.nth-4 {left: 288px;}
-.est-box.nth-11 .grade .g-label span.nth-2:before, .est-box.nth-11 .grade .g-label span.nth-3:before,
-.est-box.nth-11 .grade .g-label span.nth-4:before
-{content: ""; position: absolute; display: block; top: -28px; left: 0px; width: 2px; height: 8px; background: #fff;}
+.est-box.nth-11 .grade .g-td span.nth-1 {left: 0; margin-left: 1px;}
+.est-box.nth-11 .grade .g-td span.nth-2 {left: 33.3%; margin-left: -10px;}
+.est-box.nth-11 .grade .g-td span.nth-3 {left: 66.6%; margin-left: -10px;}
+.est-box.nth-11 .grade .g-td span.nth-4 {left: 100%; margin-left: -21px;}
+.est-box.nth-11 .grade .g-td span.nth-2:before, .est-box.nth-11 .grade .g-td span.nth-3:before {content: ""; position: absolute; display: block; top: -18px; left: 10px; width: 2px; height: 8px; background: #fff;}
 
-.est-box.nth-11 .btn-area > a {display: block; text-align: center; padding: 15px 0; font-size: 19px; letter-spacing: 0; background: #398fe1; color: #fff;}
+.est-box.nth-11 .btn-area > a {display: block; text-align: center; padding: 15px 0; font-size: 19px; letter-spacing: 0;}
 
+/*.canvas-box {margin-top: 40px; overflow: hidden;}
+#canvas-holder-11 {position: relative; width: 455px;  margin: 0 auto;}
+#chart-area-11 {margin-top: -24px;}*/
 
 .est-box.nth-12 {margin-left: 2%; height: 454px;} 
 .est-box.nth-12 .est-b7-p2 {line-height: 2.1em;}
@@ -204,7 +219,7 @@ li[class*="est-b4-li"]:first-child {margin-left: 0px; padding-left: 0; border-le
 .prps-d-0, .prps-d-1 {padding: 0 12px;}
 .prps-d-0 {font-size: 15px;}
 .prps-d-0 .m {display: none;}
-.prps-d-0 .pc {position: relative; margin-top: 21px; width: 100%;}
+.prps-d-0 .pc {position: relative; top: 21px; width: 100%;}
 .prps-d-0 .pc span {display: inline-block; text-align: center;}
 .prps-d-0 .pc span.nth-1 {}
 .dropdown.com-prc {height: 28px; width: 20%; display: inline-block; float: right;}
@@ -316,34 +331,6 @@ li[class*="prps-d2-li"] {padding: 15px 5px; font-size: 20px;}
 .grd-fig img {position: relative; display: inline-block; margin-top: 40px;}
 .grd-fig img.dn {width: 324px; }
 .grd-fig img.pct {width: 294px; margin-left: 65px; top: -15px;}
-.grade-sec .left-chart {float: left; width: 50%;}
-#canvas-holder-value {position: relative; overflow: hidden; width: 250px; margin: 35px auto 0; left: -26px;}
-#canvas-holder-value .in-txt {position: absolute; display: block; text-align: center; width: 100%; top: 50%; margin-top: -14px; font-size: 17px; line-height: 18px; letter-spacing: 0;} 
-#canvas-holder-value .in-txt .sm {font-size: 12px; color: #565656; line-height: 14px; display: block;}
-#chart-area-value {position: relative;}
-.chart-per {position: relative}
-.chart-per .per-table {margin-top: 12px;}
-.chart-per .per-table > li {float: left; width: 50%; margin-top: 4px;}
-.chart-per .per-table > li > div {float: left; font-size: 13px; color: #5a5a5a;}
-.chart-per .per-table > li > div .circle {position: relative; top: -2px;display: inline-block; width: 14px; height: 14px; border-radius: 50%; vertical-align: middle; margin-right: 5px;}
-.chart-per .per-table > li.nth-1,.chart-per .per-table > li.nth-3, .chart-per .per-table > li.nth-5 {padding-left: 15px;}
-.chart-per .per-table > li > .cell-1 {}
-.chart-per .per-table > li > .cell-2 {margin-left: 3px; letter-spacing: -0.5px;}
-.chart-label {position: relative; width: 45%; left: 5%; margin: 37px auto 0; float: left;}
-.chart-label h4 {font-size: 22px; margin-bottom: 30px;}
-.chart-label .lbl-table {position: relative;}
-.chart-label .lbl-table > li {position: relative; font-size: 0; background: #F5F5F5; margin-top: 1px;}
-.chart-label .lbl-table > li:first-child {margin-top: 0;}
-.chart-label .lbl-table > li > div {display: inline-block; width: 50%; font-size: 17px; vertical-align: middle; text-align: center; padding: 7.5px 0;}
-.chart-label .lbl-table > li > .cell-1 {color: #fff; font-weight: 300; font-size: 15px; line-height: 1.2em; letter-spacing: 0; width: 40%;}
-.chart-label .lbl-table > li > .cell-2 {width: 60%;}
-.chart-per .per-table > li.nth-1 .circle, .chart-label .lbl-table > li.nth-1 > .cell-1 {background-color: #398FE1;}
-.chart-per .per-table > li.nth-2 .circle, .chart-label .lbl-table > li.nth-2 > .cell-1 {background-color: #3AC1E3;}
-.chart-per .per-table > li.nth-3 .circle, .chart-label .lbl-table > li.nth-3 > .cell-1 {background-color: #34BA89;}
-.chart-per .per-table > li.nth-4 .circle, .chart-label .lbl-table > li.nth-4 > .cell-1 {background-color: #BED13F;}
-.chart-per .per-table > li.nth-5 .circle, .chart-label .lbl-table > li.nth-5 > .cell-1 {background-color: #DFAF2D;}
-.chart-per .per-table > li.nth-6 .circle, .chart-label .lbl-table > li.nth-6 > .cell-1 {background-color: #EA791D;}
-.chart-label .lbl-table > li.nth-7 > .cell-1 {background-color: #aaa;}
 
 .grd-txt-box {margin-top: 40px; padding: 35px 5px 0; border-top: 1px solid #e0e0e0;}
 .grd-p {font-size: 16px; line-height: 1.5em; font-weight: 300; word-break: keep-all; color: #646464;}
@@ -370,9 +357,6 @@ li[class*="prps-d2-li"] {padding: 15px 5px; font-size: 20px;}
 .rEstate-sec .repay-tb td.nth-1 {text-indent: 0; padding-right: 0;}
 
 .rEstate-sec .yield-tb th > div {background: #398fe1; color: #fff;}
-
-
-.est-box.nth-11 .grade .g-td {display: none;}
 
 /* ie9 선택자 안먹는 오류 수정 */
 .ip-outer {padding: 7.5px;}

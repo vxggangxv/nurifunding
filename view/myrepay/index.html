@@ -121,50 +121,51 @@
                                 </div>
                             </div>
                         </div>
-                        <script>
-                            var dataSchedule = ["0", "0", "0", "0", "0", "0", "0", "0", "0", "0"];
-                            //12개 이후 마지막 세개는 디자인상 넣어줌 실제로 보일때는 짤리게 보임
-                            var config = {
-                                type: 'line',
-                                data: {
-                                    labels: ["3월", "4월", "5월", "6월", "7월", "8월", "9월", "10월", "11월", "12월"], //12개 이후 마지막 세개는 디자인상 넣어줌
-                                    datasets: [{
-                                        label: "",
-                                        backgroundColor: '#398fe1',
-                                        borderColor: "#398fe1",
-                                        data: [
-                      dataSchedule[0],
-                      dataSchedule[1],
-                      dataSchedule[2],
-                      dataSchedule[3],
-                      dataSchedule[4],
-                      dataSchedule[5],
-                      dataSchedule[6],
-                      dataSchedule[7],
-                      dataSchedule[8],
-                      dataSchedule[9]
+						<script>
+							var dataSchedule = ["0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0"];
+							var config = {
+								type: 'line',
+								data: {
+									labels: ["1월", "2월", "3월", "4월", "5월", "6월", "7월", "8월", "9월", "10월", "11월", "12월"],
+									datasets: [{
+										label: "",
+										backgroundColor: '#398fe1',
+										borderColor: "#398fe1",
+										data: [
+											dataSchedule[0],
+											dataSchedule[1],
+											dataSchedule[2],
+											dataSchedule[3],
+											dataSchedule[4],
+											dataSchedule[5],
+											dataSchedule[6],
+											dataSchedule[7],
+											dataSchedule[8],
+											dataSchedule[9],
+											dataSchedule[10],
+											dataSchedule[11]
 
-                    ],
-                                        fill: false,
-                                        tension: 0,
-                  }]
-                                },
-                                options: {
-                                    responsive: true,
-                                    tooltips: {
-                                        mode: 'index',
-                                        intersect: false,
-                                    },
-                                    scales: {
-                                        yAxes: [{
-                                            ticks: {
-                                                beginAtZero: true,
-                                            }
-                    }]
-                                    },
-                                }
-                            };
-                        </script>
+										],
+										fill: false,
+										tension: 0,
+									}]
+								},
+								options: {
+									responsive: true,
+									tooltips: {
+										mode: 'index',
+										intersect: false,
+									},
+									scales: {
+										yAxes: [{
+											ticks: {
+												beginAtZero: true,
+											}
+										}]
+									},
+								}
+							};
+						</script>
                     </div>
                 </div>
 

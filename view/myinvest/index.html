@@ -215,49 +215,49 @@
                                 <div id="canvas-holder-pdt"><span class="in-txt">상품</span>
                                     <canvas id="chart-area-pdt" />
                                 </div>
-                                <script>
-                                    var dataGroupPdt = [0, 0, 0];
-                                    if (dataGroupPdt[0] == 0 && dataGroupPdt[1] == 0 && dataGroupPdt[2] == 0) {
-                                        $("#canvas-holder-pdt").prev().css("display", "block");
-                                    }
+								<script>
+									var dataGroupPdt = [0, 0, 0];
+									if (dataGroupPdt[0] == 0 && dataGroupPdt[1] == 0 && dataGroupPdt[2] == 0) {
+										$("#canvas-holder-pdt").prev().css("display", "block");
+									}
 
-                                    var configPdt = {
-                                        type: 'doughnut',
-                                        data: {
-                                            datasets: [{
-                                                data: [
-                          dataGroupPdt[0],
-                          dataGroupPdt[1],
-                          dataGroupPdt[2],
-                        ],
-                                                backgroundColor: [
-                          "#575A8D",
-                          "#B2B1C3",
-                          "#8488A3",
-                        ],
-                                                borderWidth: 4,
-                      }],
-                                            labels: [
-                        "법인",
-                        "개인",
-                        "부동산"
-                      ]
-                                        },
-                                        options: {
-                                            responsive: true,
-                                            legend: {
-                                                position: 'bottom',
-                                                labels: {
-                                                    usePointStyle: 'circle'
-                                                }
-                                            },
-                                            animation: {
-                                                animateScale: false,
-                                                animateRotate: true
-                                            }
-                                        }
-                                    };
-                                </script>
+									var configPdt = {
+										type: 'doughnut',
+										data: {
+											datasets: [{
+												data: [
+													dataGroupPdt[0],
+													dataGroupPdt[1],
+													dataGroupPdt[2],
+												],
+												backgroundColor: [
+													"#575A8D",
+													"#B2B1C3",
+													"#8488A3",
+												],
+												borderWidth: 4,
+											}],
+											labels: [
+												"법인",
+												"개인",
+												"부동산"
+											]
+										},
+										options: {
+											responsive: true,
+											legend: {
+												position: 'bottom',
+												labels: {
+													usePointStyle: 'circle'
+												}
+											},
+											animation: {
+												animateScale: false,
+												animateRotate: true
+											}
+										}
+									};
+								</script>
 
                             </li>
                             <li>
@@ -265,104 +265,104 @@
                                 <div id="canvas-holder-rev"><span class="in-txt">수익률</span>
                                     <canvas id="chart-area-rev" />
                                 </div>
-                                <script>
-                                    var dataGroupRev = [10, 10, 10, 10];
-                                    if (dataGroupRev[0] == 0 && dataGroupRev[1] == 0 && dataGroupRev[2] == 0 && dataGroupRev[3] == 0) {
-                                        $("#canvas-holder-rev").prev().css("display", "block");
-                                    }
+								<script>
+									var dataGroupRev = [10, 10, 10, 10];
+									if (dataGroupRev[0] == 0 && dataGroupRev[1] == 0 && dataGroupRev[2] == 0 && dataGroupRev[3] == 0) {
+										$("#canvas-holder-rev").prev().css("display", "block");
+									}
 
-                                    var configRev = {
-                                        type: 'doughnut',
-                                        data: {
-                                            datasets: [{
-                                                data: [
-                          dataGroupRev[0],
-                          dataGroupRev[1],
-                          dataGroupRev[2],
-                          dataGroupRev[3],
-                        ],
-                                                backgroundColor: [
-                          "#393A7B",
-                          "#585A8A",
-                          "#83859E",
-                          "#AFB0C2"
-                        ],
-                                                borderWidth: 2,
-                      }],
-                                            labels: [
-                        "8%미만",
-                        "8%~10%",
-                        "10.1~12%",
-                        "12%초과",
-                      ]
-                                        },
-                                        options: {
-                                            responsive: true,
-                                            legend: {
-                                                position: 'bottom',
-                                                labels: {
-                                                    usePointStyle: 'circle'
-                                                }
-                                            },
-                                            animation: {
-                                                animateScale: false,
-                                                animateRotate: true
-                                            }
-                                        }
-                                    };
-                                </script>
+									var configRev = {
+										type: 'doughnut',
+										data: {
+											datasets: [{
+												data: [
+													dataGroupRev[0],
+													dataGroupRev[1],
+													dataGroupRev[2],
+													dataGroupRev[3],
+												],
+												backgroundColor: [
+													"#393A7B",
+													"#585A8A",
+													"#83859E",
+													"#AFB0C2"
+												],
+												borderWidth: 2,
+											}],
+											labels: [
+												"8%미만",
+												"8%~10%",
+												"10.1~12%",
+												"12%초과",
+											]
+										},
+										options: {
+											responsive: true,
+											legend: {
+												position: 'bottom',
+												labels: {
+													usePointStyle: 'circle'
+												}
+											},
+											animation: {
+												animateScale: false,
+												animateRotate: true
+											}
+										}
+									};
+								</script>
                             </li>
                             <li>
                                 <div class="chart-area-empty"></div>
                                 <div id="canvas-holder-grade"><span class="in-txt">리스크 등급</span>
                                     <canvas id="chart-area-grade" />
                                 </div>
-                                <script>
-                                    var dataGroupGrade = [10, 10, 10, 10];
-                                    if (dataGroupGrade[0] == 0 && dataGroupGrade[1] == 0 && dataGroupGrade[2] == 0 && dataGroupGrade[3] == 0) {
-                                        $("#canvas-holder-rev").prev().css("display", "block");
-                                    }
+								<script>
+									var dataGroupGrade = [10, 10, 10, 10];
+									if (dataGroupGrade[0] == 0 && dataGroupGrade[1] == 0 && dataGroupGrade[2] == 0 && dataGroupGrade[3] == 0) {
+										$("#canvas-holder-rev").prev().css("display", "block");
+									}
 
-                                    var configGrade = {
-                                        type: 'doughnut',
-                                        data: {
-                                            datasets: [{
-                                                data: [
-                          dataGroupGrade[0],
-                          dataGroupGrade[1],
-                          dataGroupGrade[2],
-                          dataGroupGrade[3],
-                        ],
-                                                backgroundColor: [
-                          "#2AA3FF",
-                          "#3ACC00",
-                          "#FFD600",
-                          "#FF9100"
-                        ],
-                                                borderWidth: 2,
-                      }],
-                                            labels: [
-                        "A 등급",
-                        "B 등급",
-                        "C 등급",
-                        "D 등급",
-                      ]
-                                        },
-                                        options: {
-                                            responsive: true,
-                                            legend: {
-                                                position: 'bottom',
-                                                labels: {
-                                                    usePointStyle: 'circle'
-                                                }
-                                            },
-                                            animation: {
-                                                animateScale: false,
-                                                animateRotate: true
-                                            }
-                                        }
-                                    };
-                                </script>
+									var configGrade = {
+										type: 'doughnut',
+										data: {
+											datasets: [{
+												data: [
+													dataGroupGrade[0],
+													dataGroupGrade[1],
+													dataGroupGrade[2],
+													dataGroupGrade[3],
+												],
+												backgroundColor: [
+													"#2AA3FF",
+													"#3ACC00",
+													"#FFD600",
+													"#FF9100"
+												],
+												borderWidth: 2,
+											}],
+											labels: [
+												"A 등급",
+												"B 등급",
+												"C 등급",
+												"D 등급",
+											]
+										},
+										options: {
+											responsive: true,
+											legend: {
+												position: 'bottom',
+												labels: {
+													usePointStyle: 'circle'
+												}
+											},
+											animation: {
+												animateScale: false,
+												animateRotate: true
+											}
+										}
+									};
+								</script>
                             </li>
                         </ul>
                     </div>

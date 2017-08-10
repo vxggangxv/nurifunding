@@ -124,140 +124,10 @@
                 
                 <div class="row com-box br4">
                     <h3 class="grd-com-h3"><i>담보 가치 분석</i></h3>
-					<!--변경내용170802 코딩화-->
-					<div class="left-chart">
-						<div id="canvas-holder-value">
-							<span class="in-txt align-center">감정금액<br>150억<!--<br><span class="sm">(단위, %)</span>--></span>
-							<canvas id="chart-area-value" />
-						</div>
-						<script>
-							var dataGroupGrade = [34, 24, 21, 7, 7, 7];
-
-							var configGrade = {
-								type: 'doughnut',
-								data: {
-									datasets: [{
-										data: [
-											dataGroupGrade[0],
-											dataGroupGrade[1],
-											dataGroupGrade[2],
-											dataGroupGrade[3],
-											dataGroupGrade[4],
-											dataGroupGrade[5],
-										],
-										backgroundColor: [
-											"#398FE1",
-											"#3AC1E3",
-											"#34BA89",
-											"#BED13F",
-											"#DFAF2D",
-											"#EA791D"
-										],
-										borderWidth: 2,
-									}],
-									labels: [
-										"기존대출금",
-										"임차보증금",
-										"담보여유",
-										"Tr-a 취급대출",
-										"Tr-b 취급대출",
-										"Tr-c 취급대출"
-									],
-									tooltips: [
-
-									]
-								},
-								options: {
-									responsive: true,
-									animation: {
-										animateScale: false,
-										animateRotate: true
-									},
-									legend: {
-										display: false
-									},
-									tooltips : {
-										callbacks : { 
-											label : function(tooltipItem, data) {
-												var indice = tooltipItem.index;
-												var dataset = data.datasets[tooltipItem.datasetIndex];
-												var currentLabel = data.labels[indice];
-												var currentValue = dataset.data[tooltipItem.index];
-												return " " + currentLabel + " : " + currentValue + " %";
-											}
-										}
-									}
-								}
-							};
-						</script>
-						<div class="chart-per">
-							<ul class="per-table clearfix">
-								<li class="nth-1 clearfix">
-									<div class="cell-1"><span class="circle"></span> 기존대출금 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:</div>
-									<div class="cell-2">34%</div>
-								</li>
-								<li class="nth-2 clearfix">
-									<div class="cell-1"><span class="circle"></span> 임차보증금 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:</div>
-									<div class="cell-2">24%</div>
-								</li>
-								<li class="nth-3 clearfix">
-									<div class="cell-1"><span class="circle"></span> 담보여유 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:</div>
-									<div class="cell-2">21%</div>
-								</li>
-								<li class="nth-4 clearfix">
-									<div class="cell-1"><span class="circle"></span> Tr-a 취급대출 :</div>
-									<div class="cell-2">7%</div>
-								</li>
-								<li class="nth-5 clearfix">
-									<div class="cell-1"><span class="circle"></span> Tr-b 취급대출 :</div>
-									<div class="cell-2">7%</div>
-								</li>
-								<li class="nth-6 clearfix">
-									<div class="cell-1"><span class="circle"></span> Tr-c 취급대출 :</div>
-									<div class="cell-2">7%</div>
-								</li>
-							</ul>
-						</div>
-					</div>
-                    
-                    <div class="chart-label">
-						<h4>항목별 비율 금액 (원)</h4>
-                    	<ul class="lbl-table">
-                    		<li class="nth-1">
-                    			<div class="cell-1">기존대출금</div>
-                    			<div class="cell-2">5,000,000,000</div>
-                    		</li>
-                    		<li class="nth-2">
-                    			<div class="cell-1">임차보증금</div>
-                    			<div class="cell-2">3,500,000,000</div>
-                    		</li>
-                    		<li class="nth-3">
-                    			<div class="cell-1">담보여유</div>
-                    			<div class="cell-2">3,200,000,000</div>
-                    		</li>
-                    		<li class="nth-4">
-                    			<div class="cell-1">Tr-a 취급대출</div>
-                    			<div class="cell-2">1,000,000,000</div>
-                    		</li>
-                    		<li class="nth-5">
-                    			<div class="cell-1">Tr-b 취급대출</div>
-                    			<div class="cell-2">1,000,000,000</div>
-                    		</li>
-                    		<li class="nth-6">
-                    			<div class="cell-1">Tr-c 취급대출</div>
-                    			<div class="cell-2">1,000,000,000</div>
-                    		</li>
-                    		<li class="nth-7">
-                    			<div class="cell-1">담보감정<br>평가금액</div>
-                    			<div class="cell-2">15,000,000,000</div>
-                    		</li>
-                    	</ul>
+                    <div class="grd-fig clearfix">
+                        <img class="dn" src="https://nurifunding.co.kr/img/invest/amount_dn.png" alt="감정금액"><img class="pct" src="https://nurifunding.co.kr/img/invest/amount_pct.png" alt="비율금액">
                     </div>
-                    
-                    <div class="clearfix"></div>
-                    
-					<!--변경내용170802 끝-->
-					<div class="grd-txt-box">
+                    <div class="grd-txt-box">
                         <p class="grd-p mt">감정금액이란? </p>
                         <p class="grd-p">현재 부동산 가격에서 70% ~ 80% 수준으로 대출을 위한 적정 금액 산출한 가격</p>
                         <p class="grd-p mt">담보여유란?</p>
@@ -272,13 +142,7 @@
             </div>
         </section>
 
-		<script>
-			window.onload = function () {
-				var ctxGrade = document.getElementById("chart-area-value").getContext("2d");
-				window.myDoughnut = new Chart(ctxGrade, configGrade);
-
-			};
-		</script>
+        
 
         <footer class="footer container-fluid">
             <div class="container footer-box">

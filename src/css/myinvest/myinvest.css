@@ -25,7 +25,7 @@
   .mode h2 {margin-bottom: 25px; padding-bottom: 15px; border-bottom: 1px solid #ddd;}
   .mode h2 .mode-icon {position: relative; width: 26px; top: 4px; margin-right: 5px;}
   .modify-tab {font-size: 14px; font-weight: 300; letter-spacing: 0;}
-  .modify-tab .on-btn {display: inline-block; position: relative; top: -1px;margin-left: 10px; padding: 3px 15px 4px; text-align: center; background: #aaa; border: 1px solid #888; font-size: 12px;}
+  .modify-tab .on-btn {display: inline-block; position: relative; top: -1px; margin: 10px 0 0 10px; padding: 3px 15px 4px; text-align: center; background: #aaa; border: 1px solid #888; font-size: 12px;}
   .modify-box {font-size: 14px; display: none;}
   .mode-prc.dropdown, .mode-range.dropdown {display: inline-block; height: 32px;}
   .mode-prc.dropdown {width: 58px;}

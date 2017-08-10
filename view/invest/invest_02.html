@@ -144,8 +144,8 @@
                         <ul class="est-b4-ul clearfix">
                             <li class="est-b4-li1">
                                 <p class="est-b4-p1">등급</p>
-                                <!--변경내용_170530 등급변경-->
-                                <p class="est-b4-p2"><i class="c-blue f-bd">N1</i> <a href="" class="bg-blue c-white quest"><span>?</span></a></p>
+                                <!--변경내용_170620 등급변경-->
+                                <p class="est-b4-p2"><i class="c-blue f-bd">AAA+ 10</i> <a href="" class="bg-blue c-white quest"><span>?</span></a></p>
                             </li>
                             <li class="est-b4-li2">
                                 <p class="est-b4-p1">예상 수익률</p>
@@ -165,12 +165,10 @@
                             </li>
                         </ul>
                     </div>
-                    <!--변경내용 추가-->
                     <div class="est-box per clearfix">
                         <p class="pull-left"><span class="ip-percent fc-blue">80%</span><span class="ip-per-num">(852명 투자 중)</span></p>
                         <p class="pull-right"><span class="txt">남은시간</span> <span class="day fc-blue">D-6일</span></p>
                     </div>
-                    <!--변경내용 끝-->
                 </div>
                 <div class="row com-box est-wrap">
                     <div class="est-box est-com nth-5 br4 col-xs-12">
@@ -186,11 +184,16 @@
                 </div>
                 <div class="row com-box est-wrap">
                     <div class="est-box est-com nth-6 br4 col-xs-12">
-                        <h3 class="est-com-h3"><span class="fc-blue">2.</span> 투자 포인트</h3>
-                        <h4>1. 여유있는 담보력</h4>
+                        <!--변경내용_170620 내용변경-->
+                        <h3 class="est-com-h3"><span class="fc-blue">2.</span> 투자 포인트 (SWOT 분석)</h3>
+                        <h4>1. 장점</h4>
                         <p class="left-b"><span class="b-icon">-</span>해당 담보건의 1년 평균 최저 낙찰가율은 85%입니다. 누리펀딩 대출을 포함하여도 LTV 75.1% 정도기에 부실 시 회수 가능성이 높은 편 입니다.</p>
-                        <h4>2. 투자자의 원금손실부담 감소</h4>
+                        <h4>2. 단점</h4>
                         <p class="left-b"><span class="b-icon">-</span>본 대출자의 원금상환비율은 대출원금의 10% 입니다. 이에 따라 대출기간이 경과 될 수록 투자자의 원금손실부담이 줄어듭니다.</p>
+                        <h4>3. 기회</h4>
+                        <p class="left-b">내용</p>
+                        <h4>4. 위협</h4>
+                        <p class="left-b">내용</p>
                     </div>
                 </div>
                 <div class="row com-box est-wrap">
@@ -201,46 +204,46 @@
                                 <div id="canvas-holder-7"><span class="in-txt">담보가치 대비<br/>대출비율</span>
                                     <canvas id="chart-area-7"></canvas>
                                 </div>
-                                <script>
-                                    var dataGroup7 = {
-                                        "price1": 53,
-                                        "price2": 13,
-                                        "price3": 34
-                                    };
+								<script>
+									var dataGroup7 = {
+										"price1": 53,
+										"price2": 13,
+										"price3": 34
+									};
 
-                                    var config7 = {
-                                        type: 'doughnut',
-                                        data: {
-                                            datasets: [{
-                                                data: [
-                          dataGroup7.price1,
-                          dataGroup7.price2,
-                          dataGroup7.price3,
-                        ],
-                                                backgroundColor: [
-                          "#dcdcdc",
-                          "#398FE2",
-                          "#121212",
-                        ],
-                                                borderWidth: [
-                          5
-                        ]
-                      }],
-                                            labels: [
-                        "",
-                        "",
-                        ""
-                      ]
-                                        },
-                                        options: {
-                                            responsive: true,
-                                            animation: {
-                                                animateScale: false,
-                                                animateRotate: true
-                                            }
-                                        }
-                                    };
-                                </script>
+									var config7 = {
+										type: 'doughnut',
+										data: {
+											datasets: [{
+												data: [
+													dataGroup7.price1,
+													dataGroup7.price2,
+													dataGroup7.price3,
+												],
+												backgroundColor: [
+													"#dcdcdc",
+													"#398FE2",
+													"#121212",
+												],
+												borderWidth: [
+													5
+												]
+											}],
+											labels: [
+												"",
+												"",
+												""
+											]
+										},
+										options: {
+											responsive: true,
+											animation: {
+												animateScale: false,
+												animateRotate: true
+											}
+										}
+									};
+								</script>
 
                             </li>
                             <li class="est-b7-li2 clearfix">
@@ -265,7 +268,8 @@
                         </ul>
                         <h4>'선순위금'이란?</h4>
                         <p class="left-b"><span class="b-icon">-</span>누리펀딩 대출금액보다 선순위의 권리로 타금융 기관대출금 또는 임대보증금 등 모든선순위 권리금액을 말합니다.</p>
-                        <h4>'잔여 여유금'이란?</h4>
+                        <!-- 변경내용_170620 내용변경 '담보여유'란 -->
+                        <h4>'담보여유'란?</h4>
                         <p class="left-b"><span class="b-icon">-</span>누리펀딩 대출 후에도 남아있는 담보의 잔존가치로 이 비율이 높을수록 채무불이행이 발생해도 원금 손실 가능성이 작아집니다.</p>
                         <h4>'근저당 설정금'이란?</h4>
                         <p class="left-b"><span class="b-icon">-</span>담보에 대한 채권자의 권리금액으로 채무불이행 시 연체이자, 채권회수 비용 등을 감안하여 대출금의 120% 이상 설정합니다.</p>
@@ -275,7 +279,8 @@
                         <p class="left-b"><span class="b-icon">-</span>누리펀딩의 리스크관리 시스템에 의해 해당 담보물의 가치변동 및 권리침해 여부가 매일 모니터링 되고 있습니다.</p>
                         <h4>2. 부실채권 사후처리 시스템</h4>
                         <p class="left-b"><span class="b-icon">-</span>대출기간이 경과되거나 이자를 2회 이상 지체 시 누리펀딩은 적절한 절차에 의하여 다음과 같은 자체 추심을 진행합니다.</p>
-                        <a class="fc0" href="">회수정책 자세히보기 &gt;</a>
+                        <!-- 변경내용_170620 내용변경 -->
+                        <a class="fc0" href="invest_02_realestate.html">자세히보기</a>
                     </div>
                 </div>
                 <!--변경내용 서류1개추가 및 서류이름변경, 태그내용변경
@@ -329,12 +334,12 @@
                     </div>
                 </div>
                 <div class="row com-box est-wrap">
-                    <!--변경내용_170530 신용등급삭제, 누린펀딩 등급추가-->
                     <div class="est-box est-com nth-11 br4 col-xs-12">
                         <h4 class="est-com-h3">누리펀딩 등급</h4>
                         <p class="ebt-b11-p mt clearfix">기업(개인)의 신용등급과 담보가치를 결합한 여신평가 등급 입니다</p>
                         <div class="grade">
-                            <h5 class="g-th c-blue f-bd align-center">N1</h5>
+                            <!--변경내용_170620 표시등급변경-->
+                            <h5 class="g-th c-blue f-bd align-center">AAA+ 10</h5>
                             <div class="g-chart">
                                 <!--등급에 따른 클래스추가로 따른 위치 이동-->
                                 <span id="g-chart-dot" class="n1"></span>
@@ -342,19 +347,20 @@
                                 <!--<span id="g-chart-dot" class="n3"></span>-->
                                 <!--<span id="g-chart-dot" class="n4"></span>-->
                             </div>
-                            <div class="g-td">
-                                <span class="nth-1">N1</span>
-                                <span class="nth-2">N2</span>
-                                <span class="nth-3">N3</span>
-                                <span class="nth-4">N4</span>
-                            </div>
+                            <!--변경내용_170620 <div class="g-td">...</div> 삭제 -->
+                            <!--<div class="g-td">
+                                <span class="nth-1">n1</span>
+                                <span class="nth-2">n2</span>
+                                <span class="nth-3">n3</span>
+                                <span class="nth-4">n4</span>
+                            </div>-->
                             <div class="g-label">
                                 <span class="nth-1">SAFTY ZONE<br>안전존</span>
                                 <span class="nth-2">THINK ZONE<br>고려존</span>
                                 <span class="nth-3">AGREE ZONE<br>고려존</span>
                                 <span class="nth-4">REJECT ZONE<br>거절존</span>
                             </div>
-                            <div class="btn-area"><a class="br4 bor-ddd" href="invest_05.html">등급 자세히보기</a></div>
+                            <div class="btn-area"><a class="br4 bor-ddd" href="invest_02_grade.html">등급 자세히보기</a></div>
                         </div>
                     </div>
                     <div class="est-box est-com nth-12 br4 col-xs-12">
