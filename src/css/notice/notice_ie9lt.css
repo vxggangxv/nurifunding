@@ -96,3 +96,7 @@
 
 .fw-wrap {padding: 30px 90px 40px;}
 .faq-post {min-height: 475px;}
+
+.privacy {}
+.privacy .priv-txt {font-size: 16px; margin-top: 40px; background: #fff; border: 1px solid #ddd; padding: 25px 30px; line-height: 1.7; text-align: justify;}
+.privacy .priv-txt .f-bd {display: inline-block; font-size: 17px; margin-bottom: 5px;}

@@ -50,6 +50,10 @@ p[class*="mib-p"] .nr-text.detail {margin-top: 12px;}
 .mi-box h3.mt {margin-top: 40px;}
 .mi-box p.mib-p2 {font-size: 15px; line-height: 1.5em; font-weight: 300; margin-top: 10px; padding-bottom: 40px; border-bottom: 1px solid #ddd;}
 .mi-box p.mib-p3 .btn {font-size: 17px; padding: 18px 0; letter-spacing: 0; margin-top: 25px;}
+.mi-box p.mib-p1 input[type="radio"] {width: 20px; height: 20px; border-radius: 50%; margin-right: 5px; border-color: #dcdcdc;}
+.mi-box p.mib-p1 input[type="radio"].ml {margin-left: 10px;}
+.mi-box p.mib-p1 input[type="radio"]:checked {background: url(https://nurifunding.co.kr/img/radio_icon.png) no-repeat -1px; background-size: 20px; }
+
 
 .account-info {}
 .ai-box {padding: 50px 130px;}

@@ -25,12 +25,10 @@
   .f-h3 {}
   .f-table {position: relative; margin: 12px 0 0px;}
   .f-q, .f-a {position: relative; font-size: 13px; border-bottom: 1px solid #ddd;}
-   /* 20170821 여백 수정 */
-  .f-q {cursor: pointer; color: #363636; line-height: 1.4em; padding: 11px 11px 11px 36px;}
+  .f-q {cursor: pointer; color: #363636; line-height: 1.4em; padding: 11px 5px 12px 36px;}
   .f-a {height: 0; opacity: 0; visibility: hidden; color: #444; line-height: 1.5em; letter-spacing: -1px; font-family: "NanumGothic"; background: #fafafa; 
-    -webkit-transition: all 0.8s,  height 0.5s; transition: all 0.8s, height 0.5s; top: -10px; padding: 0px 12px 0px 36px; overflow: hidden;}
-  /* 20170821 답변여백 수정 */
-  .f-a.on {display: block; top: 0; padding: 12px 12px 12px 36px; opacity: 1; visibility: visible; height: auto;}
+    -webkit-transition: all 0.8s,  height 0.5s; transition: all 0.8s, height 0.5s; top: -10px; padding: 0px 5px 0px 36px; overflow: hidden;}
+  .f-a.on {display: block; top: 0; padding: 12px 5px 11px 36px; opacity: 1; visibility: visible; height: auto;}
   .q-icon, .a-icon, .q-num {position: absolute; display: inline-block; text-align: center; left: 0px; line-height: 1.4em; font-size: 14px; font-family: Arial, "NanumBarunGothic", "NanumGothic", sans-serif; }
   .q-icon, .q-num {top: 11px;}
   .q-icon {color: #398fe1;}
@@ -53,15 +51,13 @@
   .f-h3 {font-size: 21px;}
   .f-table {position: relative; margin: 15px 0 0px;}
   .f-q, .f-a {position: relative; font-size: 16px; border-bottom: 1px solid #ddd; border-bottom: 1px solid #ddd;}
-   /* 20170821 여백 수정 */
-  .f-q {cursor: pointer; color: #363636; line-height: 1.4em; padding: 15px 15px 15px 46px;}
+  .f-q {cursor: pointer; color: #363636; line-height: 1.4em; padding: 15px 5px 16px 46px;}
   /*.f-a {display: none; color: #444; line-height: 1.5em; letter-spacing: -1px; font-family: "NanumGothic"; background: #fafafa; min-height: 50px; padding: 17px 5px 16px 36px; font-size: 14px;}
   .f-a.on {display: block;}*/
   
   .f-a {height: 0; opacity: 0; visibility: hidden; color: #444; line-height: 1.5em; letter-spacing: -1px; font-family: "NanumGothic"; background: #fafafa; 
-    -webkit-transition: all 0.8s,  height 0.5s; transition: all 0.8s, height 0.5s; top: -10px; padding: 0px 17px 0px 46px; overflow: hidden; font-size: 14px; word-break:keep-all;}
-	/* 20170821 답변여백 수정 */
-  .f-a.on {display: block; top: 0; padding: 17px 17px 17px 46px; opacity: 1; visibility: visible; height: auto;}
+    -webkit-transition: all 0.8s,  height 0.5s; transition: all 0.8s, height 0.5s; top: -10px; padding: 0px 5px 0px 46px; overflow: hidden; font-size: 14px;}
+  .f-a.on {display: block; top: 0; padding: 17px 5px 16px 46px; opacity: 1; visibility: visible; height: auto;}
   .q-icon, .a-icon, .q-num {position: absolute; display: inline-block; text-align: center; left: 0px; line-height: 1.5em; font-size: 17px; font-family: Arial, "NanumBarunGothic", "NanumGothic", sans-serif; }
   .q-icon, .q-num {top: 15px;}
   .q-icon {color: #398fe1;}

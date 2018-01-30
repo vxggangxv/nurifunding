@@ -9,16 +9,16 @@
     <link rel="stylesheet" href="http://fonts.googleapis.com/earlyaccess/notosanskr.css">
     <link rel="stylesheet" href="http://fonts.googleapis.com/earlyaccess/nanumgothic.css">
     <link href="https://opensource.keycdn.com/fontawesome/4.6.3/font-awesome.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="http://static.nurifunding.co.kr/css/common.css">
-    <link rel="stylesheet" href="http://static.nurifunding.co.kr/css/mypage/mypage.css">
-    <!--<link rel="stylesheet" href="../../src/css/common.css">
-  <link rel="stylesheet" href="../../src/css/mypage/mypage.css"> -->
+    <!-- <link rel="stylesheet" href="http://static.nurifunding.co.kr/css/common.css">
+    <link rel="stylesheet" href="http://static.nurifunding.co.kr/css/mypage/mypage.css"> -->
+    <link rel="stylesheet" href="../../src/css/common.css">
+      <link rel="stylesheet" href="../../src/css/mypage/mypage.css">
 
     <script type="text/javascript" src="http://static.nurifunding.co.kr/js/jquery-1.10.2.min.js"></script>
     <script type="text/javascript" src="http://static.nurifunding.co.kr/js/Chart.bundle.min.js"></script>
     <script type="text/javascript" src="http://static.nurifunding.co.kr/js/common.js"></script>
-    <script type="text/javascript" src="http://static.nurifunding.co.kr/js/mypage/mypage.js"></script>
-    <!--<script type="text/javascript" src="../../src/js/mypage/mypage.js"></script>-->
+    <!-- <script type="text/javascript" src="http://static.nurifunding.co.kr/js/mypage/mypage.js"></script> -->
+    <script type="text/javascript" src="../../src/js/mypage/mypage.js"></script>
 
     <!--[if lt IE 9]>
     <link rel="stylesheet" href="http://static.nurifunding.co.kr/css/grid_ie9lt.min.css">
@@ -109,6 +109,11 @@
                 <div class="mi-box com-box row br3">
                     <h3 class="align-center">회원정보</h3>
                     <p class="mib-p0 align-center">회원정보를 입력해야 투자 하실 수 있습니다.</p>
+                    <p class="mib-p1">
+                        <span class="label">회원구분</span>
+                        <input class="nr-radio" type="radio" value="1" name="mtype" id="mtype1" onclick="javascript: member_type(1);" checked=""> <label for="mtype1">개인회원</label>
+                        <input class="nr-radio ml" type="radio" value="2" name="mtype" id="mtype2" onclick="javascript: member_type(2);"> <label for="mtype2">법인회원</label>
+                    </p>
                     <p class="mib-p1"><span class="label">이름</span><span class="member-name">임준수</span></p>
                     <p class="mib-p1"><span class="label">휴대전화</span>
                         <input type="text" class="nr-text" value="01012345678">

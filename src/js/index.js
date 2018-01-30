@@ -56,7 +56,7 @@ function wayP(flag) {
     $('#per-chart > div .p-chart').each(function(idx, item){
       $(item).addClass("blind");
       $(item).waypoint(function () {
-        $(item).addClass('animated fadeIn chart0'+(idx+1));
+        $(item).addClass('fadeIn chart0'+(idx+1));
       }, {
         offset: '95%'
       });
@@ -64,7 +64,7 @@ function wayP(flag) {
     $('#per-chart > div .p-per').each(function(idx, item){
       $(item).addClass("blind");
       $(item).waypoint(function () {
-        $(item).addClass('animated fadeIn');
+        $(item).addClass('fadeIn');
         $("#p-per1").animateNumber({
           number: 152,
           numberStep: $.animateNumber.numberStepFactories.separator('.', 2)

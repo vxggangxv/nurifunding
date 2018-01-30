@@ -14,8 +14,8 @@
 .f-a.on {display: block;}*/
 
 .f-a {height: 0; opacity: 0; visibility: hidden; color: #444; line-height: 1.5em; letter-spacing: -1px; font-family: "NanumGothic"; background: #fafafa; 
-  -webkit-transition: all 0.8s,  height 0.5s; transition: all 0.8s, height 0.5s; top: -10px; padding: 0px 17px 0px 46px; overflow: hidden; font-size: 14px; word-break: keep-all;}
-.f-a.on {display: block; top: 0; padding: 17px 17px 17px 46px; opacity: 1; visibility: visible; height: auto;}
+  -webkit-transition: all 0.8s,  height 0.5s; transition: all 0.8s, height 0.5s; top: -10px; padding: 0px 5px 0px 46px; overflow: hidden; font-size: 14px;}
+.f-a.on {display: block; top: 0; padding: 17px 5px 16px 46px; opacity: 1; visibility: visible; height: auto;}
 .q-icon, .a-icon, .q-num {position: absolute; display: inline-block; text-align: center; left: 0px; line-height: 1.5em; font-size: 17px; font-family: Arial, "NanumBarunGothic", "NanumGothic", sans-serif; }
 .q-icon, .q-num {top: 15px;}
 .q-icon {color: #398fe1;}

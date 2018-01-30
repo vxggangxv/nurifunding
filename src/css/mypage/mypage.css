@@ -59,6 +59,7 @@
   .mi-box {padding-left: 15px; padding-right: 15px;}
   .mi-box h3 {font-size: 18px; margin-bottom: 5px;}
   .mi-box h3.mt {margin-top: 35px;}
+  
   p[class*="mib-p"] .label {display: block; margin-top: 25px; margin-bottom: 12px; font-size: 16px; font-weight: 300;}
   p[class*="mib-p"] .member-name, p[class*="mib-p"] .nr-text {font-size: 16px; font-weight: 300;}
   p[class*="mib-p"] .nr-text {border: 0; border-bottom: 1px solid #ddd; width: 100%; padding-bottom: 5px;}
@@ -66,6 +67,9 @@
   .mi-box p.mib-p0 {color: #888; font-size: 14px; font-weight: 300;}
   .mi-box p.mib-p2 {font-size: 13px; line-height: 1.3em; font-weight: 300; margin-top: 10px; padding-bottom: 20px; border-bottom: 1px solid #ddd;}
   .mi-box p.mib-p3 .btn {font-size: 17px; line-height: 2.6em; letter-spacing: 0; margin-top: 25px;}
+  .mi-box p.mib-p1 input[type="radio"] {width: 20px; height: 20px; border-radius: 50%; margin-right: 5px; border-color: #dcdcdc;}
+  .mi-box p.mib-p1 input[type="radio"].ml {margin-left: 10px;}
+  .mi-box p.mib-p1 input[type="radio"]:checked {background: url(https://nurifunding.co.kr/img/radio_icon.png) no-repeat -1px; background-size: 20px; }
   
   .account-info {}
   .ai-box {padding-left: 15px; padding-right: 15px;}
@@ -142,6 +146,10 @@
   .mi-box h3.mt {margin-top: 40px;}
   .mi-box p.mib-p2 {font-size: 15px; line-height: 1.5em; font-weight: 300; margin-top: 10px; padding-bottom: 40px; border-bottom: 1px solid #ddd;}
   .mi-box p.mib-p3 .btn {font-size: 17px; padding: 18px 0; letter-spacing: 0; margin-top: 25px;}
+  .mi-box p.mib-p1 input[type="radio"] {width: 20px; height: 20px; border-radius: 50%; margin-right: 5px; border-color: #dcdcdc;}
+  .mi-box p.mib-p1 input[type="radio"].ml {margin-left: 10px;}
+  .mi-box p.mib-p1 input[type="radio"]:checked {background: url(https://nurifunding.co.kr/img/radio_icon.png) no-repeat -1px; background-size: 20px; }
+
 
   .account-info {}
   .ai-box {padding: 50px 130px;}
@@ -167,7 +175,8 @@
 /*테블릿 영역, col-md*/
 @media (min-width: 992px) {
   .com-box {width: 800px;}
-  
+
+  .main-box {width: 460px;}
   .pw-box {padding: 50px 140px;}
   .bank-box {padding: 50px 140px;}
   .binfo-box {padding: 50px 140px;}

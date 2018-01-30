@@ -230,9 +230,9 @@
 												]
 											}],
 											labels: [
-												"",
-												"",
-												""
+												"선순위금",
+												"누리펀딩 대출금",
+												"잔여 여유금"
 											]
 										},
 										options: {
@@ -240,6 +240,20 @@
 											animation: {
 												animateScale: false,
 												animateRotate: true
+											},
+											legend: {
+												display: false
+											},
+											tooltips : {
+												callbacks : { 
+													label : function(tooltipItem, data) {
+														var indice = tooltipItem.index;
+														var dataset = data.datasets[tooltipItem.datasetIndex];
+														var currentLabel = data.labels[indice];
+														var currentValue = dataset.data[tooltipItem.index];
+														return " " + currentLabel + " : " + currentValue + " %";
+													}
+												}
 											}
 										}
 									};
@@ -384,46 +398,61 @@
                             <div id="canvas-holder-12"><span class="in-txt">월 소득<em>700만원</em></span>
                                 <canvas id="chart-area-12" />
                             </div>
-                            <script>
-                                var dataGroup12 = {
-                                    "price1": 120,
-                                    "price2": 580,
-                                    "price3": 0
-                                };
+							<script>
+								var dataGroup12 = {
+									"price1": 120,
+									"price2": 580,
+									"price3": 0
+								};
 
-                                var config12 = {
-                                    type: 'doughnut',
-                                    data: {
-                                        datasets: [{
-                                            data: [
-                        dataGroup12.price1,
-                        dataGroup12.price2,
-                        dataGroup12.price3,
-                      ],
-                                            backgroundColor: [
-                        "#dcdcdc",
-                        "#398FE2",
-                        "#121212",
-                      ],
-                                            borderWidth: [
-                        5
-                      ],
-                    }],
-                                        labels: [
-                      "",
-                      "",
-                      ""
-                    ]
-                                    },
-                                    options: {
-                                        responsive: true,
-                                        animation: {
-                                            animateScale: false,
-                                            animateRotate: true
-                                        }
-                                    }
-                                };
-                            </script>
+								var config12 = {
+									type: 'doughnut',
+									data: {
+										datasets: [{
+											data: [
+												dataGroup12.price1,
+												dataGroup12.price2,
+												dataGroup12.price3,
+											],
+											backgroundColor: [
+												"#dcdcdc",
+												"#398FE2",
+												"#121212",
+											],
+											borderWidth: [
+												5
+											],
+										}],
+										labels: [
+											"금융 비용",
+											"생활 비용",
+											"여유 자금"
+										]
+									},
+									options: {
+										responsive: true,
+										animation: {
+											animateScale: false,
+											animateRotate: true
+										},
+										legend: {
+											display: false
+										},
+										tooltips : {
+											callbacks : { 
+												label : function(tooltipItem, data) {
+													var indice = tooltipItem.index;
+													var dataset = data.datasets[tooltipItem.datasetIndex];
+													var currentLabel = data.labels[indice];
+													var currentValue = dataset.data[tooltipItem.index];
+													return " " + currentLabel + " : " + currentValue + " 만원";
+												}
+											}
+										}
+										
+									}
+								};
+							</script>
 
                         </div>
                         <p class="est-b7-p3">월 소득 = (금융비융 + 생활비용) + 여유자금</p>

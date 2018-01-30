@@ -8,7 +8,7 @@ $(function() {
     $("#mlnb-wrap").removeClass("on");
   });
     /* 드롭다운 */
-  $(".dropdown .btn").on("click", function() {
+  $(".dropdown").on("click", ".btn", function() {
     $(this).next().slideToggle("fast");
   });
   /*텝박스 기능*/
