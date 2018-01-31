@@ -14,7 +14,7 @@
 
 /*모바일 영역, col-xs*/
 @media (max-width: 767px){
-  .com-ft {position: relative; margin-top: 28px; text-align: center; font-size: 22px; font-family: "Noto Sans Kr";}
+  .com-ft {position: relative; margin-top: 28px; text-align: center; font-size: 22px; font-family: "Noto Sans KR", sans-serif;}
   .com-mg {margin: 15px 0px 50px;}
   .com-box{position: relative; margin: 0 auto; margin-top: 10px; width: 300px; border: 1px solid #ddd; background: #fff; padding: 25px 20px; box-shadow: 1px 1px 4px 0px #dadada;}
   .br3 {border-radius: 3px;}
@@ -76,7 +76,7 @@
 
 /*테블릿 영역, col-sm~col-md */
 @media (min-width: 768px) and (max-width: 1199px) {
-  .com-ft {position: relative; margin-top: 48px; text-align: center; font-size: 36px; font-family: "Noto Sans Kr";}
+  .com-ft {position: relative; margin-top: 48px; text-align: center; font-size: 36px; font-family: "Noto Sans KR", sans-serif;}
   .com-mg {margin: 45px 0px 95px;}
   .com-box {position: relative; width: 730px; margin: 0 auto; margin-top: 20px; border: 1px solid #ddd; background: #fff; box-shadow: 1px 1px 4px 0px #dadada;}
   .br3 {border-radius: 3px;}
@@ -147,7 +147,7 @@
 /*pc 영역 col-lg*/
 @media (min-width: 1200px){
   .contents .container {width: 1024px; padding-left: 0; padding-right: 0;}
-  .com-ft {position: relative; margin-top: 48px; text-align: center; font-size: 36px; font-family: "Noto Sans Kr";}
+  .com-ft {position: relative; margin-top: 48px; text-align: center; font-size: 36px; font-family: "Noto Sans KR", sans-serif;}
   .com-mg {margin: 45px 0px 95px;}
   .com-box {position: relative; margin: 0 auto; border: 1px solid #ddd; background: #fff; box-shadow: 1px 1px 4px 0px #dadada;}
   .br3 {border-radius: 3px;}

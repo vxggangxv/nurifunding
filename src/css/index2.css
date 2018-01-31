@@ -17,7 +17,7 @@
 /*모바일 영역, col-xs*/
 @media (max-width: 767px){
   .com-pd {padding: 28px 10px 25px;}
-  .com-ft {text-align: center; font-size: 18px; font-family: "Noto Sans Kr"; line-height: 1.2em;}
+  .com-ft {text-align: center; font-size: 18px; font-family: "Noto Sans KR", sans-serif; line-height: 1.2em;}
   .com-box {position: relative; margin: 0 auto; margin-top: 15px; width: 300px;}
   .arr-icon {display: inline-block; position: relative; background: url(https://nurifunding.co.kr/img/nrm_icon_m.png) no-repeat;} .br4 {border-radius: 4px;}
   .xs-block {display: block;}
@@ -43,7 +43,7 @@
   .main-box .swiper-slide > div.s1-div-2 {top: 26px; left: 20px; color: #fff; text-align: left; z-index: 1;}
   .main-box .swiper-slide > div.s1-div-2 .d1 {font-size: 16px; font-weight: 200;}
   .main-box .swiper-slide > div.s1-div-2 .d1 p.nth-2 {font-size: 21px; font-weight: 400; margin-top: 5px; line-height: 1.2em;}
-  .main-box .swiper-slide > div.s1-div-2 .d2 {font-size: 11.5px; font-family: "Nanum Gothic"; }
+  .main-box .swiper-slide > div.s1-div-2 .d2 {font-size: 11.5px; font-family: "Nanum Gothic", sans-serif; }
   .main-box .swiper-slide > div.s1-div-2 .d2 p {margin-top: 5px; font-weight: 300; letter-spacing: -0.5px;}
   .main-box .swiper-slide > div.s1-div-2 .d2 p:first-child {margin-top: 12px;}
   .main-box .swiper-slide > div.s1-div-2 .d2 p img {display: inline-block; width: 10px; position: relative; top: 1px; margin-right: 1px;}
@@ -56,10 +56,10 @@
 
   .rate {padding: 20px 0px;}
   .rate .container {width: 320px;}
-  .r-f, .r-f2 {text-align: center; color: #fff; font-family: "NanumGothic";}
+  .r-f, .r-f2 {text-align: center; color: #fff; font-family: "Nanum Gothic", sans-serif;}
   .r-f {font-size: 14px;}
   .r-f .q-w {position: relative; top: -2px; display: inline-block; margin-left: 4px; width: 20px; height: 20px; border-radius: 50%; background: #fff; text-align: center; cursor: pointer;}
-  .r-f .q {position: relative; display: block; top: 3px; left: -1px; color: #09345f; font-weight: 800; font-family: "Noto Sans KR";}
+  .r-f .q {position: relative; display: block; top: 3px; left: -1px; color: #09345f; font-weight: 800; font-family: "Noto Sans KR", sans-serif;}
   .r-f .q .q-t {display: none; position: absolute; width: 100px; height: 28px; left: -40px; top: -39px; color: #fff; font-weight: 400; background: #000; border-radius: 4px; 
     line-height: 1.9em;}
   .r-f .q .q-t:after {position: absolute; content: ""; bottom: -13px; left: 42px; display: block; width: 1px; border: 8px solid #000; border-color: transparent; border-top-color: #000;}
@@ -168,7 +168,7 @@
 /*테블릿 영역, col-sm */
 @media (min-width: 768px) and (max-width: 991px) {
   .com-pd {padding: 98px 10px 95px;}
-  .com-ft {text-align: center; font-size: 42px; font-family: "Noto Sans Kr"; line-height: 1.2em;}
+  .com-ft {text-align: center; font-size: 42px; font-family: "Noto Sans KR", sans-serif; line-height: 1.2em;}
   .com-box {position: relative; margin: 0 auto; margin-top: 10px;}
   .arr-icon {display: inline-block; position: relative; background: url(https://nurifunding.co.kr/img/nrm_icon.png) no-repeat;}
   .br4 {border-radius: 4px;}
@@ -211,10 +211,10 @@
   .main-box .swiper-slide > div.s2-div-2 .d2 p.nth-2, .main-box .swiper-slide > div.s2-div-2 .d2 p.nth-4 {float: left; margin-right: 3px;}
 
   .rate {padding: 30px 0px;}
-  .r-f, .r-f2 {text-align: center; color: #fff; font-family: "NanumGothic"; letter-spacing: 0;}
+  .r-f, .r-f2 {text-align: center; color: #fff; font-family: "Nanum Gothic", sans-serif; letter-spacing: 0;}
   .r-f {font-size: 16px;}
   .r-f .q-w {position: relative; top: -1px; display: inline-block; margin-left: 4px; width: 22px; height: 22px; border-radius: 50%; background: #fff; text-align: center; cursor: pointer;}
-  .r-f .q {position: relative; display: block; top: 2px; left: -1px; color: #09345f; font-weight: 600; font-family: "Noto Sans KR";}
+  .r-f .q {position: relative; display: block; top: 2px; left: -1px; color: #09345f; font-weight: 600; font-family: "Noto Sans KR", sans-serif;}
     .r-f .q .q-t {display: none; position: absolute; width: 120px; height: 28px; left: -48px; top: -41px; color: #fff; font-weight: 400; background: #000; border-radius: 4px; 
     line-height: 1.6em; font-size: 16px;}
   .r-f .q .q-t:after {position: absolute; content: ""; bottom: -14px; left: 51px; display: block; width: 1px; border: 8px solid #000; border-color: transparent; border-top-color: #000;}
@@ -313,7 +313,7 @@
 /*테블릿 영역, col-md*/
 @media (min-width: 992px) {
   .com-pd {padding: 98px 10px 95px;}
-  .com-ft {text-align: center; font-size: 42px; font-family: "Noto Sans Kr"; line-height: 1.2em;}
+  .com-ft {text-align: center; font-size: 42px; font-family: "Noto Sans KR", sans-serif; line-height: 1.2em;}
   .com-box {position: relative; margin: 0 auto; margin-top: 20px;}
   .arr-icon {display: inline-block; position: relative; background: url(https://nurifunding.co.kr/img/nrm_icon.png) no-repeat;}
   .br4 {border-radius: 4px;}
@@ -362,10 +362,10 @@
   .rr-nth-2 {width: 28%;}
   .rr-nth-3 {width: 28%;}
   .rr-nth-4 {width: 27%;}
-  .r-f, .r-f2 {text-align: center; color: #fff; font-family: "NanumGothic"; letter-spacing: 0;}
+  .r-f, .r-f2 {text-align: center; color: #fff; font-family: "Nanum Gothic", sans-serif; letter-spacing: 0;}
   .r-f {font-size: 18px;}
   .r-f .q-w {position: relative; top: 0px; display: inline-block; margin-left: 4px; width: 22px; height: 22px; border-radius: 50%; background: #fff; text-align: center; cursor: pointer;}
-  .r-f .q {position: relative; display: block; top: 2px; left: 0px; color: #09345f; font-weight: 600; font-family: "Noto Sans KR";}
+  .r-f .q {position: relative; display: block; top: 2px; left: 0px; color: #09345f; font-weight: 600; font-family: "Noto Sans KR", sans-serif;}
   .r-f .q .q-t {display: none; position: absolute; width: 120px; height: 28px; left: -48px; top: -41px; color: #fff; font-weight: 400; background: #000; border-radius: 4px; 
     line-height: 1.6em; font-size: 16px;}
   .r-f .q .q-t:after {position: absolute; content: ""; bottom: -14px; left: 51px; display: block; width: 1px; border: 8px solid #000; border-color: transparent; border-top-color: #000;}

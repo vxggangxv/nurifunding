@@ -53,5 +53,9 @@
 .footer .c-txt small {font-size: 12px;}
 .fc-yellow {color: #ffea00;}
 
+.footer .a-link {}
+.footer .a-link > a {display: inline-block; margin: 0 7px;}
+.footer .a-link > a:first-child {margin-left: -4px;}
+
 .main-nav .hidden-margin {height: 20px;}
 .footer .f-txt .min-xs-br {display: block;}

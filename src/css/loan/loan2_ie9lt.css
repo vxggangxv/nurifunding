@@ -7,7 +7,7 @@
 
 .loan {}
 .lon-h2 {display: block; text-align: center; width: 100%; font-size: 28px; font-weight: 300; letter-spacing: -1px;}
-.lon-dot, .lh3-dot {position: relative; font-family: "NanumGothic";}
+.lon-dot, .lh3-dot {position: relative; font-family: "Nanum Gothic", sans-serif;}
 .lon-dot {position: relative; top: -5px; margin: 0 3px; font-size: 14px;}
 .lon-em {text-align: center; font-weight: 400; font-size: 16px; line-height: 1.5em;}
 .lon-ul {padding: 0px 0 20px;}
@@ -26,7 +26,7 @@
 .lon-d.radio input[type="radio"] {width: 20px; height: 20px; border-radius: 50%; margin-right: 5px; border-color: #dcdcdc;}
 .lon-d.radio input[type="radio"]:checked {background: url(http://img.nurifunding.co.kr/radio_icon.png) no-repeat -1px; background-size: 20px; }
 .lon-d.txtarea {height: auto;}
-.dropdown .btn, .dropdown .dropdown-menu, .nr-text, .nr-bg-txt, .nr-ph {font-size: 16px; font-family: "NanumGothic";}
+.dropdown .btn, .dropdown .dropdown-menu, .nr-text, .nr-bg-txt, .nr-ph {font-size: 16px; font-family: "Nanum Gothic", sans-serif;}
 .dropdown .btn {position: relative; border: 1px solid #ddd; background: #fff; padding: 8px 15px; border-radius: 4px; text-align: left; width: 100%; height: 100%; color:#999;}
 .dropdown .btn:focus, .dropdown .btn:active, .dropdown .btn.on {color: #333;}
 .dropdown .btn span {position: relative; top: 4px;}
@@ -69,7 +69,7 @@ p[class*=sb-].sb-p2 {color: #999; font-size: 14px;}
 .loan.nth-5 .lon-h3 {text-align: center; font-size: 22px; font-weight: 500;}
 .l5-ps {text-align: center; color: #888; font-size: 16px; margin-top: 5px;}
 .l5-ps-2 {margin-top: 30px; padding-top: 30px; border-top: 1px solid #ddd;}
-.l5-ps-2, .l5-ps-3 {font-size: 14px; line-height: 1.4em; font-family: "NanumGothic";}
+.l5-ps-2, .l5-ps-3 {font-size: 14px; line-height: 1.4em; font-family: "Nanum Gothic", sans-serif;}
 .l5-ps-2 {}
 .l5-ps-3 {color: #888;}
 
@@ -80,8 +80,8 @@ p[class*=sb-].sb-p2 {color: #999; font-size: 14px;}
 .lon-box {border: 1px solid #ddd; background: #fff; padding: 40px 100px;}
 
 .loan {}
-.lon-h2 {display: block; text-align: center; width: 100%; font-size: 34px; font-family: "Noto Sans Kr"; font-weight: 400; letter-spacing: -1px;}
-.lon-dot, .lh3-dot {position: relative; font-family: "NanumGothic";}
+.lon-h2 {display: block; text-align: center; width: 100%; font-size: 34px; font-family: "Noto Sans KR", sans-serif; font-weight: 400; letter-spacing: -1px;}
+.lon-dot, .lh3-dot {position: relative; font-family: "Nanum Gothic", sans-serif;}
 .lon-dot {position: relative; top: -5px; margin: 0 -3px; font-size: 20px;}
 .lon-em {text-align: center; font-weight: 400; font-size: 17px; line-height: 1.5em;}
 .lh3-dot {margin: 0 -2px; top: -1px;}
@@ -119,4 +119,4 @@ p[class*=sb-].sb-p2 {color: #999; font-size: 15px;}
 .loan.nth-5 .alow3 {margin-top: 35px;}
 .l5-ps {text-align: center; color: #888; font-size: 17px; margin-top: 10px;}
 .l5-ps-2 {margin-top: 35px; padding-top: 30px; border-top: 1px solid #ddd;}
-.l5-ps-2, .l5-ps-3 {font-size: 15px; line-height: 1.4em; font-family: "NanumGothic";}
+.l5-ps-2, .l5-ps-3 {font-size: 15px; line-height: 1.4em; font-family: "Nanum Gothic", sans-serif;}

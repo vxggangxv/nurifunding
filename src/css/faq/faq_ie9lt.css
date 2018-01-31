@@ -1,4 +1,4 @@
-.com-ft {text-align: center; font-size: 36px; font-family: "Noto Sans Kr"; margin-top: 55px;}
+.com-ft {text-align: center; font-size: 36px; font-family: "Noto Sans KR", sans-serif; margin-top: 55px;}
 .com-pd {margin-bottom: 20px;}
 .com-pd.last {margin-bottom: 125px;}
 .com-box {margin: 0 auto; margin-top: 0px; padding: 30px 40px; background: #fff; border: 1px solid #ddd;}
@@ -10,13 +10,13 @@
 .f-table {position: relative; margin: 15px 0 0px;}
 .f-q, .f-a {position: relative; font-size: 16px; border-bottom: 1px solid #ddd; border-bottom: 1px solid #ddd;}
 .f-q {cursor: pointer; color: #363636; line-height: 1.5em; padding: 15px 5px 16px 46px;}
-/*.f-a {display: none; color: #444; line-height: 1.5em; letter-spacing: -1px; font-family: "NanumGothic"; background: #fafafa; min-height: 50px; padding: 17px 5px 16px 36px; font-size: 14px;}
+/*.f-a {display: none; color: #444; line-height: 1.5em; letter-spacing: -1px; font-family: "Nanum Gothic"; background: #fafafa; min-height: 50px; padding: 17px 5px 16px 36px; font-size: 14px;}
 .f-a.on {display: block;}*/
 
-.f-a {height: 0; opacity: 0; visibility: hidden; color: #444; line-height: 1.5em; letter-spacing: -1px; font-family: "NanumGothic"; background: #fafafa; 
+.f-a {height: 0; opacity: 0; visibility: hidden; color: #444; line-height: 1.5em; letter-spacing: -1px; font-family: "Nanum Gothic, sans-serif"; background: #fafafa; 
   -webkit-transition: all 0.8s,  height 0.5s; transition: all 0.8s, height 0.5s; top: -10px; padding: 0px 17px 0px 46px; overflow: hidden; font-size: 14px; word-break: keep-all;}
 .f-a.on {display: block; top: 0; padding: 17px 17px 17px 46px; opacity: 1; visibility: visible; height: auto;}
-.q-icon, .a-icon, .q-num {position: absolute; display: inline-block; text-align: center; left: 0px; line-height: 1.5em; font-size: 17px; font-family: Arial, "NanumBarunGothic", "NanumGothic", sans-serif; }
+.q-icon, .a-icon, .q-num {position: absolute; display: inline-block; text-align: center; left: 0px; line-height: 1.5em; font-size: 17px; font-family: Arial, "Nanum Barun Gothic", "Nanum Gothic", sans-serif; }
 .q-icon, .q-num {top: 15px;}
 .q-icon {color: #398fe1;}
 /*.a-icon {color: #ff6434; top: 14px; left: 18px;}*/

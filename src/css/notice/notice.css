@@ -14,7 +14,7 @@
 
 /*모바일 영역, col-xs*/
 @media (max-width: 767px){
-    .com-ft {position: relative; text-align: center; font-size: 22px; font-family: "Noto Sans Kr"; margin-top: 28px;}
+    .com-ft {position: relative; text-align: center; font-size: 22px; font-family: "Noto Sans KR", sans-serif; margin-top: 28px;}
     .com-pd {margin-bottom: 50px;}
     .com-box, .page-wrap {position: relative; margin: 0 auto; width: 320px;}
     .br4 {border-radius: 4px;}
@@ -47,7 +47,7 @@
     .fp-tit-box {padding-bottom: 10px; border-bottom: 1px solid #ddd; font-size: 15px;}
     .fp-title {}
     .fp-date {position: relative; top: 2px; float: right; font-size: 13px; color: #565656;}
-    .fp-contents {padding: 15px 0px; font-size: 13px; font-family: "NanumGothic"; line-height: 1.4em;}
+    .fp-contents {padding: 15px 0px; font-size: 13px; font-family: "Nanum Gothic", sans-serif; line-height: 1.4em;}
     .fp-footer {position: relative; margin-top: 20px; text-align: right;}
     .fp-footer > a {display: inline-block; border: 1px solid #ddd; font-size: 14px; padding: 5px 8px; margin-right: 3px;}
     .fp-footer > a:hover {background-color: rgba(219,219,219,0.1);}
@@ -101,7 +101,7 @@
 
 /*테블릿 영역, col-sm */
 @media (min-width: 768px) {
-    .com-ft {text-align: center; font-size: 36px; font-family: "Noto Sans Kr"; margin-top: 55px;}
+    .com-ft {text-align: center; font-size: 36px; font-family: "Noto Sans KR", sans-serif; margin-top: 55px;}
     .com-pd {margin-bottom: 125px;}
     .com-box, .page-wrap {margin: 0 auto; margin-top: 10px;}
     .br4 {border-radius: 4px;}
@@ -135,7 +135,7 @@
     .fp-tit-box {padding-bottom: 15px; border-bottom: 1px solid #ddd; font-size: 17px;}
     .fp-title {}
     .fp-date {position: relative; top: 3px; float: right; font-size: 15px; color: #565656;}
-    .fp-contents {padding: 15px 0px; font-size: 15px; font-family: "NanumGothic"; line-height: 1.5em;}
+    .fp-contents {padding: 15px 0px; font-size: 15px; font-family: "Nanum Gothic", sans-serif; line-height: 1.5em;}
     .fp-footer {position: relative; margin-top: 80px; text-align: center;}
     .fp-footer > a {display: inline-block; border: 1px solid #ddd; font-size: 16px; padding: 10px 14px; margin-right: 3px; letter-spacing: 0;}
     .fp-footer > a:hover {background-color: rgba(219,219,219,0.1);}

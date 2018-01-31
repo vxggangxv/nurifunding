@@ -1,5 +1,5 @@
 
-.com-ft {text-align: center; font-size: 36px; font-family: "Noto Sans Kr"; margin-top: 55px;}
+.com-ft {text-align: center; font-size: 36px; font-family: "Noto Sans KR", sans-serif; margin-top: 55px;}
 .com-pd {margin-bottom: 125px;}
 .com-box, .page-wrap {margin: 0 auto; margin-top: 10px;}
 .br4 {border-radius: 4px;}
@@ -33,7 +33,7 @@
 .fp-tit-box {padding-bottom: 15px; border-bottom: 1px solid #ddd; font-size: 17px;}
 .fp-title {}
 .fp-date {position: relative; top: 3px; float: right; font-size: 15px; color: #565656;}
-.fp-contents {padding: 15px 0px; font-size: 15px; font-family: "NanumGothic"; line-height: 1.5em;}
+.fp-contents {padding: 15px 0px; font-size: 15px; font-family: "Nanum Gothic", sans-serif; line-height: 1.5em;}
 .fp-footer {position: relative; margin-top: 80px; text-align: center;}
 .fp-footer > a {display: inline-block; border: 1px solid #ddd; font-size: 16px; padding: 10px 14px; margin-right: 3px; letter-spacing: 0;}
 .fp-footer > a:hover {background-color: rgba(219,219,219,0.1);}

@@ -1,5 +1,5 @@
 .com-pd {padding: 98px 10px 95px;}
-.com-ft {text-align: center; font-size: 42px; font-family: "Noto Sans Kr"; line-height: 1.2em;}
+.com-ft {text-align: center; font-size: 42px; font-family: "Noto Sans KR", sans-serif; line-height: 1.2em;}
 .com-box {position: relative; margin: 0 auto; margin-top: 20px;}
 .arr-icon {display: inline-block; position: relative; background: url(https://nurifunding.co.kr/img/nrm_icon.png) no-repeat;}
 .br4 {border-radius: 4px;}
@@ -48,10 +48,10 @@
 .rr-nth-2 {width: 28%;}
 .rr-nth-3 {width: 28%;}
 .rr-nth-4 {width: 27%;}
-.r-f, .r-f2 {text-align: center; color: #fff; font-family: "NanumGothic"; letter-spacing: 0;}
+.r-f, .r-f2 {text-align: center; color: #fff; font-family: "Nanum Gothic", sans-serif; letter-spacing: 0;}
 .r-f {font-size: 18px;}
 .r-f .q-w {position: relative; top: 0px; display: inline-block; margin-left: 4px; width: 22px; height: 22px; border-radius: 50%; background: #fff; text-align: center; cursor: pointer;}
-.r-f .q {position: relative; top: 2px; left: 0px; color: #09345f; font-weight: 600; font-family: "Noto Sans KR";}
+.r-f .q {position: relative; top: 2px; left: 0px; color: #09345f; font-weight: 600; font-family: "Noto Sans KR", sans-serif;}
 .r-f .q .q-t {display: none; position: absolute; width: 120px; height: 28px; left: -53px; top: -36px; color: #fff; font-weight: 400; background: #000; border-radius: 4px; 
   line-height: 1.6em; font-size: 16px;}
 .r-f .q .q-t:after {position: absolute; content: ""; bottom: -14px; left: 51px; display: block; width: 1px; border: 8px solid #000; border-color: transparent; border-top-color: #000;}

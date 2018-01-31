@@ -1,5 +1,5 @@
 .com-pd {padding: 68px 10px 95px;}
-.com-ft {text-align: center; font-size: 36px; font-family: "Noto Sans Kr";}
+.com-ft {text-align: center; font-size: 36px; font-family: "Noto Sans KR", sans-serif;}
 .com-box {margin: 0 auto; margin-top: 10px;}
 .br4 {border-radius: 4px;}
 
@@ -49,7 +49,7 @@ li[class*=ipli] .pull-right.day {font-weight: 500; font-size: 17px;}
 .est-box.nth-4 {padding-bottom: 30px; border-bottom: 10px solid #398fe1;}
 
 .est-b4-li1 .quest {position: relative; top: 9px; display: inline-block; border-radius: 50%; width: 25px; height: 25px; margin-left: -2px;}
-.est-b4-li1 .quest span {position: relative; top: -16px; left: 8px; font-size: 18px; font-family: "Arial", "Noto Sans KR";}
+.est-b4-li1 .quest span {position: relative; top: -16px; left: 8px; font-size: 18px; font-family: "Arial", "Noto Sans KR", sans-serif;}
 
 .est-b4-ul {}
 li[class*="est-b4-li"] {float: left; margin-top: 30px; margin-right: 5px; padding-left: 15px; border-left: 1px solid #d2d2d2;}
@@ -131,7 +131,7 @@ li[class*="est-b4-li"]:first-child {margin-left: 0px; padding-left: 0; border-le
 .est-box.nth-11 {position: relative; height: 454px;}
 .est-box.nth-11 .ebt-b11-p {margin-top: 30px; font-weight: 300; font-size: 17px; line-height: 1.3em; word-break: keep-all;}
 .est-box.nth-11 .grade {}
-.est-box.nth-11 .grade .g-th {margin: 35px 0 30px; font-size: 34px; font-family: "Arial", "Noto Sans KR"; font-weight: 600; letter-spacing: 0;}
+.est-box.nth-11 .grade .g-th {margin: 35px 0 30px; font-size: 34px; font-family: "Arial", "Noto Sans KR", sans-serif; font-weight: 600; letter-spacing: 0;}
 .est-box.nth-11 .grade .g-chart   {
     position: relative; width: 100%; height: 8px;
     background: #398fe1; /* Old browsers */
@@ -245,7 +245,7 @@ li[class*="prps-d2-li"] {padding: 15px 5px; font-size: 20px;}
 .prps-d2-li1 {border-bottom: 1px solid #ddd;}
 .prps-d2-li2 .pull-left {font-weight: 300; font-size: 17px}
 .prps-d2-p1 {font-size: 15px; text-align: center; padding: 20px 0px; font-weight: 300;}
-.prps-d2-p1 .btn {display: inline-block; padding: 5px 10px; border: 1px solid #6c6c6c; background: #aaa; margin-left: 13px; font-family: "NanumGothic"; font-size: 12px; position: relative; top: -2px;}
+.prps-d2-p1 .btn {display: inline-block; padding: 5px 10px; border: 1px solid #6c6c6c; background: #aaa; margin-left: 13px; font-family: "Nanum Gothic", sans-serif; font-size: 12px; position: relative; top: -2px;}
 .prps-d2-p1 .btn span {margin-left: 5px; position: relative; font-size: 10px; top: -1px;}
 
 .prps-ps {font-size: 15px; margin-top: 5px;}
@@ -356,7 +356,7 @@ li[class*="prps-d2-li"] {padding: 15px 5px; font-size: 20px;}
 .rEstate-sec .repay-tb {margin-top: 6px;}
 .rEstate-sec .repay-tb th, .rEstate-sec .repay-tb td,
 .rEstate-sec .yield-tb th, .rEstate-sec .yield-tb td
-{position: relative; border-collapse: collapse; border: 1px solid #000; vertical-align: middle; line-height: 1.1em; font-family: "Malgun Gothic";}
+{position: relative; border-collapse: collapse; border: 1px solid #000; vertical-align: middle; line-height: 1.1em; font-family: "Malgun Gothic", sans-serif;}
 .rEstate-sec .repay-tb th, .rEstate-sec .repay-tb td.nth-1 {color: #fff;}
 .rEstate-sec .repay-tb th > div, .rEstate-sec .repay-tb td > div,
 .rEstate-sec .yield-tb th > div, .rEstate-sec .yield-tb td > div {position: relative; padding: 14px 1px;}

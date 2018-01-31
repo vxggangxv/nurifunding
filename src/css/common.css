@@ -6,7 +6,7 @@
 /*@import url(http://static.nurifunding.co.kr/fonts/NanumBarunGothic/nanumbarungothic.css);
 @import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
 @import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);*/
-body, * {margin:0; padding:0; font-family: 'Noto Sans Kr', 'Nanum Gothic', 'Malgun Gothic', Arial, sans-serif; box-sizing: border-box; letter-spacing: -1px;
+body, * {margin:0; padding:0; font-family: 'Noto Sans KR', 'Nanum Gothic', 'Malgun Gothic', Arial, sans-serif; box-sizing: border-box; letter-spacing: -1px;
 /*
     -webkit-user-select: none; /* Chrome, Opera, Safari *
     -moz-user-select: none; /* Firefox 2+ *
@@ -168,8 +168,11 @@ hr {border: none; border-top: 1px solid #ddd;}
   .footer .f-txt, .footer .f-txt address {font-size: 14px; line-height: 1.5em;}
   .footer .c-txt small {font-size: 12px; margin-bottom: 10px; display: block;}
   .fc-yellow {color: #ffea00;}
+	
+	.footer .a-link {}
+	.footer .a-link > a {display: inline-block; margin: 0 7px;}
+	.footer .a-link > a:first-child {margin-left: -4px;}
   
   .main-nav .hidden-margin {height: 20px;}
   .footer .f-txt .min-xs-br {display: block;}
 }
-.footer .row
