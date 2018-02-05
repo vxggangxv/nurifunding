@@ -12,7 +12,7 @@ $(function() {
   $('.swiper-wrapper').bxSlider({
     auto: true,
     speed: 500,
-    duration: 6000,
+    duration: 7500,
     slideMargin: 50,
       prevText: '<img src="https://www.nurifunding.co.kr/img/btn_prev.png" alt="다음">',
       nextText: '<img src="https://www.nurifunding.co.kr/img/btn_next.png" alt="다음">',

@@ -44,6 +44,8 @@
   .m-btn {display: inline-block; width: 100%; color: #fff; font-size: 14px; line-height: 3.6em; height: 50px; letter-spacing: 0;}
   .m-btn.join {background: #398FE2}
   .m-btn.face {background: #3F5D9B;}
+  .m-btn.kakao {background: #1ec800;}
+  .m-btn.naver {background: #ffeb00; color: #3b1e1e;}
   .mlow4 {margin-top: 10px;}
   .mlow4.mt {margin-top: 16px;}
   .ml4-link {position: relative; margin-left: 10px;}
@@ -122,6 +124,8 @@
   .m-btn {display: inline-block; width: 100%; color: #fff; font-size: 18px; line-height: 3.6em; height: 60px; letter-spacing: 0;}
   .m-btn.join {background: #398FE2}
   .m-btn.face {background: #3F5D9B;}
+  .m-btn.kakao {background: #1ec800;}
+  .m-btn.naver {background: #ffeb00; color: #3b1e1e;}
   .mlow4 {margin-top: 14px;}
   .mlow4.mt {margin-top: 20px;}
   .ml4-link {position: relative; margin-left: 10px;}
