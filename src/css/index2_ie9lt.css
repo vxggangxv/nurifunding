@@ -6,11 +6,13 @@
 .md-block {display: block;}
 
 .main {width: 100%; background: #126cc4;}
+.main-box.main-common > div {position: absolute;}
 .main-box.main-common {position: relative; width: 945px; height: 272px;}
 .main-box.main-common > div.s1-div-1 {width: 100%; text-align: center;}
-.main-box.main-common > div.s1-div-1 p {position: relative; display: inline-block;}
-.main-box.main-common > div.s1-div-1 p.nth-1 {width: 608px; height: 52px; font-size: 30px; background: #09345f; color: #fff; font-weight: 200; line-height: 1.66em;
-  margin-top: 60px; letter-spacing: 1px;}
+.main-box.main-common > div.s1-div-1 p {position: relative; /*display: inline-block;*/ font-family: "Noto Sans KR", "Malgun Gothic", sans-serif;}
+.main-box.main-common > div.s1-div-1 p.nth-0 {color: #FFF; font-size: 24px; margin-top: 40px;}
+.main-box.main-common > div.s1-div-1 p.nth-1 {width: 608px; margin: 0 auto; height: 52px; font-size: 30px; background: #09345f; color: #fff; font-weight: 200; line-height: 1.66em;
+  margin-top: 12px; letter-spacing: 1px;}
 .main-box.main-common > div.s1-div-1 p.nth-1:after {position: absolute; content: ""; display: block; left: 50px; bottom: -27px; width: 1px; border: 14px solid #09345f; border-color: transparent; border-top-color: #09345f;}
 .main-box.main-common > div.s1-div-1 p.nth-1 .f-bd {font-weight: 400;}
 .main-box.main-common > div.s1-div-1 p.nth-2 {font-size: 71px; color: #fff; font-weight: 400; letter-spacing: -2px; font-weight: 400; margin-top: 20px;}
@@ -20,9 +22,9 @@
 .main-box .swiper-slide {position: relative; width: 945px; height: 375px;}
 .main-box .swiper-slide img {display: block;}
 .main-box .swiper-slide > div {position: absolute;}
-.main-box .swiper-slide > div.s1-div-2 {top: 68px; left: 20px; color: #fff; text-align: left;}
+.main-box .swiper-slide > div.s1-div-2 {top: 68px; left: 20px; color: #fff; text-align: left; font-family: "Noto Sans KR", "Malgun Gothic", sans-serif;}
 .main-box .swiper-slide.nth-1 > div.s1-div-2 .d1 p.nth-2, .main-box .swiper-slide.nth-1 > div.s1-div-2 .d1 p.nth-2 span {letter-spacing: -3px;}
-.main-box .swiper-slide > div.s1-div-2 .d1 {font-size: 40px; font-weight: 200;}
+.main-box .swiper-slide > div.s1-div-2 .d1 {font-size: 37px; font-weight: 200;}
 .main-box .swiper-slide > div.s1-div-2 .d1 p.nth-2 {font-weight: 400; margin-top: 10px;}
 .main-box .swiper-slide > div.s1-div-2 .d2 {font-size: 24px;}
 .main-box .swiper-slide > div.s1-div-2 .d2 p {margin-top: 10px; font-weight: 300; letter-spacing: 0px;}
@@ -44,20 +46,26 @@
 .main-box .swiper-slide > div.s3-div-2 .d2 p.nth-4:before {content: "임대료, 기타 수익 등 꼼꼼꼼한 "}
 
 .rate {padding: 42px 0px;}
-.rr-nth-1 {width: 17%;}
-.rr-nth-2 {width: 28%;}
-.rr-nth-3 {width: 28%;}
-.rr-nth-4 {width: 27%;}
+.rate .container {width: 100%; text-align: center; padding: 0;}
+.rate .row {display: inline-block;}
+.rate [class*=rr-] {display: inline-block; /*width: auto; padding: 0 20px;*/}
+.rr-nth-1 {width: 198px;}
+.rr-nth-2 {width: 198px;}
+.rr-nth-3 {width: 198px;}
+.rr-nth-4 {width: 142px;}
+.rr-nth-5 {width: 250px;}
 .r-f, .r-f2 {text-align: center; color: #fff; font-family: "Nanum Gothic", sans-serif; letter-spacing: 0;}
 .r-f {font-size: 18px;}
 .r-f .q-w {position: relative; top: 0px; display: inline-block; margin-left: 4px; width: 22px; height: 22px; border-radius: 50%; background: #fff; text-align: center; cursor: pointer;}
-.r-f .q {position: relative; top: 2px; left: 0px; color: #09345f; font-weight: 600; font-family: "Noto Sans KR", sans-serif;}
+/*.r-f .q {position: relative; top: 2px; left: 0px; color: #09345f; font-weight: 600; font-family: "Noto Sans KR", sans-serif;}
 .r-f .q .q-t {display: none; position: absolute; width: 120px; height: 28px; left: -53px; top: -36px; color: #fff; font-weight: 400; background: #000; border-radius: 4px; 
   line-height: 1.6em; font-size: 16px;}
-.r-f .q .q-t:after {position: absolute; content: ""; bottom: -14px; left: 51px; display: block; width: 1px; border: 8px solid #000; border-color: transparent; border-top-color: #000;}
+.r-f .q .q-t:after {position: absolute; content: ""; bottom: -14px; left: 51px; display: block; width: 1px; border: 8px solid #000; border-color: transparent; border-top-color: #000;}*/
+.r-f .q {position: relative; display: block; top: 2px; left: 0px; color: #09345f; font-weight: 600; font-family: "Noto Sans KR", sans-serif;}
+.r-f .q .q-t {display: none; position: absolute; width: 136px; left: -54px; bottom: 30px; color: #fff; font-weight: 400; background: #000; border-radius: 1px; text-align: left; line-height: 1.2em; font-size: 16px; padding: 10px 8px; font-size: 13px; letter-spacing: -0.5px;}
 .r-f .q:hover .q-t {display: block;}
 .r-f2 {font-size: 28px; margin-top: 12px; font-weight: 500;}
-.rr-nth-4 .r-f2 {position: relative; top: -4px;}
+.rr-nth-5 .r-f2 {position: relative; top: -4px;}
 
 .benefit {background: #EBF4FB;}
 .benefit h2 {font-weight: 500; margin-bottom: 20px;}
@@ -74,11 +82,21 @@
 .benefit .com-box .p-chart {display: inline-block; width: 100%; vertical-align: bottom; background: #bdcfde;}
 .benefit .com-box .nth-5 .p-per, .benefit .com-box .nth-5 .p-tit {color: #126cc3;}
 .benefit .com-box .nth-5 .p-per {font-size: 55px; font-weight: 400;}
-.benefit .com-box .nth-1 .p-chart {height: 41px;}
-.benefit .com-box .nth-2 .p-chart {height: 54px;}
-.benefit .com-box .nth-3 .p-chart {height: 137px;}
-.benefit .com-box .nth-4 .p-chart {height: 291px;}
-.benefit .com-box .nth-5 .p-chart {height: 367px; background: #126cc3;}
+.benefit .com-box .p-chart {height: 0;}
+	.benefit .com-box .nth-5 .p-chart {background: #126cc3; height: 0;}
+	
+/*
+  .benefit .com-box .nth-1 .p-chart {height: 41px; height: 0;}
+  .benefit .com-box .nth-2 .p-chart {height: 54px; height: 0;}
+  .benefit .com-box .nth-3 .p-chart {height: 137px; height: 0;}
+  .benefit .com-box .nth-4 .p-chart {height: 291px; height: 0;}
+  .benefit .com-box .nth-5 .p-chart {height: 367px; background: #126cc3; height: 0;}
+*/  
+  .ie8 .benefit .com-box .nth-1 .p-chart.chart01 {height: 41px;}
+  .ie8 .benefit .com-box .nth-2 .p-chart.chart02 {height: 54px;}
+  .ie8 .benefit .com-box .nth-3 .p-chart.chart03 {height: 137px;}
+  .ie8 .benefit .com-box .nth-4 .p-chart.chart04 {height: 291px;}
+  .ie8 .benefit .com-box .nth-5 .p-chart.chart05 {height: 367px;}
 
 .easy {background: #fff;}
 .easy h2 {font-weight: 500; margin-bottom: 20px;}

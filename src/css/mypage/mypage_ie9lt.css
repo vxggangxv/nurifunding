@@ -48,23 +48,28 @@ p[class*="mib-p"] .nr-text {border: 0; border-bottom: 1px solid #ddd; width: 100
 p[class*="mib-p"] .nr-text.detail {margin-top: 12px;}
 .mi-box p.mib-p0 {color: #888; font-size: 16px; font-weight: 300;}
 .mi-box h3.mt {margin-top: 40px;}
-.mi-box p.mib-p2 {font-size: 15px; line-height: 1.5em; font-weight: 300; margin-top: 10px; padding-bottom: 40px; border-bottom: 1px solid #ddd;}
+.mi-box p.mib-p2 {display:block; font-size: 15px; line-height: 1.5em; font-weight: 300; margin-top: 10px; padding-bottom: 40px; border-bottom: 1px solid #ddd;}
 .mi-box p.mib-p3 .btn {font-size: 17px; padding: 18px 0; letter-spacing: 0; margin-top: 25px;}
 .mi-box p.mib-p1 input[type="radio"] {width: 20px; height: 20px; border-radius: 50%; margin-right: 5px; border-color: #dcdcdc;}
 .mi-box p.mib-p1 input[type="radio"].ml {margin-left: 10px;}
-.mi-box p.mib-p1 input[type="radio"]:checked {background: url(https://nurifunding.co.kr/img/radio_icon.png) no-repeat -1px; background-size: 20px; }
+.mi-box p.mib-p1 input[type="radio"]:checked {background: url(https://nurifunding.co.kr/img/radio_icon.png) no-repeat -1px; background-size: 20px; }z
+/* 20180222_주민등록번호 수정 (타입추가)_다솜 */
+.mi-box .mib-p1:before, .mi-box .mib-p2:before {content:''; display:block; clear:both;}
+.mi-box p.type-prinum .nr-text {float:left; width:47%;}
+.mi-box p.type-prinum .deco-line {float:left; display:inline-block; padding:5px 10px 0;}
 
 
 .account-info {}
 .ai-box {padding: 50px 130px;}
 .ai-box h3 {font-size: 34px; margin-bottom: 15px;}
-.aib-p0 {color: #888; font-size: 16px; font-weight: 300;}
+.aib-p0 {color: #888; font-size: 16px; font-weight: 300; padding-bottom: 10px;}
 
-p[class*="aib-p"] .label {display: inline-block; width: 34%; margin-top: 25px; margin-bottom: 12px; font-size: 17px; font-weight: 300; letter-spacing: 0;}
+p[class*="aib-p"] .label {display: inline-block; width: 34%; /* margin-top: 25px; margin-bottom: 12px; */ font-size: 17px; font-weight: 300; letter-spacing: 0;}
 p[class*="aib-p"] .nr-text {font-size: 17px; font-weight: 300; width: 66%; height: 40px; padding-left: 10px; line-height: 3em; background: #f9f9f9;}
 p[class*="aib-p"] .nr-text:hover, p[class*="aib-p"] .nr-text:focus {background: #fff;}
 
-.aib-p1 {margin-top: 10px;}
+.aib-p1 {margin-top: 25px; font-size: 0;}
+.aib-p1 > * {font-size: 15px; vertical-align: middle;}
 .aib-p2 {padding-top: 35px; border-top: 1px solid #ddd; font-size: 15px; line-height: 1.5em; font-weight: 300; margin-top: 45px;}
 .aib-p2 em {display: block; font-size: 16px; font-weight: 300;margin-bottom: 3px;}
 .aib-p4 {margin-top: 10px;}

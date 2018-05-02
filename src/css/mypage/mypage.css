@@ -1,6 +1,6 @@
 @media (min-width: 992px) {
   .container {
-    width: 945px;
+	width: 945px;
   }
 }
 
@@ -64,23 +64,30 @@
   p[class*="mib-p"] .member-name, p[class*="mib-p"] .nr-text {font-size: 16px; font-weight: 300;}
   p[class*="mib-p"] .nr-text {border: 0; border-bottom: 1px solid #ddd; width: 100%; padding-bottom: 5px;}
   p[class*="mib-p"] .nr-text.detail {margin-top: 12px;}
+  p.mib-p0 {line-height: 1.2; font-size: 15px;}
   .mi-box p.mib-p0 {color: #888; font-size: 14px; font-weight: 300;}
   .mi-box p.mib-p2 {font-size: 13px; line-height: 1.3em; font-weight: 300; margin-top: 10px; padding-bottom: 20px; border-bottom: 1px solid #ddd;}
   .mi-box p.mib-p3 .btn {font-size: 17px; line-height: 2.6em; letter-spacing: 0; margin-top: 25px;}
   .mi-box p.mib-p1 input[type="radio"] {width: 20px; height: 20px; border-radius: 50%; margin-right: 5px; border-color: #dcdcdc;}
   .mi-box p.mib-p1 input[type="radio"].ml {margin-left: 10px;}
   .mi-box p.mib-p1 input[type="radio"]:checked {background: url(https://nurifunding.co.kr/img/radio_icon.png) no-repeat -1px; background-size: 20px; }
+	/* 20180222_주민등록번호 수정 (타입추가)_다솜 */
+	.mi-box .mib-p1:before, .mi-box .mib-p2:before {content:''; display:block; clear:both;}
+	.mi-box p.type-prinum .nr-text {float:left; width:46%;}
+	.mi-box p.type-prinum .deco-line {float:left; display:inline-block; padding:5px 7px 0;}
   
   .account-info {}
   .ai-box {padding-left: 15px; padding-right: 15px;}
   .ai-box h3 {font-size: 18px; margin-bottom: 5px;}
-  p[class*="aib-p"] .label {display: inline-block; width: 34%; margin-top: 25px; margin-bottom: 12px; font-size: 14px; font-weight: 300;}
+  p[class*="aib-p"] .label {display: inline-block; width: 34%; /* margin-top: 25px; margin-bottom: 12px; */ font-size: 14px; font-weight: 300;}
   p[class*="aib-p"] .nr-text {font-size: 15px; font-weight: 300; width: 66%; height: 40px; padding-left: 10px; line-height: 3em; background: #f9f9f9;}
   p[class*="aib-p"] .nr-text:hover, p[class*="aib-p"] .nr-text:focus {background: #fff;}
   
-  .aib-p0 {color: #888; font-size: 14px; font-weight: 300;}
-  .aib-p1 {margin-top: 10px;}
-  .aib-p2 {margin-top: 25px; padding-top: 25px; border-top: 1px solid #ddd; font-size: 13px; line-height: 1.3em; font-weight: 300; margin-top: 10px;}
+  .aib-p0 {color: #888; font-size: 14px; font-weight: 300; padding-bottom: 15px;}
+  .aib-p1 {margin-top: 10px; font-size: 0px;}
+  .aib-p1 > * {font-size: 14px; vertical-align: middle;}
+  .aib-p2 {margin-top: 25px; padding-top: 25px; border-top: 1px solid #ddd; font-size: 13px; line-height: 1.3em; font-weight: 300;}
+  .aib-p2 em {display: block; font-size: 14px; font-weight: 300;margin-bottom: 3px;}
   .aib-p4 {margin-top: 10px;}
   .aib-p4.nr-box {font-size: 13px; margin-top: 20px;}
   .aibp4.nr-check {width: 17px; height: 17px;}
@@ -94,82 +101,87 @@
 
 /*테블릿 영역, col-sm */
 @media (min-width: 768px) {
-  .com-ft {position: relative; margin-top: 48px; text-align: center; font-size: 36px; font-family: "Noto Sans KR", sans-serif;}
-  .com-mg {margin: 45px 0px 95px;}
-  .com-box {margin: 0 auto; margin-top: 20px; border: 1px solid #ddd; background: #fff; padding: 45px 10px; box-shadow: 1px 1px 4px 0px #dadada;}
-  .br3 {border-radius: 3px;}
-  .br4 {border-radius: 4px;}
-  .xs-block {display: block;}
+	.com-ft {position: relative; margin-top: 48px; text-align: center; font-size: 36px; font-family: "Noto Sans KR", sans-serif;}
+	.com-mg {margin: 45px 0px 95px;}
+	.com-box {margin: 0 auto; margin-top: 20px; border: 1px solid #ddd; background: #fff; padding: 45px 10px; box-shadow: 1px 1px 4px 0px #dadada;}
+	.br3 {border-radius: 3px;}
+	.br4 {border-radius: 4px;}
+	/*.xs-block {display: block;}*/
 
-  .pw-box {padding: 50px 125px;}
-  .pw-box em {font-size: 29px; margin-bottom: 35px;}
-  .pw-box p.nth-1 {font-size: 16px; font-weight: 300;}
-  .pw-box p.nth-2 {margin-top: 15px;}
-  .pw-box .nr-text, .pw-box .ok-btn {height: 46px;}
-  .pw-box .nr-text {width: 74%; font-size: 17px; text-indent: 15px;}
-  .pw-box .nr-ph {display: none; position: absolute; top: 16px; left: 1px; text-indent: 15px; color: #999; letter-spacing: 0; font-size: 15px;}
-  .pw-box .ok-btn {display: inline-block; width: 19%; font-size: 17px; color: #fff; background: #398FE2; line-height: 2.6em; letter-spacing: 0; margin-top: 0px; position: relative; top: 2px; margin-left: 2%;}
+	.pw-box {padding: 50px 125px;}
+	.pw-box em {font-size: 29px; margin-bottom: 35px;}
+	.pw-box p.nth-1 {font-size: 16px; font-weight: 300;}
+	.pw-box p.nth-2 {margin-top: 15px;}
+	.pw-box .nr-text, .pw-box .ok-btn {height: 46px;}
+	.pw-box .nr-text {width: 74%; font-size: 17px; text-indent: 15px;}
+	.pw-box .nr-ph {display: none; position: absolute; top: 16px; left: 1px; text-indent: 15px; color: #999; letter-spacing: 0; font-size: 15px;}
+	.pw-box .ok-btn {display: inline-block; width: 19%; font-size: 17px; color: #fff; background: #398FE2; line-height: 2.6em; letter-spacing: 0; margin-top: 0px; position: relative; top: 2px; margin-left: 2%;}
 
-  .pw-box p.nth-3 {margin-top: 15px; font-size: 15px; font-weight: 300;}
-  .pw-box p.nth-3 .txt-btn {margin-left: 15px;}
+	.pw-box p.nth-3 {margin-top: 15px; font-size: 15px; font-weight: 300;}
+	.pw-box p.nth-3 .txt-btn {margin-left: 15px;}
 
-  .bank-box {padding: 50px 125px;}
-  .bank-box em {font-size: 30px; margin-bottom: 35px;}
-  .bank.dropdown {width: 100%; height: 46px; font-size: 16px;}
-  .bank.dropdown .btn {position: relative; border: 1px solid #ddd; background: #fff; padding: 0px 20px; border-radius: 6px; text-align: left; outline: none; width: 100%; height: 100%; font-size: 16px;
-    color: #999; letter-spacing: 0;}
-  .bank.dropdown .btn:hover {background-color: rgba(219,219,219,0.1);}
-  .bank.dropdown .btn.on {color: #333;}
-  .bank.dropdown .btn span {position: relative; top: 2px; font-size:10px; color: #398FE2;}
-  .bank.dropdown .dropdown-menu {display: none; position: absolute; border: 1px solid #ddd; background: #fff; border-radius: 6px; margin-top: -1px; z-index: 1; width: 100%;}
-  .bank.dropdown .dropdown-menu li a {display: block; padding: 5px 20px; line-height: 1.2em; font-size: 1em;}
-  .bank.dropdown .dropdown-menu li a:hover {color: #398fe2;}
-  .bb-p0 {margin-top: 10px; margin-bottom: 15px;}
-  .bb-p0 .btn {font-size: 17px; padding: 18px 0; letter-spacing: 0;}
-  .bb-p1 {line-height: 1.3em; font-size: 14px; font-weight: 300; margin-top: 3px;}
+	.bank-box {padding: 50px 125px;}
+	.bank-box em {font-size: 30px; margin-bottom: 35px;}
+	.bank.dropdown {width: 100%; height: 46px; font-size: 16px;}
+	.bank.dropdown .btn {position: relative; border: 1px solid #ddd; background: #fff; padding: 0px 20px; border-radius: 6px; text-align: left; outline: none; width: 100%; height: 100%; font-size: 16px;
+	color: #999; letter-spacing: 0;}
+	.bank.dropdown .btn:hover {background-color: rgba(219,219,219,0.1);}
+	.bank.dropdown .btn.on {color: #333;}
+	.bank.dropdown .btn span {position: relative; top: 2px; font-size:10px; color: #398FE2;}
+	.bank.dropdown .dropdown-menu {display: none; position: absolute; border: 1px solid #ddd; background: #fff; border-radius: 6px; margin-top: -1px; z-index: 1; width: 100%;}
+	.bank.dropdown .dropdown-menu li a {display: block; padding: 5px 20px; line-height: 1.2em; font-size: 1em;}
+	.bank.dropdown .dropdown-menu li a:hover {color: #398fe2;}
+	.bb-p0 {margin-top: 10px; margin-bottom: 15px;}
+	.bb-p0 .btn {font-size: 17px; padding: 18px 0; letter-spacing: 0;}
+	.bb-p1 {line-height: 1.3em; font-size: 14px; font-weight: 300; margin-top: 3px;}
 
-  .binfo-box {padding: 50px 125px;}
-  .binfo-box em {font-size: 34px; letter-spacing: 0; margin-bottom: 35px;}
-  .bib-p1 {line-height: 3em;}
-  .bib-p1 .sl {font-size: 16px; display: inline-block; width: 30%; font-weight: 300; letter-spacing: 0;}
-  .bib-p1 .sr {font-size: 16px; display: inline-block; width: 70%;}
-  .bib-p2 {margin-top: 10px;}
-  .bib-p2 .btn {font-size: 17px; line-height: 3.15em; letter-spacing: 0;}
+	.binfo-box {padding: 50px 125px;}
+	.binfo-box em {font-size: 34px; letter-spacing: 0; margin-bottom: 35px;}
+	.bib-p1 {line-height: 3em;}
+	.bib-p1 .sl {font-size: 16px; display: inline-block; width: 30%; font-weight: 300; letter-spacing: 0;}
+	.bib-p1 .sr {font-size: 16px; display: inline-block; width: 70%;}
+	.bib-p2 {margin-top: 10px;}
+	.bib-p2 .btn {font-size: 17px; line-height: 3.15em; letter-spacing: 0;}
 
-  .mi-box {padding: 50px 130px;}
-  .mi-box h3 {font-size: 34px; margin-bottom: 15px;}
-  p[class*="mib-p"] .label {display: block; margin-top: 35px; margin-bottom: 12px; font-size: 17px; font-weight: 300;}
-  p[class*="mib-p"] .member-name, p[class*="mib-p"] .nr-text {font-size: 17px; font-weight: 400;}
-  p[class*="mib-p"] .nr-text {border: 0; border-bottom: 1px solid #ddd; width: 100%; padding-bottom: 5px;}
-  p[class*="mib-p"] .nr-text.detail {margin-top: 12px;}
-  .mi-box p.mib-p0 {color: #888; font-size: 16px; font-weight: 300;}
-  .mi-box h3.mt {margin-top: 40px;}
-  .mi-box p.mib-p2 {font-size: 15px; line-height: 1.5em; font-weight: 300; margin-top: 10px; padding-bottom: 40px; border-bottom: 1px solid #ddd;}
-  .mi-box p.mib-p3 .btn {font-size: 17px; padding: 18px 0; letter-spacing: 0; margin-top: 25px;}
-  .mi-box p.mib-p1 input[type="radio"] {width: 20px; height: 20px; border-radius: 50%; margin-right: 5px; border-color: #dcdcdc;}
-  .mi-box p.mib-p1 input[type="radio"].ml {margin-left: 10px;}
-  .mi-box p.mib-p1 input[type="radio"]:checked {background: url(https://nurifunding.co.kr/img/radio_icon.png) no-repeat -1px; background-size: 20px; }
+	.mi-box {padding: 50px 130px;}
+	.mi-box h3 {font-size: 34px; margin-bottom: 15px;}
+	p[class*="mib-p"] .label {display: block; margin-top: 35px; margin-bottom: 12px; font-size: 17px; font-weight: 300;}
+	p[class*="mib-p"] .member-name, p[class*="mib-p"] .nr-text {font-size: 17px; font-weight: 400;}
+	p[class*="mib-p"] .nr-text {border: 0; border-bottom: 1px solid #ddd; width: 100%; padding-bottom: 5px;}
+	p[class*="mib-p"] .nr-text.detail {margin-top: 12px;}s
+	.mi-box p.mib-p0 {color: #888; font-size: 16px; font-weight: 300;}
+	.mi-box h3.mt {margin-top: 40px;}
+	.mi-box p.mib-p2 {display:block; font-size: 15px; line-height: 1.5em; font-weight: 300; margin-top: 10px; padding-bottom: 40px; border-bottom: 1px solid #ddd;}
+	.mi-box p.mib-p3 .btn {font-size: 17px; padding: 18px 0; letter-spacing: 0; margin-top: 25px;}
+	.mi-box p.mib-p1 input[type="radio"] {width: 20px; height: 20px; border-radius: 50%; margin-right: 5px; border-color: #dcdcdc;}
+	.mi-box p.mib-p1 input[type="radio"].ml {margin-left: 10px;}
+	.mi-box p.mib-p1 input[type="radio"]:checked {background: url(https://nurifunding.co.kr/img/radio_icon.png) no-repeat -1px; background-size: 20px; }
+	/* 20180222_주민등록번호 수정 (타입추가)_다솜 */
+	.mi-box .mib-p1:before, .mi-box .mib-p2:before {content:''; display:block; clear:both;}
+	.mi-box p.type-prinum .nr-text {float:left; width:47%;}
+	.mi-box p.type-prinum .deco-line {float:left; display:inline-block; padding:5px 10px 0;}
 
 
-  .account-info {}
-  .ai-box {padding: 50px 130px;}
-  .ai-box h3 {font-size: 34px; margin-bottom: 15px;}
-  .aib-p0 {color: #888; font-size: 16px; font-weight: 300;}
-  
-  p[class*="aib-p"] .label {display: inline-block; width: 34%; margin-top: 25px; margin-bottom: 12px; font-size: 17px; font-weight: 300; letter-spacing: 0;}
-  p[class*="aib-p"] .nr-text {font-size: 17px; font-weight: 300; width: 66%; height: 40px; padding-left: 10px; line-height: 3em; background: #f9f9f9;}
-  p[class*="aib-p"] .nr-text:hover, p[class*="aib-p"] .nr-text:focus {background: #fff;}
+	.account-info {}
+	.ai-box {padding: 50px 130px;}
+	.ai-box h3 {font-size: 34px; margin-bottom: 15px;}
+	.aib-p0 {color: #888; font-size: 16px; font-weight: 300; padding-bottom: 10px;}
 
-  .aib-p1 {margin-top: 10px;}
-  .aib-p2 {padding-top: 35px; border-top: 1px solid #ddd; font-size: 15px; line-height: 1.5em; font-weight: 300; margin-top: 45px;}
-  .aib-p2 em {display: block; font-size: 16px; font-weight: 300;margin-bottom: 3px;}
-  .aib-p4 {margin-top: 10px;}
-  .aib-p4.nr-box {font-size: 14px; margin-top: 20px;}
-  .aibp4.nr-check {width: 17px; height: 17px;}
-  .aibp4.nr-check:checked {width: 17px; height: 17px; background: url(http://img.nurifunding.co.kr/check-icon.png) no-repeat 3px; background-size: 9px; background-color: #fff;}
-  .aibp4.nr-check + span {vertical-align: middle; margin-left: 5px; margin-right: 15px; font-size: 14px;}
-  .aib-p3 {margin-top: 30px; position: relative;}
-  .aib-p3 .btn {display: block; width: 100%; text-align: center; padding: 18px 0; font-size: 17px; letter-spacing: 0;}
+	p[class*="aib-p"] .label {display: inline-block; width: 34%; /* margin-top: 25px; margin-bottom: 12px; */ font-size: 17px; font-weight: 300; letter-spacing: 0;}
+	p[class*="aib-p"] .nr-text {font-size: 17px; font-weight: 300; width: 66%; height: 40px; padding-left: 10px; line-height: 3em; background: #f9f9f9;}
+	p[class*="aib-p"] .nr-text:hover, p[class*="aib-p"] .nr-text:focus {background: #fff;}
+
+	.aib-p1 {margin-top: 25px; font-size: 0;}
+  .aib-p1 > * {font-size: 15px; vertical-align: middle;}
+	.aib-p2 {padding-top: 35px; border-top: 1px solid #ddd; font-size: 15px; line-height: 1.5em; font-weight: 300; margin-top: 45px;}
+	.aib-p2 em {display: block; font-size: 16px; font-weight: 300;margin-bottom: 3px;}
+	.aib-p4 {margin-top: 10px;}
+	.aib-p4.nr-box {font-size: 14px; margin-top: 20px;}
+	.aibp4.nr-check {width: 17px; height: 17px;}
+	.aibp4.nr-check:checked {width: 17px; height: 17px; background: url(http://img.nurifunding.co.kr/check-icon.png) no-repeat 3px; background-size: 9px; background-color: #fff;}
+	.aibp4.nr-check + span {vertical-align: middle; margin-left: 5px; margin-right: 15px; font-size: 14px;}
+	.aib-p3 {margin-top: 30px; position: relative;}
+	.aib-p3 .btn {display: block; width: 100%; text-align: center; padding: 18px 0; font-size: 17px; letter-spacing: 0;}
 }
 
 /*테블릿 영역, col-md*/

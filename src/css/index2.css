@@ -26,9 +26,10 @@
   .main-box.main-common {position: relative; height: 202px;}
   .main-box.main-common > div {position: absolute;}
   .main-box.main-common > div.s1-div-1 {width: 100%; text-align: center;}
-  .main-box.main-common > div.s1-div-1 p {position: relative; display: inline-block;}
-  .main-box.main-common > div.s1-div-1 p.nth-1 {width: 300px; height: 30px; font-size: 16px; background: #09345f; color: #fff; font-weight: 200; line-height: 1.75em;
-    margin-top: 36px; letter-spacing: 0.5px; text-indent: -8px;}
+  .main-box.main-common > div.s1-div-1 p {position: relative; /*display: inline-block;*/ font-family: "Noto Sans KR", "Malgun Gothic", sans-serif;}
+	.main-box.main-common > div.s1-div-1 p.nth-0 {color: #FFF; font-size: 16px; margin-top: 28px;}
+  .main-box.main-common > div.s1-div-1 p.nth-1 {width: 300px; margin: 0 auto; height: 30px; font-size: 16px; background: #09345f; color: #fff; font-weight: 200; line-height: 1.75em;
+    margin-top: 8px; letter-spacing: 0.5px; text-indent: -8px;}
   .main-box.main-common > div.s1-div-1 p.nth-1:after {position: absolute; content: ""; display: block; left: 36px; bottom: -15px; width: 1px; border: 8px solid #09345f; border-color: transparent; border-top-color: #09345f;}
   .main-box.main-common > div.s1-div-1 p.nth-1 .f-bd {font-weight: 400;}
   .main-box.main-common > div.s1-div-1 p.nth-2 {font-size: 41px; color: #fff; font-weight: 400; letter-spacing: -2px; font-weight: 400; margin-top: 10px; line-height: 1.1em; display: block;}
@@ -40,7 +41,7 @@
   .main-box .swiper-slide img {display: block;}
   .main-box .swiper-slide > div {position: absolute;}
     
-  .main-box .swiper-slide > div.s1-div-2 {top: 26px; left: 20px; color: #fff; text-align: left; z-index: 1;}
+  .main-box .swiper-slide > div.s1-div-2 {top: 26px; left: 20px; color: #fff; text-align: left; z-index: 1; font-family: "Noto Sans KR", "Malgun Gothic", sans-serif;}
   .main-box .swiper-slide > div.s1-div-2 .d1 {font-size: 16px; font-weight: 200;}
   .main-box .swiper-slide > div.s1-div-2 .d1 p.nth-2 {font-size: 21px; font-weight: 400; margin-top: 5px; line-height: 1.2em;}
   .main-box .swiper-slide > div.s1-div-2 .d2 {font-size: 11.5px; font-family: "Nanum Gothic", sans-serif; }
@@ -59,13 +60,12 @@
   .r-f, .r-f2 {text-align: center; color: #fff; font-family: "Nanum Gothic", sans-serif;}
   .r-f {font-size: 14px;}
   .r-f .q-w {position: relative; top: -2px; display: inline-block; margin-left: 4px; width: 20px; height: 20px; border-radius: 50%; background: #fff; text-align: center; cursor: pointer;}
-  .r-f .q {position: relative; display: block; top: 3px; left: -1px; color: #09345f; font-weight: 800; font-family: "Noto Sans KR", sans-serif;}
-  .r-f .q .q-t {display: none; position: absolute; width: 100px; height: 28px; left: -40px; top: -39px; color: #fff; font-weight: 400; background: #000; border-radius: 4px; 
-    line-height: 1.9em;}
-  .r-f .q .q-t:after {position: absolute; content: ""; bottom: -13px; left: 42px; display: block; width: 1px; border: 8px solid #000; border-color: transparent; border-top-color: #000;}
+  .r-f .q {position: relative; display: block; top: 2px; left: 0px; color: #09345f; font-weight: 600; font-family: "Noto Sans KR", sans-serif;}
+  .r-f .q .q-t {display: none; position: absolute; width: 136px; left: -54px; bottom: 24px; color: #fff; font-weight: 400; background: #000; border-radius: 1px; text-align: left; line-height: 1.2em; font-size: 16px; padding: 10px 8px; font-size: 13px; letter-spacing: -0.5px;}
+/*  .r-f .q .q-t:after {position: absolute; content: ""; bottom: -14px; left: 62px; display: block; width: 1px; border: 8px solid #000; border-color: transparent; border-top-color: #000;}*/
   .r-f .q:hover .q-t {display: block;}
   .r-f2 {font-size: 17px; margin-top: 6px;}
-  .rr-nth-4 .r-f2 {position: relative; top: -6px;}
+  .rr-nth-5 .r-f2 {position: relative; top: -6px;}
   .rate .mt {margin-top: 20px;}
 
   .benefit {background: #EBF4FB;}
@@ -85,6 +85,9 @@
   .benefit .com-box .p-chart {display: inline-block; width: 100%; vertical-align: bottom; background: #bdcfde; 
     transition: all 1s; -webkit-transition: all 1s; -moz-transition: all 1s; -o-transition: all 1s;}
   .benefit .com-box .nth-5 .p-per, .benefit .com-box .nth-5 .p-tit {color: #126cc3;}
+	.benefit .com-box .p-chart {height: 0;}
+	.benefit .com-box .nth-5 .p-chart {background: #126cc3; height: 0;}
+/*
   .benefit .com-box .nth-1 .p-chart {height: 21px; height: 0;}
   .benefit .com-box .nth-2 .p-chart {height: 31px; height: 0;}
   .benefit .com-box .nth-3 .p-chart {height: 63px; height: 0;}
@@ -96,6 +99,7 @@
   .benefit .com-box .nth-3 .p-chart.chart03 {height: 63px;}
   .benefit .com-box .nth-4 .p-chart.chart04 {height: 121px;}
   .benefit .com-box .nth-5 .p-chart.chart05 {height: 166px;}
+*/
   
   .easy {background: #fff;}
   .easy h2 {font-weight: 500; margin-bottom: 10px;}
@@ -119,7 +123,7 @@
   .thumb-box .new {position: absolute; top: 10px; left: 10px; font-size: 12px; background: rgba(38, 196, 183, 0.88); padding: 9px 5px; color: #fff; border: 2px solid #fff; z-index: 1;}
   .thumb-box .end {position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0, .58); text-align: center;}
   .thumb-box .end span {position: relative; color: #fff; display: inline-block; padding: 10px 40px; top: 40px; border: 1px solid #fff; letter-spacing: 0;}
-  .iph3 {padding: 10px; font-size: 18px;}
+  .iph3 {padding: 10px; font-size: 16px;}
   .ip-inner {padding: 0 10px; margin-top: -2px;}
   .ip-inner li[class*=ipli] {line-height: 1.5em; font-size: 14px;}
   li[class*=ipli] .pull-right {font-weight: 600; }
@@ -178,9 +182,10 @@
   .main-box.main-common {position: relative; width: 650px; height: 324px;}
   .main-box.main-common > div {position: absolute;}
   .main-box.main-common > div.s1-div-1 {width: 100%; text-align: center;}
-  .main-box.main-common > div.s1-div-1 p {position: relative; display: inline-block;}
-  .main-box.main-common > div.s1-div-1 p.nth-1 {width: 488px; height: 46px; font-size: 27px; background: #09345f; color: #fff; font-weight: 200; line-height: 1.66em;
-    margin-top: 60px;}
+  .main-box.main-common > div.s1-div-1 p {position: relative; /*display: inline-block;*/ font-family: "Noto Sans KR", "Malgun Gothic", sans-serif;}
+	.main-box.main-common > div.s1-div-1 p.nth-0 {color: #FFF; font-size: 24px; margin-top: 40px;}
+  .main-box.main-common > div.s1-div-1 p.nth-1 {width: 488px; margin: 0 auto; height: 46px; font-size: 27px; background: #09345f; color: #fff; font-weight: 200; line-height: 1.66em;
+    margin-top: 12px;}
   .main-box.main-common > div.s1-div-1 p.nth-1:after {position: absolute; content: ""; display: block; left: 60px; bottom: -27px; width: 1px; border: 14px solid #09345f; border-color: transparent; border-top-color: #09345f;}
   .main-box.main-common > div.s1-div-1 p.nth-1 .f-bd {font-weight: 400;}
   .main-box.main-common > div.s1-div-1 p.nth-2 {font-size: 71px; color: #fff; font-weight: 400; letter-spacing: -2px; font-weight: 400; margin-top: 16px; display: block;}
@@ -192,7 +197,7 @@
   .main-box .swiper-slide img {display: block;}
   .main-box .swiper-slide > div {position: absolute;}
   
-  .main-box .swiper-slide > div.s1-div-2 {top: 36px; left: 20px; color: #fff; text-align: left; z-index: 1;}
+  .main-box .swiper-slide > div.s1-div-2 {top: 36px; left: 20px; color: #fff; text-align: left; z-index: 1; font-family: "Noto Sans KR", "Malgun Gothic", sans-serif;}
   .main-box .swiper-slide > div.s1-div-2 .d1 {font-size: 36px; font-weight: 200;}
   .main-box .swiper-slide > div.s1-div-2 .d1 p.nth-2 {font-weight: 400; margin-top: 10px;}
   .main-box .swiper-slide > div.s1-div-2 .d2 {font-size: 20px;}
@@ -215,12 +220,12 @@
   .r-f {font-size: 16px;}
   .r-f .q-w {position: relative; top: -1px; display: inline-block; margin-left: 4px; width: 22px; height: 22px; border-radius: 50%; background: #fff; text-align: center; cursor: pointer;}
   .r-f .q {position: relative; display: block; top: 2px; left: -1px; color: #09345f; font-weight: 600; font-family: "Noto Sans KR", sans-serif;}
-    .r-f .q .q-t {display: none; position: absolute; width: 120px; height: 28px; left: -48px; top: -41px; color: #fff; font-weight: 400; background: #000; border-radius: 4px; 
-    line-height: 1.6em; font-size: 16px;}
-  .r-f .q .q-t:after {position: absolute; content: ""; bottom: -14px; left: 51px; display: block; width: 1px; border: 8px solid #000; border-color: transparent; border-top-color: #000;}
+    .r-f .q {position: relative; display: block; top: 2px; left: 0px; color: #09345f; font-weight: 600; font-family: "Noto Sans KR", sans-serif;}
+  .r-f .q .q-t {display: none; position: absolute; width: 136px; left: -54px; bottom: 26px; color: #fff; font-weight: 400; background: #000; border-radius: 1px; text-align: left; line-height: 1.2em; font-size: 16px; padding: 10px 8px; font-size: 13px; letter-spacing: -0.5px;}
+/*  .r-f .q .q-t:after {position: absolute; content: ""; bottom: -14px; left: 62px; display: block; width: 1px; border: 8px solid #000; border-color: transparent; border-top-color: #000;}*/
   .r-f .q:hover .q-t {display: block;}
   .r-f2 {font-size: 24px; margin-top: 6px; font-weight: 500;}
-  .rr-nth-4 .r-f2 {position: relative; top: -6px;}
+  .rr-nth-5 .r-f2 {position: relative; top: -6px;}
   .rate .mt {margin-top: 30px;}
 
   .benefit {background: #EBF4FB;}
@@ -240,6 +245,10 @@
     transition: all 1s; -webkit-transition: all 1s; -moz-transition: all 1s; -o-transition: all 1s;}
   .benefit .com-box .nth-5 .p-per, .benefit .com-box .nth-5 .p-tit {color: #126cc3;}
   .benefit .com-box .nth-5 .p-per {font-size: 44px; font-weight: 400;}
+	.benefit .com-box .p-chart {height: 0;}
+	.benefit .com-box .nth-5 .p-chart {background: #126cc3; height: 0;}
+	
+/*
   .benefit .com-box .nth-1 .p-chart {height: 41px; height: 0;}
   .benefit .com-box .nth-2 .p-chart {height: 54px; height: 0;}
   .benefit .com-box .nth-3 .p-chart {height: 137px; height: 0;}
@@ -251,6 +260,7 @@
   .benefit .com-box .nth-3 .p-chart.chart03 {height: 137px;}
   .benefit .com-box .nth-4 .p-chart.chart04 {height: 291px;}
   .benefit .com-box .nth-5 .p-chart.chart05 {height: 367px;}
+*/
 
   .easy {background: #fff;}
   .easy h2 {font-weight: 500; margin-bottom: 20px;}
@@ -321,10 +331,12 @@
 
   .main {width: 100%; background: #126cc4;}
   .main-box.main-common {position: relative; width: 945px; height: 272px;}
+	.main-box.main-common > div {position: absolute;}
   .main-box.main-common > div.s1-div-1 {width: 100%; text-align: center;}
-  .main-box.main-common > div.s1-div-1 p {position: relative; display: inline-block;}
-  .main-box.main-common > div.s1-div-1 p.nth-1 {width: 608px; height: 52px; font-size: 30px; background: #09345f; color: #fff; font-weight: 200; line-height: 1.66em;
-  margin-top: 60px; letter-spacing: 1px;}
+  .main-box.main-common > div.s1-div-1 p {position: relative; /*display: inline-block;*/ font-family: "Noto Sans KR", "Malgun Gothic", sans-serif;}
+	.main-box.main-common > div.s1-div-1 p.nth-0 {color: #FFF; font-size: 24px; margin-top: 40px;}
+  .main-box.main-common > div.s1-div-1 p.nth-1 {width: 608px; margin: 0 auto; height: 52px; font-size: 30px; background: #09345f; color: #fff; font-weight: 200; line-height: 1.66em;
+  margin-top: 12px; letter-spacing: 1px;}
   .main-box.main-common > div.s1-div-1 p.nth-1:after {position: absolute; content: ""; display: block; left: 50px; bottom: -27px; width: 1px; border: 14px solid #09345f; border-color: transparent; border-top-color: #09345f;}
   .main-box.main-common > div.s1-div-1 p.nth-1 .f-bd {font-weight: 400;}
   .main-box.main-common > div.s1-div-1 p.nth-2 {font-size: 71px; color: #fff; font-weight: 400; letter-spacing: -2px; font-weight: 400; margin-top: 20px; display: block;}
@@ -334,8 +346,8 @@
   .main-box .swiper-slide {position: relative; width: 945px; height: 375px;}
   .main-box .swiper-slide img {display: block;}
   .main-box .swiper-slide > div {position: absolute;}
-  .main-box .swiper-slide > div.s1-div-2 {top: 68px; left: 20px; color: #fff; text-align: left;}
-  .main-box .swiper-slide > div.s1-div-2 .d1 {font-size: 40px; font-weight: 200;}
+  .main-box .swiper-slide > div.s1-div-2 {top: 68px; left: 20px; color: #fff; text-align: left; font-family: "Noto Sans KR", "Malgun Gothic", sans-serif;}
+  .main-box .swiper-slide > div.s1-div-2 .d1 {font-size: 37px; font-weight: 200;}
     .main-box .swiper-slide.nth-1 > div.s1-div-2 .d1 p.nth-2, .main-box .swiper-slide.nth-1 > div.s1-div-2 .d1 p.nth-2 span {letter-spacing: -2.5px;}
   .main-box .swiper-slide > div.s1-div-2 .d1 p.nth-2 {font-weight: 400; margin-top: 10px;}
   .main-box .swiper-slide > div.s1-div-2 .d2 {font-size: 24px;}
@@ -358,20 +370,23 @@
   .main-box .swiper-slide > div.s3-div-2 .d2 p.nth-4:before {content: "임대료, 기타 수익 등 꼼꼼한 "}
 
   .rate {padding: 42px 0px;}
-  .rr-nth-1 {width: 17%;}
-  .rr-nth-2 {width: 28%;}
-  .rr-nth-3 {width: 28%;}
-  .rr-nth-4 {width: 27%;}
+	.rate .container {width: 100%; text-align: center; padding: 0;}
+	.rate .row {display: inline-block;}
+	.rate [class*=rr-] {display: inline-block; /*width: auto; padding: 0 20px;*/}
+  .rr-nth-1 {width: 198px;}
+  .rr-nth-2 {width: 198px;}
+  .rr-nth-3 {width: 198px;}
+  .rr-nth-4 {width: 142px;}
+  .rr-nth-5 {width: 250px;}
   .r-f, .r-f2 {text-align: center; color: #fff; font-family: "Nanum Gothic", sans-serif; letter-spacing: 0;}
   .r-f {font-size: 18px;}
   .r-f .q-w {position: relative; top: 0px; display: inline-block; margin-left: 4px; width: 22px; height: 22px; border-radius: 50%; background: #fff; text-align: center; cursor: pointer;}
   .r-f .q {position: relative; display: block; top: 2px; left: 0px; color: #09345f; font-weight: 600; font-family: "Noto Sans KR", sans-serif;}
-  .r-f .q .q-t {display: none; position: absolute; width: 120px; height: 28px; left: -48px; top: -41px; color: #fff; font-weight: 400; background: #000; border-radius: 4px; 
-    line-height: 1.6em; font-size: 16px;}
-  .r-f .q .q-t:after {position: absolute; content: ""; bottom: -14px; left: 51px; display: block; width: 1px; border: 8px solid #000; border-color: transparent; border-top-color: #000;}
+  .r-f .q .q-t {display: none; position: absolute; width: 136px; left: -54px; bottom: 30px; color: #fff; font-weight: 400; background: #000; border-radius: 1px; text-align: left; line-height: 1.2em; font-size: 16px; padding: 10px 8px; font-size: 13px; letter-spacing: -0.5px;}
+/*  .r-f .q .q-t:after {position: absolute; content: ""; bottom: -14px; left: 62px; display: block; width: 1px; border: 8px solid #000; border-color: transparent; border-top-color: #000;}*/
   .r-f .q:hover .q-t {display: block;}
   .r-f2 {font-size: 28px; margin-top: 12px; font-weight: 500;}
-  .rr-nth-4 .r-f2 {position: relative; top: -4px;}
+  .rr-nth-5 .r-f2 {position: relative; top: -4px;}
 
   .benefit {background: #EBF4FB;}
   .benefit h2 {font-weight: 500; margin-bottom: 20px;}
@@ -389,17 +404,22 @@
     transition: all 1s; -webkit-transition: all 1s; -moz-transition: all 1s; -o-transition: all 1s;}
   .benefit .com-box .nth-5 .p-per, .benefit .com-box .nth-5 .p-tit {color: #126cc3;}
   .benefit .com-box .nth-5 .p-per {font-size: 55px; font-weight: 400;}
+	.benefit .com-box .p-chart {height: 0;}
+	.benefit .com-box .nth-5 .p-chart {background: #126cc3; height: 0;}
+	
+/*
   .benefit .com-box .nth-1 .p-chart {height: 41px; height: 0;}
   .benefit .com-box .nth-2 .p-chart {height: 54px; height: 0;}
   .benefit .com-box .nth-3 .p-chart {height: 137px; height: 0;}
   .benefit .com-box .nth-4 .p-chart {height: 291px; height: 0;}
   .benefit .com-box .nth-5 .p-chart {height: 367px; background: #126cc3; height: 0;}
-  
-  .benefit .com-box .nth-1 .p-chart.chart01 {height: 41px;}
-  .benefit .com-box .nth-2 .p-chart.chart02 {height: 54px;}
-  .benefit .com-box .nth-3 .p-chart.chart03 {height: 137px;}
-  .benefit .com-box .nth-4 .p-chart.chart04 {height: 291px;}
-  .benefit .com-box .nth-5 .p-chart.chart05 {height: 367px;}
+*/  
+  .ie8 .benefit .com-box .nth-1 .p-chart.chart01 {height: 41px;}
+  .ie8 .benefit .com-box .nth-2 .p-chart.chart02 {height: 54px;}
+  .ie8 .benefit .com-box .nth-3 .p-chart.chart03 {height: 137px;}
+  .ie8 .benefit .com-box .nth-4 .p-chart.chart04 {height: 291px;}
+  .ie8 .benefit .com-box .nth-5 .p-chart.chart05 {height: 367px;}
+
 
   .easy {background: #fff;}
   .easy h2 {font-weight: 500; margin-bottom: 20px;}

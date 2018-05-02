@@ -1,4 +1,7 @@
 @charset "utf-8";
+/*@import url(../fonts/notosanskr/notosanskr.css);*/
+@import url(https://nurifunding.co.kr/static/fonts/notosanskr/notosanskr.css);
+@import url(https://nurifunding.co.kr/static/fonts/nanumgothic/nanumgothic.css);
 /* css 초기화 */
 @import url(https://nurifunding.co.kr/static/css/reset.css);
 @import url(https://nurifunding.co.kr/static/css/grid_1024.css);
@@ -6,7 +9,8 @@
 /*@import url(http://static.nurifunding.co.kr/fonts/NanumBarunGothic/nanumbarungothic.css);
 @import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
 @import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);*/
-body, * {margin:0; padding:0; font-family: 'Noto Sans KR', 'Nanum Gothic', 'Malgun Gothic', Arial, sans-serif; box-sizing: border-box; letter-spacing: -1px;
+body, html {font-family: 'Noto Sans KR', 'Nanum Gothic', 'Malgun Gothic', Arial, sans-serif;}
+body, * {margin:0; padding:0; box-sizing: border-box; letter-spacing: -1px;
 /*
     -webkit-user-select: none; /* Chrome, Opera, Safari *
     -moz-user-select: none; /* Firefox 2+ *
@@ -23,12 +27,17 @@ button {cursor: pointer; border: none; background: none;}
 a {text-decoration:none; color: #434343;}
 b {font-weight: 600;}
 
+.clr:before, .clr:after {content: ""; display: block;}
+.clr:after {clear: both;}
+
 .blind {visibility: hidden;}
 .bounceIn, .fadeIn, .flipInX, .fadeInLeft {visibility: visible;}
 
 /*폰트 색상*/
 .bg-blue {background-color: #398fe1;}
 .bg-darkBlue {background-color: #09345f;}
+.bg-gray {background: #aeaeae;}
+.bg-red {background: #f45454;}
 .c-gray, .fc-gray {color: #ccc;}
 .c-blue, .fc-blue {color: #398fe1; /* color: #126cc3; */}
 .c-blue2 {color: #126cc3;}
@@ -41,12 +50,18 @@ b {font-weight: 600;}
 
 /*테두리*/
 .bor-ddd {border: 1px solid #ddd;}
+.br3 {border-radius: 3px;}
+.br4 {border-radius: 4px;}
 
 /*폰트 정렬*/
 .align-left {text-align: left;}
 .align-right {text-align: right;}
 .align-center {text-align: center;}
 .td-under {text-decoration: underline;}
+
+.iph3 {overflow: hidden; white-space: nowrap; text-overflow: ellipsis;}
+.ftfm-nn {font-family: "Nanum Gothic", sans-serif; letter-spacing: -0.5px;}
+.ftfm-nt {font-family: "Noto Sans KR", "Malgun Gothic", "Nanum Gothic", sans-serif; letter-spacing: -0.5px;}
 
 /* 캔버스 커스타미이징 */
 canvas {
@@ -63,7 +78,14 @@ canvas {
 .nr-text {border: 1px solid #ddd; outline: none;}
 .nr-radio, .nr-check {border: 1px solid #ddd; outline: none; cursor: pointer;}
 .nr-radio:checked, .nr-check:checked {background-color: #fff;}
-
+select.nr-select::-ms-expand {
+    display: none;
+}
+input.base-1, select.base-1 {height: 32px; padding-left: 10px; width: 170px; box-sizing: border-box;}
+input.base-1 {border-color: transparent; border-bottom-color: #ddd;}
+select.base-1 {
+    border: 1px solid #ddd; background: #fff url(https://nurifunding.co.kr/img/common/selectArr.png) no-repeat 94% center;
+}
 
 /* 공통속성 css */
 .dropdown {position: relative;}
@@ -84,9 +106,12 @@ hr {border: none; border-top: 1px solid #ddd;}
 .section:before, .section:after {content: ""; display: block;}
 .section:after {clear: both;}
 
+
 /*모바일 영역*/
 @media (max-width: 767px){
-  .header {background: #fff; border-bottom: 2px solid #398FE1; height: 46px;}
+	.wrap {padding-top: 46px;}
+	.header, .mlnb-wrap {z-index: 11;}
+  .header {position: fixed; width: 100%; left: 0; top: 0; background: #fff; border-bottom: 2px solid #398FE1; height: 46px;}
   .header-box {width: 100%; position: relative; top: 18px; padding-right: 15px; padding-left: 15px;}
   .header-box > div {position: relative; clear: both; width: 100%;}
   .navbar-header {top: -9px;}
@@ -101,7 +126,7 @@ hr {border: none; border-top: 1px solid #ddd;}
   .my-tab {position: absolute; right: 0px; top: 4px; width: 16px; height: 22px;}
   .my-tab img {width: 100%;}
   
-  .mlnb-wrap {display: none !important; position: fixed; z-index: 1; top: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.819);}
+  .mlnb-wrap {display: none !important; position: fixed; /* z-index: 1; */ top: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.819);}
   .mlnb-wrap.on {display: block !important;}
   .mlnb-container {position: absolute; top: 0; left: 0px; width: 280px; height: 100%; background: #fff;}
   .mlnb-header {background: #398fe1; padding: 15px 20px 30px 20px;}
@@ -132,7 +157,7 @@ hr {border: none; border-top: 1px solid #ddd;}
   .footer .footer-box div[class*="-txt"]:first-child {margin-top: 0px;}
   .footer .a-txt > a {display: inline-block; margin-left: 7px; color: #d3d3d3; font-size: 13px;}
   .footer .a-txt > a:first-child {margin-left: 0;}
-  .footer .f-txt, .footer .f-txt address {font-size: 12px; line-height: 1.5em;}
+  .footer .f-txt, .footer .f-txt address {font-size: 12px; line-height: 1.5em; word-break: keep-all;}
   .footer .c-txt small {font-size: 11px; margin-bottom: 5px; display: block;}
   .fc-yellow {color: #ffea00;}
   
@@ -140,8 +165,9 @@ hr {border: none; border-top: 1px solid #ddd;}
 }
 /*테블릿 & PC영역*/
 @media (min-width: 768px){
+	.wrap {padding-top: 90px;}
   .header, .sub-nav {z-index: 11;}
-  .header {background: #fff; border-bottom: 1px solid #ddd; height: 90px;}
+  .header {position: fixed; width: 100%; left: 0; top: 0; background: #fff; border-bottom: 1px solid #ddd; height: 90px;}
   .header-box {position: relative; top: 35px;}
   .header-box > div {position: relative; float: left;}
   .navbar-header {top: -10px;}
@@ -165,7 +191,7 @@ hr {border: none; border-top: 1px solid #ddd;}
   .footer .footer-box div[class*="-txt"]:first-child {margin-top: 0px;}
   .footer .a-txt > a {display: inline-block; margin-left: 20px; color: #d3d3d3}
   .footer .a-txt > a:first-child {margin-left: 0;}
-  .footer .f-txt, .footer .f-txt address {font-size: 14px; line-height: 1.5em;}
+  .footer .f-txt, .footer .f-txt address {font-size: 14px; line-height: 1.5em; word-break: keep-all;}
   .footer .c-txt small {font-size: 12px; margin-bottom: 10px; display: block;}
   .fc-yellow {color: #ffea00;}
 	

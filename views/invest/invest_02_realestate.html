@@ -14,12 +14,14 @@
     <link rel="stylesheet" href="https://nurifunding.co.kr/static/css/nivo-lightbox.css">
     <link rel="stylesheet" href="https://nurifunding.co.kr/static/css/jquery.bxslider.css">
 
-    <!--<link rel="stylesheet" href="https://nurifunding.co.kr/static/css/invest/override.css">
+    <link rel="stylesheet" href="https://nurifunding.co.kr/static/css/invest/override.css">
     <link rel="stylesheet" href="https://nurifunding.co.kr/static/css/common.css">
-    <link rel="stylesheet" href="https://nurifunding.co.kr/static/css/invest/invest2.css">-->
+    <link rel="stylesheet" href="https://nurifunding.co.kr/static/css/invest/invest2.css">
+<!--
         <link rel="stylesheet" href="../../src/css/invest/override.css">
          <link rel="stylesheet" href="../../src/css/common.css">
          <link rel="stylesheet" href="../../src/css/invest/invest2.css">    
+-->
 
     <script type="text/javascript" src="https://nurifunding.co.kr/static/js/jquery-1.10.2.min.js"></script>
     <!--추가js-->
@@ -107,19 +109,95 @@
         <!-- 부동산 리스트 점검 -->
         <section class="grade-sec rEstate-sec">
             <div class="container">
-                <h2 class="grd-h2">부동산 시세변동에 따른 리스크 점검</h2>
+                <h2 class="grd-h2">월 임대료 시세변동에 따른 리스크 점검</h2>
                 
-                <div class="row com-box br4">
-                    <h3 class="grd-com-h3">부동산 가격 변동추이</h3>
-                    <div class="grd-estate-img"></div>
+                <!--180227 클래스 추가-->
+                <div class="rEstate-per row com-box br4">
+                    <h3 class="grd-com-h3">월 임대료 가격 변동추이</h3>
+                    <!--180227 차트 변경-->
+                    <div class="canvas-wrap">
+                        <div class="canvas-box">
+                            <div id="canvas-holder-per">
+                                <canvas id="chart-area-per"></canvas>
+                            </div>
+                        </div>
+                        <span class="s-x">(%)</span>
+                        <span class="s-y">(년도)</span>
+                    </div>
+                    <script>
+                        var standard = ["100", "100", "100", "100"];
+                        var dataPer = ["80", "120", "140", "90"];
+                        var config = {
+                            type: 'line',
+                            data: {
+                                labels: ["2014.12", "2015.12", "2016.12", "현재"],
+                                datasets: [{
+                                    label: "현재시세",
+                                    backgroundColor: '#ff0404',
+                                    borderColor: "#ff0404",
+                                    data: [
+                                        standard[0],
+                                        standard[1],
+                                        standard[2],
+                                        standard[3],
+                                        standard[4],
+                                        standard[5],
+                                        standard[6],
+                                        standard[7],
+                                        standard[8],
+                                        standard[9],
+                                        standard[10],
+                                        standard[11]
+                                    ],
+                                    fill: false,
+                                    lineTension: 0
+                                },  {
+                                    label: "변동추이",
+                                    backgroundColor: '#398fe1',
+                                    borderColor: "#398fe1",
+                                    data: [
+                                        dataPer[0],
+                                        dataPer[1],
+                                        dataPer[2],
+                                        dataPer[3],
+                                        dataPer[4],
+                                        dataPer[5],
+                                        dataPer[6],
+                                        dataPer[7],
+                                        dataPer[8],
+                                        dataPer[9],
+                                        dataPer[10],
+                                        dataPer[11]
+                                    ],
+                                    fill: false,
+                                    lineTension: 0
+                                }]
+                            },
+                            options: {
+                                responsive: true,
+                                tooltips: {
+                                    mode: 'index',
+                                    intersect: false,
+                                },
+                                scales: {
+                                    yAxes: [{
+                                        ticks: {
+                                            suggestedMin: 50,
+                                            suggestedMax: 150,
+                                        }
+                                    }]
+                                },
+                            }
+                        };
+                    </script>
                 </div>
                 
                 <div class="row com-box br4">
-                    <h3 class="grd-com-h3">부동산 가격 하락시 대출금 상환 가능성 점검</h3>
-                    <p class="ps">(단위 : 원)</p>
+                    <h3 class="grd-com-h3">월 임대료 가격 하락시 대출금 상환 가능성 점검</h3>
+                    <p class="ps">(단위 : 백만원)</p>
                     <table class="repay-tb">
                         <tr>
-                            <th class="nth-1"><div><span class="xs-block">부동산</span> 시세</div></th>
+                            <th class="nth-1"><div>구 분</div></th>
                             <th class="nth-2"><div>현재시세</div></th>
                             <th class="nth-3"><div><span class="xs-block320">감정</span>비율</div></th>
                             <th class="nth-4"><div>감정가</div></th>
@@ -129,81 +207,81 @@
                         </tr>
                         <tr>
                             <td class="nth-1"><div><span class="xs-block">현재</span> 시세</div></td>
-                            <td><div>18,750,000</div></td>
-                            <td><div>80%</div></td>
-                            <td><div>15,000,000</div></td>
-                            <td><div>8,500,000</div></td>
-                            <td><div>3,000,000</div></td>
-                            <td class="nth-7"><div>3,500,000</div></td>
+                            <td><div>24</div></td>
+                            <td><div>90%</div></td>
+                            <td><div>22</div></td>
+                            <td><div>0</div></td>
+                            <td><div>10</div></td>
+                            <td class="nth-7"><div>12</div></td>
                         </tr>
                         <tr>
                             <td class="nth-1"><div><span class="xs-block">10%</span> 하락</div></td>
-                            <td><div>16,870,000</div></td>
-                            <td><div>80%</div></td>
-                            <td><div>13,500,000</div></td>
-                            <td><div>8,500,000</div></td>
-                            <td><div>3,000,000</div></td>
-                            <td class="nth-7"><div>2,000,000</div></td>
+                            <td><div>22</div></td>
+                            <td><div>90%</div></td>
+                            <td><div>19</div></td>
+                            <td><div>0</div></td>
+                            <td><div>10</div></td>
+                            <td class="nth-7"><div>8</div></td>
                         </tr>
                         <tr>
                             <td class="nth-1"><div><span class="xs-block">15%</span> 하락</div></td>
-                            <td><div>15,937,500</div></td>
-                            <td><div>80%</div></td>
-                            <td><div>12,750,000</div></td>
-                            <td><div>8,500,000</div></td>
-                            <td><div>3,000,000</div></td>
-                            <td class="nth-7"><div>1,250,000</div></td>
+                            <td><div>20</div></td>
+                            <td><div>90%</div></td>
+                            <td><div>18</div></td>
+                            <td><div>0</div></td>
+                            <td><div>10</div></td>
+                            <td class="nth-7"><div>8</div></td>
                         </tr>
                         <tr>
                             <td class="nth-1"><div><span class="xs-block">20%</span> 하락</div></td>
-                            <td><div>15,000,000</div></td>
-                            <td><div>80%</div></td>
-                            <td><div>12,000,000</div></td>
-                            <td><div>8,500,000</div></td>
-                            <td><div>3,000,000</div></td>
-                            <td class="nth-7"><div>500,000</div></td>
+                            <td><div>19</div></td>
+                            <td><div>90%</div></td>
+                            <td><div>17</div></td>
+                            <td><div>0</div></td>
+                            <td><div>10</div></td>
+                            <td class="nth-7"><div>7</div></td>
                         </tr>
                         <tr>
                             <td class="nth-1"><div><span class="xs-block">25%</span> 하락</div></td>
-                            <td><div>14,062,500</div></td>
-                            <td><div>80%</div></td>
-                            <td><div>11,250,000</div></td>
-                            <td><div>8,500,000</div></td>
-                            <td><div>3,000,000</div></td>
-                            <td class="nth-7"><div>250,000</div></td>
+                            <td><div>18</div></td>
+                            <td><div>90%</div></td>
+                            <td><div>16</div></td>
+                            <td><div>0</div></td>
+                            <td><div>10</div></td>
+                            <td class="nth-7"><div>6</div></td>
                         </tr>
                         <tr>
                             <td class="nth-1"><div><span class="xs-block">30%</span> 하락</div></td>
-                            <td><div>13,125,000</div></td>
-                            <td><div>80%</div></td>
-                            <td><div>10,500,000</div></td>
-                            <td><div>8,500,000</div></td>
-                            <td><div>3,000,000</div></td>
-                            <td class="nth-7"><div>1,000,000</div></td>
+                            <td><div>17</div></td>
+                            <td><div>90%</div></td>
+                            <td><div>14</div></td>
+                            <td><div>0</div></td>
+                            <td><div>10</div></td>
+                            <td class="nth-7"><div>5</div></td>
                         </tr>
                         <tr>
                             <td class="nth-1"><div><span class="xs-block">35%</span> 하락</div></td>
-                            <td><div>12,187,500</div></td>
-                            <td><div>80%</div></td>
-                            <td><div>9,750,000</div></td>
-                            <td><div>8,500,000</div></td>
-                            <td><div>3,000,000</div></td>
-                            <td class="nth-7"><div>1,750,000</div></td>
+                            <td><div>16</div></td>
+                            <td><div>90%</div></td>
+                            <td><div>13</div></td>
+                            <td><div>0</div></td>
+                            <td><div>10</div></td>
+                            <td class="nth-7"><div>4</div></td>
                         </tr>
                         <tr>
                             <td class="nth-1"><div><span class="xs-block">40%</span> 하락</div></td>
-                            <td><div></div></td>
-                            <td><div>80%</div></td>
-                            <td><div>9,000,000</div></td>
-                            <td><div>8,500,000</div></td>
-                            <td><div>3,000,000</div></td>
-                            <td class="nth-7"><div>2,500,000</div></td>
+                            <td><div>14</div></td>
+                            <td><div>90%</div></td>
+                            <td><div>13</div></td>
+                            <td><div>0</div></td>
+                            <td><div>10</div></td>
+                            <td class="nth-7"><div>3</div></td>
                         </tr>
                     </table>
                     
                 </div>
                 
-                <div class="row com-box br4">
+                <!--<div class="row com-box br4">
                     <h3 class="grd-com-h3">부동산 수익률 분석</h3>
                     <table class="yield-tb">
                         <tr>
@@ -225,13 +303,19 @@
                             <td><div></div></td>
                         </tr>
                     </table>
-                </div>
+                </div>-->
                 
             </div>
         </section>
 
+        <!--180227 차트 스크립트-->
+        <script>
+            window.onload = function () {
+                var ctx = document.getElementById("chart-area-per").getContext("2d");
+                window.myLine = new Chart(ctx, config);
+            };
+        </script>
         
-
         <footer class="footer container-fluid">
             <div class="container footer-box">
                 <div class="row a-txt">

@@ -27,10 +27,12 @@
   .modify-tab {font-size: 14px; font-weight: 300; letter-spacing: 0;}
   .modify-tab .on-btn {display: inline-block; position: relative; top: -1px; margin: 10px 0 0 10px; padding: 3px 15px 4px; text-align: center; background: #aaa; border: 1px solid #888; font-size: 12px;}
   .modify-box {font-size: 14px; display: none;}
-  .mode-prc.dropdown, .mode-range.dropdown {display: inline-block; height: 32px;}
+  .mode-prc.dropdown, .mode-range.dropdown {display: inline-block; height: 32px; vertical-align: middle;}
   .mode-prc.dropdown {width: 58px;}
-  .mode-range.dropdown {width: 92px; margin-left: 3px;}
+  .mode-range.dropdown {width: 97px; margin-left: 3px;}
   .mode-prc.dropdown .btn, .mode-range.dropdown .btn {display: inline-block; padding: 0 5px 0 3px; width: 100%; height: 100%; border-radius: 0;}
+  .mode-prc.dropdown .btn span, 
+  .mode-range.dropdown .btn > span {top: 5px; }
   .mode-prc.dropdown .dropdown-menu, .mode-range.dropdown .dropdown-menu {border-radius: 0; width: 100%;}
   .mode-prc.dropdown .dropdown-menu li a, .mode-range.dropdown .dropdown-menu li a {border-radius: 0; width: 100%; font-size: 14px; padding: 5px;}
   .mod-p1 {margin-top: 10px;}
@@ -48,7 +50,7 @@
   .myi-dep h2 .user-btn img {width: 18px;}
   .md-bank {margin-top: 25px;}
   .mdb-p1, .mdb-p2 {letter-spacing: 0;}
-  .mdb-p1 {font-size: 14px; font-weight: 300; color: #666;}
+  .mdb-p1 {font-size: 14px; font-weight: 300; color: #666; word-break: keep-all; line-height: 1.1;}
   .mdb-p2 {font-size: 14px; font-weight: 300;margin-top: 10px;}
   .md-with {margin-top: 35px; padding-top: 20px; padding-bottom: 10px; border-top: 1px solid #ddd; border-bottom: 1px solid #ddd;}
   .md-with h3 {font-size: 20px;}
@@ -137,14 +139,16 @@
   .modify-tab {font-size: 14px; font-weight: 300; letter-spacing: 0;}
   .modify-tab .on-btn {display: inline-block; position: relative; top: -1px;margin-left: 10px; padding: 3px 15px 4px; text-align: center; background: #aaa; border: 1px solid #888; font-size: 12px;}
   .modify-box {position: relative; margin-top: -8px; font-size: 14px; display: none;}
-  .mode-prc.dropdown, .mode-range.dropdown {display: inline-block; height: 32px; position: relative; top: -1px;}
+  .mode-prc.dropdown, .mode-range.dropdown {display: inline-block; height: 32px; position: relative; top: -1px; vertical-align: middle;}
   .mode-prc.dropdown {width: 58px;}
-  .mode-range.dropdown {width: 92px; margin-left: 3px;}
+  .mode-range.dropdown {width: 100px; margin-left: 3px;}
   .mode-prc.dropdown .btn, .mode-range.dropdown .btn {display: inline-block; padding: 0 5px 0 3px; width: 100%; height: 100%; border-radius: 0;}
+  .mode-prc.dropdown .btn > span,
+  .mode-range.dropdown .btn > span {top: 5px; }
   .mode-prc.dropdown .dropdown-menu, .mode-range.dropdown .dropdown-menu {border-radius: 0; width: 100%;}
   .mode-prc.dropdown .dropdown-menu li a, .mode-range.dropdown .dropdown-menu li a {border-radius: 0; width: 100%; font-size: 14px; padding: 5px;}
   .mod-p1, .mod-p2 {display: inline-block;}
-  .mod-p1 {margin-top: 10px; margin-left: 20px;}
+  .mod-p1 {margin-top: 10px; margin-left: 10px;}
   .mod-p1 .nr-check {width: 16px; height: 16px;}
   .mod-p1 .nr-check:checked {width: 16px; height: 16px; background: url(http://img.nurifunding.co.kr/check-icon.png) no-repeat 2px 2px; background-size: 10px; background-color: #fff;}
   .mod-p1 .nr-check + span {vertical-align: middle; margin-left: 5px; font-size: 14px; font-weight: 300;}
@@ -159,9 +163,9 @@
   .myi-dep h2 .user-btn img {width: 18px;}
   .md-bank, .md-bank2 {float: left;}
   .md-with {float: right;}
-  .md-bank {margin-top: 25px; width: 50%;}
+  .md-bank {margin-top: 25px; width: 50%; padding-right: 10px;}
   .mdb-p1, .mdb-p2 {letter-spacing: 0;}
-  .mdb-p1 {font-size: 14px; font-weight: 300; color: #666;}
+  .mdb-p1 {font-size: 14px; font-weight: 300; color: #666; word-break: keep-all; line-height: 1.1;}
   .mdb-p2 {font-size: 14px; font-weight: 300;margin-top: 10px;}
   .md-with {position: relative; margin-top: -26px; padding-bottom: 10px; border-left: 1px solid #ddd; width: 50%; padding-left: 20px; height: 223px;}
   .md-with h3 {font-size: 20px;}
@@ -267,10 +271,12 @@
   .modify-tab {font-size: 14px; font-weight: 300; letter-spacing: 0;}
   .modify-tab .on-btn {display: inline-block; position: relative; top: -1px;margin-left: 10px; padding: 3px 15px 4px; text-align: center; background: #aaa; border: 1px solid #888; font-size: 12px;}
   .modify-box {position: relative; margin-top: -8px; font-size: 14px; display: none;}
-  .mode-prc.dropdown, .mode-range.dropdown {display: inline-block; height: 32px; position: relative; top: -1px;}
+  .mode-prc.dropdown, .mode-range.dropdown {display: inline-block; height: 32px; position: relative; top: -1px; vertical-align: middle;}
   .mode-prc.dropdown {width: 58px;}
-  .mode-range.dropdown {width: 92px; margin-left: 3px;}
+  .mode-range.dropdown {width: 100px; margin-left: 3px;}
   .mode-prc.dropdown .btn, .mode-range.dropdown .btn {display: inline-block; padding: 0 5px 0 3px; width: 100%; height: 100%; border-radius: 0;}
+  .mode-prc.dropdown .btn > span,
+  .mode-range.dropdown .btn > span {top: 5px;}
   .mode-prc.dropdown .dropdown-menu, .mode-range.dropdown .dropdown-menu {border-radius: 0; width: 100%;}
   .mode-prc.dropdown .dropdown-menu li a, .mode-range.dropdown .dropdown-menu li a {border-radius: 0; width: 100%; font-size: 14px; padding: 5px;}
   .mod-p1, .mod-p2 {display: inline-block;}
@@ -289,7 +295,7 @@
   .myi-dep h2 .user-btn img {width: 18px;}
   .md-bank {margin-top: 25px;}
   .mdb-p1, .mdb-p2 {letter-spacing: 0;}
-  .mdb-p1 {font-size: 14px; font-weight: 300; color: #666;}
+  .mdb-p1 {font-size: 14px; font-weight: 300; color: #666; word-break: keep-all; line-height: 1.1;}
   .mdb-p2 {font-size: 14px; font-weight: 300;margin-top: 10px;}
   .md-with {margin-top: 55px; padding-top: 20px; padding-bottom: 10px; position: relative; border-top: 1px solid #ddd;}
   .md-with h3 {font-size: 20px;}

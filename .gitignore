@@ -1,5 +1,7 @@
 #json file
 *.json
+*.img
+*.zip
 
 # Windows image file caches
 Thumbs.db

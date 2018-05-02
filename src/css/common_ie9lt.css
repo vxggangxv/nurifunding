@@ -26,8 +26,9 @@
   padding-left: 10px;
 }
 
+.wrap {padding-top: 90px;}
 .header, .sub-nav {z-index: 11;}
-.header {background: #fff; border-bottom: 1px solid #ddd; height: 90px;}
+.header {position: fixed; width: 100%; left: 0; top: 0; background: #fff; border-bottom: 1px solid #ddd; height: 90px;}
 .header-box {position: relative; top: 35px;}
 .header-box > div {position: relative; float: left;}
 .navbar-header {top: -10px;}

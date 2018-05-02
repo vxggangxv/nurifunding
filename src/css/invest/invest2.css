@@ -12,14 +12,64 @@
 .wrap {position: relative; width: 100%;}
 .main {position: relative;}
 
+/*투자하기 상품 상세페이지 상세설명 더보기 팝업*/
+.goods_content { position:fixed; z-index:99999; overflow:hidden; display:none; top:0; left:0; background:rgba(0, 0, 0, 0.5); width:100%; height:100%;}
+.goods_content > div { background:white; position:absolute; left:50%; border:2px solid #ccc; padding:2%; line-height:1.5em;
+	-webkit-transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	-o-transform: translateX(-50%);
+	transform: translateX(-50%);
+}
+
+.goods_content #g_content_tt { width:100%; height:50px; float:left; font-size:18px; font-weight:bold; border-bottom:2px solid #ccc;}
+.goods_content #g_content_ct { width:100%; min-height:200px; float:left; margin-top:20px; overflow:scroll;}
+.goods_content input {position: absolute; top: 0px; right: 0px; width: 30px; height: 30px; border: 1px solid #ccc; padding: 5px; text-align: center; border-radius: 0; background: #ddd;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+
+/* 20180320 투자 위험 고지 레이어 팝업 */
+.invst-popup {z-index:9999; display:none; position:fixed; width:100%; height:100%; top:0; background:rgba(0, 0, 0, 0.5)}
+.invst-popup .popup-wrap {position:absolute; width:660px; margin:0 auto; top:50%; left:50%; /*padding:0 50px; padding-top:25%; margin-top:-25%;*/}
+.invst-popup .popup-container {position:relative; box-sizing:border-box; border:2px solid #398fe1; padding:50px; box-shadow:0px 2px 4px 0px #333; background:#fff;}
+.invst-popup .popup-container .popup-tit {padding-bottom:30px;font-size:20px; color:#666; font-weight:normal}
+.invst-popup .popup-container .popup-info-box {padding:20px; border:1px solid #fd7684;}
+.invst-popup .popup-container .popup-info-box p {font-size:16px; color: #fd7684; word-break:keep-all; letter-spacing:0; line-height:28px;}
+.invst-popup .popup-form {position:relative; text-align:center; margin:0 auto; font-size:18px; line-height:normal; padding:30px 0 0; word-break: keep-all;}
+.invst-popup .popup-form .popup-input {display:inline-block; margin:30px 0 35px; border:2px dashed #398fe1;}
+.invst-popup .popup-form .popup-input .input-agree {height:40px; padding:0 7px;}
+.invst-popup .popup-form .est-box {max-width:300px; margin:0 auto;}
+.invst-popup .popup-form .est-box a {font-weight:normal;}
+.invst-popup .pop-close {position: absolute; width:35px; height:35px; right:20px; top:20px;}
+.invst-popup .pop-close:before, .invst-popup .pop-close:after {content:''; display:block; position:absolute; background: #666; width: 30px;height: 1px; top:15px;}
+.invst-popup .pop-close:before { -webkit-transform: rotate(-45deg); transform: rotate(-45deg);}
+.invst-popup .pop-close:after { -webkit-transform: rotate(45deg); transform: rotate(45deg);}
+
+.rBn-box {z-index: 100; position: fixed; top: 150px; left: 50%; margin-left: 540px;}
+.rBn-box > a {display: block; width: 110px; margin-bottom:10px;}
+.rBn-box-m {opacity: 0; visibility: hidden; height: 0; overflow: hidden;}
+
+@media (max-width: 1320px) {
+	.rBn-box {left: auto; margin-left: 0; right: 10px;}
+}
+
 /*모바일 영역, col-xs*/
 @media (max-width: 767px){
+	.goods_content > div.pop-goods {width: 310px;}
+
+
   .com-pd {padding: 28px 5px 50px;}
   .com-ft {position: relative; text-align: center; font-size: 22px; font-family: "Noto Sans KR", sans-serif;}
   .com-box, .tit {margin: 0 auto; width: 310px;}
   .com-box {margin-top: 10px;}
   .br4 {border-radius: 4px;}
     .xs-block {display: block;}
+	
+	.rBn-box-m {position: fixed; right: 6px; bottom: 65px; height: auto; -webkit-transition: opacity 1s; -o-transition: opacity 1s; transition: opacity 1s; z-index: 1;}
+	.rBn-box-m.on {opacity: 1; visibility: visible;}
+	.rBn-box-m .a-invest {display: block; background: rgb(55, 148, 239); font-size: 14px; color: #fff; line-height: 1.2; text-align: center; box-sizing: border-box; padding: 8px 20px; box-shadow: 1px 2px 2px 2px rgba(0,0,0, 0.2); letter-spacing: -0.5px;}
+	.rBn-box-m .a-invest img {width: 24px;}
 
   .ingProduct {background: #f5f5f5; padding: 28px 5px 50px;}
   .ingProduct .com-ft {float: left;}
@@ -38,14 +88,14 @@
   .thumb-box .new {position: absolute; top: 10px; left: 10px; font-size: 12px; background: rgba(38, 196, 183, 0.88); padding: 9px 5px; color: #fff; border: 2px solid #fff; z-index: 1;}
   .thumb-box .end {position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0, .58); text-align: center;}
   .thumb-box .end span {position: relative; color: #fff; display: inline-block; padding: 10px 40px; top: 40px; border: 1px solid #fff; letter-spacing: 0;}
-  .iph3 {padding: 10px; font-size: 18px;}
+  .iph3 {padding: 10px; font-size: 16px;}
   .ip-inner {padding: 0 10px; margin-top: -2px;}
   .ip-inner li[class*=ipli] {line-height: 1.5em; font-size: 14px;}
   li[class*=ipli] .pull-right {font-weight: 600; }
   .ipli-nth-5 {margin: 10px 0 3px; background: #dadada;}
   .ip-per-bar {width: 80%; height: 7px; }
-  .ip-per-num {font-size: 13px; color: #777; margin-left: 2px;}
-  .ip-percent {position: relative; font-size: 18px; font-weight: 600;}
+  .ip-per-num {font-size: 12.5px; color: #777; margin-left: 2px;}
+  .ip-percent {position: relative;  font-size: 18px;  font-weight: 600;}
   li[class*=ipli] .pull-right.day {font-weight: 500; font-size: 17px;}
   .ip-btn-box {text-align: center; margin: 15px 0;}
   .ip-btn {display: inline-block; width: 290px; color: #fff; line-height: 2.8em; font-size: 14px; letter-spacing: 0;}
@@ -54,16 +104,20 @@
   .est-wrap {position: relative;}
   .estate .com-box {margin-top: 0;}
   .bond-num {font-size: 15px; font-weight: 300; letter-spacing: 0; padding-bottom: 10px; border-bottom: 1px solid #aaa;}
-  .est-h2 {margin-top: 20px; font-size: 22px;}
+  .est-h2 {margin-top: 20px; font-size: 17px;}
   .est-box {position: relative;}
     .est-box #est-slider .mag {display: none; position: absolute; left: 50%; top: 50%; margin-left: -42px; margin-top: -42px; width: 84px; height: 84px;}
     .est-box #est-slider:hover .mag {display: block;}
   .est-box.nth-1 {margin-top: 15px;}
-  .est-box.nth-2 {margin-top: 10px;}
+  .est-box.nth-2 {margin-top: 15px;}
   .est-box.nth-2 > p {line-height: 1.5em; font-weight: 300; font-size: 15px; letter-spacing: 0;}
-  .est-box.nth-3 {margin-top: 30px;}
+  .est-box.nth-2 .infoTxt {max-height: 110px; overflow: hidden; word-break: keep-all; /* text-overflow: ellipsis; word-wrap: break-word; */}
+	.est-box.nth-2 + .est-box.nth-3 {margin-top: 10px;}
+  .est-box.nth-3 {margin-top: 5px;}
+  .est-box.nth-3 .a-more {}
+  .est-box.nth-3 .a-more > span {position: relative; font-size: 9px; top: -2px;}
   .est-box.nth-3 > a {display: block; text-align: center; padding: 15px 0; font-size: 15px; letter-spacing: 0;}
-  .est-box.nth-4 {padding-bottom: 20px; border-bottom: 3px solid #398fe1;}
+  .est-box.nth-4 {padding-bottom: 20px;}
   .est-b4-ul {}
   li[class*="est-b4-li"] {float: left;}
   .est-b4-li1, .est-b4-li2, .est-b4-li3 {margin-top: 20px;}
@@ -86,16 +140,32 @@
   .est-com .b-icon {position: absolute; left: 0; top: -2px;}
   .est-com-h3 {font-size: 18px;}
   
+	.est-box.per-bar {position: relative; clear: both; width: 100%; height: 12px; border: 1px solid #ddd; background: #fff;}
+	.est-box.per-bar .inBar {background: #398fe1; width: 100%; height: 100%;}
+	
   .est-box.per {clear: both; padding-top: 6px;}
   .est-box.per span {position: relative;}
-  .est-box.per .ip-percent, .est-box.per .pull-right .day {font-weight: 500;}
-  .est-box.per .ip-per-num {top: -2px; font-size: 14px; color: #666;}
-  .est-box.per .pull-right {color: #666;}
+  .est-box.per, .est-box.per .ip-percent, .est-box.per .pull-right .day {font-size: 15px; font-weight: 500;}
+  .est-box.per .ip-per-num {color: #666;}
+  .est-box.per .pull-right {color: #666; font-size: 14px;}
   
   .est-box.nth-5 p {line-height: 1.5em; font-size: 14px; font-weight: 300;}
   .est-box.nth-5 p.mt {margin-top: 20px;}
   .est-box.nth-5 p.nth-1, .est-box.nth-5 p.nth-2 {font-size: 15px;}
   .est-box.nth-5 em {font-weight: 400;}
+    .est-box .tbCms {width:100%; margin-top: 15px; font-size:14px; font-weight:300;}
+    .est-box .tbCms col.nth-1 {width: 30%;}
+    .est-box .tbCms col.nth-2 {width: 70%;}
+    .est-box .tbCms thead {background:#6ab0f2; border-top:1px solid #ccc; color:white;}
+    .est-box .tbCms tr {width:100%; border-bottom:1px solid #ccc;}
+    .est-box .tbCms td, .est-box .tbCms th {vertical-align:middle; border-left:1px solid #ccc; padding: 7px 0; word-break: keep-all; line-height: 1.4;}
+    .est-box .tbCms td:first-child, .est-box .tbCms th:first-child {border-left: 0;}
+    .est-box .tbCms td {padding-left: 5px;}
+    .est-box .tbCms td.ta-center {text-align: center; padding-left: 0;}
+    .est-box .tbCms p.dot {position: relative; padding-left: 8px;}
+    .est-box .tbCms p.dot > span:first-child {position: absolute; left: 0; top: -2px;}
+			
+    
   .est-box.nth-6 {}
   .est-box.nth-6 h4 {margin-top: 20px; font-size: 15px;}
   .est-box.nth-6 p {margin-top: 10px; font-size: 14px; line-height: 1.3em; font-weight: 300;}
@@ -300,8 +370,10 @@
     .grade-sec {position: relative;}
     .grade-sec .com-box {width: 320px; margin: 30px auto 40px; border: 1px solid #ddd; background: #fff; padding: 20px 15px;}
     .grd-h2 {margin-top: 35px; font-size: 25px; display: block; text-align: center; width: 100%; font-weight: 300; letter-spacing: -1px;}
-    .grd-com-h3 {font-size: 16px; line-height: 1.2em; word-break: keep-all;}
+    .grd-com-h3 {font-size: 14px; line-height: 1.2em; word-break: keep-all;}
     .grd-rate-img {position: relative; margin-top: 20px; width: 100%; height: 201px; background: url(https://nurifunding.co.kr/img/invest/grade_cht_m.png) no-repeat; background-size: 288px;}
+    .grd-rate-img.alp {background: url(https://nurifunding.co.kr/img/invest/grade_cht01_m.png) no-repeat; background-size: 288px;}
+    .grd-rate-img.num {background: url(https://nurifunding.co.kr/img/invest/grade_cht02_m.png) no-repeat; background-size: 288px;}
     .grd-rate-img img {position: absolute; width: 14px;}
     .grd-rate-img .x-01 {left: 66px;}
     .grd-rate-img .x-02 {left: 88px;}
@@ -370,10 +442,22 @@
     .grd-p {font-size: 15px; line-height: 1.5em; font-weight: 300; word-break: keep-all; color: #646464;}
     .grd-p.mt {margin-top: 20px; color: #1e1e1e;}
     .grd-p:first-child {margin-top: 0;}
+	
+	/* 20180220_7차주(대출자)정보수정_다솜 */
+	.est-com.com-type2 {border:0;}
+	.est-com.com-type2 em {margin-top:0;}
+	.est-com.com-type3 {margin-top:0; border:0;}
     
     .rEstate-sec .com-box {width: 360px;}
     .rEstate-sec .grd-h2 {font-size: 22px;}
     .rEstate-sec .grd-estate-img {margin-top: 15px; padding: 39% 0 0; background: url(https://nurifunding.co.kr/img/invest/rEstate_chart.png) no-repeat; background-size: 100% auto;}
+    .rEstate-sec .rEstate-per {overflow-x: auto;}
+    .rEstate-sec .canvas-wrap {position: relative; width: 100%; margin-top: 12px; margin-bottom: 10px;}
+    .rEstate-sec .canvas-wrap .s-x, .rEstate-sec .canvas-wrap .s-y {position: absolute; display: inline-block; color: #5e5e5e; font-size: 11px; bottom: -8px;}
+    .rEstate-sec .canvas-wrap .s-x {left: 5px;}
+    .rEstate-sec .canvas-wrap .s-y {left: 20px;}
+    .rEstate-sec .canvas-box {width: 100%;}
+  
     .rEstate-sec .ps {text-align: right; margin-top: 6px; font-size: 12px;}
     .rEstate-sec .repay-tb, .rEstate-sec .yield-tb {position: relative; width: 100%; margin-top: 15px; font-size: 11px; text-align: center;}
     .rEstate-sec .repay-tb {margin-top: 4px;}
@@ -391,6 +475,24 @@
     .rEstate-sec .repay-tb td.nth-1 {text-indent: 0; padding-right: 0;}
     
     .rEstate-sec .yield-tb th {background: #398fe1; color: #fff;}
+
+	.goods_content > div { width:90%; top:100px; max-height:400px; }
+	.goods_content #g_content_ct { height:250px;}
+	
+
+	/* 20180320 투자 위험 고지 레이어 팝업 */
+	.invst-popup {box-sizing: border-box; }
+	.invst-popup .popup-wrap {box-sizing: border-box; width:300px; margin-left:-150px;}
+	.invst-popup .popup-container {box-sizing: border-box; padding:20px;}
+	.invst-popup .popup-container .popup-tit {padding-bottom:15px; font-size:18px;}
+	.invst-popup .popup-container .popup-info-box {padding: 3px 6px;}
+	.invst-popup .popup-container .popup-info-box p {font-size:14px; line-height:23px;}
+	.invst-popup .popup-form {font-size:16px; padding:15px 0 0;}
+	.invst-popup .popup-form .popup-input {margin:15px 0 20px;}
+	.invst-popup .popup-form .popup-input .input-agree {height:30px; padding:0 5px;}
+	.invst-popup .popup-form .est-box {max-width:150px;}
+	.invst-popup .pop-close {width:20px; height:20px; right:20px; top:20px;}
+	.invst-popup .pop-close:before, .invst-popup .pop-close:after {width: 16px;height: 1px; top:8px;}
 }
 @media (max-device-width: 320px) {
     .xs-block320 {display: block;}
@@ -433,51 +535,69 @@
   li[class*=ipli] .pull-right.day {font-weight: 500; font-size: 17px;}
   .ip-btn-box {text-align: center; margin: 15px 0;}
   .ip-btn {display: inline-block; width: 88.5%; color: #fff; line-height: 2.8em; font-size: 16px; letter-spacing: 0;}
-  
-  
+    
   .estate {padding: 35px 0px;}
   .est-wrap {position: relative;}
   .estate .com-box {margin-top: 0;}
   .bond-num {font-size: 15px; font-weight: 300; letter-spacing: 0; padding-bottom: 10px; border-bottom: 1px solid #aaa;}
   .est-h2 {margin-top: 20px; font-size: 22px;}
   .est-box {position: relative;}
+	.est-box .est-wrapper > li {height: 280px; overflow: hidden;}
+	.est-box .est-wrapper > li > a > img:first-child {min-height: 280px;}
     .est-box #est-slider .mag {display: none; position: absolute; left: 50%; top: 50%; margin-left: -42px; margin-top: -42px; width: 84px; height: 84px;}
     .est-box #est-slider:hover .mag {display: block;}
   .est-box.nth-1 {margin-top: 15px;}
-  .est-box.nth-2 {margin-top: 10px;}
+  .est-box.nth-2 {margin-top: 15px;}
   .est-box.nth-2 > p {line-height: 1.5em; font-weight: 300; font-size: 15px; letter-spacing: 0;}
-  .est-box.nth-3 {margin-top: 30px;}
+  .est-box.nth-2 .infoTxt {text-overflow: ellipsis; height: 178px; overflow: hidden;word-wrap: break-word;}
+  .est-box.nth-3 {margin-top: 6px;}
   .est-box.nth-3 > a {display: block; text-align: center; padding: 15px 0; font-size: 15px; letter-spacing: 0;}
-  .est-box.nth-4 {padding-bottom: 20px; border-bottom: 3px solid #398fe1;}
+	.est-box.nth-3 .a-more {}
+  .est-box.nth-3 .a-more > span {position: relative; font-size: 9px; top: -2px;}
+  .est-box.nth-4 {padding-bottom: 20px;}
   .est-b4-ul {}
   li[class*="est-b4-li"] {float: left; border-left: 1px solid #d2d2d2;}
   li[class*="est-b4-li"]:first-child {margin-left: 0px; border-left: 0;}
   .est-b4-li1, .est-b4-li2, .est-b4-li3, .est-b4-li4, .est-b4-li5 {width: auto; margin-top: 20px; padding: 0 20px;}
     .est-b4-li1 .quest {position: relative; top: 2px; display: inline-block; border-radius: 50%; width: 18px; height: 18px;}
     .est-b4-li1 .quest span {position: relative; top: -4px; font-size: 13px; font-family: "Arial", "Noto Sans KR", sans-serif;}
-  .est-box.nth-3 {margin-top: 3px;}
   .est-b4-p1, .est-b4-p2 {letter-spacing: 0;}
   .est-b4-p1 {font-size: 14px;}
   .est-b4-p2 {margin-top: 20px; font-size: 20px;} 
   .est-b4-p2 span {font-size: 16px; margin-left: 5px;}
-  
-  .est-box.per {clear: both; padding-top: 6px;}
-  .est-box.per span {position: relative;}
-  .est-box.per .ip-percent, .est-box.per .pull-right .day {font-weight: 500;}
-  .est-box.per .ip-per-num, .est-box.per .pull-right .txt {color: #666;}
-  .est-box.per .ip-per-num {top: -2px; font-size: 14px; margin-left: 5px;}
-  .est-box.per .pull-right .txt {margin-right: 3px;}
   
   .est-com {margin-top: 15px; padding: 25px 15px 20px; border: 1px solid #ddd; background: #fff;}
   .est-com p {position: relative;}
   .est-com .left-b {position: relative; padding-left: 7px; font-weight: 300;}
   .est-com .b-icon {position: absolute; left: 0; top: -2px;}
   .est-com-h3 {font-size: 18px;}
+	
+	.est-box.per-bar {clear: both; width: 100%; height: 14px; border: 1px solid #ddd; background: #fff;}
+	.est-box.per-bar .inBar {background: #398fe1; width: 100%; height: 100%;}
+	
+  .est-box.per {clear: both; padding-top: 6px;}
+  .est-box.per span {position: relative;}
+  .est-box.per .ip-percent, .est-box.per .pull-right .day {font-weight: 500;}
+  .est-box.per .ip-per-num, .est-box.per .pull-right .txt {color: #666;}
+  .est-box.per .ip-per-num {top: -2px; margin-left: 5px;}
+  .est-box.per .pull-right .txt {margin-right: 3px;}
   
   .est-box.nth-5 p {line-height: 1.5em; font-size: 14px; font-weight: 300;}
   .est-box.nth-5 p.mt {margin-top: 20px;}
   .est-box.nth-5 p.nth-1, .est-box.nth-5 p.nth-2 {font-size: 15px;}
   .est-box.nth-5 em {font-weight: 400;}
+    .est-box .tbCms {width:100%; margin-top:20px; font-size:14px; font-weight:300;}
+    .est-box .tbCms col.nth-1 {width: 20%;}
+    .est-box .tbCms col.nth-2 {width: 80%;}
+    .est-box .tbCms thead {background:#6ab0f2; border-top:1px solid #ccc; color:white;}
+    .est-box .tbCms tr {width:100%; border-bottom:1px solid #ccc;}
+    .est-box .tbCms td, .est-box .tbCms th {vertical-align:middle; border-left:1px solid #ccc; padding: 7px 0; word-break: keep-all; line-height: 1.4;}
+    .est-box .tbCms td:first-child, .est-box .tbCms th:first-child {border-left: 0;}
+    .est-box .tbCms td {padding-left: 15px;}
+    .est-box .tbCms td.ta-center {text-align: center; padding-left: 0;}
+    .est-box .tbCms p.dot {position: relative; padding-left: 8px;}
+    .est-box .tbCms p.dot > span:first-child {position: absolute; left: 0; top: -2px;}
+    
   .est-box.nth-6 {}
   .est-box.nth-6 h4 {margin-top: 20px; font-size: 15px;}
   .est-box.nth-6 p {margin-top: 10px; font-size: 14px; line-height: 1.3em; font-weight: 300;}
@@ -694,6 +814,8 @@
     .grd-h2 {margin-top: 35px; font-size: 28px; display: block; text-align: center; width: 100%; font-weight: 400; letter-spacing: -1px;}
     .grd-com-h3 {font-size: 24px; line-height: 1.2em;}
     .grd-rate-img {position: relative; margin-top: 30px; width: 100%; height: 361px; background: url(https://nurifunding.co.kr/img/invest/grade_cht.png) no-repeat; background-size: 628px;}
+    .grd-rate-img.alp {background: url(https://nurifunding.co.kr/img/invest/grade_cht01.png) no-repeat; background-size: 628px;}
+    .grd-rate-img.num {background: url(https://nurifunding.co.kr/img/invest/grade_cht02.png) no-repeat; background-size: 628px;}
     .grd-rate-img img {position: absolute; width: 26px;}
     .grd-rate-img .x-01 {left: 105px;}
     .grd-rate-img .x-02 {left: 159px;}
@@ -762,7 +884,21 @@
     .grd-p.mt {margin-top: 20px; color: #1e1e1e;}
     .grd-p:first-child {margin-top: 0;}
     
+	/* 20180220_7차주(대출자)정보수정_다솜 */
+	.est-com.com-type2 {clear:both; width:50%; height:auto; margin-left:0; border:0;}
+	.est-com.com-type2 em {margin-top:0;}
+	.est-com.com-type3 {clear:both; width:100%; height:auto; margin-top:0; border:0;}
+	.est-com.com-type3 .grade .g-label span.nth-2 {left:25%}
+	.est-com.com-type3 .grade .g-label span.nth-3 {left:50%}
+	.est-com.com-type3 .grade .g-label span.nth-4 {left:75%}
+	
     .rEstate-sec .grd-estate-img {margin-top: 25px; padding: 39% 0 0; background: url(https://nurifunding.co.kr/img/invest/rEstate_chart.png) no-repeat; background-size: 100% auto;}
+    .rEstate-sec .canvas-wrap {position: relative; width: 628px; height: 314px; margin-top: 10px;}
+    .rEstate-sec .canvas-wrap .s-x, .rEstate-sec .canvas-wrap .s-y {position: absolute; display: inline-block; color: #6d6d6d; font-size: 10px;}
+    .rEstate-sec .canvas-wrap .s-x {left: 8px; bottom: -8px;}
+    .rEstate-sec .canvas-wrap .s-y {left: -16px; bottom: 7px;}
+    .rEstate-sec .canvas-box {width: 628px; height: 314px;}
+  
     .rEstate-sec .ps {text-align: right; margin-top: 15px; font-size: 14px;}
     .rEstate-sec .repay-tb, .rEstate-sec .yield-tb {position: relative; width: 100%; margin-top: 25px; font-size: 14px; text-align: center;}
     .rEstate-sec .repay-tb {margin-top: 6px;}
@@ -782,11 +918,15 @@
     .rEstate-sec .repay-tb td.nth-1 {text-indent: 0; padding-right: 0;}
 
     .rEstate-sec .yield-tb th > div {background: #398fe1; color: #fff;}
+
+	.goods_content > div { width:50%; top:200px; max-height:350px; }
+	.goods_content #g_content_ct { height:250px;}
     
 }
 
 /*테블릿 영역, col-md*/
 @media (min-width: 992px) {
+  .estate .container {width: 1044px;}
   .com-pd {padding: 68px 10px 95px;}
   .com-ft {text-align: center; font-size: 36px; font-family: "Noto Sans KR", sans-serif;}
   .com-box {margin: 0 auto; margin-top: 10px;}
@@ -800,19 +940,22 @@
   .dropdown .dropdown-menu {display: none; position: absolute; border: 1px solid #ddd; background: #fff; border-radius: 6px; margin-top: -1px; z-index: 1; width: 100%;}
   .dropdown .dropdown-menu li a {display: block; padding: 5px 20px; line-height: 1.2em; font-size: 1em;}
   .dropdown .dropdown-menu li a:hover {color: #398fe2;}
-  .ip-wrap {}
-  .ip-outer {padding: 0; margin-top: 30px;}
+  .row.tit, .ip-wrap {width: 1270px; margin-left: -162px;}
+  .ip-outer {padding: 0; margin-top: 30px; padding-left: 15px;}
+	.ip-outer:nth-of-type(4n+1) {padding-left: 0;}
+/*
   .ip-outer:nth-child(odd) {padding-right: 15px;}
   .ip-outer:nth-child(even) {padding-left: 15px;}
+*/
   .ip-box { margin: 0 auto; background: #fff; border: 1px solid #ddd;}
-  .thumb-box {position: relative; width: 445.5px; height: 178.19px;}
+  .thumb-box {position: relative; width: 100%; height: 178.19px; background-size: cover; border-top-left-radius: 4px; border-top-right-radius: 4px;}
   .thumb-box img {width: 100%;}
   .thumb-box .new {position: absolute; top: 10px; left: 10px; font-size: 14px; background: rgba(38, 196, 183, 0.88); padding: 11px 5px; color: #fff; border: 2px solid #fff; z-index: 1;}
   .thumb-box .end {position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0, .58); text-align: center;}
   .thumb-box .end span {position: relative; color: #fff; display: inline-block; padding: 10px 40px; top: 72px; border: 1px solid #fff; letter-spacing: 0; font-size: 20px;}
-  .iph3 {padding: 10px 25px; font-size: 24px;}
-  .ip-inner {padding: 0 25px; margin-top: -2px;}
-  .ip-inner li[class*=ipli] {line-height: 1.5em; font-size: 18px;}
+  .iph3 {padding: 10px 20px; font-size: 20px;}
+  .ip-inner {padding: 0 20px; margin-top: -2px;}
+  .ip-inner li[class*=ipli] {line-height: 1.5em; font-size: 16px;}
   li[class*=ipli] .pull-right {font-weight: 600; }
   .ipli-nth-5 {margin: 10px 0 3px; background: #dadada;}
   .ip-per-bar {width: 80%; height: 7px; }
@@ -826,16 +969,24 @@
   .est-wrap {position: relative;}
   .estate .com-box {margin-top: 0;}
   .bond-num {font-size: 17px; letter-spacing: 0; padding-bottom: 10px; border-bottom: 1px solid #aaa;}
+	.bond-num .a-print {position: relative; border: none; float: right; padding-right: 5px; line-height: 2; top: -7px; font-size: 16px; color: #4b87c8;}
+	.bond-num .a-print .s-img {position: relative; display: inline-block; vertical-align: middle; text-align: center; top: 2px;}
+	.bond-num .a-print img {width: 30px;}
   .est-h2 {margin-top: 25px; font-size: 36px;}
   .est-box {position: relative;}
+	.est-box .est-wrapper > li {height: 280px; overflow: hidden;}
+	.est-box .est-wrapper > li > a > img:first-child {min-height: 280px;}
     .est-box #est-slider .mag {display: none; position: absolute; left: 50%; top: 50%; margin-left: -42px; margin-top: -42px; width: 84px; height: 84px;}
     .est-box #est-slider:hover .mag {display: block;}
   .est-box.nth-1 {margin-top: 15px;}
-  .est-box.nth-2 {margin-top: 10px;}
+  .est-box.nth-2 {margin-top: 15px;}
   .est-box.nth-2 > p {line-height: 1.5em; font-weight: 400; font-size: 16px; letter-spacing: -1px;}
-  .est-box.nth-3 {position: absolute; bottom: 0; right: 0;}
+  .est-box.nth-2 .infoTxt {text-overflow: ellipsis; height: 150px; overflow: hidden;word-wrap: break-word;}
+  .est-box.nth-3 {margin-top: 6px;}
   .est-box.nth-3 > a {display: block; text-align: center; padding: 20px 0; font-size: 19px; letter-spacing: 0;}
-  .est-box.nth-4 {padding-bottom: 30px; border-bottom: 10px solid #398fe1;}
+	.est-box.nth-3 .a-more {}
+  .est-box.nth-3 .a-more > span {position: relative; font-size: 12px; top: -3px; left: 2px;}
+  .est-box.nth-4 {padding-bottom: 30px;}
   
     .est-b4-li1 .quest {position: relative; top: 9px; display: inline-block; border-radius: 50%; width: 25px; height: 25px; margin-left: -2px;}
     .est-b4-li1 .quest span {position: relative; top: -16px; left: 8px; font-size: 18px; font-family: "Arial", "Noto Sans KR", sans-serif;}
@@ -849,23 +1000,37 @@
   .est-b4-p2 .fw-small {font-size: 28px; font-weight: 500;}
   .est-b4-p2 .f-small {font-size: 24px; margin-left: 5px; font-weight: 400;}
   
-  .est-box.per {clear: both; padding-top: 16px;}
-  .est-box.per span {position: relative;}
-  .est-box.per .ip-percent, .est-box.per .pull-right .day {font-weight: 500; font-size: 28px;}
-  .est-box.per .ip-per-num, .est-box.per .pull-right .txt {font-size: 20px; top: -4px; color: #666; top: -4px;}
-  .est-box.per .ip-per-num {margin-left: 10px;}
-  .est-box.per .pull-right .txt {margin-right: 10px;}
-  
   .est-com {margin-top: 20px; padding: 35px 15px 30px; border: 1px solid #ddd; background: #fff;}
   .est-com-h3 {font-size: 28px;}
   .est-com p {position: relative;}
   .est-com .left-b {position: relative; padding-left: 7px; font-weight: 300;}
   .est-com .b-icon {position: absolute; left: 0; top: -2px;}
   
+	.est-box.per-bar {clear: both; width: 100%; height: 18px; border: 1px solid #ddd; background: #fff;}
+	.est-box.per-bar .inBar {background: #398fe1; width: 100%; height: 100%;}
+	
+  .est-box.per {clear: both; padding-top: 16px;}
+  .est-box.per span {position: relative;}
+  .est-box.per .ip-percent, .est-box.per .pull-right .day {font-weight: 500; font-size: 28px;}
+  .est-box.per .ip-per-num, .est-box.per .pull-right .txt {font-size: 20px; top: -4px; color: #666; top: -4px;}
+  .est-box.per .ip-per-num {margin-left: 10px;}
+  .est-box.per .pull-right .txt {margin-right: 10px;}
+	
   .est-box.nth-5 p {line-height: 1.7em; font-size: 16px; font-weight: 300;}
   .est-box.nth-5 p.mt {margin-top: 20px;}
   .est-box.nth-5 p.nth-1, .est-box.nth-5 p.nth-2 {font-size: 17px;}
   .est-box.nth-5 em {font-weight: 400;}
+    .est-box .tbCms {width:100%; margin-top:20px; font-size:16px; font-weight:300;}
+    .est-box .tbCms col.nth-1 {width: 20%;}
+    .est-box .tbCms col.nth-2 {width: 80%;}
+    .est-box .tbCms thead {background:#6ab0f2; border-top:1px solid #ccc; color:white;}
+    .est-box .tbCms tr {width:100%; border-bottom:1px solid #ccc;}
+    .est-box .tbCms td, .est-box .tbCms th {vertical-align:middle; border-left:1px solid #ccc; padding: 7px 0; word-break: keep-all; line-height: 1.4;}
+    .est-box .tbCms td:first-child, .est-box .tbCms th:first-child {border-left: 0;}
+    .est-box .tbCms td {padding-left: 15px;}
+    .est-box .tbCms td.ta-center {text-align: center; padding-left: 0;}
+    .est-box .tbCms p.dot {position: relative; padding-left: 10px;}
+    .est-box .tbCms p.dot > span:first-child {position: absolute; left: 0; top: -2px;}
   
   .est-box.nth-6 {}
   .est-box.nth-6 h4 {margin-top: 20px; font-size: 18px;}
@@ -914,7 +1079,7 @@
   .est-box.nth-9 p {font-size: 16px; line-height: 1.4em;}
   .est-box.nth-9 p.mt {margin-top: 15px;}
     .nowheel {position: absolute; top: 483px; width: 100%; height: 370px; margin-top: -370px; background: transparent; z-index: 1;}
-  .est-box.nth-9 iframe {width: 923px; height: 370px; margin-top: 30px; position: relative; left: -15px;}
+  .est-box.nth-9 iframe {width: 100%; height: 370px; margin-top: 30px; position: relative;}
   .d-hr {width: 100%; margin-top: 15px; font-size: 17px; padding: 20px 0 0; border-top: 1px solid #ddd;}
   
   .est-box.nth-11, .est-box.nth-12 {width: 49%; padding-left: 40px; padding-right: 40px;} 
@@ -1074,6 +1239,8 @@
     .grd-h2 {margin-top: 35px; font-size: 34px; display: block; text-align: center; width: 100%; font-weight: 400; letter-spacing: -1px;}
     .grd-com-h3 {font-size: 24px; line-height: 1.2em;}
     .grd-rate-img {position: relative; margin-top: 40px; width: 100%; height: 410px; background: url(https://nurifunding.co.kr/img/invest/grade_cht.png) no-repeat; background-size: 714px;}
+    .grd-rate-img.alp {background: url(https://nurifunding.co.kr/img/invest/grade_cht01.png) no-repeat;}
+    .grd-rate-img.num {background: url(https://nurifunding.co.kr/img/invest/grade_cht02.png) no-repeat;}
     .grd-rate-img img {position: absolute;}
     .grd-rate-img .x-01 {left: 118px;}
     .grd-rate-img .x-02 {left: 179px;}
@@ -1142,7 +1309,21 @@
     .grd-p.mt {margin-top: 20px; color: #1e1e1e;}
     .grd-p:first-child {margin-top: 0;}
     
+	/* 20180220_7차주(대출자)정보수정_다솜 */
+	.est-com.com-type2 {clear:both; width:50%; height:auto; margin-left:0; border:0;}
+	.est-com.com-type2 em {margin-top:0;}
+	.est-com.com-type3 {clear:both; width:100%; height:auto; margin-top:0; border:0;}
+	.est-com.com-type3 .grade .g-label span.nth-2 {left:25%}
+	.est-com.com-type3 .grade .g-label span.nth-3 {left:50%}
+	.est-com.com-type3 .grade .g-label span.nth-4 {left:75%}
+	
     .rEstate-sec .grd-estate-img {margin-top: 25px; padding: 39% 0 0; background: url(https://nurifunding.co.kr/img/invest/rEstate_chart.png) no-repeat; background-size: 100% auto;}
+    .rEstate-sec .canvas-wrap {position: relative; width: 690px; height: 345px; margin-top: 15px;}
+    .rEstate-sec .canvas-wrap .s-x, .rEstate-sec .canvas-wrap .s-y {position: absolute; display: inline-block; color: #6d6d6d; font-size: 12px;}
+    .rEstate-sec .canvas-wrap .s-x {left: 7px; bottom: -10px;}
+    .rEstate-sec .canvas-wrap .s-y {left: -23px; bottom: 7px;}
+    .rEstate-sec .canvas-box {width: 690px; height: 345px;}
+  
     .rEstate-sec .ps {text-align: right; margin-top: 15px; font-size: 14px;}
     .rEstate-sec .repay-tb, .rEstate-sec .yield-tb {position: relative; width: 100%; margin-top: 25px; font-size: 14px; text-align: center;}
     .rEstate-sec .repay-tb {margin-top: 6px;}
@@ -1163,7 +1344,10 @@
 
     .rEstate-sec .yield-tb th > div {background: #398fe1; color: #fff;}
     
-}
+	.goods_content > div { width: 1044px; top:180px; height:600px;}
+	.goods_content #g_content_tt { font-size:24px;}
+	.goods_content #g_content_ct { height:450px;}
+	
 
 /*pc 영역*/
 @media (min-width: 1200px){

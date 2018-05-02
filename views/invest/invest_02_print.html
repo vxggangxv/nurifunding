@@ -1,0 +1,804 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=0">
+    <title>누리펀딩</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/earlyaccess/notosanskr.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/earlyaccess/nanumgothic.css">
+    <link href="https://opensource.keycdn.com/fontawesome/4.6.3/font-awesome.min.css" rel="stylesheet">
+    <!--추가 css-->
+    <link rel="stylesheet" href="https://nurifunding.co.kr/static/css/nivo-lightbox-theme/default.css">
+    <link rel="stylesheet" href="https://nurifunding.co.kr/static/css/nivo-lightbox.css">
+    <link rel="stylesheet" href="https://nurifunding.co.kr/static/css/jquery.bxslider.css">
+
+    <link rel="stylesheet" href="https://nurifunding.co.kr/static/css/invest/override.css">
+<!--
+    <link rel="stylesheet" href="https://nurifunding.co.kr/static/css/common.css">
+    <link rel="stylesheet" href="https://nurifunding.co.kr/static/css/invest/print.css">
+-->
+    <link rel="stylesheet" href="../../src/css/common.css">
+    <link rel="stylesheet" href="../../src/css/invest/print.css">
+
+    <script type="text/javascript" src="https://nurifunding.co.kr/static/js/jquery-1.10.2.min.js"></script>
+    <!--추가js-->
+    <script type="text/javascript" src="https://nurifunding.co.kr/static/js/jquery.dotdotdot.js"></script>
+    <script type="text/javascript" src="https://nurifunding.co.kr/static/js/nivo-lightbox.min.js"></script>
+    <script type="text/javascript" src="https://nurifunding.co.kr/static/js/jquery.bxslider.min.js"></script>
+
+    <script type="text/javascript" src="https://nurifunding.co.kr/static/js/Chart.bundle.min.js"></script>
+    <script type="text/javascript" src="https://nurifunding.co.kr/static/js/common.js"></script>
+    <script type="text/javascript" src="https://nurifunding.co.kr/static/js/invest/invest.js"></script>
+
+    <!--[if lt IE 9]>
+    <link rel="stylesheet" href="https://nurifunding.co.kr/static/css/grid_ie9lt.min.css">
+    <link rel="stylesheet" href="https://nurifunding.co.kr/static/css/common_ie9lt.css">
+    
+    <script type="text/javascript" src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+    <h1 class="skip">누리펀딩</h1>
+    <div class="wrap">
+
+        <!-- 02.부동산 -->
+        <section class="estate">
+            <div class="container">
+                <div class="row com-box est-wrap">
+                    <p class="bond-num">채권번호 : 41586호</p>
+                    <h2 class="est-h2">마포 아파트</h2>
+                </div>
+                <div class="row com-box est-wrap">
+                    <!--변경내용 시작, a태그 href는 이미지 확대시 보여질 이미지 경로, 이미지태그 src는 보여질 이미지 경로-->
+                    <div class="est-box nth-1">
+                        <ul class="est-wrapper">
+                            <li>
+                                <a data-lightbox-gallery="est" href="https://nurifunding.co.kr/img/est-list/est_pdt_01.jpg">
+                                    <img src="https://nurifunding.co.kr/img/est-list/est_pdt_01.jpg" alt="마포아파트">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--변경내용 끝-->
+                    <div class="est-box nth-2">
+                        <p class="infoTxt" id="goods_txt">
+                            본 대출자는 50대 남성으로 중기업에 재직 중 입니다. 누리펀딩 대출금으로 자녀 유학비 및 교육에 활용할 예정입니다. 본 건의 담보물은 본인이 거주하는 아파트로 타금융회사에 이은 후순위 대출입니다. 본 대출금은 총 4천만원으로 4백만원은 원리금균등, 3천 6백만원은 월이자지급 방식입니다.
+                        </p>
+                    </div>
+                </div>
+                <div class="row com-box est-wrap">
+                    <div class="est-box nth-4 col-xs-12">
+                        <ul class="est-b4-ul clearfix">
+                            <li class="est-b4-li1">
+                                <p class="est-b4-p1">등급</p>
+                                <!--변경내용_170620 등급변경-->
+                                <p class="est-b4-p2"><i class="c-blue f-bd">AAA+ 10</i></p>
+                            </li>
+                            <li class="est-b4-li2">
+                                <p class="est-b4-p1">예상 수익률</p>
+                                <p class="est-b4-p2">6.5%</p>
+                            </li>
+                            <li class="est-b4-li3">
+                                <p class="est-b4-p1">기간</p>
+                                <p class="est-b4-p2">12<span class="f-small">개월</span></p>
+                            </li>
+                            <li class="est-b4-li4">
+                                <p class="est-b4-p1">상환방식</p>
+                                <p class="est-b4-p2"><span class="fw-small">혼합상환</span></p>
+                            </li>
+                            <li class="est-b4-li5">
+                                <p class="est-b4-p1">모집 현황</p>
+                                <p class="est-b4-p2">4,000 / 4,000<span class="f-small">만원</span></p>
+                            </li>
+                        </ul>
+                    </div>
+					<!--퍼센트바-->
+					<div class="est-box per-bar clearfix">
+						<p class="inBar" style="width: 80%;"></p>
+					</div>
+                    <div class="est-box per clearfix">
+                        <p class="pull-left"><span class="ip-percent fc-blue">80%</span><span class="ip-per-num">(852명 투자 중)</span></p>
+                        <p class="pull-right"><span class="txt">남은시간</span> <span class="day fc-blue">D-6일</span></p>
+                    </div>
+                </div>
+                
+				<!-- 평가등급 -->
+				<section class="grade-sec">
+					<div class="container">
+						<h2 class="grd-h2">누리펀딩 여신평가 등급</h2>
+
+						<div class="row com-box br4">
+							<h3 class="grd-com-h3">법인의 신용등급과 담보가치를 결합한 여신평가 등급</h3>
+							<!--변경내용_170620 등급별 체크표시, 등급별로 x-01~x-10 과 y-01~y-10 혼합하여 사용-->
+							<div class="grd-rate-img">
+								<!--숫자-->
+								<img src="https://nurifunding.co.kr/img/invest/grade_cht01.png" alt="차트" class="inBg">
+								<!--차트-->
+								<!--<img src="https://nurifunding.co.kr/img/invest/grade_cht02.png" alt="차트" class="inBg">-->
+								<img src="https://nurifunding.co.kr/img/invest/i_grdCheck.png" alt="자신의등급표시" class="x-01 y-01">
+							</div>
+							<ul class="grd-label">
+								<li class="l1">여신종합등급</li>
+								<li class="l2"><div>SAFTY ZONE 안전존</div></li>
+								<li class="l3"><div>THINK ZONE 고려존</div></li>
+								<li class="l4"><div>AGREE ZONE 합의존</div></li>
+								<li class="l5"><div>REJECT ZONE 거절존</div></li>
+							</ul>
+						</div>
+
+						<div class="row com-box br4">
+							<h3 class="grd-com-h3"><i>담보 가치 분석</i></h3>
+							<!--변경내용170802 코딩화-->
+							<div class="left-chart">
+								<div id="canvas-holder-value">
+									<span class="in-txt align-center">감정금액<br>150억<!--<br><span class="sm">(단위, %)</span>--></span>
+									<canvas id="chart-area-value" />
+								</div>
+								<script>
+									var dataGroupGrade = [34, 24, 21, 7];
+
+									var configGrade = {
+										type: 'doughnut',
+										data: {
+											datasets: [{
+												data: [
+													dataGroupGrade[0],
+													dataGroupGrade[1],
+													dataGroupGrade[2],
+													dataGroupGrade[3],
+												],
+												backgroundColor: [
+													"#3AC1E3",
+													"#34BA89",
+													"#BED13F",
+													"#DFAF2D",
+												],
+												borderWidth: 2,
+											}],
+											labels: [
+												"기존대출금",
+												"우선순위금",
+												"본건대출금",
+												"담보여유",
+											],
+											tooltips: [
+
+											]
+										},
+										options: {
+											responsive: true,
+											animation: {
+												duration: 0
+											},
+											legend: {
+												display: false
+											},
+											tooltips : {
+												callbacks : { 
+													label : function(tooltipItem, data) {
+														var indice = tooltipItem.index;
+														var dataset = data.datasets[tooltipItem.datasetIndex];
+														var currentLabel = data.labels[indice];
+														var currentValue = dataset.data[tooltipItem.index];
+														return " " + currentLabel + " : " + currentValue + " %";
+													}
+												}
+											}
+										}
+									};
+								</script>
+								<div class="chart-per">
+									<ul class="per-table clearfix">
+										<li class="nth-2 clearfix">
+											<div class="cell-1"><span class="circle"></span> 기존대출금 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:</div>
+											<div class="cell-2">34.0%</div>
+										</li>
+										<li class="nth-3 clearfix">
+											<div class="cell-1"><span class="circle"></span> 우선순위금 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:</div>
+											<div class="cell-2">21.0%</div>
+										</li>
+										<li class="nth-4 clearfix">
+											<div class="cell-1"><span class="circle"></span> 본건 대출금 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:</div>
+											<div class="cell-2">24.0%</div>
+										</li>
+										<li class="nth-5 clearfix">
+											<div class="cell-1"><span class="circle"></span> 담보여유 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:</div>
+											<div class="cell-2">21.0%</div>
+										</li>
+									</ul>
+								</div>
+							</div>
+
+							<div class="chart-label">
+								<h4>항목별 비율 금액 (백만원)</h4>
+								<ul class="lbl-table">
+									<li class="nth-1">
+										<div class="cell-1"><span>담보감정가</span></div>
+										<div class="cell-2">5,000,000,000</div>
+									</li>
+									<li class="nth-2">
+										<div class="cell-1"><span>기존대출금</span></div>
+										<div class="cell-2">3,500,000,000</div>
+									</li>
+									<li class="nth-3">
+										<div class="cell-1"><span>우선순위금</span></div>
+										<div class="cell-2">3,200,000,000</div>
+									</li>
+									<li class="nth-4">
+										<div class="cell-1"><span>본건 대출금</span></div>
+										<div class="cell-2">1,000,000,000</div>
+									</li>
+									<li class="nth-5">
+										<div class="cell-1"><span>담보여유</span></div>
+										<div class="cell-2">1,000,000,000</div>
+									</li>
+								</ul>
+							</div>
+
+							<div class="clearfix"></div>
+
+							<!--변경내용170802 끝-->
+							<div class="grd-txt-box">
+								<p class="grd-p mt">감정금액이란? </p>
+								<p class="grd-p">현재 부동산 가격에서 70% ~ 80% 수준으로 대출을 위한 적정 금액 산출한 가격</p>
+								<p class="grd-p mt">담보여유란?</p>
+								<p class="grd-p">현재 부동산 가격에서 기존 대출금(기대출)과 본건 대출금으로 부동산 가격 하락시에도 대출금 회수를
+									위한 안전성을 확보할 수 있는 여유 부분</p>
+								<p class="grd-p mt">선순위란?</p>
+								<p class="grd-p">법에서 보장하는 임대 보증금, 우선 임금채권 등</p>
+								<p class="grd-p mt"><span class="xs-block">담보여유 </span>= 감정금액 - 선순위 - 기존 대출금 - 본건 대출금</p>
+							</div>
+						</div>
+
+					</div>
+				</section>
+                
+                <div class="row com-box est-wrap">
+                    <div class="est-box est-com nth-5 br4 col-xs-12">
+                        <h3 class="est-com-h3"><span class="fc-blue">1.</span> 투자 개요</h3>
+                        <!--180227 표 변경-->
+                        <table id="guide_line" class="tbCms guideLine">
+                            <colgroup>
+                                <col class="nth-1">
+                                <col class="nth-2">
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th><div class="inBg"></div><span>구분</span></th>
+                                    <th><div class="inBg"></div><span>내용</span></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>상품</td>
+                                    <td><em class="fc-blue">월임대료 담보대출</em></td>
+                                </tr>
+                                <tr>
+                                    <td>대출금</td>
+                                    <td><em class="fc-blue">500.0만원</em></td>
+                                </tr>
+								<tr>
+                                    <td>근저당</td>
+                                    <td>600.0만원</td>
+                                </tr>
+                                <tr>
+                                    <td>상품종류</td>
+                                    <td>오피스텔</td>
+                                </tr>
+                                <tr>
+                                    <td>담보이용</td>
+                                    <td>거주형 오피스텔</td>
+                                </tr>
+                                <tr>
+                                    <td>총 판매대금</td>
+                                    <td>12,000,000원</td>
+                                </tr>
+                                <tr>
+                                    <td>자금용도</td>
+                                    <td><em class="fc-blue">운전자금 </em></td>
+                                </tr>
+                                <tr>
+                                    <td>안전장치</td>
+                                    <td style="text-align: center;">-</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="row com-box est-wrap">
+                    <div class="est-box est-com nth-6 br4 col-xs-12">
+                        <h3 class="est-com-h3"><span class="fc-blue">2.</span> 투자 포인트</h3>
+                        <!--180227 표 변경-->
+                        <table class="tbCms">
+                            <colgroup>
+                                <col class="nth-1">
+                                <col class="nth-2">
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th><div class="inBg"></div><span>구분</span></th>
+                                    <th><div class="inBg"></div><span>내용</span></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="ta-center">장점</td>
+                                    <td>
+                                        <p class="dot"><span>-</span> 안정적인 임대수수료 수익확보로 상환여력 충분함</p>
+                                        <p class="dot"><span>-</span> 원주 최고 중심가에 위치하여 교통의 편리함(고속버스터미널 3분거리에 위치)</p>
+                                        <p class="dot"><span>-</span> 우수한 건물 보안성으로 직장 여성과 대학생(연세대학교)의 선호도가 높아 공실 가능성이 낮음</p>
+                                        <p class="dot"><span>-</span> 인근 다양한 편의시설 밀집(AK플라자, 롯데마트,시외버스터미널,메가박스 등)</p>
+                                        <p class="dot"><span>-</span> 주)이엔자산개발은 전국에 총320여세대의 아파트 및 상가를 보유하고 부동산임대업을 전문으로 하는 기업임</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="ta-center">단점</td>
+                                    <td>
+                                        견질담보 형태로 담보확보가 확실하지 않은 상태이나, 월임대료 수입을 유용하지 않고 우리 대출금을 상환하도록 민형사상 책임을 지도록 각서를 징구하여 보완 하였음
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="ta-center">기회</td>
+                                    <td>-</td>
+                                </tr>
+                                <tr>
+                                    <td class="ta-center">위협</td>
+                                    <td>부동산 경기의 침체나 경기 하락에 따른 월임대료 하락요인은 있음</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="row com-box est-wrap">
+                    <div class="est-box est-com nth-7 br4 col-xs-12">
+                        <h3 class="est-com-h3"><span class="fc-blue">3.</span> 누리펀딩에서 설정한 담보</h3>
+                        <ul class="est-b7-ul clearfix">
+                            <li class="est-b7-li1">
+                                <div id="canvas-holder-7"><span class="in-txt">담보가치 대비<br/>대출비율</span>
+                                    <canvas id="chart-area-7"></canvas>
+                                </div>
+								<script>
+									var dataGroup7 = {
+										"price1": 53,
+										"price2": 13,
+										"price3": 34
+									};
+
+									var config7 = {
+										type: 'doughnut',
+										data: {
+											datasets: [{
+												data: [
+													dataGroup7.price1,
+													dataGroup7.price2,
+													dataGroup7.price3,
+												],
+												backgroundColor: [
+													"#dcdcdc",
+													"#398FE2",
+													"#121212",
+												],
+												borderWidth: [
+													5
+												]
+											}],
+											labels: [
+												"선순위금",
+												"누리펀딩 대출금",
+												"잔여 여유금"
+											]
+										},
+										options: {
+											responsive: true,
+											animation: {
+												duration: 0
+											},
+											legend: {
+												display: false
+											},
+											tooltips : {
+												callbacks : { 
+													label : function(tooltipItem, data) {
+														var indice = tooltipItem.index;
+														var dataset = data.datasets[tooltipItem.datasetIndex];
+														var currentLabel = data.labels[indice];
+														var currentValue = dataset.data[tooltipItem.index];
+														return " " + currentLabel + " : " + currentValue + " %";
+													}
+												}
+											}
+										}
+									};
+								</script>
+
+                            </li>
+                            <li class="est-b7-li2 clearfix">
+                                <p class="est-b7-p1 clearfix"><span class="pull-left">담보 감정가</span><em class="pull-right">31,500<span>만원</span></em></p>
+                                <p class="est-b7-p2 clearfix">
+                                    <span class="dot1 pull-left">&#9679;</span>
+                                    <span class="pull-left">선순위금</span>
+                                    <em class="pull-right">16,400만원 ( 53% )</em>
+                                </p>
+                                <p class="est-b7-p2 clearfix">
+                                    <span class="dot2 pull-left">&#9679;</span>
+                                    <span class="pull-left">누리펀딩 대출금</span>
+                                    <em class="pull-right">4,000만원 ( 13% )</em>
+                                </p>
+                                <p class="est-b7-p2 clearfix">
+                                    <span class="dot3 pull-left">&#9679;</span>
+                                    <span class="pull-left">잔여 여유금</span>
+                                    <em class="pull-right">11,100만원 ( 34% )</em>
+                                </p>
+                                <p class="est-b7-p3 pull-right">(선순위금 채권최고액 : 19,680만원)</p>
+                            </li>
+                        </ul>
+                        <h4>'선순위금'이란?</h4>
+                        <p class="left-b"><span class="b-icon">-</span>누리펀딩 대출금액보다 선순위의 권리로 타금융 기관대출금 또는 임대보증금 등 모든선순위 권리금액을 말합니다.</p>
+                        <!-- 변경내용_170620 내용변경 '담보여유'란 -->
+                        <h4>'담보여유'란?</h4>
+                        <p class="left-b"><span class="b-icon">-</span>누리펀딩 대출 후에도 남아있는 담보의 잔존가치로 이 비율이 높을수록 채무불이행이 발생해도 원금 손실 가능성이 작아집니다.</p>
+                        <h4>'근저당'이란?</h4>
+                        <p class="left-b"><span class="b-icon">-</span>담보에 대한 채권자의 권리금액으로 채무불이행 시 연체이자, 채권회수 비용 등을 감안하여 대출금의 120% 이상 설정합니다.</p>
+                        <hr/>
+                        <h3 class="est-com-h3"><span class="fc-blue">4.</span> 투자자 보호</h3>
+                        <h4>1. 담보물 변동사항 모니터링 시스템</h4>
+                        <p class="left-b"><span class="b-icon">-</span>누리펀딩의 리스크관리 시스템에 의해 해당 담보물의 가치변동 및 권리침해 여부가 매일 모니터링 되고 있습니다.</p>
+                        <h4>2. 부실채권 사후처리 시스템</h4>
+                        <p class="left-b"><span class="b-icon">-</span>대출기간이 경과되거나 이자를 2회 이상 지체 시 누리펀딩은 적절한 절차에 의하여 다음과 같은 자체 추심을 진행합니다.</p>
+                        
+                        
+                        <!-- 부동산 리스트 점검 -->
+						<section class="grade-sec rEstate-sec">
+							<div class="container">
+								<h2 class="grd-h2">월 임대료 시세변동에 따른 리스크 점검</h2>
+
+								<!--180227 클래스 추가-->
+								<div class="rEstate-per row com-box br4">
+									<h3 class="grd-com-h3">월 임대료 가격 변동추이</h3>
+									<!--180227 차트 변경-->
+									<div class="canvas-wrap">
+										<div class="canvas-box">
+											<div id="canvas-holder-per">
+												<canvas id="chart-area-per"></canvas>
+											</div>
+										</div>
+										<span class="s-x">(%)</span>
+										<span class="s-y">(년도)</span>
+									</div>
+									<script>
+										var standard = ["100", "100", "100", "100"];
+										var dataPer = ["80", "120", "140", "90"];
+										var config = {
+											type: 'line',
+											data: {
+												labels: ["2014.12", "2015.12", "2016.12", "현재"],
+												datasets: [{
+													label: "현재시세",
+													backgroundColor: '#ff0404',
+													borderColor: "#ff0404",
+													data: [
+														standard[0],
+														standard[1],
+														standard[2],
+														standard[3],
+														standard[4],
+														standard[5],
+														standard[6],
+														standard[7],
+														standard[8],
+														standard[9],
+														standard[10],
+														standard[11]
+													],
+													fill: false,
+													lineTension: 0
+												},  {
+													label: "변동추이",
+													backgroundColor: '#398fe1',
+													borderColor: "#398fe1",
+													data: [
+														dataPer[0],
+														dataPer[1],
+														dataPer[2],
+														dataPer[3],
+														dataPer[4],
+														dataPer[5],
+														dataPer[6],
+														dataPer[7],
+														dataPer[8],
+														dataPer[9],
+														dataPer[10],
+														dataPer[11]
+													],
+													fill: false,
+													lineTension: 0
+												}]
+											},
+											options: {
+												animation: {
+													duration: 0
+												},
+												responsive: true,
+												tooltips: {
+													mode: 'index',
+													intersect: false,
+												},
+												scales: {
+													yAxes: [{
+														ticks: {
+															suggestedMin: 50,
+															suggestedMax: 150,
+														}
+													}]
+												},
+											}
+										};
+									</script>
+								</div>
+
+								<div class="row com-box br4">
+									<h3 class="grd-com-h3">월 임대료 가격 하락시 대출금 상환 가능성 점검</h3>
+									<p class="ps">(단위 : 백만원)</p>
+									<table class="repay-tb">
+										<tr>
+											<th class="nth-1"><span class="inBg"></span><div>구 분</div></th>
+											<th class="nth-2"><span class="inBg"></span><div>현재시세</div></th>
+											<th class="nth-3"><span class="inBg"></span><div><span class="xs-block320">감정</span>비율</div></th>
+											<th class="nth-4"><span class="inBg"></span><div>감정가</div></th>
+											<th class="nth-5"><span class="inBg"></span><div>우선순위</div></th>
+											<th class="nth-6"><span class="inBg"></span><div><span class="xs-block">본건</span>대출금</div></th>
+											<th class="nth-7"><span class="inBg"></span><div>남는담보</div></th>
+										</tr>
+										<tr>
+											<td class="nth-1"><span class="inBg"></span><div><span class="xs-block">현재</span> 시세</div></td>
+											<td><div>24</div></td>
+											<td><div>90%</div></td>
+											<td><div>22</div></td>
+											<td><div>0</div></td>
+											<td><div>10</div></td>
+											<td class="nth-7"><div>12</div></td>
+										</tr>
+										<tr>
+											<td class="nth-1"><span class="inBg"></span><div><span class="xs-block">10%</span> 하락</div></td>
+											<td><div>22</div></td>
+											<td><div>90%</div></td>
+											<td><div>19</div></td>
+											<td><div>0</div></td>
+											<td><div>10</div></td>
+											<td class="nth-7"><div>8</div></td>
+										</tr>
+										<tr>
+											<td class="nth-1"><span class="inBg"></span><div><span class="xs-block">15%</span> 하락</div></td>
+											<td><div>20</div></td>
+											<td><div>90%</div></td>
+											<td><div>18</div></td>
+											<td><div>0</div></td>
+											<td><div>10</div></td>
+											<td class="nth-7"><div>8</div></td>
+										</tr>
+										<tr>
+											<td class="nth-1"><span class="inBg"></span><div><span class="xs-block">20%</span> 하락</div></td>
+											<td><div>19</div></td>
+											<td><div>90%</div></td>
+											<td><div>17</div></td>
+											<td><div>0</div></td>
+											<td><div>10</div></td>
+											<td class="nth-7"><div>7</div></td>
+										</tr>
+										<tr>
+											<td class="nth-1"><span class="inBg"></span><div><span class="xs-block">25%</span> 하락</div></td>
+											<td><div>18</div></td>
+											<td><div>90%</div></td>
+											<td><div>16</div></td>
+											<td><div>0</div></td>
+											<td><div>10</div></td>
+											<td class="nth-7"><div>6</div></td>
+										</tr>
+										<tr>
+											<td class="nth-1"><span class="inBg"></span><div><span class="xs-block">30%</span> 하락</div></td>
+											<td><div>17</div></td>
+											<td><div>90%</div></td>
+											<td><div>14</div></td>
+											<td><div>0</div></td>
+											<td><div>10</div></td>
+											<td class="nth-7"><div>5</div></td>
+										</tr>
+										<tr>
+											<td class="nth-1"><span class="inBg"></span><div><span class="xs-block">35%</span> 하락</div></td>
+											<td><div>16</div></td>
+											<td><div>90%</div></td>
+											<td><div>13</div></td>
+											<td><div>0</div></td>
+											<td><div>10</div></td>
+											<td class="nth-7"><div>4</div></td>
+										</tr>
+										<tr>
+											<td class="nth-1"><span class="inBg"></span><div><span class="xs-block">40%</span> 하락</div></td>
+											<td><div>14</div></td>
+											<td><div>90%</div></td>
+											<td><div>13</div></td>
+											<td><div>0</div></td>
+											<td><div>10</div></td>
+											<td class="nth-7"><div>3</div></td>
+										</tr>
+									</table>
+
+								</div>
+
+								<!--<div class="row com-box br4">
+									<h3 class="grd-com-h3">부동산 수익률 분석</h3>
+									<table class="yield-tb">
+										<tr>
+											<th><div>부동산 가격</div></th>
+											<th><div>대출금</div></th>
+											<th><div>전세보증금</div></th>
+											<th><div>저가자금</div></th>
+											<th><div>연간임대료</div></th>
+											<th><div>수익률</div></th>
+											<th><div>비고</div></th>
+										</tr>
+										<tr>
+											<td><div>188억원</div></td>
+											<td><div>10억원</div></td>
+											<td><div>38억원</div></td>
+											<td><div>100억</div></td>
+											<td><div>7.2억</div></td>
+											<td><div>7.20%</div></td>
+											<td><div></div></td>
+										</tr>
+									</table>
+								</div>-->
+
+							</div>
+						</section>
+                    </div>
+                </div>
+                <!--변경내용 서류1개추가 및 서류이름변경, 태그내용변경
+            a태그 href는 이미지 확대시 보여질 이미지 경로, 이미지태그 src는 보여질 이미지 경로 tit은 이미지제목-->
+                <div class="row com-box est-wrap">
+                    <div class="est-box est-com nth-8 br4 col-xs-12">
+                        <h3 class="est-com-h3"><span class="fc-blue">5.</span> 증빙서류</h3>
+                        <ul class="reg-box clearfix">
+                            <li class="reg-inner">
+                                <a data-lightbox-gallery="reg" href="https://nurifunding.co.kr/img/cert_reg_01.jpg" title="채권 양도, 양수서" target="_blank" class="reg-link">
+                                    <img src="https://nurifunding.co.kr/img/cert_reg_01.jpg" alt="채권 양도, 양수서">
+                                    <span class="reg-cap">채권 양도, 양수서</span>
+                                </a>
+                            </li>
+                            <li class="reg-inner">
+                                <a data-lightbox-gallery="reg" href="https://nurifunding.co.kr/img/cert_reg_01.jpg" title="건축허가서" target="_blank" class="reg-link">
+                                    <img src="https://nurifunding.co.kr/img/cert_reg_01.jpg" alt="건축허가서">
+                                    <span class="reg-cap">건축허가서</span>
+                                </a>
+                            </li>
+                            <li class="reg-inner">
+                                <a data-lightbox-gallery="reg" href="https://nurifunding.co.kr/img/cert_reg_01.jpg" title="등기부등본 보기" target="_blank" class="reg-link">
+                                    <img src="https://nurifunding.co.kr/img/cert_reg_01.jpg" alt="등기부등본 보기">
+                                    <span class="reg-cap">등기부등본 보기</span>
+                                </a>
+                            </li>
+                            <li class="reg-inner">
+                                <a data-lightbox-gallery="reg" href="https://nurifunding.co.kr/img/cert_reg_01.jpg" title="건축도면" target="_blank" class="reg-link">
+                                    <img src="https://nurifunding.co.kr/img/cert_reg_01.jpg" alt="등기부등본">
+                                    <span class="reg-cap">건축도면</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!--변경 내용 끝-->
+                <div class="row com-box est-wrap">
+                    <!--변경내용_170530 마우스휠제거 기능 제거, 클릭시 다시 기능-->
+                    <div class="nowheel" onclick="style.pointerEvents='none'"></div>
+                    <div class="est-box est-com nth-9 br4 col-xs-12">
+                        <h3 class="est-com-h3"><span class="fc-blue">6.</span> 위치 및 건축물 정보</h3>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3163.5635607429517!2d126.94074531575605!3d37.54178417980252!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357c98b004ed3fd9%3A0xd658d94957112797!2z7ISc7Jq47Yq567OE7IucIOuniO2PrOq1rCDthqDsoJXroZwzMeq4uCAyNA!5e0!3m2!1sko!2skr!4v1490148902004" frameborder="0" allowfullscreen></iframe>
+                        <p class="left-b mt"><span class="b-icon">-</span>구분 : 아파트</p>
+                        <p class="left-b"><span class="b-icon">-</span>면적 : 59.6㎡</p>
+                        <p class="left-b"><span class="b-icon">-</span>주소 : 서울 마포구 토정로 31길 24 (용강동, E편한세상 마포3차)</p>
+                    </div>
+                </div>
+                
+                <!-- 180220 차주(대출자)정보 수정 -->
+                <div class="row com-box est-wrap">
+                    <div class="est-box est-com nth-16 br4 col-xs-12">
+                        <h3 class="est-com-h3"><span class="fc-blue">7.</span> 대출자 정보</h3>
+                        
+						<div class="est-box est-com nth-12 br4 col-xs-12 com-type2">
+							<h4 class="est-com-h3">법인정보</h4>
+							<p class="est-b7-p2 mt clearfix">
+								<span class="dot1 pull-left">●</span>
+								<span class="pull-left">매출액</span>
+								<em class="pull-right">0만원</em>
+							</p>
+							<p class="est-b7-p2 clearfix">
+								<span class="dot2 pull-left">●</span>
+								<span class="pull-left">영업이익</span>
+								<em class="pull-right">0만원</em>
+							</p>
+							<p class="est-b7-p2 clearfix">
+								<span class="dot3 pull-left">●</span>
+								<span class="pull-left">당기순이익</span>
+								<em class="pull-right">0만원</em>
+							</p>
+						</div>
+						
+						<div class="est-box est-com nth-11 br4 col-xs-12 com-type3">
+							<h4 class="est-com-h3">여신평가등급</h4>
+							<p class="ebt-b11-p mt clearfix">기업(개인)의 신용등급과 담보가치를 결합한 여신평가 등급 입니다</p>
+							<div class="grade">
+								<h5 class="g-th c-blue f-bd align-center">AAA+ 10</h5>
+								<div class="g-chart">
+									<img class="inBg" src="https://nurifunding.co.kr/img/invest/gradeBar.png" alt="등급바">
+									<span id="g-chart-dot" class="n2"></span>
+								</div>
+								<div class="g-label">
+									<span class="nth-1">SAFTY ZONE<br>안전존</span>
+									<span class="nth-2">THINK ZONE<br>고려존</span>
+									<span class="nth-3">AGREE ZONE<br>고려존</span>
+									<span class="nth-4">REJECT ZONE<br>거절존</span>
+								</div>
+							</div>
+						</div>
+                    </div>
+				</div>
+                
+                <div class="row com-box est-wrap">
+                    <div class="est-box est-com nth-16 br4 col-xs-12">
+                        <h3 class="est-com-h3"><span class="fc-blue">8.</span> 투자자 유의사항</h3>
+                        <p>
+							온라인을 통한 금융투자상품의 투자는 회사의 권유 없이 고객님의 판단에 의해 이루어지며,<br>
+							대출의 특성상 상환예정일 이전에 중도 상환될 수 있습니다.<br>
+							투자이용약관 제11조와 12조 내용에 따라 상환지연 등에 해당되는 경우 채권추심과 환가절차 과정에서 원금의<br>
+							일부 손실이 발생할 수 있으며 채권추심 등을 통해 투자금 회수에 상당기간 소요될 수 있습니다.<br>
+							당사는 원금 및 수익률을 보장하지 않으므로 투자 시 신중한 결정 바랍니다.
+						</p>
+                    </div>
+                </div>
+                <div class="row com-box est-wrap">
+                    <div class="est-box est-com nth-17 br4 col-xs-12">
+                        <div class="est-calc clearfix">
+                            이 대출자에게
+                            <div class="dropdown calc" id="est-calc">
+                                <button type="button" class="btn">10만원<span class="pull-right">▼</span></button>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">10만원</a></li>
+                                    <li><a href="#">30만원</a></li>
+                                    <li><a href="#">50만원</a></li>
+                                    <li><a href="#">100만원</a></li>
+                                </ul>
+                            </div>
+                            을 투자할 경우, 예상되는 전체 이자 (세전)는 <span class="fc-blue">6,481원</span> 입니다.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <script>
+            window.onload = function () {
+                var ctx7 = document.getElementById("chart-area-7").getContext("2d");
+                window.myDoughnut = new Chart(ctx7, config7);
+
+                /*변경내용_170530_차트제거*/
+                //var ctx11 = document.getElementById("chart-area-11").getContext("2d");
+                //window.myLine = new Chart(ctx11, config11);
+
+                /*var ctx12 = document.getElementById("chart-area-12").getContext("2d");
+                window.myDoughnut = new Chart(ctx12, config12);*/
+				
+				var ctxGrade = document.getElementById("chart-area-value").getContext("2d");
+				window.myDoughnut = new Chart(ctxGrade, configGrade);
+				
+				var ctx = document.getElementById("chart-area-per").getContext("2d");
+                window.myLine = new Chart(ctx, config);
+            };
+        </script>
+    </div>
+</body>
+
+</html>

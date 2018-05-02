@@ -1,0 +1,32 @@
+@charset "utf-8";
+body {background:  #fff;}
+
+/*예치금 계좌 등록 팝업*/
+.wpop-account {position: relative; width: 100%; height: auto; box-sizing: border-box; padding: 10px; padding-bottom: 50px; margin: 0 auto;}
+.wpop-account .container {position: relative; width: 100%; margin: 0 auto;}
+.wpop-account .header-wpop {position: relative; width: 100%; height: 121px; background: url(https://nurifunding.co.kr/img/pop/accountHdBg.png) no-repeat center; background-size: cover; border-radius: 4px;}
+.wpop-account .header-wpop h2 {position: relative; color: #fff; font-size: 22px; font-weight: 700; height: 100%;}
+.wpop-account .header-wpop h2:after {content: ""; display: inline-block; height: 108%; vertical-align: middle;}
+.wpop-account .header-wpop h2 strong {letter-spacing: 0;}
+.wpop-account .header-wpop h2 img {position: relative; vertical-align: middle; top: -2px; margin-left: 30px; margin-right: 12px;}
+.wpop-account .main {margin: 35px auto 0; border-top: 1px solid #ddd; border-bottom: 1px solid #ddd; padding: 30px 0; }
+.wpop-account .main .p-row {width: 240px; margin: 0 auto; margin-bottom: 10px; font-size: 0;}
+.wpop-account .main .p-row > * {vertical-align: middle;}
+.wpop-account .main .p-row + p {margin-bottom: 0;}
+.wpop-account .main .p-row > span {font-size: 19px;}
+.wpop-account .main .p-row input, .wpop-account .main .p-row select {font-size: 16px;}
+.wpop-account .main .p-row .lbl {display: inline-block; width: 70px;}
+.wpop-account .main .p-row .lbl.ltsp-1 {letter-spacing: 1.5px}
+.wpop-account .area-btn {margin-top: 40px;}
+.wpop-account .area-btn .btn {display: inline-block; width: 240px; font-size: 17px; padding: 18px 0; letter-spacing: 0;}
+
+/*모바일 영역*/
+@media (max-width: 549px){
+    .wpop-account .header-wpop {height: 80px;}
+    .wpop-account .header-wpop h2 {font-size: 18px;}
+    .wpop-account .header-wpop h2 img {width: 36px; margin-left: 20px; margin-right: 5px;}
+    .wpop-account .main {margin-top: 25px;}
+    .wpop-account .main .p-row > span {font-size: 17px;}
+    .wpop-account .main .p-row input, .wpop-account .main .p-row select {font-size: 15px;}
+    .wpop-account .area-btn {margin-top: 30px;}
+}

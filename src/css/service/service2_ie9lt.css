@@ -30,7 +30,7 @@ body {background: #fff;}
 .is-box {position: relative; border-bottom: 1px solid #dcdcdc; margin-top: 75px; padding-bottom: 80px}
 .is-box.nth-3 {text-align: center;}
 .is-box.nth-4 {padding-bottom: 60px;}
-.is-h3 {font-size: 36px; font-weight: 500; margin-top: 0px; line-height: 1.3em; color: #111;}
+.is-h3 {font-size: 35px; font-weight: 500; margin-top: 0px; line-height: 1.3em; color: #111;}
 .is-box.nth-2 .is-h3 {margin-top: 20px;}
 .is-p {margin-top: 15px; font-size: 18px; font-weight: 300; line-height: 1.6em;}
 .is-p2 {position: absolute; line-height: 0; right: 0; bottom: 0; width: 275px; text-align: right;}
