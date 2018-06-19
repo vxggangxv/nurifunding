@@ -13,20 +13,22 @@
 	<link rel="stylesheet" href="https://nurifunding.co.kr/static/fonts/NanumBarunGothic/nanumbarungothic.css">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/earlyaccess/notosanskr.css">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/earlyaccess/nanumgothic.css">
-	<link href="https://opensource.keycdn.com/fontawesome/4.6.3/font-awesome.min.css" rel="stylesheet">
+<!--	<link href="https://opensource.keycdn.com/fontawesome/4.6.3/font-awesome.min.css" rel="stylesheet">-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
 	<!--css 추가-->
 	<link rel="stylesheet" href="https://nurifunding.co.kr/static/css/animate.css">
 	<link rel="stylesheet" href="https://nurifunding.co.kr/static/css/jquery.bxslider.css">
 
-<!--
 	<link rel="stylesheet" href="https://nurifunding.co.kr/static/css/override.css">
     <link rel="stylesheet" href="https://nurifunding.co.kr/static/css/common.css">
     <link rel="stylesheet" href="https://nurifunding.co.kr/static/css/index2.css">
--->
 
-	<link rel="stylesheet" href="../src/css/override.css">
+<!--	<link rel="stylesheet" href="../src/css/override.css">-->
+<!--
 	<link rel="stylesheet" href="../src/css/common.css">
 	<link rel="stylesheet" href="../src/css/index2.css">
+-->
+
 
 	<script type="text/javascript" src="https://nurifunding.co.kr/static/js/jquery-1.10.2.min.js"></script>
 	<!--js 추가-->
@@ -41,12 +43,14 @@
 	<script type="text/javascript" src="https://nurifunding.co.kr/static/js/index.js"></script>
 <!--	<script type="text/javascript" src="../src/js/index.js"></script>-->
 
-	<!--<link rel="stylesheet" href="../src/css/common_ie9lt.css">-->
+	<!--<link rel="stylesheet" href="../src/css/common_ie9lt.css">
+    <link rel="stylesheet" href="https://nurifunding.co.kr/static/css/common_ie9lt.css">
+	-->
 	<!--<script type="text/javascript" src="https://nurifunding.co.kr/static/js/ie9_lt.js"></script>-->
 	<!--<link rel="stylesheet" href="https://nurifunding.co.kr/static/css/index2_ie9lt.css">-->
 	<!--[if lt IE 9]>
     <link rel="stylesheet" href="https://nurifunding.co.kr/static/css/grid_ie9lt.min.css">
-    <link rel="stylesheet" href="https://nurifunding.co.kr/static/css/common_ie9lt.css">
+    <link rel="stylesheet" href="../src/css/common_ie9lt.css">
     <link rel="stylesheet" href="../src/css/index2_ie9lt.css">
    
     <script type="text/javascript" src="../src/js/ie9_lt.js"></script>
@@ -99,6 +103,10 @@
 -->
 						<li class="hidden-xs hidden-sm hidden-margin"></li>
 						<li><a class="c-blue" href="login/index.html">로그인</a></li>
+                       
+		                <!-- 180528 헤더 추가 -->
+                        <li class="h-link fir"><a href=" http://www.fss.or.kr" target="_blank" class="a-link"><img src="http://img.nurifunding.co.kr/bt_main_2.png" alt="금융감독원 승인기업 2018-금감원-1486"></a></li>
+                        <li class="h-link"><a href="https://www.nurifunding.co.kr/notice/view.php?var=HUY=&page=1" target="_blank" class="a-link"><img src="http://img.nurifunding.co.kr/bt_kakaotalk.png" alt="카카오톡 플러스 친구 @누리펀딩"></a></li>
 					</ul>
 				</div>
 			</div>
@@ -487,6 +495,23 @@
 
 			</div>
 		</section>
+		
+		<!-- 180510 코스닥 벤처펀딩 추가 -->
+		<section class="vcfund fom-pd">
+            <div class="container">
+                <p class="vf-tit-1"><span class="f-bd">KOSDAQ </span>VC Fund</p>
+                <h2 class="com-ft c-blue2 f-bd">코스닥 벤처펀드도 누리펀딩!</h2>
+                <p class="vf-tit-2">친절한 상담을 약속드립니다.</p>
+                <div class="vf-box">
+                    <p class="vf-txt-1">코스닥벤처펀드란?</p>
+                    <p class="vf-txt-2">
+                        코스닥 시장활성화 방안의 일환으로 도입된 펀드로 펀드 투자금의 절반을 혁신, 벤처기업에 투자하는 상품입니다.<br>
+                        (2018년 3월 5일 첫 선을 보임)
+                    </p>
+                </div>
+            </div>
+		</section>
+		
 		<section class="faq com-pd">
 			<div class="container">
 				<h2 class="com-ft">자주하는 질문</h2>
@@ -520,46 +545,96 @@
 
 			</div>
 		</section>
-		<footer class="footer container-fluid">
-			<div class="container footer-box">
-				<div class="row d-logo">
-					<img class="fLogo-m show-xs" src="https://nurifunding.co.kr/img/fLogo_m.png" alt="푸터로고">
-					<img class="fLogo hidden-xs" src="https://nurifunding.co.kr/img/fLogo.png" alt="푸터로고">
+		
+		<!-- 180615 수정 -->
+		<div class="side-banner">
+		    <a href="#none" class="hidden-md"><img src="http://img.nurifunding.co.kr/side_banner_01.png" alt="카카오톡 플러스 친구" /></a>
+		    <a href="#none"><img src="http://img.nurifunding.co.kr/side_banner_02.jpg" alt="가상계죄개설시1만원지급" /></a>
+		</div>
+		<script>
+			$(function() {
+				var scrNum = 300
+				$(window).scroll(function() {
+					var scr = $(window).scrollTop();
+					// console.log(scr + ", " + relativeScr);
+					if (scr > scrNum) {
+						$(".side-banner").fadeOut();
+					} else {
+						$(".side-banner").fadeIn();
+					}
+					
+				});
+			});
+		</script>
+		<!--// -->
+		
+		<!-- 180528 푸터 수정 -->
+		<footer class="footer-01">
+		    <div class="container footer-box">
+				<div class="logo">
+				    <img class="" src="http://img.nurifunding.co.kr/fLogo_02.jpg" alt="푸터로고">
 				</div>
-				<div class="row a-txt">
-					<a href="#">회사소개</a>
-					<a href="#">서비스이용약관</a>
-					<a href="#">투자이용약관</a>
-					<a href="#">개인정보취급방침</a>
-					<a href="#">대부거래기본약관</a>
-				</div>
-				<div class="row f-txt">
-					<address>
-						<span class="min-xs-br"><span class="xs-br">(주) 누리펀딩</span><span class="hidden-xs"> ㅣ </span>대표이사: 박기범 ㅣ 사업자등록번호 677-81-00871</span>
-						고객센터 1666-4570 ㅣ E-mail help@nurifunding.co.kr ㅣ 주소: 서울특별시 강남구 테헤란로 82길 15, 11층 (대치동,디아이타워)				
-					</address>
-					<address>
-						<span class="min-xs-br"><span class="xs-br"><br>(주)누리펀딩대부</span><span class="hidden-xs"> ㅣ </span>대표이사: 박기범 ㅣ 사업자등록번호 791-86-00662 ㅣ P2P연계대부업 : 2018-금감원-1486 ㅣ 등록기관 : 금융감독원</span>
-						고객센터 1666-4570 ㅣ E-mail help@nurifunding.co.kr ㅣ 주소: 서울특별시 강남구 테헤란로82길 15, 10층(대치동, 디아이타워)				
-					</address>
-				</div>
-				<div class="row c-txt"><small>COPYRIGHT <span class="fc-yellow">NURIFUNDING</span> ALL RIGHTS RESERVED.</small></div>
-				<div class="row f-txt">
-					당사는 투자상품에 관하여 충분하게 설명할 의무가 있으며, 투자자는 약관을 통해 위험성, 수익성, 수수료 등에 대하여 인지 후 투자하시기 바랍니다. <span class="c-blue">누리펀딩은 투자원금과 수익을 보장하지 않으며, 투자손실에 대한 책임은 모두 투자자에게 있습니다.</span> 또한 대출 시 귀하의 신용등급이 하락할 수 있습니다.
-				</div>
-				<div class="row f-txt mt-2">
-					대출금리 연 19% 이내 (연체이자율 연 24% 이내) 채무의 조기상환수수료율 등 조기상환조건 없으며 플랫폼 이용료, 법무비 등 부대비용 별도 부담입니다.<br>
-					중개수수료를 요구하거나 받는 행위는 불법입니다. 과도한 빚은 당신에게 큰 불행을 안겨줄 수 있습니다. 대출 시 귀하의 신용등급이 하락할 수 있습니다.
-
-				</div>
-				<div class="row a-link hidden-xs">
-					<a href="http://p2plending.or.kr" target="_blank" class="nth-1"><img src="https://nurifunding.co.kr/img/common/bt_footer_01.jpg" alt="한국 P2P 금융협회"></a>
-					<a href="http://p2plending.or.kr/page_msgp52" target="_blank" class="nth-2"><img src="https://nurifunding.co.kr/img/common/bt_footer_02.jpg" alt="한국 P2P 금융협회 민원창구 바로가기"></a>
-					<a href="http://www.clfa.or.kr" target="_blank" class="nth-3"><img src="https://nurifunding.co.kr/img/common/bt_footer_03.jpg" alt="한국대부금융협회"></a>
-					<a href="http://www.crowdfunding.or.kr" target="_blank" class="nth-4"><img src="https://nurifunding.co.kr/img/common/bt_footer_04.jpg" alt="한국크라우드 펀딩협회"></a>
-					<a href="http://korfin.kr" target="_blank" class="nth-5"><img src="https://nurifunding.co.kr/img/common/bt_footer_05.jpg" alt="한국핀테크 산업협회"></a>
-				</div>
-			</div>
+                <div class="a-txt">
+                    <a href="/service/">회사소개</a>
+                    <a href="/policy/service.php">서비스이용약관</a>
+                    <a href="/policy/invest.php">투자이용약관</a>
+                    <a href="/policy/policy.php" class="nth-4">개인정보취급방침</a>
+                    <a href="/policy/basic.php">대부거래기본약관</a>
+                </div>
+        
+                <div class="f-adr-box clr">
+                    <div class="f-adr">
+                        <address>
+                            <span>(주) 누리펀딩</span>
+                            서울시 강남구 테헤란로 82길 15, 11층 (대치동,디아이타워)<br>
+                            대표이사: 김정권 ㅣ 사업자등록번호 677-81-00871<br>
+                            E-mail : help@nurifunding.co.kr
+                        </address>
+                        <ul class="f-link-list clr">
+                            <li><a href=" http://www.fss.or.kr" target="_blank" class="a-link"><img src="http://img.nurifunding.co.kr/bt_main.png" alt="금융감독원 승인기업 2018-금감원-1486"></a></li>
+                        </ul>
+                    </div>
+                    <div class="f-adr">
+                        <address>
+                            <span>(주)누리펀딩대부</span>
+                            서울시 강남구 테헤란로 82길 15, 11층 (대치동,디아이타워)<br>
+                            대표이사: 김정권 ㅣ 사업자등록번호 791-86-00662<br>
+                            P2P연계대부업 : 2018-금감원-1486 ㅣ 등록기관 : 금융감독원<br>
+                            E-mail : help@nurifunding.co.kr
+                        </address>
+                    </div>
+                    <div class="f-adr last">
+                        <address>
+                            <span class="fc-yellow">고객센터 1666-4570</span>
+                            평일 : 09시~18시   |   점심휴무 : 13시~14시<br>
+                            토.일.공휴일 : 휴무
+                        </address>
+                        <ul class="f-link-list clr">
+                            <li><a href="https://blog.naver.com/jkkim317" target="_blank" class="a-link"><img src="http://img.nurifunding.co.kr/bt_blog.png" alt="누리펀딩 블로그"></a></li>
+                            <li><a href="https://www.nurifunding.co.kr/notice/view.php?var=HUY=&page=1" target="_blank" class="a-link"><img src="http://img.nurifunding.co.kr/bt_kakaotalk.png" alt="카카오톡 플러스 친구 @누리펀딩"></a></li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="f-txt-box">
+                    <div class="f-txt">
+                        당사는 투자상품에 관하여 충분하게 설명할 의무가 있으며, 투자자는 약관을 통해 위험성, 수익성, 수수료 등에 대하여 인지 후 투자하시기 바랍니다. <br>
+                        <span class="c-blue">누리펀딩은 투자원금과 수익을 보장하지 않으며, 투자손실에 대한 책임은 모두 투자자에게 있습니다.</span> 또한 대출 시 귀하의 신용등급이 하락할 수 있습니다.<br>
+                        대출금리 연 19% 이내 (연체이자율 연 24% 이내) 채무의 조기상환수수료율 등 조기상환조건 없으며 플랫폼 이용료, 법무비 등 부대비용 별도 부담입니다.<br>
+                        중개수수료를 요구하거나 받는 행위는 불법입니다. 과도한 빚은 당신에게 큰 불행을 안겨줄 수 있습니다. 대출 시 귀하의 신용등급이 하락할 수 있습니다.
+                    </div>
+                </div>
+                
+                <div class="f-link-box hidden-xs">
+                    <ul class="f-link-list clr">
+                        <li><a href="http://p2plending.or.kr" target="_blank" class="a-link"><img src="https://nurifunding.co.kr/img/common/bt_footer_01.jpg" alt="한국 P2P 금융협회"></a></li>
+                        <li><a href="http://www.clfa.or.kr" target="_blank" class="a-link"><img src="https://nurifunding.co.kr/img/common/bt_footer_03.jpg" alt="한국대부금융협회"></a></li>
+                        <li><a href="http://www.crowdfunding.or.kr" target="_blank" class="a-link"><img src="https://nurifunding.co.kr/img/common/bt_footer_04.jpg" alt="한국크라우드 펀딩협회"></a></li>
+                        <li><a href="http://korfin.kr" target="_blank" class="a-link"><img src="https://nurifunding.co.kr/img/common/bt_footer_05.jpg" alt="한국핀테크 산업협회"></a></li>
+                        <li><a href="http://www.paygate.net" target="_blank" class="a-link"><img src="http://img.nurifunding.co.kr/bt_footer_06.jpg" alt="payGate"></a></li>
+                    </ul>
+                </div>
+		    </div>
 		</footer>
 	</div>
 </body>

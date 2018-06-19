@@ -1,9 +1,12 @@
+.hidden-md {display:none !important;}
+
 .wrap {min-width: 1044px;}
+
 .container {
   width: 945px;
 }
 .container.header-box, .container.footer-box {
-  width: 1044px;
+    width: 1125px;
 }
 
 .container-fluid {
@@ -32,13 +35,16 @@
 .header-box {position: relative; top: 35px;}
 .header-box > div {position: relative; float: left;}
 .navbar-header {top: -10px;}
-.navbar-brand {position: relative; display: inline-block; width: 216px;}
-.navbar-brand img {width: 216px;}
+.navbar-brand {position: relative; display: inline-block; width: 200px;}
+.navbar-brand img {width: 200px;}
 
 .main-nav > li, .main-nav > li > a {padding-bottom: 20px;}
-.main-nav > li {position: relative; float: left; font-size: 18px; margin-left: 20px;}
+.main-nav > li {position: relative; float: left; font-size: 17px; margin-left: 8px;}
 .main-nav > li:first-child {margin-left: 0;}
 .main-nav > li:hover .sub-nav {display: block;}
+.main-nav .h-link {margin-top: -10px;}
+.main-nav .h-link.fir {margin-left:20px;} 
+.main-nav .h-link img {width:130px;}
 
 .sub-nav {display: none; position: absolute; width: 120px; left: 50%; margin-top: 10px; margin-left: -60px; border: 1px solid #eaeaea; background: #fff; padding-bottom: 15px;}
 .sub-nav a {width: 100%; display: block; text-align: center; margin-top: 15px; font-size: 15px; color: #545454;}
@@ -60,3 +66,27 @@
 
 .main-nav .hidden-margin {height: 20px;}
 .footer .f-txt .min-xs-br {display: block;}
+
+.footer-01 {position:relative; padding:25px 0 70px; color: #b4b4b4; background: #282828;}
+.footer-01 .footer-box {width:1000px; padding-left:25px;}
+.footer-01 .mt10 {margin-top:10px}
+.footer-01 .f-link-box {margin-top:30px; padding:0 0 95px 8px;}
+.footer-01 .f-link-list {}
+.footer-01 .f-link-list li {float:left; margin-left:12px}
+.footer-01 .f-link-list li:first-child {margin-left:0}
+.footer-01 .logo {position:absolute; display:inline-block; top:0;}
+.footer-01 .a-txt {position:relative; display:inline-block; padding:10px 0 0 200px;}
+.footer-01 .a-txt a {margin-left: 20px; color: #d3d3d3}
+.footer-01 .f-adr-box {position:relative; margin-top:40px; margin-left:8px}
+.footer-01 .f-adr-box .f-adr {float:left; margin-right:35px}
+.footer-01 .f-adr-box .f-adr.last {margin-right:0}
+.footer-01 .f-adr-box .f-adr address {font-size:14px; line-height:23px;}
+.footer-01 .f-adr-box .f-adr address span {display:block; margin-bottom:2px; font-size:20px;}
+.footer-01 .f-adr-box .f-link-list {margin-top:10px;}
+.footer-01 .f-txt-box {position:absolute; bottom:0;}
+.footer-01 .f-txt {margin-left:8px; font-size:14px; line-height:23px;}
+.footer-01 .f-txt span {display:inline-block}
+
+.side-banner {z-index: 99999; position:fixed; display:inline-block; width: auto; top:200px; left: 50%; margin-left: 645px;}
+.side-banner a {position:relative; display:inline-block;}
+.side-banner a img {max-width: none;}

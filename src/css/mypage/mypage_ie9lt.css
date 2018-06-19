@@ -1,5 +1,5 @@
-.com-ft {position: relative; margin-top: 48px; text-align: center; font-size: 36px; font-family: "Noto Sans KR", sans-serif;}
-.com-mg {margin: 45px 0px 95px;}
+.com-ft {position: relative; margin-top: 30px; text-align: center; font-size: 36px; font-family: "Noto Sans KR", sans-serif;}
+.com-mg {margin: 30px 0px 95px;}
 .com-box {margin: 0 auto; margin-top: 20px; border: 1px solid #ddd; background: #fff; padding: 45px 10px; box-shadow: 1px 1px 4px 0px #dadada;}
 .br3 {border-radius: 3px;}
 .br4 {border-radius: 4px;}
@@ -46,6 +46,8 @@ p[class*="mib-p"] .label {display: block; margin-top: 35px; margin-bottom: 12px;
 p[class*="mib-p"] .member-name, p[class*="mib-p"] .nr-text {font-size: 17px; font-weight: 400;}
 p[class*="mib-p"] .nr-text {border: 0; border-bottom: 1px solid #ddd; width: 100%; padding-bottom: 5px;}
 p[class*="mib-p"] .nr-text.detail {margin-top: 12px;}
+p[class*="mib-p"] .nr-text.buis {width: 47%;}
+.mi-box .file-buis {width: 50%; margin-left: 1%;}
 .mi-box p.mib-p0 {color: #888; font-size: 16px; font-weight: 300;}
 .mi-box h3.mt {margin-top: 40px;}
 .mi-box p.mib-p2 {display:block; font-size: 15px; line-height: 1.5em; font-weight: 300; margin-top: 10px; padding-bottom: 40px; border-bottom: 1px solid #ddd;}

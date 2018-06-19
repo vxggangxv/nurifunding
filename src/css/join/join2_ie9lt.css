@@ -30,14 +30,16 @@
 
 .nr-login hr.sun {margin: 40px auto; border-color: #d7d7d7;}
 
-.nr-login .nr-text, .nr-login .a-btn {border-radius: 4px;}
+.nr-login .nr-text, .nr-login .a-btn, .mi-box.com-box .phone-cert .a-btn, .mi-box.com-box .mib-p1 .a-btn {border-radius: 4px;}
 .nr-login .area-mail .d-row-1 {}
 .nr-login .area-mail .d-row-1 .p-1 {font-size: 20px; color: #3b3f43; font-weight: 700;}
 .nr-login .area-mail .d-row-1 .p-2 {color: #a0a0a0; line-height: 1.5; margin-top: 5px;}
 .nr-login .area-mail .d-row-2 {margin-top: 20px; font-size: 0;}
 .nr-login .area-mail .d-row-2 .nr-text, 
 .nr-login .area-mail .d-row-2 .a-btn,
-.nr-login .area-mail .d-row-3 .a-btn {display: inline-block; padding: 15px 12px; height: 48px; vertical-align: middle; font-size: 16px; line-height: 18px; box-sizing: border-box;}
+.nr-login .area-mail .d-row-3 .a-btn,
+.mi-box.com-box .phone-cert .a-btn, 
+.mi-box.com-box .mib-p1 .a-btn {display: inline-block; padding: 15px 12px; height: 48px; vertical-align: middle; font-size: 16px; line-height: 18px; box-sizing: border-box;}
 .nr-login .area-mail .d-row-2 .nr-text {margin-right: 10px; width: 260px; letter-spacing: 0; color: #444;}
 .nr-login .area-mail .d-row-2 .a-btn {text-align: center; color: #fff; background: #404040; width: 130px;}
 .nr-login .area-mail .d-row-3 .a-btn {background: #f75a4b; color: #fff; font-size: 19px; line-height: 21px; font-weight: 700; width: 100%; text-align: center; margin-top: 10px; letter-spacing: 0;}
@@ -53,6 +55,7 @@
 
 .nr-login .area-login .pull-left {width: 100%;}
 .nr-login .area-login .a-btn {position: relative; display: inline-block; width: 100%; height: 48px; font-size: 16px; background: #f75a4b; margin-top: 10px;}
+.nr-login .area-login .a-btn.bg-blue {background:#398fe1}
 
 .nr-login .d-ps {margin-top: 30px; text-align: center; word-break: keep-all;}
 .nr-login .d-ps .p-1 {font-size: 20px; font-weight: 600; color: #0468c8;}
@@ -62,9 +65,39 @@
 .nr-login .d-ps .p-1 {font-size: 20px; font-weight: 600; color: #0468c8;}
 .nr-login .d-ps .p-2 {margin-top: 15px; line-height: 1.5; font-size: 15px;}
 
+
 /* 20180321_로그인수정_다솜 */
-.nr-login .login-box {position: relative; width: 400px; margin: 0 auto; margin-top:-17px; margin-bottom:-17px;}
+.nr-login .login-box {position: relative; width: 400px; margin: 0 auto; margin-top:-17px;}
+.nr-login .login-box.type-sns {margin-bottom:-17px;}
 .nr-login .login-box .login-tit {font-size:24px; font-weight:bold; color:#0468c8;}
 .nr-login .login-box .login-txt {padding:12px 0 33px; font-size:16px; line-height:18px; color:#4c4b4b;}
 .nr-login .login-box.type-sns .login-txt {padding:12px 0 21px;}
 .nr-login .login-box .d-ps {margin-top:11px}
+/* 20180329_회원가입 수정 및 추가_다솜 */
+.nr-login .login-box .p-2 {margin-bottom:-17px;}
+.nr-login .login-box .d-row-2 .a-btn {font-size:13px;}
+.nr-login .login-box .d-row-cer {margin-top:10px;}
+.nr-login .login-box .d-row-cer .nr-text {font-size:15px;}
+.nr-login .login-box .d-row-cer .a-btn {background:#7a7a7a;}
+.nr-login .login-box .area-password {}
+.nr-login .login-box .area-password .join-password {display:table; width:100%; margin-top:10px;}
+.nr-login .login-box .area-password .join-password:first-of-type {margin-top:0}
+.nr-login .login-box .area-password .join-txt {display:table-cell; width:100px; font-size:15px;}
+.nr-login .login-box .area-password .nr-text {display:table-cell; width:100%; font-size: 14px; color: #5f5f5f; height: 50px; text-indent: 15px; line-height: 3em; letter-spacing: 0;}
+.nr-login .login-box .area-password .a-btn {position: relative; display: inline-block; width: 100%; height: 48px; font-size: 16px; line-height: 48px; background: #f75a4b; margin-top: 10px; color: #fff; text-align: center;}
+
+.mi-box.com-box {width: 800px; padding: 50px 160px;}
+.mi-box.com-box .c-red, .mi-box.com-box .c-gray {padding-left:5px;}
+.mi-box.com-box .mib-p2 {word-break:keep-all; border-bottom:0; padding-bottom:0;}
+.mi-box.com-box .phone-cert {display:table; position:relative; width:100%; margin-top:10px;}
+.mi-box.com-box .phone-cert:first-of-type {margin-top:0;}
+.mi-box.com-box .phone-cert .nr-text {display:table-cell; border: 0; border-bottom: 1px solid #ddd; width:90%; padding-bottom: 5px; margin-right:10px; font-size: 16px; font-weight: 400; vertical-align:text-bottom}
+.mi-box.com-box .phone-cert .a-btn {display:table-cell; height: 38px; padding:0 13px; font-size: 14px; font-weight:normal; line-height: 38px; text-align: center; vertical-align:text-top; color: #fff; background: #404040;}
+.mi-box.com-box .phone-cert.cert-check .a-btn {background: #7a7a7a; }
+.mi-box.com-box .phone-cert .a-btn.passed {position:relative; left:-30px; color:#f45454; background:#fff}
+/* 20180402_가상계좌 생성_다솜 */
+.mi-box.com-box .bank.dropdown .dropdown-menu {max-height:235px; overflow-y:auto}
+.mi-box.com-box .tit-mt {margin-top:50px;}
+.mi-box.com-box .mib-p2-mt {margin-top:25px}
+.mi-box.com-box .mib-p1 {position:relative;}
+.mi-box.com-box .mib-p1 .btn-message {position:absolute; height:30px; right:0; bottom:10px; padding:0 20px; font-size:13px; line-height:30px; color:#fff; background:#7a7a7a; }

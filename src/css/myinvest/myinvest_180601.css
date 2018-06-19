@@ -1,6 +1,6 @@
 @media (min-width: 992px) {
   .container {
-	width: 945px;
+    width: 945px;
   }
 }
 
@@ -55,18 +55,6 @@
   .md-with {margin-top: 35px; padding-top: 20px; padding-bottom: 10px; border-top: 1px solid #ddd; border-bottom: 1px solid #ddd;}
   .md-with h3 {font-size: 20px;}
   .md-with h3 a {font-size: 14px; float: right; font-weight: 300;}
-	.md-with .s-gray {color: #676767;}
-	.md-with .s-purple {color: #a544ff;}
-	.md-with .s-blue {color: #0e77d8;}
-	.md-with hr.sun {margin: 10px auto;}
-	.md-with h3 + .p-1 {margin-top: 18px;}
-	.md-with .p-1 {font-size: 15px; margin-top: 10px;}
-	.md-with .p-1 .pull-left {margin-top: 2px;}
-	.md-with .p-1 .s-1 {font-size: 18px;}
-	.md-with .p-1.total {margin-top: 0;}
-	.md-with .p-1.total .pull-left {margin-top: 4px;}
-	.md-with .p-1.total .s-1 {font-size: 20px;}
-	.md-with .p-1.total + .mdw-p2 {}
   .mdw-p0 {text-align: center; font-size: 14px; font-weight: 300; margin-top: 25px; line-height: 1.5em; }
   .mdw-p1 {text-align: right; margin-top: 50px; font-size: 20px;}
   .mdw-p2 {margin-top: 20px; text-align: center;}
@@ -182,18 +170,6 @@
   .md-with {position: relative; margin-top: -26px; padding-bottom: 10px; border-left: 1px solid #ddd; width: 50%; padding-left: 20px; height: 223px;}
   .md-with h3 {font-size: 20px;}
   .md-with h3 a {font-size: 14px; float: right; font-weight: 300;}
-	.md-with .s-gray {color: #676767;}
-	.md-with .s-purple {color: #a544ff;}
-	.md-with .s-blue {color: #0e77d8;}
-	.md-with hr.sun {margin: 10px auto;}
-	.md-with h3 + .p-1 {margin-top: 18px;}
-	.md-with .p-1 {font-size: 15px; margin-top: 10px;}
-	.md-with .p-1 .pull-left {margin-top: 2px;}
-	.md-with .p-1 .s-1 {font-size: 18px;}
-	.md-with .p-1.total {margin-top: 0;}
-	.md-with .p-1.total .pull-left {margin-top: 4px;}
-	.md-with .p-1.total .s-1 {font-size: 20px;}
-	.md-with .p-1.total + .mdw-p2 {margin-top: 40px;}
   .mdw-p0 {text-align: center; font-size: 14px; font-weight: 300; margin-top: 45px; line-height: 1.5em; }
   .mdw-p1 {text-align: right; margin-top: 90px; font-size: 26px; }
   .mdw-p2 {margin-top: 30px; text-align: center;}
@@ -324,18 +300,6 @@
   .md-with {margin-top: 55px; padding-top: 20px; padding-bottom: 10px; position: relative; border-top: 1px solid #ddd;}
   .md-with h3 {font-size: 20px;}
   .md-with h3 a {font-size: 15px; float: right; font-weight: 300;}
-	.md-with .s-gray {color: #676767;}
-	.md-with .s-purple {color: #a544ff;}
-	.md-with .s-blue {color: #0e77d8;}
-	.md-with hr.sun {margin: 10px auto;}
-	.md-with h3 + .p-1 {margin-top: 18px;}
-	.md-with .p-1 {font-size: 16px; margin-top: 10px;}
-	.md-with .p-1 .pull-left {margin-top: 2px;}
-	.md-with .p-1 .s-1 {font-size: 20px;}
-	.md-with .p-1.total {margin-top: 0;}
-	.md-with .p-1.total .pull-left {margin-top: 4px;}
-	.md-with .p-1.total .s-1 {font-size: 26px;}
-	.md-with .p-1.total + .mdw-p2 {}
   .mdw-p0 {text-align: center; font-size: 14px; font-weight: 300; margin-top: 45px; line-height: 1.5em; }
   .mdw-p1 {text-align: right; margin-top: 90px; font-size: 26px; }
   .mdw-p2 {margin-top: 30px; text-align: center;}

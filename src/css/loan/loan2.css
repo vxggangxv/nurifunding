@@ -18,7 +18,7 @@
 
   .contents {position: relative;}
   .lon-h2 {margin-top: 35px;}
-  .lon-box {position: relative; width: 320px; margin: 30px auto 40px;}
+  .lon-box {position: relative; width: 320px; margin: 15px auto 40px;}
   .lon-box {border: 1px solid #ddd; background: #fff; padding: 30px 20px;}
   
   .loan {}
@@ -63,8 +63,13 @@
   .alow3 {margin-top: 25px;}
   .a-btn {display: inline-block; width: 100%; color: #fff; font-size: 15px; line-height: 3.1em; height: 46px; letter-spacing: 0;}
   .a-btn span {position: relative; right: 20px;font-size: 10px;}
-  .a-ps {font-size: 13px; text-align: center; margin-top: 10px; color: #545454;}
+  .a-ps {font-size: 13px; text-align: center; margin-top: 10px; color: #545454; line-height: 1.2; word-break: keep-all;}
   
+	.loan.nth-1 {}
+	.loan.nth-1 .p-1, .loan.nth-1 .p-2 {text-align: center; line-height: 1.3;}
+	.loan.nth-1 .p-1 {font-size: 18px; margin-top: 10px;}
+	.loan.nth-1 .p-2 {font-size: 15px;}
+	
   .loan.nth-4 {}
   .loan.nth-4 .lon-em {font-size: 15px;}
   .loan.nth-4 .ps {font-size: 14px; text-align: center; color: #636363; margin-top: 3px; line-height: 1.2em;}
@@ -97,8 +102,7 @@
 
   .contents {position: relative;}
   .lon-h2 {margin-top: 35px;}
-  .lon-box {position: relative; width: 500px; margin: 30px auto 50px;}
-  .lon-box {border: 1px solid #ddd; background: #fff; padding: 30px 50px;}
+  .lon-box {position: relative; width: 500px; margin: 15px auto 50px; border: 1px solid #ddd; background: #fff; padding: 30px 50px;}
 
   .loan {}
   .lon-h2 {display: block; text-align: center; width: 100%; font-size: 28px; font-weight: 300; letter-spacing: -1px;}
@@ -144,8 +148,13 @@
   .alow3 {margin-top: 25px;}
   .a-btn {display: inline-block; width: 100%; color: #fff; font-size: 16px; line-height: 3.2em; height: 50px; letter-spacing: 0;}
   .a-btn span {position: relative; right: 20px;font-size: 11px;}
-  .a-ps {font-size: 14px; text-align: center; margin-top: 10px; color: #545454;}
+  .a-ps {font-size: 15px; text-align: center; margin-top: 15px; color: #545454;}
   
+	.loan.nth-1 {}
+	.loan.nth-1 .p-1, .loan.nth-1 .p-2 {text-align: center; line-height: 1.3;}
+	.loan.nth-1 .p-1 {font-size: 20px; margin-top: 15px;}
+	.loan.nth-1 .p-2 {font-size: 16px;}
+	
   .loan.nth-4 {}
   .loan.nth-4 .lon-em {font-size: 16px;}
   .loan.nth-4 .ps {font-size: 14px; text-align: center; color: #636363; margin-top: 3px;}
@@ -171,8 +180,7 @@
 /*PC영역*/
 @media (min-width: 1200px) {
   .lon-h2 {margin-top: 45px;}
-  .lon-box {position: relative; width: 800px; margin: 45px auto 65px;}
-  .lon-box {border: 1px solid #ddd; background: #fff; padding: 40px 100px;}
+  .lon-box {position: relative; width: 800px; margin: 15px auto 65px; border: 1px solid #ddd; background: #fff; padding: 40px 100px;}
   .md-inline {display: inline;}
   
   .loan {}
@@ -197,6 +205,11 @@
   .a-btn {display: inline-block; width: 100%; color: #fff; font-size: 18px; line-height: 3.2em; height: 58px; letter-spacing: 0;}
   .a-btn span {position: relative; right: 20px;font-size: 11px;}
   
+	.loan.nth-1 {}
+	.loan.nth-1 .p-1, .loan.nth-1 .p-2 {text-align: center; line-height: 1.3;}
+	.loan.nth-1 .p-1 {font-size: 22px; margin-top: 15px;}
+	.loan.nth-1 .p-2 {font-size: 18px;}
+	
   .loan.nth-4 {}
   .loan.nth-4 .lon-em {font-size: 22px;}
   .loan.nth-4 .ps {font-size: 17px; text-align: center; color: #636363; margin-top: 3px;}

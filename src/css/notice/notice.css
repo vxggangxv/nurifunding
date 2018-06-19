@@ -46,7 +46,7 @@
     .fp-wrap {width: 300px; padding: 15px;}
     .fp-tit-box {padding-bottom: 10px; border-bottom: 1px solid #ddd; font-size: 15px;}
     .fp-title {}
-    .fp-date {position: relative; top: 2px; float: right; font-size: 13px; color: #565656;}
+    .fp-date {display: none; position: relative; top: 2px; float: right; font-size: 13px; color: #565656;}
     .fp-contents {padding: 15px 0px; font-size: 13px; font-family: "Nanum Gothic", sans-serif; line-height: 1.4em;}
     .fp-footer {position: relative; margin-top: 20px; text-align: right;}
     .fp-footer > a {display: inline-block; border: 1px solid #ddd; font-size: 14px; padding: 5px 8px; margin-right: 3px;}

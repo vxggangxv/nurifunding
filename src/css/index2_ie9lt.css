@@ -155,5 +155,15 @@ li[class*=ipli] .pull-right.day {font-weight: 500; font-size: 23px;}
 .fq-btn-box {text-align: center;}
 .fq-btn {display: inline-block; width: 65%; border:1px solid #dcdcdc; line-height: 2.8em; font-size: 20px; background: #126cc3; color: #fff;}
 
+/* 180510_코스닥 벤처펀딩_다솜 */
+.vcfund {padding:65px 0 70px; text-align:center; background: #fff;}
+.vcfund .vf-tit-1 {position:relative; margin-bottom:10px; padding-bottom:15px; font-size:26px;}
+.vcfund .vf-tit-1:after {content:''; display:block; position:absolute; width:120px; height:1px; bottom:0; left:50%; margin-left:-60px; background:#a6a6a6}
+.vcfund .vf-tit-2 {margin-top:10px; font-size:26px;}
+.vcfund .vf-box {margin-top:45px}
+.vcfund .vf-box p {word-break:keep-all; line-height:30px;}
+.vcfund .vf-box .vf-txt-1 {font-size:24px;}
+.vcfund .vf-box .vf-txt-2 {font-size:18px;}
+
 /* ie9 선택자 안먹는 오류 수정 */
 .ip-outer {padding: 10px;}

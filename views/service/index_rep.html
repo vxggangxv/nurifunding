@@ -6,38 +6,46 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=0">
     <title>누리펀딩</title>
-    <link rel="stylesheet" href="http://fonts.googleapis.com/earlyaccess/notosanskr.css">
-    <link rel="stylesheet" href="http://fonts.googleapis.com/earlyaccess/nanumgothic.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/earlyaccess/notosanskr.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/earlyaccess/nanumgothic.css">
     <link href="https://opensource.keycdn.com/fontawesome/4.6.3/font-awesome.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="http://nurifunding.co.kr/static/css/common.css">
-    <link rel="stylesheet" href="http://nurifunding.co.kr/static/css/loan/loan2.css">
+    <!--추가 css경로-->
+    <link rel="stylesheet" href="https://nurifunding.co.kr/static/css/nivo-lightbox-theme/default.css">
+    <link rel="stylesheet" href="https://nurifunding.co.kr/static/css/nivo-lightbox.css">
+    
+    <link rel="stylesheet" href="https://nurifunding.co.kr/static/css/common.css">
+    <link rel="stylesheet" href="https://nurifunding.co.kr/static/css/service/service2.css">
 <!--
     <link rel="stylesheet" href="../../src/css/common.css">
-    <link rel="stylesheet" href="../../src/css/loan/loan2.css">  
+    <link rel="stylesheet" href="../../src/css/service/service2.css">
 -->
 
-    <script type="text/javascript" src="http://nurifunding.co.kr/static/js/jquery-1.10.2.min.js"></script>
-    <script type="text/javascript" src="http://nurifunding.co.kr/static/js/common.js"></script>
-    <script type="text/javascript" src="http://nurifunding.co.kr/static/js/loan/loan.js"></script>
-<!--    <script type="text/javascript" src="../../src/js/loan/loan.js"></script>-->
+    <script type="text/javascript" src="https://nurifunding.co.kr/static/js/jquery-1.10.2.min.js"></script>
+    <!--추가 js경로-->
+    <script type="text/javascript" src="https://nurifunding.co.kr/static/js/nivo-lightbox.min.js"></script>
+    
+    <script type="text/javascript" src="https://nurifunding.co.kr/static/js/common.js"></script>
+    <script type="text/javascript" src="https://nurifunding.co.kr/static/service/service.js"></script>
+    <!--추가 js경로-->
+<!--    <script type="text/javascript" src="../../src/js/service/service.js"></script>-->
+    
 
-    <!--<link rel="stylesheet" href="../../src/css/loan/loan2_ie9lt.css">-->
-    <!--<script type="text/javascript" src="../../src/js/ie9_lt.js"></script>-->
+    <!--<link rel="stylesheet" href="https://nurifunding.co.kr/static/css/service/service2_ie9lt.css">-->
     <!--[if lt IE 9]>
-    <link rel="stylesheet" href="http://nurifunding.co.kr/static/css/grid_ie9lt.min.css">
-    <link rel="stylesheet" href="http://nurifunding.co.kr/static/css/common_ie9lt.css">
-    <link rel="stylesheet" href="http://nurifunding.co.kr/static/css/loan/loan2_ie9lt.css">
+    <link rel="stylesheet" href="https://nurifunding.co.kr/static/css/grid_ie9lt.min.css">
+    <link rel="stylesheet" href="https://nurifunding.co.kr/static/css/common_ie9lt.css">
+    <link rel="stylesheet" href="../../src/css/service/service2_ie9lt.css">
 
-    <script type="text/javascript" src="http://nurifunding.co.kr/static/js/ie9_lt.js"></script>
+    <script type="text/javascript" src="https://nurifunding.co.kr/static/js/ie9_lt.js"></script>
     <script type="text/javascript" src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-    <![endif]-->
+  <![endif]-->
 </head>
 
 <body>
     <h1 class="skip">누리펀딩</h1>
     <div class="wrap">
         <!-- 일반 해더 -->
-		<header class="header" id="header">
+        <header class="header" id="header">
 			<div class="container header-box">
 				<div class="navbar-header">
 					<button type="button" class="nav-tab show-xs">
@@ -58,7 +66,9 @@
 							<nav class="sub-nav">
 								<ul>
 									<li><a href="service/index.html">서비스 소개</a></li>
+									<li><a href="service/index_rep.html">대표 소개</a></li>
 									<li><a href="notice/index.html">공지사항</a></li>
+									<li><a href="#">자료실</a></li>
 								</ul>
 							</nav>
 						</li>
@@ -107,7 +117,9 @@
 						<nav class="m-sub-nav">
 							<ul>
 								<li><a href="service/index.html">서비스 소개</a></li>
-								<li><a href="notice/notice_01.html">공지사항</a></li>
+								<li><a href="service/index_rep.html">대표 소개</a></li>
+								<li><a href="notice/index.html">공지사항</a></li>
+								<li><a href="#">자료실</a></li>
 							</ul>
 						</nav>
 					</li>
@@ -116,48 +128,101 @@
 			</div>
 		</section>
 
-        <div class="contents">
-
-			<!--180619 수정-->
-            <!-- 00.대출신청 -->
-            <section class="loan nth-1">
-                <h2 class="lon-h2">대출신청</h2>
-            	<p class="fc-blue p-1">대출상담 문의전화 1644-5506</p>
-            	<p class="p-2">누리펀딩으로 전화주시면 친절한 상담을 약속드립니다.</p>
-                <div class="container lon-box br4">
-
-					<ul class="lon-ul">
-						<li class="lon-li">
-							<p class="lon-p">이름 </p>
-							<div class="lon-d nr-box">
-								<input type="text" name="name" class="nr-text br4 center-block" placeholder="이름을 입력해주세요"><span class="nr-ph">이름을 입력해주세요</span>
-							</div>
-						</li>
-						<li class="lon-li">
-							<div class="nth-1">
-								<p class="lon-p">휴대폰 번호 </p>
-								<div class="lon-d nr-box" id="lon-phone">
-									<input type="text" name="phone" onkeyup="javascript: checktype('number','phone');" class="nr-text br4 center-block" placeholder="'-'를 제외하고 입력해주세요"><span class="nr-ph">'-'를 제외하고 입력해주세요</span>
-								</div>
-							</div>
-						</li>
-						<li class="lon-li">
-							<p class="lon-p">이메일 </p>
-							<div class="lon-d nr-box">
-								<input type="text" name="email" class="nr-text br4 center-block" placeholder="nurifunding@naver.com"><span class="nr-ph">nurifunding@naver.com</span>
-							</div>
-						</li>
-					</ul>
-
-                    <p class="alow3"><a href="loan_04.html" class="a-btn br4 bg-blue">신청하기<span class="pull-right">▶</span></a></p>
-                    <p class="a-ps">신청해주신 정보를 통해 24시간 이내로 고객님께 연락드리겠습니다.</p>
+        <section class="page-sect">
+            <div class="container">
+                <div class="ps-wrap com-box">
+                    <!--변경내용 제목변경-->
+                    <h2 class="ps-h2">대표 소개</h2>
                 </div>
-            </section>
-            <!-- // -->
+            </div>
+        </section>
 
-        </div>
+        <section class="info-sect rep-sect">
+            <div class="container">
 
-        <footer class="footer-01">
+                <!--변경내용 시작 전체변경-->
+                <div class="is-wrap com-box low">
+                    
+					<div class="is-box nth-5 type-2 col-xs-12 col-sm-12">
+						<div class="d2">
+                            <h3 class="is-h3">누리펀딩 <span class="c-blue">대표 소개</span></h3>
+							<p class="p1-1">
+								김정권 (1963년생) <br>
+                            	최종학력 : 헬싱키 경제경영대학원 MBA
+                            </p>
+                            
+                            <ul class="history nth-1">
+								<li class="clearfix"><div>주요 이력 (KB 국민은행 근무)</div></li>
+                                <li class="clearfix">
+                                    <div class="c-blue pull-left">1999</div>
+                                    <div class="pull-right">여신심사역 과정</div>
+                                </li>
+                                <li class="clearfix">
+                                    <div class="c-blue pull-left">2000</div>
+                                    <div class="pull-right c-blue f-bd">심사센터 여신심사역 (전업종)</div>
+                                </li>
+                                <li class="clearfix">
+                                    <div class="c-blue pull-left">2002</div>
+                                    <div class="pull-right">마포기업금융지점 팀장 (RM/PF/대출)</div>
+                                </li>
+                                <li class="clearfix">
+                                    <div class="c-blue pull-left">2007</div>
+                                    <div class="pull-right c-blue f-bd">기업여신심사부 팀장 <br class="show-xs">(투자금융/SOC/유동화/해외투자)</div>
+                                </li>
+								<li class="clearfix">
+                                    <div class="c-blue pull-left">2010</div>
+                                    <div class="pull-right">지점장 (망원동/시화공단/목동)</div>
+                                </li>
+								<li class="clearfix">
+                                    <div class="c-blue pull-left">2014</div>
+                                    <div class="pull-right">기관영업부 부장 <br class="show-xs">(정부기관/시도금고/학교/병원 협약)</div>
+                                </li>
+								<li class="clearfix">
+                                    <div class="c-blue pull-left">2015</div>
+                                    <div class="pull-right c-blue f-bd">지역본부장 (중앙2 지역, 인천북2 지역)</div>
+                                </li>
+								<li class="clearfix">
+                                    <div class="c-blue pull-left">2018</div>
+                                    <div class="pull-right">(주)누리펀딩 창업</div>
+                                </li>
+							</ul>
+							
+							<ul class="history nth-1">
+                            	<li class="clearfix">
+                            		<div>수상이력</div>
+                            	</li>
+                            	<li class="clearfix">
+                                    <div class="c-blue pull-left">2005</div>
+                                    <div class="pull-right">국은인상</div>
+                                </li>
+								<li class="clearfix">
+                                    <div class="c-blue pull-left">2014</div>
+                                    <div class="pull-right">국방부장관 표창장</div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="d1">
+                            <img class="img-rep" src="https://nurifunding.co.kr/img/service/photo_rep.png" alt="대표사진">
+                        </div>
+                    </div>
+                    
+                </div>
+                <!--변경내용 끝-->
+
+            </div>
+        </section>
+
+        <!-- 180601 배너 추가 -->
+<!--
+		<div class="side-banner">
+		    <a href="#none" class="hidden-md"><img src="http://img.nurifunding.co.kr/side_banner_01.png" alt="카카오톡 플러스 친구" /></a>
+		    <a href="#none"><img src="http://img.nurifunding.co.kr/side_banner_02.jpg" alt="가상계죄개설시1만원지급" /></a>
+		</div>
+-->
+		<!--// -->
+		
+		<!-- 180528 푸터 수정 -->
+		<footer class="footer-01">
 		    <div class="container footer-box">
 				<div class="logo">
 				    <img class="" src="http://img.nurifunding.co.kr/fLogo_02.jpg" alt="푸터로고">
@@ -225,9 +290,6 @@
 		    </div>
 		</footer>
     </div>
-
-
-
 </body>
 
 </html>

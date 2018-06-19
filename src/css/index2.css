@@ -151,7 +151,17 @@
   .a-icon {background-position: -75px; top: 15px;}
   .fq-btn-outer {margin: 20px auto 5px;}
   .fq-btn-box {text-align: center;}
-    .fq-btn {display: inline-block; width: 100%; border: 1px solid #dcdcdc; line-height: 2.5em; font-size: 15px; background: #126cc3; color: #fff;}
+  .fq-btn {display: inline-block; width: 100%; border: 1px solid #dcdcdc; line-height: 2.5em; font-size: 15px; background: #126cc3; color: #fff;}
+  
+  /* 180510_코스닥 벤처펀딩_다솜 */
+  .vcfund {padding:32px 0 35px; text-align:center; background: #fff;}
+  .vcfund .vf-tit-1 {position:relative; margin-bottom:5px; padding-bottom:7px; font-size:15px;}
+  .vcfund .vf-tit-1:after {content:''; display:block; position:absolute; width:60px; height:1px; bottom:0; left:50%; margin-left:-30px; background:#a6a6a6}
+  .vcfund .vf-tit-2 {margin-top:10px; font-size:15px;}
+  .vcfund .vf-box {margin-top:15px}
+  .vcfund .vf-box p {word-break:keep-all; line-height:17px;}
+  .vcfund .vf-box .vf-txt-1 {font-size:13px;}
+  .vcfund .vf-box .vf-txt-2 {font-size:12px;}
 }
 @media (min-width: 410px) and (max-width: 480px){
     .main-box .swiper-slide > div.s1-div-2 .d2 p {letter-spacing: 0; font-size: 16px;}
@@ -169,6 +179,9 @@
 }
 
 
+@media (min-width: 768px) {
+	
+}
 /*테블릿 영역, col-sm */
 @media (min-width: 768px) and (max-width: 991px) {
   .com-pd {padding: 98px 10px 95px;}
@@ -317,7 +330,17 @@
   .a-icon {background-position: -150px; top: 18px;}
   .fq-btn-outer {margin: 30px auto 0px;}
   .fq-btn-box {text-align: center;}
-    .fq-btn {display: inline-block; width: 60%; border: 1px solid #dcdcdc; line-height: 2.5em; font-size: 18px; background: #126cc3; color: #fff;}
+  .fq-btn {display: inline-block; width: 60%; border: 1px solid #dcdcdc; line-height: 2.5em; font-size: 18px; background: #126cc3; color: #fff;}
+  
+  /* 180510_코스닥 벤처펀딩_다솜 */
+  .vcfund {padding:65px 0 70px; text-align:center; background: #fff;}
+  .vcfund .vf-tit-1 {position:relative; margin-bottom:10px; padding-bottom:15px; font-size:26px;}
+  .vcfund .vf-tit-1:after {content:''; display:block; position:absolute; width:120px; height:1px; bottom:0; left:50%; margin-left:-60px; background:#a6a6a6}
+  .vcfund .vf-tit-2 {margin-top:10px; font-size:26px;}
+  .vcfund .vf-box {margin-top:45px}
+  .vcfund .vf-box p {word-break:keep-all; line-height:30px;}
+  .vcfund .vf-box .vf-txt-1 {font-size:24px;}
+  .vcfund .vf-box .vf-txt-2 {font-size:18px;}
 }
 
 /*테블릿 영역, col-md*/
@@ -476,7 +499,17 @@
   .a-icon {background-position: -150px; top: 18px;}
   .fq-btn-outer {margin: 50px auto 0px;}
   .fq-btn-box {text-align: center;}
-    .fq-btn {display: inline-block; width: 65%; border:1px solid #dcdcdc; line-height: 2.8em; font-size: 20px; background: #126cc3; color: #fff;}
+  .fq-btn {display: inline-block; width: 65%; border:1px solid #dcdcdc; line-height: 2.8em; font-size: 20px; background: #126cc3; color: #fff;}
+    
+  /* 180510_코스닥 벤처펀딩_다솜 */
+  .vcfund {padding:65px 0 70px; text-align:center; background: #fff;}
+  .vcfund .vf-tit-1 {position:relative; margin-bottom:10px; padding-bottom:15px; font-size:26px;}
+  .vcfund .vf-tit-1:after {content:''; display:block; position:absolute; width:120px; height:1px; bottom:0; left:50%; margin-left:-60px; background:#a6a6a6}
+  .vcfund .vf-tit-2 {margin-top:10px; font-size:26px;}
+  .vcfund .vf-box {margin-top:45px}
+  .vcfund .vf-box p {word-break:keep-all; line-height:30px;}
+  .vcfund .vf-box .vf-txt-1 {font-size:24px;}
+  .vcfund .vf-box .vf-txt-2 {font-size:18px;}
 
 }
 
@@ -485,3 +518,4 @@
 
 
 }
+
