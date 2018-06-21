@@ -17,23 +17,11 @@ $(function() {
 	});
 	});
 
-	//nivo라이트박스
-	$('.reg-inner a').nivoLightbox();
-	$('#est-slider a').nivoLightbox();
-
-	//부동산이미지 bxslider
-	$('#est-slider').bxSlider({
-	mode: 'fade',
-	auto: true,
-	speed: 500,
-	adaptiveHeight: true,
-	duration: 6000,
-	prevText: '<img src="https://nurifunding.co.kr/img/invest/inv_btn_prev.png" alt="다음">',
-	nextText: '<img src="https://nurifunding.co.kr/img/invest/inv_btn_next.png" alt="다음">'
-	});
-
 	// 동의하기 레이어팝업
 	popCenter ();
+	
+
+
 		
 });
 
