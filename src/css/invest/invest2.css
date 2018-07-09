@@ -83,11 +83,11 @@
   .ip-outer {margin-top: 10px;}
   .ip-outer:first-child {margin-top: 0;}
   .ip-box {background: #fff; border: 1px solid #ddd;}
-  .thumb-box {position: relative; width: 308px; height: 119.19px;}
+  .thumb-box {position: relative; width: 308px; height: 211px; background-size: 100% 100% !important;}
   .thumb-box img {width: 100%;}
   .thumb-box .new {position: absolute; top: 10px; left: 10px; font-size: 12px; background: rgba(38, 196, 183, 0.88); padding: 9px 5px; color: #fff; border: 2px solid #fff; z-index: 1;}
-  .thumb-box .end {position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0, .58); text-align: center;}
-  .thumb-box .end span {position: relative; color: #fff; display: inline-block; padding: 10px 40px; top: 40px; border: 1px solid #fff; letter-spacing: 0;}
+  .thumb-box .end {position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0, .58); text-align: center; border-top-left-radius: 4px; border-top-right-radius: 4px;}
+  .thumb-box .end span {position: relative; color: #fff; display: inline-block; padding: 10px 40px; top: 95px; border: 1px solid #fff; letter-spacing: 0;}
   .iph3 {padding: 10px; font-size: 16px;}
   .ip-inner {padding: 0 10px; margin-top: -2px;}
   .ip-inner li[class*=ipli] {line-height: 1.5em; font-size: 14px;}
@@ -520,11 +520,11 @@
   .ip-outer:nth-child(even) {padding-left: 10px;}
   .ip-box {/* height:395px;  */background: #fff; border: 1px solid #ddd;}
   .iph3 {padding: 10px 20px; font-size: 20px;}
-  .thumb-box {position: relative; width: 353px; height: 141.19px;}
+  .thumb-box {position: relative; width: 353px; height: 242px; background-size: 100% 100% !important;}
   .thumb-box img {width: 100%;}
   .thumb-box .new {position: absolute; top: 10px; left: 10px; font-size: 14px; background: rgba(38, 196, 183, 0.88); padding: 11px 5px; color: #fff; border: 2px solid #fff; z-index: 1;}
-  .thumb-box .end {position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0, .58); text-align: center;}
-  .thumb-box .end span {position: relative; color: #fff; display: inline-block; padding: 10px 40px; top: 52px; border: 1px solid #fff; letter-spacing: 0; font-size: 20px;}
+  .thumb-box .end {position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0, .58); text-align: center; border-top-left-radius: 4px; border-top-right-radius: 4px;}
+  .thumb-box .end span {position: relative; color: #fff; display: inline-block; padding: 10px 40px; top: 100px; border: 1px solid #fff; letter-spacing: 0; font-size: 20px;}
   .ip-inner {padding: 0 20px; margin-top: -2px;}
   .ip-inner li[class*=ipli] {height:24px; line-height: 1.5em; font-size: 16px;}
   li[class*=ipli] .pull-right {font-weight: 600; }
@@ -948,11 +948,11 @@
   .ip-outer:nth-child(even) {padding-left: 15px;}
 */
   .ip-box { margin: 0 auto; background: #fff; border: 1px solid #ddd;}
-  .thumb-box {position: relative; width: 100%; height: 178.19px; background-size: cover; border-top-left-radius: 4px; border-top-right-radius: 4px;}
+  .thumb-box {position: relative; width: 100%; height: 207px; background-size: 100% 100% !important;}
   .thumb-box img {width: 100%;}
   .thumb-box .new {position: absolute; top: 10px; left: 10px; font-size: 14px; background: rgba(38, 196, 183, 0.88); padding: 11px 5px; color: #fff; border: 2px solid #fff; z-index: 1;}
-  .thumb-box .end {position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0, .58); text-align: center;}
-  .thumb-box .end span {position: relative; color: #fff; display: inline-block; padding: 10px 40px; top: 72px; border: 1px solid #fff; letter-spacing: 0; font-size: 20px;}
+  .thumb-box .end {position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0, .58); text-align: center; border-top-left-radius: 4px; border-top-right-radius: 4px;}
+  .thumb-box .end span {position: relative; color: #fff; display: inline-block; padding: 10px 40px; top: 86px; border: 1px solid #fff; letter-spacing: 0; font-size: 20px;}
   .iph3 {padding: 10px 20px; font-size: 20px;}
   .ip-inner {padding: 0 20px; margin-top: -2px;}
   .ip-inner li[class*=ipli] {height:24px; line-height: 1.5em; font-size: 16px;}

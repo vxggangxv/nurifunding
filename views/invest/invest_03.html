@@ -8,7 +8,7 @@
 	<title>누리펀딩</title>
 	<link rel="stylesheet" href="http://fonts.googleapis.com/earlyaccess/notosanskr.css">
 	<link rel="stylesheet" href="http://fonts.googleapis.com/earlyaccess/nanumgothic.css">
-	<link href="https://opensource.keycdn.com/fontawesome/4.6.3/font-awesome.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
 	
 <!--
 	<link rel="stylesheet" href="https://nurifunding.co.kr/static/css/common.css">
@@ -863,8 +863,8 @@
 		</section>
 
 		<!-- 180619 투자하기 클릭시 나타나는 레이어 팝업 -->
-		<div class="invst-popup" style="display: block;">
-			<div class="popup-wrap" id="popup-container1">
+		<div class="invst-popup" id="popup-container1" style="display: block;">
+			<div class="popup-wrap">
 				<div class="popup-container br4">
 					<p class="popup-tit">투자 위험 고지</p>
 					<div class="popup-info-box br4">
@@ -878,15 +878,16 @@
 							<input class="input-agree" name="agreeInput" placeholder="동의함">
 						</p>
 						<!--<div class="est-box nth-3 col-xs-12 col-sm-7"><a href="javascript:;" class="bg-blue fc-white br4">투자 신청 완료</a></div>-->
-						<div class="est-box nth-3"><a href="#none" class="bg-blue fc-white br4">투자 신청 완료</a></div>
+<!--						<div class="est-box nth-3"><a href="javascript:;" class="bg-blue fc-white br4" onclick="$('#popup-container1').hide(); $('#popup-container2').show();">투자 신청 완료</a></div>-->
+						<div class="est-box nth-3"><a href="javascript:;" class="bg-blue fc-white br4" onclick="popupClose('#popup-container1'); popupOpen('#popup-container2');">투자 신청 완료</a></div>
 					</div>
 					<a href="javascript:void(0);" onclick="popupClose('.invst-popup');" class="pop-close"></a>
 				</div>
 			</div>
 		</div>
 		
-		<div class="invst-popup" style="display: none;">
-			<div class="popup-wrap" id="popup-container2">
+		<div class="invst-popup" id="popup-container2" style="display: none;">
+			<div class="popup-wrap">
 				<div class="popup-container br4">
 					<div class="popup-info-box br4" style=" text-align:center;">
 						<img src="http://nurifunding.co.kr/img/invest_notice.jpg" alt="투자안내">

@@ -18,19 +18,17 @@ $(function() {
 	});
 
 	// 동의하기 레이어팝업
-	popCenter ();
-	
-
-
-		
+	popCenter();		
 });
 
 function popCenter () {
 	$(window).resize(function(){
-			var invstPop = $('.invst-popup .popup-wrap');
-			var invstPopW = invstPop.find('.popup-container').outerWidth();
-			var invstPopH = invstPop.find('.popup-container').outerHeight();
-			invstPop.css({'margin-top' : '-'+(invstPopH/2)+'px', 'margin-left' : '-'+(invstPopW/2)+'px'})
+		var invstPop = $('.invst-popup .popup-wrap');
+		$.each(invstPop, function() {
+			var invstPopW = $(this).find('.popup-container').outerWidth();
+			var invstPopH = $(this).find('.popup-container').outerHeight();
+			$(this).css({'margin-top' : '-'+(invstPopH/2)+'px', 'margin-left' : '-'+(invstPopW/2)+'px'});
+		});
 	}).resize();
 }
 

@@ -21,11 +21,11 @@
 */
 
 .ip-box {/* height:450px;  */margin: 0 auto; background: #fff; border: 1px solid #ddd;}
-.thumb-box {position: relative; width: 445.5px; height: 178.19px;}
+.thumb-box {position: relative; width: 445.5px; height: 207px; background-size: 100% 100% !important;}
 .thumb-box img {width: 100%;}
 .thumb-box .new {position: absolute; top: 10px; left: 10px; font-size: 14px; background: rgba(38, 196, 183, 0.88); background: #30C0BA; padding: 11px 5px; color: #fff; border: 2px solid #fff; z-index: 1;}
 .thumb-box .end {position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: #cdcdcd; text-align: center;}
-.thumb-box .end span {position: relative; color: #fff; display: inline-block; padding: 10px 40px; top: 72px; border: 1px solid #fff; letter-spacing: 0; font-size: 20px;}
+.thumb-box .end span {position: relative; color: #fff; display: inline-block; padding: 10px 40px; top: 93px; border: 1px solid #fff; letter-spacing: 0; font-size: 20px;}
 .iph3 {padding: 10px 20px; font-size: 20px;}
 .ip-inner {padding: 0 20px; margin-top: -2px;}
 .ip-inner li[class*=ipli] {height:24px; line-height: 1.5em; font-size: 16px;}
