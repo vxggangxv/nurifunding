@@ -2,7 +2,8 @@
 
 @media (min-width: 992px) {
   .container {
-    width: 945px;
+    /*width: 945px;*/
+     width: 1024px; 
   }
 }
 
@@ -17,7 +18,7 @@
 /*모바일 영역, col-xs*/
 @media (max-width: 767px){
   .com-pd {padding: 28px 10px 25px;}
-  .com-ft {text-align: center; font-size: 18px; font-family: "Noto Sans KR", sans-serif; line-height: 1.2em;}
+  .com-ft {text-align: center; font-size: 18px; font-family: "Nanum Square", sans-serif; line-height: 1.2em;}
   .com-box {position: relative; margin: 0 auto; margin-top: 15px; width: 300px;}
   .arr-icon {display: inline-block; position: relative; background: url(https://nurifunding.co.kr/img/nrm_icon_m.png) no-repeat;} .br4 {border-radius: 4px;}
   .xs-block {display: block;}
@@ -26,7 +27,7 @@
   .main-box.main-common {position: relative; height: 202px;}
   .main-box.main-common > div {position: absolute;}
   .main-box.main-common > div.s1-div-1 {width: 100%; text-align: center;}
-  .main-box.main-common > div.s1-div-1 p {position: relative; /*display: inline-block;*/ font-family: "Noto Sans KR", "Malgun Gothic", sans-serif;}
+  .main-box.main-common > div.s1-div-1 p {position: relative; /*display: inline-block;*/ font-family: "Nanum Square", "Malgun Gothic", sans-serif;}
 	.main-box.main-common > div.s1-div-1 p.nth-0 {color: #FFF; font-size: 16px; margin-top: 28px;}
   .main-box.main-common > div.s1-div-1 p.nth-1 {width: 300px; margin: 0 auto; height: 30px; font-size: 16px; background: #09345f; color: #fff; font-weight: 200; line-height: 1.75em;
     margin-top: 8px; letter-spacing: 0.5px; text-indent: -8px;}
@@ -41,7 +42,7 @@
   .main-box .swiper-slide img {display: block;}
   .main-box .swiper-slide > div {position: absolute;}
     
-  .main-box .swiper-slide > div.s1-div-2 {top: 26px; left: 20px; color: #fff; text-align: left; z-index: 1; font-family: "Noto Sans KR", "Malgun Gothic", sans-serif;}
+  .main-box .swiper-slide > div.s1-div-2 {top: 26px; left: 20px; color: #fff; text-align: left; z-index: 1; font-family: "Nanum Square", "Malgun Gothic", sans-serif;}
   .main-box .swiper-slide > div.s1-div-2 .d1 {font-size: 16px; font-weight: 200;}
   .main-box .swiper-slide > div.s1-div-2 .d1 p.nth-2 {font-size: 21px; font-weight: 400; margin-top: 5px; line-height: 1.2em;}
   .main-box .swiper-slide > div.s1-div-2 .d2 {font-size: 11.5px; font-family: "Nanum Gothic", sans-serif; }
@@ -60,7 +61,7 @@
   .r-f, .r-f2 {text-align: center; color: #fff; font-family: "Nanum Gothic", sans-serif;}
   .r-f {font-size: 14px;}
   .r-f .q-w {position: relative; top: -2px; display: inline-block; margin-left: 4px; width: 20px; height: 20px; border-radius: 50%; background: #fff; text-align: center; cursor: pointer;}
-  .r-f .q {position: relative; display: block; top: 2px; left: 0px; color: #09345f; font-weight: 600; font-family: "Noto Sans KR", sans-serif;}
+  .r-f .q {position: relative; display: block; top: 2px; left: 0px; color: #09345f; font-weight: 600; font-family: "Nanum Square", sans-serif;}
   .r-f .q .q-t {display: none; position: absolute; width: 136px; left: -54px; bottom: 24px; color: #fff; font-weight: 400; background: #000; border-radius: 1px; text-align: left; line-height: 1.2em; font-size: 16px; padding: 10px 8px; font-size: 13px; letter-spacing: -0.5px;}
 /*  .r-f .q .q-t:after {position: absolute; content: ""; bottom: -14px; left: 62px; display: block; width: 1px; border: 8px solid #000; border-color: transparent; border-top-color: #000;}*/
   .r-f .q:hover .q-t {display: block;}
@@ -68,8 +69,11 @@
   .rr-nth-5 .r-f2 {position: relative; top: -6px;}
   .rate .mt {margin-top: 20px;}
 
+	.miripayBn {position: relative; background: #7c88ff; padding: 12px 0; text-align: center;}
+	.miripayBn figure img {width: 300px;}
+	
   .benefit {background: #EBF4FB;}
-  .benefit h2 {font-weight: 500; margin-bottom: 10px;}
+  .benefit h2 {font-weight: 600; margin-bottom: 10px;}
   .benefit .container > .p1 {text-align: center; font-size: 14px; word-break: keep-all; line-height: 1.2em; color: #414141; font-weight: 300; width: 300px; margin: 0 auto;}
   .benefit .com-box {position: relative; height: 214px;}
   .benefit .com-box > div {position: absolute; bottom: 0; float: left; width: 59px;}
@@ -87,6 +91,18 @@
   .benefit .com-box .nth-5 .p-per, .benefit .com-box .nth-5 .p-tit {color: #126cc3;}
 	.benefit .com-box .p-chart {height: 0;}
 	.benefit .com-box .nth-5 .p-chart {background: #126cc3; height: 0;}
+    
+  .benefit .com-box .nuri .p-per, .benefit .com-box .nuri .p-tit {color: #126cc3;}
+	.benefit .com-box .p-chart {height: 0;}
+	.benefit .com-box .nuri .p-chart {background: #126cc3; height: 0;}
+    
+#per-chart-m.list-4 {margin-top:5px}
+  .benefit .com-box.list-4 > div {width: 24.5%;}
+  .benefit .com-box.list-4 .nth-1, .benefit .com-box.list-4 .nth-3 {bottom: 0;}
+  .benefit .com-box.list-4 .nth-1 {left: 0;}
+  .benefit .com-box.list-4 .nth-2 {left: 25%;}
+  .benefit .com-box.list-4 .nth-3 {left: 50%;}
+    .benefit .com-box.list-4 .nth-4 {left: 75%;}
 /*
   .benefit .com-box .nth-1 .p-chart {height: 21px; height: 0;}
   .benefit .com-box .nth-2 .p-chart {height: 31px; height: 0;}
@@ -118,11 +134,11 @@
   .ip-outer {margin-top: 10px;}
   .ip-outer:first-child {margin-top: 0;}
   .ip-box {background: #fff; border: 1px solid #ddd; overflow: hidden;}
-  .thumb-box {position: relative; width: 298px; height: 204px; background-size: 100% 100% !important;}
+  .thumb-box {position: relative; width: 298px; height: 204px;}
   .thumb-box img {width: 100%;}
   .thumb-box .new {position: absolute; top: 10px; left: 10px; font-size: 12px; background: rgba(38, 196, 183, 0.88); padding: 9px 5px; color: #fff; border: 2px solid #fff; z-index: 1;}
-  .thumb-box .end {position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0, .58); text-align: center; border-top-left-radius: 4px; border-top-right-radius: 4px;}
-  .thumb-box .end span {position: relative; color: #fff; display: inline-block; padding: 10px 40px; top: 90px; border: 1px solid #fff; letter-spacing: 0;}
+  .thumb-box .end {position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0, .58); text-align: center;}
+  .thumb-box .end span {position: relative; color: #fff; display: inline-block; padding: 10px 40px; top: 85px; border: 1px solid #fff; letter-spacing: 0;}
   .iph3 {padding: 10px; font-size: 16px;}
   .ip-inner {padding: 0 10px; margin-top: -2px;}
   .ip-inner li[class*=ipli] {line-height: 1.5em; font-size: 14px;}
@@ -162,6 +178,9 @@
   .vcfund .vf-box p {word-break:keep-all; line-height:17px;}
   .vcfund .vf-box .vf-txt-1 {font-size:13px;}
   .vcfund .vf-box .vf-txt-2 {font-size:12px;}
+    
+    /* 180625_수익률 하단 텍스트 추가_다솜 */
+    .benefit .benefit-b-txt {margin-top:10px; font-size: 11px; text-align:center; line-height: 1.3em; color: #232323;}
 }
 @media (min-width: 410px) and (max-width: 480px){
     .main-box .swiper-slide > div.s1-div-2 .d2 p {letter-spacing: 0; font-size: 16px;}
@@ -179,13 +198,10 @@
 }
 
 
-@media (min-width: 768px) {
-	
-}
 /*테블릿 영역, col-sm */
 @media (min-width: 768px) and (max-width: 991px) {
   .com-pd {padding: 98px 10px 95px;}
-  .com-ft {text-align: center; font-size: 42px; font-family: "Noto Sans KR", sans-serif; line-height: 1.2em;}
+  .com-ft {text-align: center; font-size: 42px; font-family: "Nanum Square", sans-serif; line-height: 1.2em;}
   .com-box {position: relative; margin: 0 auto; margin-top: 10px;}
   .arr-icon {display: inline-block; position: relative; background: url(https://nurifunding.co.kr/img/nrm_icon.png) no-repeat;}
   .br4 {border-radius: 4px;}
@@ -195,7 +211,7 @@
   .main-box.main-common {position: relative; width: 650px; height: 324px;}
   .main-box.main-common > div {position: absolute;}
   .main-box.main-common > div.s1-div-1 {width: 100%; text-align: center;}
-  .main-box.main-common > div.s1-div-1 p {position: relative; /*display: inline-block;*/ font-family: "Noto Sans KR", "Malgun Gothic", sans-serif;}
+  .main-box.main-common > div.s1-div-1 p {position: relative; /*display: inline-block;*/ font-family: "Nanum Square", "Malgun Gothic", sans-serif;}
 	.main-box.main-common > div.s1-div-1 p.nth-0 {color: #FFF; font-size: 24px; margin-top: 40px;}
   .main-box.main-common > div.s1-div-1 p.nth-1 {width: 488px; margin: 0 auto; height: 46px; font-size: 27px; background: #09345f; color: #fff; font-weight: 200; line-height: 1.66em;
     margin-top: 12px;}
@@ -210,7 +226,7 @@
   .main-box .swiper-slide img {display: block;}
   .main-box .swiper-slide > div {position: absolute;}
   
-  .main-box .swiper-slide > div.s1-div-2 {top: 36px; left: 20px; color: #fff; text-align: left; z-index: 1; font-family: "Noto Sans KR", "Malgun Gothic", sans-serif;}
+  .main-box .swiper-slide > div.s1-div-2 {top: 36px; left: 20px; color: #fff; text-align: left; z-index: 1; font-family: "Nanum Square", "Malgun Gothic", sans-serif;}
   .main-box .swiper-slide > div.s1-div-2 .d1 {font-size: 36px; font-weight: 200;}
   .main-box .swiper-slide > div.s1-div-2 .d1 p.nth-2 {font-weight: 400; margin-top: 10px;}
   .main-box .swiper-slide > div.s1-div-2 .d2 {font-size: 20px;}
@@ -232,8 +248,8 @@
   .r-f, .r-f2 {text-align: center; color: #fff; font-family: "Nanum Gothic", sans-serif; letter-spacing: 0;}
   .r-f {font-size: 16px;}
   .r-f .q-w {position: relative; top: -1px; display: inline-block; margin-left: 4px; width: 22px; height: 22px; border-radius: 50%; background: #fff; text-align: center; cursor: pointer;}
-  .r-f .q {position: relative; display: block; top: 2px; left: -1px; color: #09345f; font-weight: 600; font-family: "Noto Sans KR", sans-serif;}
-    .r-f .q {position: relative; display: block; top: 2px; left: 0px; color: #09345f; font-weight: 600; font-family: "Noto Sans KR", sans-serif;}
+  .r-f .q {position: relative; display: block; top: 2px; left: -1px; color: #09345f; font-weight: 600; font-family: "Nanum Square", sans-serif;}
+    .r-f .q {position: relative; display: block; top: 2px; left: 0px; color: #09345f; font-weight: 600; font-family: "Nanum Square", sans-serif;}
   .r-f .q .q-t {display: none; position: absolute; width: 136px; left: -54px; bottom: 26px; color: #fff; font-weight: 400; background: #000; border-radius: 1px; text-align: left; line-height: 1.2em; font-size: 16px; padding: 10px 8px; font-size: 13px; letter-spacing: -0.5px;}
 /*  .r-f .q .q-t:after {position: absolute; content: ""; bottom: -14px; left: 62px; display: block; width: 1px; border: 8px solid #000; border-color: transparent; border-top-color: #000;}*/
   .r-f .q:hover .q-t {display: block;}
@@ -241,8 +257,10 @@
   .rr-nth-5 .r-f2 {position: relative; top: -6px;}
   .rate .mt {margin-top: 30px;}
 
+	.miripayBn {position: relative; background: #7c88ff; padding: 11px 0; text-align: center;}
+	
   .benefit {background: #EBF4FB;}
-  .benefit h2 {font-weight: 500; margin-bottom: 20px;}
+  .benefit h2 {font-weight: 600; margin-bottom: 20px;}
   .benefit .container > .p1 {text-align: center; font-size: 18px; word-break: keep-all; line-height: 1.2em; margin-bottom: 50px; color: #414141; font-weight: 300;}
   .benefit .com-box {height: 482px;}
   .benefit .com-box > div {position: absolute; bottom: 0; left: 0; float: left; width: 145px;}
@@ -260,6 +278,12 @@
   .benefit .com-box .nth-5 .p-per {font-size: 44px; font-weight: 400;}
 	.benefit .com-box .p-chart {height: 0;}
 	.benefit .com-box .nth-5 .p-chart {background: #126cc3; height: 0;}
+    
+#per-chart.list-4 {width:585px}
+  .benefit .com-box .nuri .p-per, .benefit .com-box .nuri .p-tit {color: #126cc3;}
+  .benefit .com-box .nuri .p-per {font-size: 44px; font-weight: 400;}
+	.benefit .com-box .p-chart {height: 0;}
+	.benefit .com-box .nuri .p-chart {background: #126cc3; height: 0;}
 	
 /*
   .benefit .com-box .nth-1 .p-chart {height: 41px; height: 0;}
@@ -298,12 +322,12 @@
   .ip-outer:nth-child(odd) {padding-right: 10px;}
   .ip-outer:nth-child(even) {padding-left: 10px;}
   .ip-box {background: #fff; border: 1px solid #ddd; overflow: hidden;}
-  .thumb-box {position: relative; width: 353px; height: 240px; background-size: 100% 100% !important;}
+  .thumb-box {position: relative; width: 353px; height: 242px;}
   .thumb-box img {width: 100%;}
   .thumb-box .new {position: absolute; top: 10px; left: 10px; font-size: 14px; background: rgba(38, 196, 183, 0.88); padding: 11px 5px; color: #fff; border: 2px solid #fff; z-index: 1;}
-  .thumb-box .end {position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0, .58); text-align: center; border-top-left-radius: 4px; border-top-right-radius: 4px;}
-  .thumb-box .end span {position: relative; color: #fff; display: inline-block; padding: 10px 40px; top: 100px; border: 1px solid #fff; letter-spacing: 0; font-size: 20px;}
-  .iph3 {padding: 10px 20px; font-size: 20px;}
+  .thumb-box .end {position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0, .58); text-align: center;}
+  .thumb-box .end span {position: relative; color: #fff; display: inline-block; padding: 10px 40px; top: 97px; border: 1px solid #fff; letter-spacing: 0; font-size: 20px;}
+  .iph3 {padding: 13px 20px 10px; font-size: 20px;}
   .ip-inner {padding: 0 20px; margin-top: -2px;}
   .ip-inner li[class*=ipli] {line-height: 1.5em; font-size: 16px;}
   li[class*=ipli] .pull-right {font-weight: 600; }
@@ -341,12 +365,15 @@
   .vcfund .vf-box p {word-break:keep-all; line-height:30px;}
   .vcfund .vf-box .vf-txt-1 {font-size:24px;}
   .vcfund .vf-box .vf-txt-2 {font-size:18px;}
+    
+    /* 180625_수익률 하단 텍스트 추가_다솜 */
+    .benefit .benefit-b-txt {margin-top:20px; font-size: 14px; text-align:center; line-height: 1.3em; color: #232323;}
 }
 
 /*테블릿 영역, col-md*/
 @media (min-width: 992px) {
   .com-pd {padding: 98px 10px 95px;}
-  .com-ft {text-align: center; font-size: 42px; font-family: "Noto Sans KR", sans-serif; line-height: 1.2em;}
+  .com-ft {text-align: center; font-size: 42px; font-family: "Nanum Square", sans-serif; line-height: 1.2em;}
   .com-box {position: relative; margin: 0 auto; margin-top: 20px;}
   .arr-icon {display: inline-block; position: relative; background: url(https://nurifunding.co.kr/img/nrm_icon.png) no-repeat;}
   .br4 {border-radius: 4px;}
@@ -356,7 +383,7 @@
   .main-box.main-common {position: relative; width: 945px; height: 272px;}
 	.main-box.main-common > div {position: absolute;}
   .main-box.main-common > div.s1-div-1 {width: 100%; text-align: center;}
-  .main-box.main-common > div.s1-div-1 p {position: relative; /*display: inline-block;*/ font-family: "Noto Sans KR", "Malgun Gothic", sans-serif;}
+  .main-box.main-common > div.s1-div-1 p {position: relative; /*display: inline-block;*/ font-family: "Nanum Square", "Malgun Gothic", sans-serif;}
 	.main-box.main-common > div.s1-div-1 p.nth-0 {color: #FFF; font-size: 24px; margin-top: 40px;}
   .main-box.main-common > div.s1-div-1 p.nth-1 {width: 608px; margin: 0 auto; height: 52px; font-size: 30px; background: #09345f; color: #fff; font-weight: 200; line-height: 1.66em;
   margin-top: 12px; letter-spacing: 1px;}
@@ -369,7 +396,7 @@
   .main-box .swiper-slide {position: relative; width: 945px; height: 375px;}
   .main-box .swiper-slide img {display: block;}
   .main-box .swiper-slide > div {position: absolute;}
-  .main-box .swiper-slide > div.s1-div-2 {top: 68px; left: 20px; color: #fff; text-align: left; font-family: "Noto Sans KR", "Malgun Gothic", sans-serif;}
+  .main-box .swiper-slide > div.s1-div-2 {top: 68px; left: 20px; color: #fff; text-align: left; font-family: "Nanum Square", "Malgun Gothic", sans-serif;}
   .main-box .swiper-slide > div.s1-div-2 .d1 {font-size: 37px; font-weight: 200;}
     .main-box .swiper-slide.nth-1 > div.s1-div-2 .d1 p.nth-2, .main-box .swiper-slide.nth-1 > div.s1-div-2 .d1 p.nth-2 span {letter-spacing: -2.5px;}
   .main-box .swiper-slide > div.s1-div-2 .d1 p.nth-2 {font-weight: 400; margin-top: 10px;}
@@ -395,24 +422,26 @@
   .rate {padding: 42px 0px;}
 	.rate .container {width: 100%; text-align: center; padding: 0;}
 	.rate .row {display: inline-block;}
-	.rate [class*=rr-] {display: inline-block; /*width: auto; padding: 0 20px;*/}
-  .rr-nth-1 {width: 198px;}
-  .rr-nth-2 {width: 198px;}
-  .rr-nth-3 {width: 198px;}
+	.rate [class*=rr-] {display: inline-block; width: auto; padding: 0 30px;}
+  /*.rr-nth-1 {width: 198px;}
+  .rr-nth-2 {width: 225px;}
+  .rr-nth-3 {width: 225px;}
   .rr-nth-4 {width: 142px;}
-  .rr-nth-5 {width: 250px;}
+  .rr-nth-5 {width: 200px;}*/
   .r-f, .r-f2 {text-align: center; color: #fff; font-family: "Nanum Gothic", sans-serif; letter-spacing: 0;}
   .r-f {font-size: 18px;}
   .r-f .q-w {position: relative; top: 0px; display: inline-block; margin-left: 4px; width: 22px; height: 22px; border-radius: 50%; background: #fff; text-align: center; cursor: pointer;}
-  .r-f .q {position: relative; display: block; top: 2px; left: 0px; color: #09345f; font-weight: 600; font-family: "Noto Sans KR", sans-serif;}
+  .r-f .q {position: relative; display: block; top: 2px; left: 0px; color: #09345f; font-weight: 600; font-family: "Nanum Square", sans-serif;}
   .r-f .q .q-t {display: none; position: absolute; width: 136px; left: -54px; bottom: 30px; color: #fff; font-weight: 400; background: #000; border-radius: 1px; text-align: left; line-height: 1.2em; font-size: 16px; padding: 10px 8px; font-size: 13px; letter-spacing: -0.5px;}
 /*  .r-f .q .q-t:after {position: absolute; content: ""; bottom: -14px; left: 62px; display: block; width: 1px; border: 8px solid #000; border-color: transparent; border-top-color: #000;}*/
   .r-f .q:hover .q-t {display: block;}
   .r-f2 {font-size: 28px; margin-top: 12px; font-weight: 500;}
   .rr-nth-5 .r-f2 {position: relative; top: -4px;}
+	
+	.miripayBn {position: relative; background: #7c88ff; padding: 11px 0; text-align: center;}
 
   .benefit {background: #EBF4FB;}
-  .benefit h2 {font-weight: 500; margin-bottom: 20px;}
+  .benefit h2 {font-weight: 600; margin-bottom: 20px;}
   .benefit .container > .p1 {text-align: center; font-size: 18px; word-break: keep-all; line-height: 1.2em; margin-bottom: 50px; font-weight: 300;}
   .benefit .com-box {height: 482px;}.benefit .com-box > div {position: absolute; bottom: 0; left: 0; float: left; width: 184px;}
   .benefit .com-box .nth-1 {left: 0;}
@@ -429,6 +458,12 @@
   .benefit .com-box .nth-5 .p-per {font-size: 55px; font-weight: 400;}
 	.benefit .com-box .p-chart {height: 0;}
 	.benefit .com-box .nth-5 .p-chart {background: #126cc3; height: 0;}
+    
+    #per-chart.list-4 {width:745px;}
+  .benefit .com-box .nuri .p-per, .benefit .com-box .nuri .p-tit {color: #126cc3;}
+  .benefit .com-box .nuri .p-per {font-size: 55px; font-weight: 400;}
+	.benefit .com-box .p-chart {height: 0;}
+	.benefit .com-box .nuri .p-chart {background: #126cc3; height: 0;}
 	
 /*
   .benefit .com-box .nth-1 .p-chart {height: 41px; height: 0;}
@@ -450,11 +485,11 @@
   .easy .com-box {text-align: center;}
   .easy .com-box img {position: relative; display: inline-block; width: 160px; margin-top: 52px; margin-bottom: 30px;}
   .easy .com-box div.nth-1 img {}
-  .easy .com-box div.nth-2 img {left: 17px;}
+  .easy .com-box div.nth-2 img {left: 15px;}
   .easy .com-box div.nth-3 img {}
-    .easy .com-box div.nth-1 {left: 15px;}
+    .easy .com-box div.nth-1 {left: 25px;}
     .easy .com-box div.nth-1 img.plus,  .easy .com-box div.nth-2 img.plus {position: absolute; top: 34px; width: 76px;}
-    .easy .com-box div.nth-1 img.plus {left: 250px;}
+    .easy .com-box div.nth-1 img.plus {left: 275px;}
     .easy .com-box div.nth-2 img.plus {left: 296px;}
   .easy .com-box h3 {font-size: 24px; font-weight: 500; line-height: 1.2em; margin-bottom: 8px;}
   .easy .com-box div.nth-3 h3 {margin-bottom: 25px;}
@@ -467,12 +502,12 @@
   .ip-outer:nth-child(odd) {padding-right: 15px;}
   .ip-outer:nth-child(even) {padding-left: 15px;}
   .ip-box { margin: 0 auto; background: #fff; border: 1px solid #ddd; overflow: hidden;}
-  .thumb-box {position: relative; width: 445.5px; height: 305px; background-size: 100% 100% !important;}
+  .thumb-box {position: relative; width: 486px; height: 335px;}
   .thumb-box img {width: 100%;}
   .thumb-box .new {position: absolute; top: 10px; left: 10px; font-size: 14px; background: rgba(38, 196, 183, 0.88); padding: 11px 5px; color: #fff; border: 2px solid #fff; z-index: 1;}
-  .thumb-box .end {position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0, .58); text-align: center; border-top-left-radius: 4px; border-top-right-radius: 4px;}
-  .thumb-box .end span {position: relative; color: #fff; display: inline-block; padding: 10px 40px; top: 142.5px; border: 1px solid #fff; letter-spacing: 0; font-size: 20px;}
-  .iph3 {padding: 10px 25px; font-size: 24px;}
+  .thumb-box .end {position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0, .58); text-align: center;}
+  .thumb-box .end span {position: relative; color: #fff; display: inline-block; padding: 10px 40px; top:145px; border: 1px solid #fff; letter-spacing: 0; font-size: 20px;}
+  .iph3 {padding: 15px 25px 10px; font-size: 24px;}
   .ip-inner {padding: 0 25px; margin-top: -2px;}
   .ip-inner li[class*=ipli] {line-height: 1.5em; font-size: 18px;}
   li[class*=ipli] .pull-right {font-weight: 600; }
@@ -510,6 +545,9 @@
   .vcfund .vf-box p {word-break:keep-all; line-height:30px;}
   .vcfund .vf-box .vf-txt-1 {font-size:24px;}
   .vcfund .vf-box .vf-txt-2 {font-size:18px;}
+    
+    /* 180625_수익률 하단 텍스트 추가_다솜 */
+    .benefit .benefit-b-txt {margin-top:25px; font-size: 16px; text-align:center; line-height: 1.3em; color: #232323;}
 
 }
 
@@ -518,4 +556,3 @@
 
 
 }
-

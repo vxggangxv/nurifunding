@@ -73,20 +73,21 @@ function wayP(on, itm, ht) {
 		
 		$pPer.waypoint(function () {
 			$pPer.addClass('fadeIn');
+            
 			$("#p-per1").animateNumber({
-				number: 156,
+				number: $('#per1_val').val(),
 				numberStep: $.animateNumber.numberStepFactories.separator('.', 2)
 			}, 1000);
 			$("#p-per2").animateNumber({
-				number: 189,
+				number: $('#per2_val').val(),
 				numberStep: $.animateNumber.numberStepFactories.separator('.', 2)
 			}, 1000);
 			$("#p-per3").animateNumber({
-				number: 561,
+				number: $('#per3_val').val(),
 				numberStep: $.animateNumber.numberStepFactories.separator('.', 2)
 			}, 1000);
 			$("#p-per4").animateNumber({
-				number: 1296,
+				number: $('#per4_val').val(),
 				numberStep: $.animateNumber.numberStepFactories.separator('.', 2)
 			}, 1000);
 			$("#p-per5").animateNumber({

@@ -1,5 +1,5 @@
 .contents .container {width: 1024px; padding-left: 0; padding-right: 0;}
-.com-ft {position: relative; margin-top: 48px; text-align: center; font-size: 36px; font-family: "Noto Sans KR", sans-serif;}
+.com-ft {position: relative; margin-top: 48px; text-align: center; font-size: 36px; font-family: "Nanum Gothic", sans-serif;}
 .com-mg {margin: 45px 0px 95px;}
 .com-box {position: relative; margin: 0 auto; margin-top: 20px; border: 1px solid #ddd; background: #fff; padding: 25px 25px; box-shadow: 1px 1px 4px 0px #dadada;}
 .com-box h2, .com-box h3 {font-size: 20px;}
@@ -34,17 +34,19 @@
 .mod-p2 .cancle-btn {border: 1px solid #ccc;}
 .mod-p2 .save-btn {margin-left: 6px; border: 1px solid #398fe1;}
 
-.myi-dep {width: 270px; height: 594px; float: left;}
+.myi-dep {width: 270px; height: 630px; float: left;}
 .myi-dep h2 {}
 .myi-dep h2 .user-btn {position: relative; float: right;}
 .myi-dep h2 .user-btn img {width: 18px;}
+.myi-dep h3 {margin-top:20px; font-size: 20px;}
+.myi-dep h3 a {font-size: 15px; float: right; font-weight: 300;}
 .md-bank {margin-top: 25px;}
 .mdb-p1, .mdb-p2 {letter-spacing: 0;}
 .mdb-p1 {font-size: 14px; font-weight: 300; color: #666; word-break: keep-all; line-height: 1.1;}
 .mdb-p2 {font-size: 14px; font-weight: 300;margin-top: 10px;}
-.md-with {margin-top: 55px; padding-top: 20px; padding-bottom: 10px; position: relative; border-top: 1px solid #ddd;}
-.md-with h3 {font-size: 20px;}
-.md-with h3 a {font-size: 15px; float: right; font-weight: 300;}
+/*.md-with {margin-top: 35px; padding-top: 25px; padding-bottom: 10px; position: relative; border-top: 1px solid #ddd;}*/
+    .md-with {margin-top: 12px; padding-top: 12px; padding-bottom: 10px; position: relative; border-top: 1px solid #ddd;}
+.md-with h3 {margin-top:0}
 .md-with .s-gray {color: #676767;}
 .md-with .s-purple {color: #a544ff;}
 .md-with .s-blue {color: #0e77d8;}
@@ -59,31 +61,33 @@
 .md-with .p-1.total + .mdw-p2 {}
 .mdw-p0 {text-align: center; font-size: 14px; font-weight: 300; margin-top: 45px; line-height: 1.5em; }
 .mdw-p1 {text-align: right; margin-top: 90px; font-size: 26px; }
-.mdw-p2 {margin-top: 30px; text-align: center;}
+.mdw-p2 {margin-top: 15px; text-align: center;}
 .mdw-p2 .btn {display: block; width: 100%; padding: 20px 0; font-size: 15px; letter-spacing: 0;}
 .md-bank2 {}
 .md-bank2 .mdb-p1 {margin-top: 30px;}
 
-.md-wrapper {width: 740px; height: 241px; float: left; margin-left: 14px;}
+.md-wrapper {width: 740px; /* height: 241px; */ float: left; margin-left: 14px;}
 
-.revenue, .total-payment, .total-invest {float: left; width: 237px; height: 241px;}
+/* 180822 금액 위치 수정 */
+.revenue, .total-payment, .total-invest {float: left; width: 237px; height: 250px;}
 .total-payment, .total-invest {margin-left: 14px;}
 .revenue {}
 .revenue h3 {}
-.revenue h3 span {float: right; position: relative; top: 140px;}
+.revenue h3 span {position: absolute; right: 25px; bottom: 25px;}
 
 .total-payment {}
 .total-payment h3 {margin-bottom: 25px;}
+.tp-box {padding-bottom:20px; margin-bottom:20px; border-bottom: 1px solid #ddd;}
 .tp-p1 {margin-top: 6px; font-weight: 300; font-size: 14px;}
-.tp-p2 {margin-top: 20px; padding-top: 20px; border-top: 1px solid #ddd; text-align: right; font-size: 20px;}
+.tp-p2 {position: absolute; right: 25px; bottom: 25px; text-align: right; font-size: 20px;}
 .tp-p3 {margin-top: 15px; font-size: 14px; font-weight: 300;}
 
 .total-invest {}
 .total-invest h3 {}
-.ti-p1 {margin-top: 120px; text-align: right; font-size: 20px;}
+.ti-p1 {position: absolute; right: 25px; bottom: 25px; text-align: right; font-size: 20px;}
 .ti-p2 {margin-top: 15px; font-size: 14px; font-weight: 300;}
 
-.portfolio {width: 740px; height: 340px; float: left; margin-left: 14px; margin-top: 33px;}
+.portfolio {width: 740px; height: 350px; float: left; margin-left: 14px; margin-top: 30px;}
 .portfolio h3 {margin-bottom: 25px;}
 .pf-tab-box {position: relative; text-align: center; display: none;}
 .pf-tab-box .btn {display: inline-block; width: 32%; padding: 7px 0 8px; font-size: 14px; border:1px solid #ccc; font-weight: 300;}
@@ -100,7 +104,7 @@
 .bond-pdt h3 a {font-size: 15px; float: right; font-weight: 300;}
 .pdt-cat-box {position: relative;  margin: 0 auto; margin-top: 10px;}
 .pdt-cate {}
-.pdt-cate li {float: left; width: 15%; padding: 12px 12px; border:1px solid #ccc; text-align: center; margin-top: 10px; margin-left: 2%;}
+.pdt-cate li {float: left; width: 18.4%; padding: 12px 12px; border:1px solid #ccc; text-align: center; margin-top: 10px; margin-left: 2%;}
 .pdt-cate li:first-child {margin-left: 0;}
 .pdt-cate li.on {color: #398fe1; border-color: #398fe1; background: #fff;}
 
@@ -110,6 +114,7 @@
 .mypdt-num span.nth-2 {margin-left: 10px;}
 
 .mypdt {}
+.mypdt .bg-cancle
 .mp-li.nth1, .mp-li.nth2 {float: left; }
 .mp-li.nth1 {width: 65%;}
 .mp-li.nth2 {width: 35%;}
@@ -128,3 +133,62 @@
 .mp-li.nth2 {border-left: 1px solid #ddd; padding-left: 30px;}
 .mp-li.nth2 .mp-d {line-height: 1.5em;}
 .mp-li.nth2 .mp-d p {font-size: 14px; font-weight: 300;}
+
+
+/* 180706_출금/거래내역과 같은 테이블 추가 및 버튼생성_다솜 */
+.tab-cont-box {position: relative;}
+.tab-cont-box section {display: none;}
+.tab-cont-box section.on {display: block;}
+
+.th {position: relative; margin-top: 15px; border-top: 1px solid #888; border-bottom: 1px solid #ddd;}
+.th li {display: table-cell; font-size: 14px; padding: 15px 0;}
+
+.td {position: relative; border-bottom: 1px solid #ddd;}
+.td li {display: table-cell; vertical-align: middle; font-size: 14px; padding: 20px 0;}
+
+.th li, .td li {text-align: center; font-weight: 300;}
+.th li.nth-1, .td li.nth-1 {width: 100px;} 
+.th li.nth-2, .td li.nth-2 {width: 100px;}
+.th li.nth-3, .td li.nth-3 {width: 552px; text-align: left; padding-left: 5px;}
+.th li.nth-4, .td li.nth-4 {width: 100px;}
+.th li.nth-5, .td li.nth-5 {width: 100px;}
+
+.mypdt .btn-mp {position:absolute; top:0px; right:5px;border-radius:3px;padding:5px;font-size:12px;color:#ffffff; background:#398fe1;}
+.mypdt .btn-mp.btn-view {position:relative; top:-16px; right:auto;}
+
+#pay_info .mp-ul {position:relative}
+#pay_info .mp-li.nth1 {position:relative}
+#pay_info .mp-li.nth2 {position:relative;}
+#pay_info .mp-ul .row-dPrc {position: absolute; left: 0; bottom: 0; font-size: 15px;}
+#pay_info .mp-ul .row-dPrc .dPrc {margin-left: 10px;}
+
+.exp-list-box .exp-list-tit {font-size:15px; line-height:15px; text-align:center; color:#1d1d1d}
+.exp-list-box .exp-list {position:relative; width:100%; /*margin:28px auto 26px;*/ margin: 0 auto;}
+.exp-list-box .exp-list > div {position:relative; box-sizing:border-box; width:100%; margin:0 auto; text-align:center}
+.exp-list-box .exp-list .thead {}
+.exp-list-box .exp-list .tbody {}
+.exp-list-box .exp-list .tfoot {}
+.exp-list-box .exp-list .tr {position:relative; box-sizing:border-box; width:100%; margin:0 auto; text-align:center}
+.exp-list-box .exp-list .tr:before, .exp-list-box .exp-list .tr:after {content:''; display:block; clear:both}
+.exp-list-box .exp-list .thead .tr {}
+.exp-list-box .exp-list .tbody .tr {}
+.exp-list-box .exp-list .tfoot .tr {}
+.exp-list-box .exp-list .nth-1 {width:13.3%;}
+.exp-list-box .exp-list .nth-2 {width:16%;}
+.exp-list-box .exp-list .nth-3 {width:13%;}
+.exp-list-box .exp-list .nth-4 {width:15%;}
+.exp-list-box .exp-list .nth-5 {width:13.7%;}
+.exp-list-box .exp-list .nth-6 {width:14.5%;}
+.exp-list-box .exp-list .nth-7 {width:14.5%;}
+.exp-list-box .exp-list .th, .exp-list-box .exp-list .td {position:relative; box-sizing:border-box; display:inline-block; float:left; padding:10px 0 11px; font-size:15px; text-align:center; color:#1d1d1d; border:1px solid #ccc; border-left:0; border-top:0;}
+.exp-list-box .exp-list .th:first-child, .exp-list-box .exp-list .td:first-child {border-left:1px solid #ccc}
+.exp-list-box .exp-list .th {}
+.exp-list-box .exp-list .thead .th {border-top:1px solid #ccc; background:#f4f4f4}
+.exp-list-box .exp-list .td {}
+.exp-list-box .exp-list .tbody .td {background:#fff}
+.exp-list-box .exp-list .tbody .td {padding-left:10px; padding-right:10px; text-align:right; background:#fff}
+.exp-list-box .exp-list .tbody .td.nth-1, .exp-list-box .exp-list .tbody .td.nth-2, .exp-list-box .exp-list .tbody .td.nth-3 {text-align:center}
+.exp-list-box .exp-list .tfoot .td {padding-left:10px; padding-right:10px; text-align:right; background:#f4f4f4}
+.exp-list-box .exp-list .tfoot .nth-1 {width:42.3%}
+.exp-list-box .exp-list .tfoot .nth-1, .exp-list-box .exp-list .tfoot .nth-2, .exp-list-box .exp-list .tfoot .nth-3 {text-align:center}
+.exp-list-box .exp-list-txt {margin-top:6px; font-size:15px; line-height:20px; color:#1d1d1d}

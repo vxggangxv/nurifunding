@@ -2,14 +2,18 @@
 /*@import url(../fonts/notosanskr/notosanskr.css);*/
 @import url(https://nurifunding.co.kr/static/fonts/notosanskr/notosanskr.css);
 @import url(https://nurifunding.co.kr/static/fonts/nanumgothic/nanumgothic.css);
+@import url(https://cdn.rawgit.com/hiun/NanumSquare/master/nanumsquare.css);
 /* css 초기화 */
 @import url(https://nurifunding.co.kr/static/css/reset.css);
 @import url(https://nurifunding.co.kr/static/css/grid_1024.css);
 /*@import url(../../src/css/grid_1024.css);*/
-/*@import url(http://static.nurifunding.co.kr/fonts/NanumBarunGothic/nanumbarungothic.css);
-@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
-@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);*/
-body, html {font-family: 'Noto Sans KR', 'Nanum Gothic', 'Malgun Gothic', Arial, sans-serif;}
+/*@import url(https://nurifunding.co.kr/static/fonts/nanumgothic/nanumgothic.css);
+@import url(https://fonts.googleapis.com/earlyaccess/notosanskr.css);
+@import url(https://fonts.googleapis.com/earlyaccess/nanumgothic.css);*/
+
+body, html, * {font-family: 'Nanum Gothic', 'Nanum Square', 'Malgun Gothic', sans-serif;}
+/* body, html {font-family: 'Nanum Square', 'Noto Sans KR', 'Nanum Gothic', 'Malgun Gothic', Arial, sans-serif;} */
+
 body, * {margin:0; padding:0; box-sizing: border-box; letter-spacing: -1px;
 /*
     -webkit-user-select: none; /* Chrome, Opera, Safari *
@@ -26,6 +30,12 @@ body {background: #f5f5f5; color: #333;}
 button {cursor: pointer; border: none; background: none;}
 a {text-decoration:none; color: #434343;}
 b {font-weight: 600;}
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+input[type="password"] {font-family: sans-serif;}
 
 .clr:before, .clr:after {content: ""; display: block;}
 .clr:after {clear: both;}
@@ -35,18 +45,24 @@ b {font-weight: 600;}
 
 /*폰트 색상*/
 .bg-blue {background-color: #398fe1;}
+.bg-blue2 {background:#3584d0}
+.bg-skyblue {background-color: #52ade4;}
 .bg-darkBlue {background-color: #09345f;}
 .bg-gray {background: #aeaeae;}
+.bg-gray2 {background: #b4b4b4;}
 .bg-red {background: #f45454;}
 .c-gray, .fc-gray {color: #ccc;}
 .c-blue, .fc-blue {color: #398fe1; /* color: #126cc3; */}
-.c-blue2 {color: #126cc3;}
+.fc-lightblue {color:#1072d1}
+.c-blue2, .fc-blue2 {color: #126cc3;}
+.fc-blue3 {color:#0468c8}
 .c-white, .fc-white {color: #fff;}
 .c-orange, .fc-orange {color: #ff9a16;}
-.c-red {color: #ee1c1c;}
+.c-red, .fc-red {color: #ee1c1c;}
+.fc-red2 {color: #e22424;}
 
 /*폰트 굵기*/
-.f-bd {font-weight: 500;}
+.f-bd {font-weight: 600;}
 
 /*테두리*/
 .bor-ddd {border: 1px solid #ddd;}
@@ -60,8 +76,9 @@ b {font-weight: 600;}
 .td-under {text-decoration: underline;}
 
 .iph3 {overflow: hidden; white-space: nowrap; text-overflow: ellipsis;}
-.ftfm-nn {font-family: "Nanum Gothic", sans-serif; letter-spacing: -0.5px;}
-.ftfm-nt {font-family: "Noto Sans KR", "Malgun Gothic", "Nanum Gothic", sans-serif; letter-spacing: -0.5px;}
+.ftfm-nn {font-family: "Nanum Gothic", "Nanum Square", sans-serif; letter-spacing: -0.5px;}
+.ftfm-nt {font-family: "Nanum Gothic", "Nanum Square", sans-serif; letter-spacing: -0.5px;}
+/* .ftfm-nt {font-family: "Noto Sans KR", "Malgun Gothic", "Nanum Gothic", sans-serif; letter-spacing: -0.5px;} */
 
 /* 캔버스 커스타미이징 */
 canvas {
@@ -110,6 +127,8 @@ hr {border: none; border-top: 1px solid #ddd;}
 /*모바일 영역*/
 @media (max-width: 767px){
     
+    .hidden-xs, .show-md {display:none;}
+    
     .wrap {padding-top: 46px;}
     .header, .mlnb-wrap {z-index: 11;}
     .header {position: fixed; width: 100%; left: 0; top: 0; background: #fff; border-bottom: 2px solid #398FE1; height: 46px;}
@@ -130,16 +149,16 @@ hr {border: none; border-top: 1px solid #ddd;}
     .mlnb-wrap {display: none !important; position: fixed; /* z-index: 1; */ top: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.819);}
     .mlnb-wrap.on {display: block !important;}
     .mlnb-container {position: absolute; top: 0; left: 0px; width: 280px; height: 100%; background: #fff;}
-    .mlnb-header {background: #398fe1; padding: 15px 20px 30px 20px;}
+    .mlnb-header {background: #398fe1; padding: 15px 0px 30px 20px;}
     .mh-logo img {width: 150px}
-    .mlnb-header .cls-btn {position: relative; top: 0px; float: right;}
+    .mlnb-header .cls-btn {position: relative; top: 0px; right: 15px; float: right;}
     .mlnb-header .cls-btn img {width: 26px;}
 
     .t-box {margin-top: 30px; color: #fff; font-size: 14px; line-height: 1.5em;}
     .t-box p, .t-box a {letter-spacing: 0;}
-    .t-box p.nth-3 {margin-top: 10px;}
+    .t-box p.nth-3 {margin-top: 5px;}
     .t-box a {display: inline-block;color: #fff;/* width: 80px; */padding: 2px 4px;text-align: center;border: 1px solid #fff;font-size: 13px;}
-    .t-box a.nth-2 {margin-left: 5px;}
+    .t-box a.nth-2 {margin-left: 3px;}
 
     .mlnb {}
     .mlnb > li {position: relative; border-bottom: 1px solid #ddd;}
@@ -201,17 +220,53 @@ hr {border: none; border-top: 1px solid #ddd;}
     .side-banner {z-index: 99999; position:fixed; display:inline-block; width:96px; bottom:85px; right:0}
     .side-banner a {position:relative; display:inline-block;}
     .side-banner a img {}
+    
+    /* 180622_툴팁박스_다솜 */
+    .tooltip-box {display:inline-block; }
+    .tooltip-box .tooltip-txt {padding-right:5px; vertical-align:middle; font-size:13px; color:#3f3f3f}
+    .invest-detail-view-area .invest-detail-box .max-money-tooltip .btn-tooltip {vertical-align:middle;}
+    .btn-tooltip {position:relative; display:inline-block; width:13px; height:13px; vertical-align:middle; border-radius:100%; background:#c2c9d0;}
+    .btn-tooltip span {position:absolute; display:block; width:100%; height:100%; top:50%; margin-top:-7px; left:50%; margin-left:-4px; font-size:12px; line-height:13px; font-weight:bold; vertical-align:middle; color:#fff;}
+    .tooltip-detail {z-index:995; position:absolute; width:145px; margin-top:3px; right: 0; /*margin-left:-40px*/; padding:8px 9px;  border:1px solid #bab8b9; border-radius:2px; background:#fff; -webkit-box-shadow: 4px 4px 17px -6px rgba(140,140,140,0.6); -moz-box-shadow: 4px 4px 17px -6px rgba(140,140,140,0.6); box-shadow:4px 4px 17px -6px rgba(140,140,140,0.6);}
+    .tooltip-detail p {font-size:12px; line-height:15px; color:#3f3f3f; word-break:keep-all}
+    .tooltip-detail .f-bd {margin-bottom:5px; color:#000}
+    
+    /* 180704_팝업_다솜 */
+    .pop-com {z-index: 10000; display:block; position:fixed; box-sizing:border-box; overflow-y:auto; width:100%; height:100%; top:0; left:0; padding:0 15px; background:rgba(0, 0, 0, 0.7)}
+    .pop-com .pop-wrap {z-index: 10001; display:block; position:relative; box-sizing:border-box; width:100%; height:auto; top:50%; margin-bottom:50px; padding:15px 8px 7px; background:#f5f5f5;}
+    .pop-com .pop-top-box {}
+    .pop-com .pop-top-box .pop-tit {font-size:20px; font-weight:600; line-height:20px; text-align:center; color:#3b3b3b}
+    .pop-com .pop-container {margin-top:9px; padding:20px 20px 22px; border:1px solid #ddd; border-radius:4px; background:#fff}
+    .pop-com .pop-container .pop-txt-0 {margin-top:9px; font-size:17px; line-height:17px; font-weight:600}
+    .pop-com .pop-container .pop-txt-1 {margin-top:7px; font-size:14px; line-height:20px; word-break:keep-all; color:#505050}
+    .pop-com .pop-container .btn-com {margin-top:13px; display:inline-block; width:100%; height:38px; font-size:14px; line-height:38px; text-align:center; border-radius:4px}
+    .pop-com .pop-container .btn-com.btn-wid-1 {width:125px;}
+    .pop-com .pop-container .btn-box {text-align:center; margin:0 auto}
+    .pop-com .pop-container .btn-box.btn-box-wid2 {margin:10px auto 15px; padding:0 5px}  
+    .pop-com .pop-container .btn-box.btn-box-wid2 a {float:right; width:48.5%;}
+    .pop-com .pop-container .btn-box.btn-box-wid2 a:first-child {float:left;}
+    
+    .pop-com .btn-close {display:inline-block; position:absolute; width:auto; height:16px; top:18px; right:12px; background:url(https://nurifunding.co.kr/img/btn_close.png) no-repeat 0 center; background-size:auto 15px;}
+    .pop-com .btn-close span {padding-left:20px; font-size:12px; font-weight:600; vertical-align:middle; line-height:15px; color:#696969}
+    
+
+    /* 180727 한글표기를 위한 텍스트 추가_다솜 */
+    .nr-money-txt {display:block; margin-top:10px; padding-right:11%; font-size:15px; line-height:15px; color:#686868; text-align:right;}
+    
+    
 }
 
 /*테블릿 & PC영역*/
 @media (min-width: 768px){
+    
     .side-banner {z-index: 99999; position:fixed; display:inline-block; width: auto; top:200px; left: 50%; margin-left: 645px;}
     .side-banner a {position:relative; display:inline-block;}
     .side-banner a img {max-width: none;}
 
     .hidden-md {display: none !important;}
+    .show-md {display: block !important;}
 
-    .wrap {padding-top: 85px;}
+    .wrap {padding-top: 90px;}
     .header, .sub-nav {z-index: 11;}
     .header {position: fixed; width: 100%; left: 0; top: 0; background: #fff; border-bottom: 1px solid #ddd; height: 85px;}
     .header-box {position: relative; top: 35px;}
@@ -273,6 +328,37 @@ hr {border: none; border-top: 1px solid #ddd;}
     .footer-01 .f-txt {margin-left:8px; font-size:12px; line-height:20px;}
     .footer-01 .f-txt span {display:inline-block}
     
+    /* 180622_툴팁박스_다솜 */
+    .tooltip-box {display:inline-block; }
+    .tooltip-box .tooltip-txt {padding-right:5px; vertical-align:middle; font-size:16px; color:#3f3f3f}
+    .invest-detail-view-area .invest-detail-box .max-money-tooltip .btn-tooltip {vertical-align:middle;}
+    .btn-tooltip {position:relative; display:inline-block; width:17px; height:17px; vertical-align:middle; border-radius:100%; background:#c2c9d0;}
+    .btn-tooltip span {position:absolute; display:block; width:100%; height:100%; top:50%; margin-top:-8px; left:50%; margin-left:-4px; font-size:14px; line-height:17px; font-weight:bold; vertical-align:middle; color:#fff;}
+    .tooltip-detail {z-index:995; position:absolute; width:205px; margin-top:5px; right: 0; /*margin-left:-40px*/; padding:17px 19px;  border:1px solid #bab8b9; border-radius:2px; background:#fff; -webkit-box-shadow: 4px 4px 17px -6px rgba(140,140,140,0.6); -moz-box-shadow: 4px 4px 17px -6px rgba(140,140,140,0.6); box-shadow:4px 4px 17px -6px rgba(140,140,140,0.6);}
+    .tooltip-detail p {font-size:14px; line-height:20px; color:#3f3f3f; word-break:keep-all}
+    .tooltip-detail .f-bd {margin-bottom:8px; color:#000}
+    
+    /* 180704_팝업_다솜 */
+    .pop-com {z-index: 10000; display:block; position:fixed; overflow-y:auto; width:100%; height:100%; top:0; left:0; background:rgba(0, 0, 0, 0.7)}
+    .pop-com .pop-wrap {z-index: 10001; display:block; position:relative; box-sizing:border-box; width:570px; height:auto; left:50%; /*top:50%;*/ margin-top:180px; margin-bottom:100px; margin-left:-275px; padding:30px 14px 13px; background:#f5f5f5;}
+    .pop-com .pop-top-box {}
+    .pop-com .pop-top-box .pop-tit {font-size:30px; font-weight:600; line-height:30px; text-align:center; color:#3b3b3b}
+    .pop-com .pop-container {margin-top:15px; padding:36px 44px 30px; border:1px solid #ddd; border-radius:4px; background:#fff}
+    .pop-com .pop-container .pop-txt-0 {margin-top:15px; font-size:28px; line-height:28px; font-weight:600}
+    .pop-com .pop-container .pop-txt-1 {margin-top:13px; font-size:16px; line-height:24px; color:#505050}
+    .pop-com .pop-container .btn-com {margin-top:20px; display:inline-block; width:100%; height:54px; font-size:18px; line-height:54px; text-align:center; border-radius:4px}
+    .pop-com .pop-container .btn-com.btn-wid-1 {width:193px;}
+    .pop-com .pop-container .btn-box {text-align:center; margin:0 auto}
+    .pop-com .pop-container .btn-box.btn-box-wid2 {margin:20px auto 30px; padding:0 20px}  
+    .pop-com .pop-container .btn-box.btn-box-wid2 a {float:right; width:48.5%;}
+    .pop-com .pop-container .btn-box.btn-box-wid2 a:first-child {float:left;}
+    
+    .pop-com .btn-close {display:inline-block; position:absolute; width:auto; height:24px; top:32px; right:16px; background:url(https://nurifunding.co.kr/img/btn_close.png) no-repeat 0 center;}
+    .pop-com .btn-close span {padding-left:30px; font-size:18px; font-weight:600; line-height:24px; color:#696969}
+    
+    /* 180727 한글표기를 위한 텍스트 추가_다솜 */
+    .nr-money-txt {display:block; margin-top:10px; padding-right:25px; font-size:16px; line-height:16px; color:#686868; text-align:right;}
+    
 }
 
 @media (min-width: 980px){
@@ -289,9 +375,10 @@ hr {border: none; border-top: 1px solid #ddd;}
     .footer-01 .a-txt a {margin-left: 20px; font-size:16px;}
     .footer-01 .f-adr-box .f-adr {width: auto; margin-right:35px}
     .footer-01 .f-adr-box .f-adr address {font-size:14px; line-height:23px;}
-    .footer-01 .f-adr-box .f-adr address span {dfont-size:20px;}
+    .footer-01 .f-adr-box .f-adr address span {font-size:20px;}
     .footer-01 .f-txt {font-size:14px; line-height:23px;}
 
+    .tooltip-detail {right:auto; margin-left:-40px}
 }
 
 /* 

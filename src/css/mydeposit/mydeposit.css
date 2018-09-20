@@ -12,66 +12,99 @@
 .wrap {position: relative; width: 100%;}
 .main {position: relative;}
 
+.dep-p1,
+.with-p2 button,
+.with-p3 .nr-text,
+.th li, .td li {font-family: "Nanum Gothic", sans-serif !important;}
+
+.th li.nth-4, .td li.nth-4,
+.th li.nth-5, .td li.nth-5 {text-align: right;}
+
 /*모바일 영역, col-xs*/
 @media (max-width: 767px){
-  .com-ft {position: relative; margin-top: 28px; text-align: center; font-size: 22px; font-family: "Noto Sans KR", sans-serif;}
-  .com-mg {margin: 15px 0px 50px;}
-  .com-box{position: relative; margin: 0 auto; margin-top: 10px; width: 300px; border: 1px solid #ddd; background: #fff; padding: 25px 20px; box-shadow: 1px 1px 4px 0px #dadada;}
-  .br3 {border-radius: 3px;}
-  .br4 {border-radius: 4px;}
-  .xs-block {display: block;}
+    .com-ft {position: relative; margin-top: 28px; text-align: center; font-size: 22px; font-family: "Noto Sans KR", sans-serif;}
+    .com-mg {margin: 15px 0px 50px;}
+    .com-mg .container {position:relative; box-sizing:border-box; width:100%; padding:0 17px}
+    .com-box{position: relative; margin: 0 auto; margin-top: 10px;/* width: 300px;*/ width:100%; border: 1px solid #ddd; background: #fff; padding: 25px 20px; box-shadow: 1px 1px 4px 0px #dadada;}
+    .br3 {border-radius: 3px;}
+    .br4 {border-radius: 4px;}
+    .xs-block {display: block;}
+
+    .deposit {}
+    .deposit h2 {font-size: 18px; margin-bottom: 25px;}
+    .dep-p1 {font-size: 15px; font-weight: 300;}
+    .dep-p1 span {display: block; margin-bottom: 8px; margin-top: 20px;}
+    .dep-p2 {margin-top: 50px; text-align: right; font-size: 26px}
+    .md-with {margin-top: 35px; padding-top: 20px; padding-bottom: 10px;}
+    .mdw-p0 {text-align: center; font-size: 14px; font-weight: 300; margin-top: -30px; line-height: 1.5em; }
+    .mdw-p2 {margin-top: 20px; text-align: center;}
+    .mdw-p2 .btn {display: block; width: 100%; padding: 18px 0; font-size: 15px; letter-spacing: 0;}
+
+    .withdraw.com-box {/* padding: 25px 20px */;}
+    .withdraw h2 {font-size: 18px; margin-bottom: 20px;}
+    .with-p1 {font-size: 13px; line-height: 1.5em; font-weight: 300;}
+    .with-p2 {margin-top: 25px;}
+    .with-p2 button {width: 28.5%; margin-left: 1%; padding: 7px 0; border: 1px solid #c3c3c3; box-shadow: 1px 1px 4px 0px #dadada; color: #666;}
+    .with-p2 button:first-child {margin-left: 0;}
+    .with-p3 {margin-top: 8px; font-weight: 300; border-color: #c3c3c3;}
+    .with-p3 .nr-text, .with-p4 .btn {height: 46px;}
+    .with-p3 .nr-text {width: 90%; font-size: 17px; text-align: right; padding-right: 15px; text-indent: 0; letter-spacing: 0;}
+    .with-p3 .nr-ph {display: none; position: absolute; top: 16px; left: 1px; text-indent: 15px; color: #999; letter-spacing: 0; font-size: 15px;}
+
+    /* 180727 한글표기를 위한 텍스트 추가_다솜 */
+    .with-p3.nr-box, .with-p4 {}
   
-  .deposit {}
-  .deposit h2 {font-size: 18px; margin-bottom: 25px;}
-  .dep-p1 {font-size: 15px; font-weight: 300;}
-  .dep-p1 span {display: block; margin-bottom: 8px; margin-top: 20px;}
-  .dep-p2 {margin-top: 50px; text-align: right; font-size: 26px}
-  .md-with {margin-top: 35px; padding-top: 20px; padding-bottom: 10px;}
-  .mdw-p0 {text-align: center; font-size: 14px; font-weight: 300; margin-top: -30px; line-height: 1.5em; }
-  .mdw-p2 {margin-top: 20px; text-align: center;}
-  .mdw-p2 .btn {display: block; width: 100%; padding: 18px 0; font-size: 15px; letter-spacing: 0;}
+    .with-p4 {margin-top: 30px; padding-bottom: 20px;}
+    .with-p4 .btn {display: block; width: 100%; font-size: 16px; color: #fff; background: #398FE2; line-height: 2.9em; letter-spacing: 0;}
+    .with-p5 {position: absolute; bottom: 15px; font-size: 13px; font-weight: 300;}
+    .with-p5 span {margin-left: 15px;}
+    .with-p6 {/* position: absolute; bottom: 20px; */ font-size: 13px; font-weight: 300;}
+    .with-p6 span {display:block; margin-top:5px;}
+    .user-icon {display: none;}
+
+    .history {padding-left: 10px; padding-right: 10px;}
+    .history h2 {font-size: 18px; letter-spacing: 0;}
+    .history h2, .tab {display: inline-block; font-weight: 300;}
+    .tab-box {position: relative; margin-top: 2px; width: 100%;}
+    .tab {float: right;}
+    .tab li {float: left; margin-left: 10px;}
+    .tab li a {font-size: 15px;}
+    .tab li.on a {color: #398fe1;}
+
+    .tab-cont-box {position: relative;}
+    .tab-cont-box section {display: none;}
+    .tab-cont-box section.on {display: block;}
+    .th {position: relative; border-top: 1px solid #888; border-bottom: 1px solid #ddd; margin-top: 10px;}
+    .th li {display: none; float: left; font-size: 14px; padding: 15px 0;}
+    .th li.m {display: block;}
+
+    .td {position: relative; border-bottom: 1px solid #ddd; /* display: table-row; */}
+    .td li {display: none; float: left; font-size: 14px; padding: 15px 0;}
+    .td li.m {display: block; vertical-align: middle;}
+
+    .th li, .td li {font-weight: 300;}
+    .th li.nth-1, .td li.nth-1 {width: 22%; text-align: center;}
+    .th li.nth-3, .td li.nth-3 {width: 53%; text-align: left; padding-left: 4px;}
+    .th li.nth-4, .td li.nth-4 {width: 25%; text-align: right; padding-right: 5px;}
   
-  .withdraw {}
-  .withdraw h2 {font-size: 18px; margin-bottom: 20px;}
-  .with-p1 {font-size: 13px; line-height: 1.5em; font-weight: 300;}
-  .with-p2 {margin-top: 25px;}
-  .with-p2 button {width: 28.5%; margin-left: 1%; padding: 7px 0; border: 1px solid #c3c3c3; box-shadow: 1px 1px 4px 0px #dadada; color: #666;}
-  .with-p2 button:first-child {margin-left: 0;}
-  .with-p3 {margin-top: 8px; font-weight: 300; border-color: #c3c3c3;}
-  .with-p3 .nr-text, .with-p4 .btn {height: 46px;}
-  .with-p3 .nr-text {width: 90%; font-size: 17px; text-align: right; padding-right: 15px; text-indent: 0; letter-spacing: 0;}
-  .with-p3 .nr-ph {display: none; position: absolute; top: 16px; left: 1px; text-indent: 15px; color: #999; letter-spacing: 0; font-size: 15px;}
-  .with-p4 {margin-top: 40px; padding-bottom: 20px;}
-  .with-p4 .btn {display: block; width: 100%; font-size: 16px; color: #fff; background: #398FE2; line-height: 2.9em; letter-spacing: 0;}
-  .with-p5 {position: absolute; bottom: 25px; font-size: 13px; font-weight: 300;}
-  .with-p5 span {margin-left: 15px;}
-  .user-icon {display: none;}
-  
-  .history {padding-left: 10px; padding-right: 10px;}
-  .history h2 {font-size: 18px; letter-spacing: 0;}
-  .history h2, .tab {display: inline-block; font-weight: 300;}
-  .tab-box {position: relative; margin-top: 2px; width: 100%;}
-  .tab {float: right;}
-  .tab li {float: left; margin-left: 10px;}
-  .tab li a {font-size: 15px;}
-  .tab li.on a {color: #398fe1;}
-  
-  .tab-cont-box {position: relative;}
-  .tab-cont-box section {display: none;}
-  .tab-cont-box section.on {display: block;}
-  .th {position: relative; border-top: 1px solid #888; border-bottom: 1px solid #ddd; margin-top: 10px;}
-  .th li {display: none; float: left; font-size: 14px; padding: 15px 0;}
-  .th li.m {display: block;}
-  
-  .td {position: relative; border-bottom: 1px solid #ddd; display: table-row;}
-  .td li {display: none; font-size: 14px; padding: 10px 0;}
-  .td li.m {display: table-cell; vertical-align: middle;}
-  
-  .th li, .td li {font-weight: 300;}
-  .th li.nth-1, .td li.nth-1 {width: 22%; text-align: center;}
-  .th li.nth-3, .td li.nth-3 {width: 53%; text-align: left; padding-left: 4px;}
-  .th li.nth-4, .td li.nth-4 {width: 25%; text-align: right; padding-right: 5px;}
-  
+    /* 20180707_출금인증동의_다솜 */
+    .withdraw-agree {}
+    .withdraw-agree .container {}
+    .withdraw-agree .container .com-box {margin-top: 0; padding:23px 10px 29px; text-align:center}
+    .withdraw-agree .wd-agree-tit {margin-bottom:10px; font-size:17px; line-height:20px; color:#1d73c6}
+    .withdraw-agree .wd-ing-box {display:inline-block; padding:15px 25px 14px; border:1px solid #cbcbcb; background:#f3f3f3}
+    .withdraw-agree .wd-ing-box .ing-txt {padding:7px 0 8px; text-align:left; background:url(https://nurifunding.co.kr/img/loading.gif)no-repeat 0 center; background-size:auto 34px;}
+    .withdraw-agree .wd-ing-box .ing-txt span {padding-left:45px; font-size:15px; font-weight:600; line-height:19px; word-break:keep-all; color:#626262}
+    .withdraw-agree .wd-p {position:relative; margin-top:15px; font-size:14px; font-weight: 500; line-height:18px; word-break:keep-all}
+    .withdraw-agree .wd-p img {padding:0 55px}
+    .withdraw-agree .wd-btn {display:inline-block; width:190px; margin-top:15px; } 
+    .withdraw-agree .wd-btn a {display:block; height:37px; font-size:15px; line-height:37px;}
+    /* 20180709_출금완료_다솜 */
+    .withdraw-agree .withdraw-end-box {margin:67px auto 42px; background:url(https://nurifunding.co.kr/img/mydeposit/img_withdraw_end.png)no-repeat center 0; background-size:auto 53px}
+    .withdraw-agree .withdraw-end-box .wd-end-tit {padding-top:70px; font-size:18px; line-height:18px;}
+    .withdraw-agree .withdraw-end-box .wd-end-txt {padding:10px 0 35px; font-size:14px; line-height:20px;}
+    .withdraw-agree .withdraw-end-box .wd-btn {}
+    .withdraw-agree .withdraw-end-box .wd-btn a {}
 }
 
 /*테블릿 영역, col-sm~col-md */
@@ -84,7 +117,7 @@
 
   .deposit {padding: 35px 35px 0; height: 200px; margin-top: 0;}
   .deposit h2 {font-size: 22px; margin-bottom: 25px;}
-  .dep-p1 {font-size: 15px; font-weight: 300; display: inline-block; position: relative; top: 19px;}
+  .dep-p1 {font-size: 15px; font-weight: 300; display: inline-block; position: relative; /* top: 19px; */}
   .dep-p1.sm-ml {margin-left: 40px;}
   .dep-p1 span {display: block; margin-bottom: 8px; margin-top: 20px;}
   .dep-p2 {display: inline-block; float: right; margin-top: 50px; text-align: right; font-size: 26px}
@@ -94,7 +127,7 @@
   .mdw-p2 {position: absolute; right: 0; bottom: 0; text-align: center;}
   .mdw-p2 .btn {display: block; width: 200px; padding: 20px 0; font-size: 15px; letter-spacing: 0;}
 
-  .withdraw {padding: 35px 35px 0; height: 300px;}
+  .withdraw {padding: 35px 35px 25px; /* height: 300px; */}
   .withdraw h2 {font-size: 22px; margin-bottom: 25px;}
   .with-p1 {font-size: 15px; line-height: 1.5em; font-weight: 300;}
   .with-p2 {margin-top: 20px;}
@@ -104,10 +137,16 @@
   .with-p3 .nr-text, .with-p4 .btn {height: 46px;}
   .with-p3 .nr-text {width: 450px; font-size: 17px; text-align: right; padding-right: 15px; text-indent: 0; letter-spacing: 0;}
   .with-p3 .nr-ph {display: none; position: absolute; top: 16px; left: 1px; text-indent: 15px; color: #999; letter-spacing: 0; font-size: 15px;}
+
+  /* 180727 한글표기를 위한 텍스트 추가_다솜 */
+  .with-p3.nr-box, .with-p4 {float:left; margin-top:8px;}
+
   .with-p4 {display: inline-block; width: 158px; margin-left: 26px;}
   .with-p4 .btn {display: block; width: 100%; font-size: 16px; color: #fff; background: #398FE2; line-height: 2.9em; letter-spacing: 0;}
   .with-p5 {margin-top: 40px; font-size: 15px; font-weight: 300;}
   .with-p5 span {margin-left: 15px;}
+  .with-p6 {margin-top: 30px; font-size: 15px; font-weight: 300;}
+  .with-p6 span {display:block; margin-top:10px;}
   .user-icon {position: relative; top: 5px; margin-left: 12px; width: 19px;}
 
   .history {padding: 35px 35px;}
@@ -127,7 +166,7 @@
   .th li {display: table-cell; font-size: 14px; padding: 15px 0;}
 
   .td {position: relative; border-bottom: 1px solid #ddd;}
-  .td li {display: table-cell; vertical-align: middle; font-size: 14px; padding: 10px 0;}
+  .td li {display: table-cell; vertical-align: middle; font-size: 14px; padding: 20px 0;}
 
   .th li, .td li {text-align: center; font-weight: 300;}
   .th li.nth-1, .td li.nth-1 {width: 70px;}
@@ -139,6 +178,28 @@
   
 }
 
+
+/*테블릿 영역~pc 영역, col-md~col-lg*/
+@media (min-width: 768px) {
+    /* 20180707_출금인증동의_다솜 */
+    .withdraw-agree {margin:30px 0px 45px;}
+    .withdraw-agree .container {width:800px}
+    .withdraw-agree .container .com-box {padding:42px 0 52px; text-align:center}
+    .withdraw-agree .wd-agree-tit {margin-bottom:20px; font-size:26px; line-height:30px; color:#1d73c6}
+    .withdraw-agree .wd-ing-box {display:inline-block; padding:26px 36px 21px; border:1px solid #cbcbcb; background:#f3f3f3}
+    .withdraw-agree .wd-ing-box .ing-txt {padding:10px 0 14px; background:url(https://nurifunding.co.kr/img/loading.gif)no-repeat 0 center; background-size:auto 44px;}
+    .withdraw-agree .wd-ing-box .ing-txt span {padding-left:53px; font-size:20px; font-weight:600; line-height:26px; color:#626262}
+    .withdraw-agree .wd-p {position:relative; margin-top:25px; font-size:18px; font-weight: 500; line-height:24px; }
+    .withdraw-agree .wd-btn {display:inline-block; width:120px; margin-top:25px; } 
+    .withdraw-agree .wd-btn a {display:block; height:48px; font-size:15px; line-height:48px;}
+    /* 20180709_출금완료_다솜 */
+    .withdraw-agree .withdraw-end-box {margin:50px auto 38px; background:url(https://nurifunding.co.kr/img/mydeposit/img_withdraw_end.png)no-repeat center 0;}
+    .withdraw-agree .withdraw-end-box .wd-end-tit {padding-top:120px; font-size:28px; line-height:28px;}
+    .withdraw-agree .withdraw-end-box .wd-end-txt {padding-top:12px; font-size:18px; line-height:24px;}
+    .withdraw-agree .withdraw-end-box .wd-btn {}
+    .withdraw-agree .withdraw-end-box .wd-btn a {}
+}
+
 /*테블릿 영역, col-md*/
 @media (min-width: 992px) {
 
@@ -146,68 +207,77 @@
 
 /*pc 영역 col-lg*/
 @media (min-width: 1200px){
-  .contents .container {width: 1024px; padding-left: 0; padding-right: 0;}
-  .com-ft {position: relative; margin-top: 48px; text-align: center; font-size: 36px; font-family: "Noto Sans KR", sans-serif;}
-  .com-mg {margin: 45px 0px 95px;}
-  .com-box {position: relative; margin: 0 auto; border: 1px solid #ddd; background: #fff; box-shadow: 1px 1px 4px 0px #dadada;}
-  .br3 {border-radius: 3px;}
-  .br4 {border-radius: 4px;}
-  
-  
-  .lg-wrapper {width: 1024px;}
-  
-  .deposit {padding: 35px 30px 0; width: 270px; height: 350px; float: left;}
-  .deposit h2 {font-size: 22px; margin-bottom: 25px;}
-  .dep-p1 {font-size: 15px; font-weight: 300; display: block;}
-  .dep-p1 span {display: block; margin-bottom: 8px; margin-top: 30px;}
-  .dep-p1.sm-ml {margin-left: 0;}
-  .dep-p2 {width: 100%; margin-top: 100px; text-align: right; font-size: 26px}
-  .md-with {margin-top: 35px; padding-top: 20px; padding-bottom: 10px;}
-  .mdw-p0 {text-align: center; font-size: 14px; font-weight: 300; margin-top: 0px; line-height: 1.7em; }
-  .mdw-p0 span {display: block;}
-  .mdw-p2 {margin-top: 51px; text-align: center;}
-  .mdw-p2 .btn {display: block; width: 100%; padding: 18px 0; font-size: 15px; letter-spacing: 0;}
+    .contents .container {width: 1024px; padding-left: 0; padding-right: 0;}
+    .com-ft {position: relative; margin-top: 48px; text-align: center; font-size: 36px; font-family: "Noto Sans KR", sans-serif;}
+    .com-mg {margin: 45px 0px 95px;}
+    .com-box {position: relative; margin: 0 auto; border: 1px solid #ddd; background: #fff; box-shadow: 1px 1px 4px 0px #dadada;}
+    .br3 {border-radius: 3px;}
+    .br4 {border-radius: 4px;}
 
-  .withdraw {padding: 35px 35px 0; width: 744px; height: 350px; float: left; margin-left: 10px;}
-  .withdraw h2 {font-size: 22px; margin-bottom: 25px;}
-  .with-p1 {font-size: 15px; line-height: 1.5em; font-weight: 300;}
-  .with-p2 {margin-top: 20px;}
-  .with-p2 button {width: 145px; margin-left: 5px; padding: 7px 0; border: 1px solid #c3c3c3; box-shadow: 1px 1px 4px 0px #dadada; color: #666; font-size: 15px;}
-  .with-p2 button:first-child {margin-left: 0;}
-  .with-p3 {margin-top: 8px; font-weight: 300; border-color: #c3c3c3; display: inline-block;}
-  .with-p3 .nr-text, .with-p4 .btn {height: 46px;}
-  .with-p3 .nr-text {width: 450px; font-size: 17px; text-align: right; padding-right: 15px; text-indent: 0; letter-spacing: 0;}
-  .with-p3 .nr-ph {display: none; position: absolute; top: 16px; left: 1px; text-indent: 15px; color: #999; letter-spacing: 0; font-size: 15px;}
-  .with-p4 {position: relative; display: inline-block; width: 158px; margin-left: 30px; top: 3px;}
-  .with-p4 .btn {display: block; width: 100%; font-size: 16px; color: #fff; background: #398FE2; line-height: 2.9em; letter-spacing: 0;}
-  .with-p5 {margin-top: 40px; font-size: 15px; font-weight: 300;}
-  .with-p5 span {margin-left: 15px;}
-  .user-icon {position: relative; top: 5px; margin-left: 12px; width: 19px;}
 
-  .history {padding: 35px 35px; margin-top: 10px; width: 1024px;}
-  .history h2 {display: block; font-size: 22px; letter-spacing: 0;}
-  .tab-box {position: relative; width: 100%; height: 20px; margin-top: 25px;}
-  .tab {position: relative; float: left; top: 2px; left: 0px; font-weight: 300;}
-  .tab li {float: left; margin-left: 20px;}
-  .tab li:first-child {margin-left: 0;}
-  .tab li a {font-size: 16px;}
-  .tab li.on a {color: #398fe1;}
-  
-  .tab-cont-box {position: relative;}
-  .tab-cont-box section {display: none;}
-  .tab-cont-box section.on {display: block;}
-  
-  .th {position: relative; margin-top: 15px; border-top: 1px solid #888; border-bottom: 1px solid #ddd;}
-  .th li {display: table-cell; font-size: 14px; padding: 15px 0;}
+    .lg-wrapper {width: 1024px;}
 
-  .td {position: relative; border-bottom: 1px solid #ddd;}
-  .td li {display: table-cell; vertical-align: middle; font-size: 14px; padding: 10px 0;}
+    .deposit {padding: 35px 30px 0; width: 270px; height: 350px; float: left;}
+    .deposit h2 {font-size: 22px; margin-bottom: 25px;}
+    .dep-p1 {font-size: 15px; font-weight: 300; display: block;}
+    .dep-p1 span {display: block; margin-bottom: 8px; margin-top: 30px;}
+    .dep-p1.sm-ml {margin-left: 0;}
+    .dep-p2 {width: 100%; margin-top: 100px; text-align: right; font-size: 26px}
+    .md-with {margin-top: 35px; padding-top: 20px; padding-bottom: 10px;}
+    .mdw-p0 {text-align: center; font-size: 14px; font-weight: 300; margin-top: 0px; line-height: 1.7em; }
+    .mdw-p0 span {display: block;}
+    .mdw-p2 {margin-top: 51px; text-align: center;}
+    .mdw-p2 .btn {display: block; width: 100%; padding: 18px 0; font-size: 15px; letter-spacing: 0;}
 
-  .th li, .td li {text-align: center; font-weight: 300;}
-  .th li.nth-1, .td li.nth-1 {width: 100px;}
-  .th li.nth-2, .td li.nth-2 {width: 100px;}
-  .th li.nth-3, .td li.nth-3 {width: 552px; text-align: left; padding-left: 5px;}
-  .th li.nth-4, .td li.nth-4 {width: 100px;}
-  .th li.nth-5, .td li.nth-5 {width: 100px;}
+    .withdraw {padding: 35px 35px 0; width: 744px; height: 350px; float: left; margin-left: 10px;}
+    .withdraw h2 {font-size: 22px; margin-bottom: 25px;}
+    .with-p1 {font-size: 15px; line-height: 1.5em; font-weight: 300;}
+    .with-p2 {margin-top: 20px;}
+    .with-p2 button {width: 145px; margin-left: 5px; padding: 7px 0; border: 1px solid #c3c3c3; box-shadow: 1px 1px 4px 0px #dadada; color: #666; font-size: 15px;}
+    .with-p2 button:first-child {margin-left: 0;}
+    .with-p3 {margin-top: 8px; font-weight: 300; border-color: #c3c3c3; display: inline-block;}
+    .with-p3 .nr-text, .with-p4 .btn {height: 46px;}
+    .with-p3 .nr-text {width: 450px; font-size: 17px; text-align: right; padding-right: 15px; text-indent: 0; letter-spacing: 0;}
+    .with-p3 .nr-ph {display: none; position: absolute; top: 16px; left: 1px; text-indent: 15px; color: #999; letter-spacing: 0; font-size: 15px;}
+    /* 180727 한글표기를 위한 텍스트 추가_다솜 */
+    .with-p3.nr-box, .with-p4 {float:left; margin-top:8px;}
 
+    .with-p4 {position: relative; display: inline-block; width: 158px; margin-left: 30px; /* top: 3px; */}
+    .with-p4 .btn {display: block; width: 100%; font-size: 16px; color: #fff; background: #398FE2; line-height: 2.9em; letter-spacing: 0;}
+    .with-p5 {margin-top: 40px; font-size: 15px; font-weight: 300;}
+    .with-p5 span {margin-left: 15px;}
+    .with-p6 {margin-top: 30px; font-size: 15px; font-weight: 300;}
+    .with-p6 span {display:block; margin-top:10px;}
+    .user-icon {position: relative; top: 5px; margin-left: 12px; width: 19px;}
+
+    .history {padding: 35px 35px; margin-top: 10px; width: 1024px;}
+    .history h2 {display: block; font-size: 22px; letter-spacing: 0;}
+    .tab-box {position: relative; width: 100%; height: 20px; margin-top: 25px;}
+    .tab {position: relative; float: left; top: 2px; left: 0px; font-weight: 300;}
+    .tab li {float: left; margin-left: 20px;}
+    .tab li:first-child {margin-left: 0;}
+    .tab li a {font-size: 16px;}
+    .tab li.on a {color: #398fe1;}
+
+    .tab-cont-box {position: relative;}
+    .tab-cont-box section {display: none;}
+    .tab-cont-box section.on {display: block;}
+
+    .th {position: relative; margin-top: 15px; border-top: 1px solid #888; border-bottom: 1px solid #ddd;}
+    .th li {display: table-cell; font-size: 14px; padding: 15px 0;}
+
+    .td {position: relative; border-bottom: 1px solid #ddd;}
+    .td li {display: table-cell; vertical-align: middle; font-size: 14px; padding: 20px 0;}
+
+    .th li, .td li {text-align: center; font-weight: 300;}
+    .th li.nth-1, .td li.nth-1 {width: 100px;}
+    .th li.nth-2, .td li.nth-2 {width: 100px;}
+    .th li.nth-3, .td li.nth-3 {width: 552px; text-align: left; padding-left: 5px;}
+    .th li.nth-4, .td li.nth-4 {width: 100px;}
+    .th li.nth-5, .td li.nth-5 {width: 100px;}
+    
+    
+    /* 20180707_출금인증동의_다솜 */
+    .withdraw-agree {margin:30px 0px 45px;}
+    .withdraw-agree .container {width:800px}
 }

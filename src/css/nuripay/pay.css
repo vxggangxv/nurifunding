@@ -1,0 +1,175 @@
+@charset "utf-8";
+
+
+/*모바일 영역*/
+@media (max-width: 767px){
+    .wrap {padding-top:40px}
+    .show-xs {display:block;}
+    .btn-pay {position:relative; display:inline-block; padding:0; height:32px; font-size:12px; line-height:32px; font-weight:600; color:#fff; text-align:center; border-radius:4px; background:#0898e7}
+    section[class*="pay-sec"] {position:relative;}
+    section[class*="pay-sec"] .pay-area {position:relative; box-sizing:border-box; width:100%; margin:0 auto; padding:0;}
+    section[class*="pay-sec"] .pay-area img {}
+    .pay-sec2 .nr-select {display:inline-block; box-sizing:border-box; height:35px; padding:0 13px 0 8px; font-size:15px; line-height:35px; font-weight:500; color:#0069cb; border: 1px solid #bdbdbd; border-radius:1px;  background: #f7f7f7 url(https://nurifunding.co.kr/img/nuripay/selectArr.png) no-repeat 95% center; background-size:10px auto}
+    
+    /* 헤더 */
+    .pay-header {padding-top:8px; height:40px; border-bottom:0; background:#e5e5e5}
+    .pay-header h2 {float:left; position:relative; display:inline-block; width:75px}
+    .pay-header h2 a {width:100%;}
+    .pay-header .container.header-box { box-sizing:border-box; width:100%; margin:0 auto; top:0; padding:0 15px;}
+    .pay-header .pull-right {margin-top:6px; clear:none; display:inline-block; width:auto}
+    .pay-header .main-nav > li, .main-nav > li > a {padding-bottom:0; line-height:13px;}
+    .pay-header .main-nav > li {margin-left:0; font-size:13px; font-weight:bold; color:#616161}
+    .pay-header .main-nav .img-call {display:inline-block; margin:0 5px}
+    .pay-header .main-nav .last {display:none}
+    
+    /* 메인 */
+    .pay-sec1 {padding:30px 0 17px; text-align:center; background:url(https://nurifunding.co.kr/img/nuripay/m/bg_sec1.jpg) no-repeat center center; background-size:cover}
+    .pay-sec1 .btn-pay {margin:20px 0 26px; width:100px;}
+    
+    /* 누리페이 선정산 */
+    .pay-sec2 {padding:27px 18px 320px; background:#f4f4f4}
+    .pay-sec2 .pay-cal {position:absolute; box-sizing:border-box; width:100%; height:280px; margin:0 auto; bottom:-297px; padding:20px 0; text-align:center; border:1px solid #c8c6c7; border-radius:1px; background:#fff}
+    .pay-sec2 .pay-cal .cal-tit {position:relative; display:block; width:95px; height:auto; margin:0 auto}
+    .pay-sec2 .pay-cal .cal-tit img {height:24px;}
+    .pay-sec2 .pay-cal .cal-tit:after {content:''; position:absolute; display:inline-block; width:95px; height:1px; bottom:-5px; left:-1px; background:#d9d9d9}
+    .pay-sec2 .pay-cal .cal-txt {margin:9px auto 13px; font-size:13px; line-height:13px; color:#0069cb}
+    .pay-sec2 .pay-sel-box {}
+    .pay-sec2 .select-box {position:relative; display:inline-block; } 
+    .pay-sec2 .nr-select.sel-money {width:106px;}
+    .pay-sec2 .nr-select.sel-day {width:70px;}
+    .pay-sec2 .pay-sel-box span {display:inline-block; font-size:14px; line-height:35px; color:#3d3d3d}
+    .pay-sec2 .pay-sel-box .pay-sel-txt {font-size:15px; line-height:24px; color:#6a6a6a}
+    .pay-sec2 .pay-sel-box .pay-cal-money, .pay-sec2 .pay-sel-box .pay-cal-money span {font-size:24px; line-height:24px; color:#128bce}
+    .pay-sec2 .pay-sel-box .pay-cal-money {padding:3px 0 10px}
+    .pay-sec2 .btn-pay {width:202px; }
+    .pay-sec2 .pay-txt2 {margin-top:12px; font-size:12px; line-height:18px; color:#6a6a6a}
+    
+    .pay-sec2 .pay-info {position:relative; display:block}
+    
+    /* 누리페이에서 먼저 정산받으세요 */
+    .pay-sec3 {box-sizing:border-box; padding:33px 0 30px; background:#fff}
+    .pay-sec3 .pay-max {padding-top:25px;}
+    
+    /* FAQ 안내 */
+    .pay-sec4 {box-sizing:border-box; padding:27px 0 23px; background:#f4f4f4}
+    
+    /* 누리페이 선정산 서비스를 신청하세요! */
+    .pay-sec5 {box-sizing:border-box; padding:28px 17px 33px; margin:0 auto; background:#fff}
+    .pay-sec5 .pay-area { margin:0 auto; text-align:center}
+    .pay-sec5 .cal-tit {margin-bottom:7px; font-size:19px; font-weight:600; text-align:center; word-break:keep-all; line-height:22px; color:#0076b8}
+    .pay-sec5 .cal-txt {margin-bottom:14px; font-size:12px; text-align:center; line-height:15px; word-break:keep-all; color:#3d3d3d}
+    .pay-sec5 .input-box {position:relative; width:90%; margin:0 auto; margin-top:9px}
+    .pay-sec5 .nr-text {display:inline-block; width:100%; height:30px; padding:0 10px; font-size:13px; line-height:30px; font-weight:500; color:#3d3d3d; border: 1px solid #bbb9b9; border-radius:1px;}
+    .pay-sec5 .input-tit {position:relative; float:left; width:25%; font-size:12px; text-align:left; line-height:30px; color:#3d3d3d}
+    .pay-sec5 .input-tit label {cursor:pointer}
+    .pay-sec5 .input-txt-box {position:relative; float:left; width:75%;}
+    .pay-sec5 .input-num-box .nr-text {float:left; width:25%}
+    .pay-sec5 .input-num-box .nr-text.fir {width:27%}
+    .pay-sec5 .input-num-box .nr-text.last {width:36%}
+    .pay-sec5 .input-num-box .line {float:left; display:inline-block; position:relative; width:2%; height:2px; margin:13px 2% 0; vertical-align:middle; background: #b1b1b1}
+    .pay-sec5 .btn-pay {width:90%; margin-top:14px}
+    
+    /* 푸터 */
+    .pay-footer {box-sizing:border-box; padding:20px 17px 21px; background:#555}
+    .pay-footer .container.footer-box {position:relative; width:100%; margin:0 auto;}
+    .pay-footer p, .pay-footer span, .pay-footer a {color:#fff}
+    .pay-footer .f-pay-txt {float:left; font-size:15px; line-height:18px;}
+    .pay-footer .f-pay-txt span {display:block; font-size:11px}
+    .pay-footer .f-cs-txt {float:right; font-size:17px; font-weight:600;}
+    .pay-footer .f-pay-txt2 {margin-top:10px; font-size:10px; line-height:15px}
+    .pay-footer .show-xs img {margin-top:6px; width:70px;}
+    
+}
+
+/*테블릿 & PC영역*/
+@media (min-width: 768px){
+    .wrap {padding-top:70px}
+    .show-xs {display:none}
+    .btn-pay {position:relative; display:inline-block; padding:0 13px; height:53px; font-size:16px; line-height:53px; font-weight:600; color:#fff; text-align:center; border-radius:4px; background:#0898e7}
+    section[class*="pay-sec"] {position:relative;}
+    section[class*="pay-sec"] .pay-area {position:relative; width:960px; margin:0 auto;}
+    section[class*="pay-sec"] .pay-area img {}
+    .pay-sec2 .nr-select {display:inline-block; height:40px; padding:0 15px; font-size:20px; line-height:40px; font-weight:500; color:#0069cb; border: 1px solid #bdbdbd; border-radius:1px;  background: #f7f7f7 url(https://nurifunding.co.kr/img/nuripay/selectArr.png) no-repeat 95% center}
+    
+    /* 헤더 */
+    .pay-header {padding-top:17px; height:70px; border-bottom:0; background:#e5e5e5}
+    .pay-header h2 {float:left; position:relative; display:inline-block; width:155px}
+    .pay-header h2 a {width:100%;}
+    .pay-header .container.header-box {width:960px; top:0; padding:0}
+    .pay-header .main-nav > li, .main-nav > li > a {padding-bottom:0; line-height:34px;}
+    .pay-header .main-nav > li {margin-left:14px; font-size:18px; color:#616161}
+    .pay-header .main-nav .img-call {display:none}
+    .pay-header .main-nav .btn-pay {height:34px; font-size:14px; line-height:34px}
+    
+    /* 메인 */
+    .pay-sec1 {padding:95px 0 86px; background:url(https://nurifunding.co.kr/img/nuripay/bg_sec1.jpg) no-repeat center center; background-size:cover}
+    .pay-sec1 .btn-pay {margin:36px 0 118px; width:165px; height:53px; font-size:14px; line-height:53px}
+    
+    /* 누리페이 선정산 */
+    .pay-sec2 {padding:45px 0; background:#f4f4f4}
+    .pay-sec2 .pay-cal {float:left; position:relative; box-sizing:border-box; width:348px; height:437px; margin:0 auto; padding:30px 15px; text-align:center; border:1px solid #c8c6c7; border-radius:1px; background:#fff}
+    .pay-sec2 .pay-cal .cal-tit {position:relative; display:block; width:163px; height:52px; margin:0 auto}
+    .pay-sec2 .pay-cal .cal-tit img {height:40px;}
+    .pay-sec2 .pay-cal .cal-tit:after {content:''; position:absolute; display:inline-block; width:189px; height:1px; left:-13px; bottom:0; background:#d9d9d9}
+    .pay-sec2 .pay-cal .cal-txt {margin:13px auto 25px; font-size:16px; line-height:16px; color:#0069cb}
+    .pay-sec2 .pay-sel-box {}
+    .pay-sec2 .select-box {position:relative; display:inline-block; } 
+    .pay-sec2 .nr-select.sel-money {width:134px;}
+    .pay-sec2 .nr-select.sel-day {width:88px;}
+    .pay-sec2 .pay-sel-box span {display:inline-block; font-size:22px; line-height:40px; color:#3d3d3d}
+    .pay-sec2 .pay-sel-box .pay-sel-txt {font-size:22px; line-height:45px; color:#3d3d3d}
+    .pay-sec2 .pay-sel-box .pay-cal-money, .pay-sec2 .pay-sel-box .pay-cal-money span {font-size:44px; line-height:44px; color:#128bce}
+    .pay-sec2 .pay-sel-box .pay-cal-money {padding:10px 0 15px}
+    .pay-sec2 .btn-pay {width:280px; }
+    .pay-sec2 .pay-txt2 {margin-top:14px; font-size:14px; line-height:22px; color:#3d3d3d}
+    
+    .pay-sec2 .pay-info {float:right; padding-top:15px;}
+    
+    /* 누리페이에서 먼저 정산받으세요 */
+    .pay-sec3 {padding:50px 0 75px; background:#fff}
+    .pay-sec3 .pay-max {padding-top:58px;}
+    
+    /* FAQ 안내 */
+    .pay-sec4 {padding:46px 0 55px; background:#f4f4f4}
+    
+    /* 누리페이 선정산 서비스를 신청하세요! */
+    .pay-sec5 {padding:50px 0 53px; margin:0 auto; background:#fff}
+    .pay-sec5 .pay-area { margin:0 auto; text-align:center}
+    .pay-sec5 .cal-tit {margin-bottom:10px; font-size:28px; font-weight:600; text-align:center; line-height:28px; color:#0076b8}
+    .pay-sec5 .cal-txt {margin-bottom:30px; font-size:20px; text-align:center; line-height:24px; color:#3d3d3d}
+    .pay-sec5 .input-box {position:relative; width:515px; margin:0 auto; margin-top:9px}
+    .pay-sec5 .nr-text {display:inline-block; width:375px; height:40px; padding:0 14px; font-size:18px; line-height:40px; font-weight:500; color:#3d3d3d; border: 1px solid #bbb9b9; border-radius:1px;}
+    .pay-sec5 .input-tit {position:relative; float:left; width:135px; font-size:18px; text-align:left; line-height:40px; color:#3d3d3d}
+    .pay-sec5 .input-tit label {cursor:pointer}
+    .pay-sec5 .input-txt-box {position:relative; float:left}
+    .pay-sec5 .input-num-box .nr-text {width:86px}
+    .pay-sec5 .input-num-box .nr-text.fir {width:101px}
+    .pay-sec5 .input-num-box .nr-text.last {width:150px}
+    .pay-sec5 .input-num-box .line {display:inline-block; position:relative; width:5px; height:2px; margin:0 4px; vertical-align:middle; background: #b1b1b1}
+    .pay-sec5 .btn-pay {width:507px; margin-top:30px}
+    
+    /* 푸터 */
+    .pay-footer {box-sizing:border-box; padding-top:55px; height:135px; background:#555}
+    .pay-footer .container.footer-box {position:relative; width:960px; margin:0 auto;}
+    .pay-footer p, .pay-footer span, .pay-footer a {color:#fff}
+    .pay-footer .f-pay-txt {float:left; font-size:26px}
+    .pay-footer .f-pay-txt span {display:inline-block; margin-left:4px; font-size:18px}
+    .pay-footer .f-cs-txt {float:right; font-size:26px; font-weight:600}
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

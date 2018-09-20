@@ -1,7 +1,18 @@
-#json file
+#fontFile
+*.ttf
+*.woff
+*.woff2
+*.eot
+*.otf
+
+#sftpFile, zip∆ƒ¿œ
 *.json
-*.img
 *.zip
+
+# ImeageFile
+*.jpg
+*.png
+*.gif
 
 # Windows image file caches
 Thumbs.db
